@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Soccer Streams
+{% endblock %}
+
+{% block content %}
+<h1>Welcome!</h1>
+<div>
+    <p>Click <a href="{% url 'all_games' %}">here</a> for Today's games.</p>
+</div>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ data.selected_game }}
+{% endblock %}
+
+{% block content %}
+<table class="table">
+    <thead>AceStream Links</thead>
+    <tbody>
+    {% if data.links.0.kind == "Ace" %}
+    {% for link in data.links %}
+    <tr>
+        <td>{{ link.link }}</td>
+    </tr>
+    <tr>
+        <td>{{ link.body_html }}</td>
+    </tr>
+    {% endfor %}
+    {% else %}
+    <tr>
+        <td>No Ace Streams link found.</td>
+    </tr>
+    {% endif %}
+    </tbody>
+</table>
+{% if data.links.0.kind == "Post" %}
+<div>
+    <p>Post Link:</p>
+    <a href="{{ data.links.0.link }}" target="_blank">{{ data.links.0.link }}</a>
+</div>
+{% endif %}
+{% endblock %}
