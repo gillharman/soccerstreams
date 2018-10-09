@@ -1,0 +1,1 @@
+web: gunicorn soccerstreams.wsgi --log-file -
