@@ -41,36 +41,37 @@ def scan_acestream_link(urlString):
             for child in dict['data']['children']:
                 if child['kind'] == 't1':
                     regex_result = re.finditer(acestream_reg_ex, child['data']['body'])
-                    print(str(regex_result))
-                    if regex_result is not None:
-                        links_obj = {}
-                        links_obj["kind"] = 'Ace'
-                        links_obj["body_html"] = Template(html.unescape(child['data']['body_html'])).render(
-                            Context({"data": ""}))
-                        #Could be multiple acestream link in one comment
-                        links = []
-                        for link in regex_result:
-                            ace_link = {}
-                            ace_link["link"] = link.group()
-                            links.append(ace_link)
-                        links_obj["links"] = links
-                        dataObj.append(links_obj)
-                    else:
-                        continue
+                    for i in regex_result:
+                        if i.group():
+                            links_obj = {}
+                            links_obj["kind"] = 'Ace'
+                            links_obj["body_html"] = Template(html.unescape(child['data']['body_html'])).render(
+                                Context({"data": ""}))
+                            #Could be multiple acestream link in one comment
+                            # links = []
+                            # for link in regex_result:
+                            #     ace_link = {}
+                            #     ace_link["link"] = link.group()
+                            #     print('link.group: ' + link.group())
+                            #     links.append(ace_link)
+                            # links_obj["links"] = links
+                            dataObj.append(links_obj)
+                        else:
+                            continue
 
     except KeyError:
         'Error. Unsuccessful connection...'
 
     if not dataObj:
-        links = []
-        ace_link = {}
-        ace_link["link"]:""
-        links.append(ace_link)
+        # links = []
+        # ace_link = {}
+        # ace_link["link"]:""
+        # links.append(ace_link)
         links_obj = {
             "kind":"Post",
             "link":str(urlString),
             "body_html":"",
-            "links": ace_link
+            # "links": ace_link
         }
         dataObj.append(links_obj)
 
