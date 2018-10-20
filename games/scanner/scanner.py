@@ -29,7 +29,10 @@ def scan_for_games():
 
 def scan_acestream_link(urlString):
 
-    dataObj = [];
+    links = []
+    link_obj = {
+        'link':""
+    }
 
     requestUrl = str(urlString) + ".json"
     responseData = make_request(requestUrl)
@@ -42,37 +45,39 @@ def scan_acestream_link(urlString):
                 if child['kind'] == 't1':
                     regex_result = re.finditer(acestream_reg_ex, child['data']['body'])
                     for i in regex_result:
-                        if i.group():
-                            links_obj = {}
-                            links_obj["kind"] = 'Ace'
-                            links_obj["body_html"] = Template(html.unescape(child['data']['body_html'])).render(
-                                Context({"data": ""}))
-                            #Could be multiple acestream link in one comment
-                            # links = []
-                            # for link in regex_result:
-                            #     ace_link = {}
-                            #     ace_link["link"] = link.group()
-                            #     print('link.group: ' + link.group())
-                            #     links.append(ace_link)
-                            # links_obj["links"] = links
-                            dataObj.append(links_obj)
-                        else:
-                            continue
+                        link_obj['link'] = i.group();
+                        #body_html = child['data']['body_html']
+                        #print(type(child['data']['body_html']))
+
+                        ##wrap_ace_link = re.finditer(acestream_reg_ex, body_html)
+                        #for j in wrap_ace_link:
+                        #    print(j.group());
+                        #    body_html.replace(j.group(), '&#x3C;a&#x3E;'+ j.group() +'&#x3C;/a&#x3E;')
+                        #print(body_html)
+                        # links_obj["body_html"] = Template(html.unescape(child['data']['body_html'])).render(
+                        #     Context({"data": ""}))
+                        #links_obj["body_html"] = Template(html.unescape(body_html).render(Context({"data": ""})))
+                        #Could be multiple acestream link in one comment
+                        # links = []
+                        # for link in regex_result:
+                        #     ace_link = {}
+                        #     ace_link["link"] = link.group()
+                        #     print('link.group: ' + link.group())
+                        #     links.append(ace_link)
+                        # links_obj["links"] = links
+                        links.append(link_obj)
+                else:
+                    continue
 
     except KeyError:
         'Error. Unsuccessful connection...'
 
-    if not dataObj:
-        # links = []
-        # ace_link = {}
-        # ace_link["link"]:""
-        # links.append(ace_link)
-        links_obj = {
-            "kind":"Post",
-            "link":str(urlString),
-            "body_html":"",
-            # "links": ace_link
-        }
-        dataObj.append(links_obj)
+    retVal = {}
+    if links:
+        retVal['type'] = "ACESTREAM"
+        retVal['links'] = links
+    else:
+        retVal['type'] = "FULL_THREAD"
+        retVal['links'] = str(urlString)
 
-    return dataObj
+    return retVal

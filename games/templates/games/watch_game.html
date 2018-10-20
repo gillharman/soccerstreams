@@ -5,29 +5,17 @@
 {% endblock %}
 
 {% block content %}
-<table class="table">
-    <thead>AceStream Links</thead>
-    <tbody>
-    {% if data.links.0.kind == "Ace" %}
+{% if data %}
+{% if data.link_type == "ACESTREAM" %}
+<div>AceStream Links</div>
+<ul class="list-group">
     {% for link in data.links %}
-    <!--<tr>-->
-        <!--<td>{{ link.link }}</td>-->
-    <!--</tr>-->
-    <tr>
-        <td>{{ link.body_html }}</td>
-    </tr>
+    <li class="list-group-item">{{ link.link }}</li>
     {% endfor %}
-    {% else %}
-    <tr>
-        <td>No Ace Streams link found.</td>
-    </tr>
-    {% endif %}
-    </tbody>
-</table>
-{% if data.links.0.kind == "Post" %}
-<div>
-    <p>Post Link:</p>
-    <a href="{{ data.links.0.link }}" target="_blank">{{ data.links.0.link }}</a>
-</div>
+</ul>
+{% else %}
+<div>No AceStream links found</div>
+<div>Post Link: <a href="{{ data.links }}" target="_blank">{{ data.links }}</a></div>
+{% endif %}
 {% endif %}
 {% endblock %}
