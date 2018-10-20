@@ -7,12 +7,18 @@
 {% block content %}
 {% if data %}
 {% if data.link_type == "ACESTREAM" %}
-<div>AceStream Links</div>
-<ul class="list-group">
-    {% for link in data.links %}
-    <li class="list-group-item">{{ link.link }}</li>
-    {% endfor %}
-</ul>
+<div class="container">
+    <h4>AceStream Links</h4>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4">
+    <div class="list-group">
+        {% for link in data.links %}
+        <a href="{{ link.link }}" class="list-group-item">Acestream Link {{ forloop.counter }}
+            <span class="badge badge-primary badge-pill">{{ link.score }}</span>
+        </a>
+        {% endfor %}
+    </div>
+</div>
 {% else %}
 <div>No AceStream links found</div>
 <div>Post Link: <a href="{{ data.links }}" target="_blank">{{ data.links }}</a></div>
