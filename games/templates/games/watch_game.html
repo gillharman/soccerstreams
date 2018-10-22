@@ -11,10 +11,12 @@
     <h4>AceStream Links</h4>
 </div>
 <div class="col-lg-4 col-md-4 col-sm-4">
-    <div class="list-group">
+    <div class="list-group links">
         {% for link in data.links %}
-        <a href="{{ link.link }}" class="list-group-item">Acestream Link {{ forloop.counter }}
+        <a href="{{ link.link }}" class="list-group-item">
             <span class="badge badge-primary badge-pill">{{ link.score }}</span>
+            <h4>Acestream Link {{ forloop.counter }}</h4>
+            <p>Streamer: {{ link.author }}</p>
         </a>
         {% endfor %}
     </div>

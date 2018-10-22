@@ -11,24 +11,28 @@ All Games
         <table class="table table-bordered">
             <tbody>
                 <tr>
-                    <th>Time</th>
-                    <th>Game</th>
-                    <th>Link</th>
+                    <th class="col-lg-2 col-md-2 col-sm-2">Time</th>
+                    <th class="col-lg-5 col-md-5 col-sm-5">Game</th>
+                    <th class="col-lg-5 col-md-5 col-sm-5">Link</th>
                 </tr>
-        </tbody>
+            </tbody>
                 <tbody>
+                {% if matches %}
                 {% for match in matches %}
-                    <tr>
-                        <td class="col-lg-2 col-md-2 col-sm-2 col-xs-2">{{ match.Time }}</td>
-                        <td class="col-lg-5 col-md-5 col-sm-5 col-xs-5">{{ match.GameTitle }}</td>
-                        <td class="col-lg-5 col-md-5 col-sm-5 col-xs-5"><form method="post" action="{% url 'watch_game' %}">
-                            {% csrf_token %}
-                            <input name="match-post-link" type="text" hidden="hidden" value="{{ match.PostLink }}"/>
-                            <input name="match-title" type="text" hidden="hidden" value="{{ match.GameTitle }}"/>
-                            <button type="submit" class="btn btn-link">Watch</button>
-                        </form></td>
-                    </tr>
+                <tr>
+                    <td class="col-lg-2 col-md-2 col-sm-2">{{ match.Time }}</td>
+                    <td class="col-lg-5 col-md-5 col-sm-5">{{ match.GameTitle }}</td>
+                    <td class="col-lg-5 col-md-5 col-sm-5"><form method="post" action="{% url 'watch_game' %}">
+                        {% csrf_token %}
+                        <input name="match-post-link" type="text" hidden="hidden" value="{{ match.PostLink }}"/>
+                        <input name="match-title" type="text" hidden="hidden" value="{{ match.GameTitle }}"/>
+                        <button type="submit" class="btn btn-link">Watch</button>
+                        </form>
+                    </td>
+                </tr>
                 {% endfor %}
+                {% else %}
+                {% endif %}
             </tbody>
         </table>
     </div>

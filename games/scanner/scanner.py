@@ -45,6 +45,7 @@ def scan_acestream_link(urlString):
                         link_obj = {}
                         link_obj['link'] = i.group();
                         link_obj['score'] = child['data']['score']
+                        link_obj['author'] = child['data']['author']
                         links.append(link_obj)
                 else:
                     continue
