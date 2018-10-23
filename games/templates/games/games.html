@@ -8,6 +8,9 @@ All Games
 <div class="panel panel-default">
     <div class="panel-heading">Today's Games</div>
     <div class="panel-body">
+        {% if not matches %}
+        <div class="alert alert-info">There are no games going on right now.</div>
+        {% else %}
         <table class="table table-bordered">
             <tbody>
                 <tr>
@@ -16,8 +19,7 @@ All Games
                     <th class="col-lg-5 col-md-5 col-sm-5">Link</th>
                 </tr>
             </tbody>
-                <tbody>
-                {% if matches %}
+            <tbody>
                 {% for match in matches %}
                 <tr>
                     <td class="col-lg-2 col-md-2 col-sm-2">{{ match.Time }}</td>
@@ -31,10 +33,9 @@ All Games
                     </td>
                 </tr>
                 {% endfor %}
-                {% else %}
-                {% endif %}
             </tbody>
         </table>
+        {% endif %}
     </div>
 </div>
 {% endblock %}

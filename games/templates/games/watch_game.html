@@ -7,23 +7,30 @@
 {% block content %}
 {% if data %}
 {% if data.link_type == "ACESTREAM" %}
-<div class="container">
-    <h4>AceStream Links</h4>
-</div>
-<div class="col-lg-4 col-md-4 col-sm-4">
-    <div class="list-group links">
-        {% for link in data.links %}
-        <a href="{{ link.link }}" class="list-group-item">
-            <span class="badge badge-primary badge-pill">{{ link.score }}</span>
-            <h4>Acestream Link {{ forloop.counter }}</h4>
-            <p>Streamer: {{ link.author }}</p>
-        </a>
-        {% endfor %}
+<div class="panel panel-default">
+    <div class="panel-heading">AceStream Links</div>
+    <div class="panel-body">
+        <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="list-group links">
+                {% for link in data.links %}
+                <a href="{{ link.link }}" class="list-group-item">
+                    <span class="badge badge-primary badge-pill">{{ link.score }}</span>
+                    <h4>Acestream Link {{ forloop.counter }}</h4>
+                    <p>Streamer: {{ link.author }}</p>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
     </div>
 </div>
 {% else %}
-<div>No AceStream links found</div>
-<div>Post Link: <a href="{{ data.links }}" target="_blank">{{ data.links }}</a></div>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="alert alert-info">No AceStream links found</div>
+        <hr>
+        <div style="padding-left:10px;">Post Link: <a href="{{ data.links }}" target="_blank">{{ data.links }}</a></div>
+    </div>
+</div>
 {% endif %}
 {% endif %}
 {% endblock %}
