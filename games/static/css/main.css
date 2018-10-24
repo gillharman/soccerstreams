@@ -1,8 +1,10 @@
 body {
+    padding-top: 172px;
     background: url("/static/img/soccer-streams-background.jpg");
     background-color: #808080;
     background-repeat: no-repeat;
-    background-size: cover
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .container {
@@ -23,7 +25,10 @@ body {
 }
 
 .panel-body {
-    background: #e6e6fa
+    background: #e6e6fa;
+    height: 90vh;
+    max-height: 90vh;
+    overflow: auto;
 }
 
 
