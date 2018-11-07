@@ -1,13 +1,5 @@
 import requests
-from games.models import Game, Logs
-
-def store_game(match, link, time):
-    # game = {'thread': thread, 'link': link}
-    game = Game();
-    game.match = match
-    game.url = link
-    game.time = time
-    game.save()
+from games.models import Logs
 
 
 def make_request(url):

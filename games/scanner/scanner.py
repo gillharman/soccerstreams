@@ -1,12 +1,18 @@
 import re
-import html
 
-from django.template import Context, Template
 from .scanner_helper_functions import make_request
+
+from games.models import Game, Links
+
+def store_game(obj):
+    game = Game();
+    game.match = obj["GameTitle"]
+    game.url = obj["PostLink"]
+    game.time = obj["Time"]
+    game.save()
 
 def scan_for_games():
     dataObj = []
-    #print("This runs", file=sys.stderr)
     url = 'http://www.reddit.com/r/soccerstreams/.json'
 
     data = make_request(url)
@@ -17,15 +23,16 @@ def scan_for_games():
         for child in data['data']['children']:
             game_title_check = re.search(reg_ex, child['data']['title']) #Title with GMT Time ([00:00 GMT])
             if game_title_check:
-                game = {}
-                game["GameTitle"] = child['data']['title'].replace(game_title_check.group(), '').strip()
-                game["Time"] = game_title_check.group()[1:10]
-                game["PostLink"] = child['data']['url']
-                dataObj.append(game)
+                soccerMatch = {}
+                soccerMatch["GameTitle"] = child['data']['title'].replace(game_title_check.group(), '').strip()
+                soccerMatch["Time"] = game_title_check.group()[1:10]
+                soccerMatch["PostLink"] = child['data']['url']
+                store_game(soccerMatch)
+                # dataObj.append(soccerMatch)
     except KeyError:
         'Error. Unsuccessful connection...'
 
-    return dataObj
+    # return dataObj
 
 def scan_acestream_link(urlString):
 

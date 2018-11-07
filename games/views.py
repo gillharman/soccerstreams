@@ -6,7 +6,7 @@ def welcome(request):
     return render(request, 'games/welcome.html')
 
 def matches(request):
-    games = scan_for_games()
+    games = Game.objects.get_games()
     # games = []
     return render(request, 'games/games.html',
                   {"matches" : games})
