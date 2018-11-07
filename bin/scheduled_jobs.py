@@ -1,5 +1,3 @@
-from games.scanner import scanner
-
 from django_cron import CronJobBase, Schedule
 
 class MyCronJob(CronJobBase):

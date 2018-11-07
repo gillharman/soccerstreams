@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a24984d9-905a-4a1e-8193-849e0157c296" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/scheduled_jobs.py" afterPath="$PROJECT_DIR$/bin/scheduled_jobs.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soccerstreams/settings.py" afterPath="$PROJECT_DIR$/soccerstreams/settings.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,14 +24,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scheduled_jobs.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="scheduled_jobs.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bin/scheduled_jobs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-              <folding>
-                <element signature="e#0#33#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/soccerstreams/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="217">
+              <caret line="56" column="25" lean-forward="false" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -74,15 +83,15 @@
         <option value="$PROJECT_DIR$/soccerstreams/__init__.py" />
         <option value="$PROJECT_DIR$/celery.py" />
         <option value="$PROJECT_DIR$/tasks.py" />
-        <option value="$PROJECT_DIR$/soccerstreams/settings.py" />
         <option value="$PROJECT_DIR$/games/scanner/scanner_helper_functions.py" />
         <option value="$PROJECT_DIR$/scheduled_jobs.py" />
         <option value="$PROJECT_DIR$/games/views.py" />
         <option value="$PROJECT_DIR$/games/templates/games/games.html" />
         <option value="$PROJECT_DIR$/games/scanner/scanner.py" />
         <option value="$PROJECT_DIR$/games/models.py" />
-        <option value="$PROJECT_DIR$/bin/scheduled_jobs.py" />
         <option value="$PROJECT_DIR$/Procfile" />
+        <option value="$PROJECT_DIR$/bin/scheduled_jobs.py" />
+        <option value="$PROJECT_DIR$/soccerstreams/settings.py" />
       </list>
     </option>
   </component>
@@ -113,6 +122,16 @@
           <expand>
             <path>
               <item name="soccerstreams" type="b2602c69:ProjectViewProjectNode" />
+              <item name="soccerstreams" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="soccerstreams" type="b2602c69:ProjectViewProjectNode" />
+              <item name="soccerstreams" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="soccerstreams" type="b2602c69:ProjectViewProjectNode" />
+              <item name="soccerstreams" type="462c0819:PsiDirectoryNode" />
               <item name="soccerstreams" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -549,7 +568,7 @@
         <state relative-caret-position="612">
           <caret line="36" column="49" lean-forward="false" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -567,16 +586,8 @@
         <state relative-caret-position="136">
           <caret line="8" column="36" lean-forward="false" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soccerstreams/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="56" column="19" lean-forward="false" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -585,7 +596,7 @@
         <state relative-caret-position="204">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -600,11 +611,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/scheduled_jobs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soccerstreams/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="56" column="25" lean-forward="false" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
