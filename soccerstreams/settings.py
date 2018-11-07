@@ -54,7 +54,7 @@ MIDDLEWARE = [
 ]
 
 CRON_CLASSES = [
-    "scheduled_jobs.MyCronJob",
+    "/bin/scheduled_jobs.MyCronJob",
 ]
 
 ROOT_URLCONF = 'soccerstreams.urls'
