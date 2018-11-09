@@ -1,5 +1,8 @@
 from django_cron import CronJobBase, Schedule
 
+from bin.scanner import scanner
+
+
 class MyCronJob(CronJobBase):
     RUNS_EVERY_MINS = 1
 
@@ -8,4 +11,4 @@ class MyCronJob(CronJobBase):
 
     def do(selfs):
         print("Hello World")
-        # scanner.scan_for_games()
+        scanner.scan_for_games()

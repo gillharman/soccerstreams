@@ -1,6 +1,8 @@
 from django.shortcuts import render
-from .scanner.scanner import scan_for_games, scan_acestream_link
+
+from bin.scanner.scanner import scan_acestream_link
 from .models import Game
+
 
 def welcome(request):
     return render(request, 'games/welcome.html')

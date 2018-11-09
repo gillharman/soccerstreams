@@ -7,7 +7,7 @@ class GamesQuerySet(models.QuerySet):
         d = date(2018, 11, 4)
         return self.filter(
             created__date=d
-        ).order_by('created').distinct('match')
+        )
 
 class Game(models.Model):
     match = models.CharField(max_length=100)
