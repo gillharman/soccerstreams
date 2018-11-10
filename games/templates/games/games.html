@@ -22,11 +22,12 @@ All Games
             <tbody>
                 {% for match in matches %}
                 <tr>
+                    <td class="col-lg-2 col-md-2 col-sm-2">{{ match.aceLink }}</td>
                     <td class="col-lg-2 col-md-2 col-sm-2">{{ match.time }}</td>
-                    <td class="col-lg-5 col-md-5 col-sm-5">{{ match.match }}</td>
-                    <td class="col-lg-5 col-md-5 col-sm-5"><form method="post" action="{% url 'watch_game' %}">
+                    <td class="col-lg-4 col-md-4 col-sm-4">{{ match.match }}</td>
+                    <td class="col-lg-4 col-md-4 col-sm-4"><form method="post" action="{% url 'watch_game' %}">
                         {% csrf_token %}
-                        <input name="match-post-link" type="text" hidden="hidden" value="{{ match.postUrl }}"/>
+                        <input name="match-id" type="text" hidden="hidden" value="{{ match.id }}"/>
                         <input name="match-title" type="text" hidden="hidden" value="{{ match.match }}"/>
                         <button type="submit" class="btn btn-link">Watch</button>
                         </form>

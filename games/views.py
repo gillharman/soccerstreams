@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
-from bin.scanner.scanner import scan_acestream_link
-from .models import Game
+from bin.scanner.scanner import scrape_ace_links
+from .models import Game, Links
 
 
 def welcome(request):
@@ -15,14 +15,8 @@ def matches(request):
 
 def watch_game(request):
     responseData = request.POST
-
-    ##For Testing Purpose##
-    # selected_game = "Test"
-    data = scan_acestream_link("https://www.reddit.com/r/soccerstreams/comments/9c3g4s/1630_gmt_manchester_city_vs_newcastle_united/.json")
-
-
-    # data = scan_acestream_link(responseData['match-post-link'])
+    selected_game_links = Links.objects.get_links(responseData['match-id'])
+    print(selected_game_links)
     selected_game = responseData['match-title']
-    #print(ace_links[0]["body_html"])
     return render(request, 'games/watch_game.html',
-                  {"data": {"link_type": data['type'], "links" : data['links'], "selected_game" : selected_game}})
+                  {"data": {"links" : selected_game_links, "selected_game" : selected_game}})

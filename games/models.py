@@ -4,15 +4,18 @@ from datetime import date
 
 class GamesQuerySet(models.QuerySet):
     def get_games(self):
-        d = date(2018, 11, 4)
-        return self.filter(
-            created__date=d
-        )
+        d = date.today()
+        return self.filter(created__date=d).distinct('match')
+
+class LinksQuerySet(models.QuerySet):
+    def get_links(self, gameID):
+        return self.filter(match = gameID).distinct('link')
 
 class Game(models.Model):
     match = models.CharField(max_length=100)
     postUrl = models.CharField(max_length=2083, default='https://reddit.com/soccerstreams')
     time = models.CharField(max_length=14)
+    aceLink = models.BooleanField(default=False)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 
@@ -25,6 +28,8 @@ class Links(models.Model):
     linkScore = models.IntegerField()
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
+
+    objects = LinksQuerySet.as_manager()
 
 class Logs(models.Model):
     httpStatusCode = models.CharField(max_length=10)
