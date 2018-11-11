@@ -10,6 +10,7 @@ gunicorn==19.9.0
 idna==2.7
 kombu==4.2.1
 pipenv==2018.7.1
+psycopg2==2.7.6
 psycopg2-binary==2.7.5
 pytz==2018.5
 requests==2.19.1

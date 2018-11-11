@@ -9,6 +9,10 @@ https://docs.djangoproject.com/en/2.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.0/ref/settings/
 """
+# try:
+#     from .local_settings import *
+# except:
+#     pass
 
 import os
 
@@ -22,7 +26,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'djx4q2y-yyvjozclbw4*t1w!ph#l2om^24gc(j$09%njvjbg++'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -81,17 +85,13 @@ WSGI_APPLICATION = 'soccerstreams.wsgi.application'
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    # }
     'default' : {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'soccerstreams',
-        'USER': 'harman',
-        'PASSWORD': 'manveer',
-        'HOST': 'localhost',
-        'PORT': '',
+        'NAME': 'd9tuc6o4fjvk70',
+        'USER': 'ggwunygmlvyamx',
+        'PASSWORD': 'e37ed4fd3707bdc664815cd2daf21ab2ea106a6e225fa665fddafa185f16625d',
+        'HOST': 'ec2-23-21-147-71.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
