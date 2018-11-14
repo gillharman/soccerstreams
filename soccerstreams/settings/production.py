@@ -1,5 +1,7 @@
 from .base import *
 
+# DJANGO_SETTINGS_MODULE="soccerstreams.settings.production"
+
 ALLOWED_HOSTS = ['soccer-streams02.herokuapp.com']
 
 DEBUG = False
