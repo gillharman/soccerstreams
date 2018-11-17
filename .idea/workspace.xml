@@ -2,538 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a24984d9-905a-4a1e-8193-849e0157c296" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/autocomplete.781713f30664.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/autocomplete.781713f30664.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/autocomplete.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/autocomplete.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/base.4e3bba263270.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/base.4e3bba263270.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/base.7c5fa36168a7.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/base.7ea12481fb59.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/base.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/base.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/changelists.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/changelists.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/changelists.f6dc691f8d62.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/changelists.f6dc691f8d62.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/dashboard.7ac78187c567.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/dashboard.7ac78187c567.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/dashboard.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/dashboard.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/fonts.494e4ec545c9.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/fonts.494e4ec545c9.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/fonts.cc6140298ba7.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/fonts.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/fonts.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/forms.2da17328804f.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/forms.2da17328804f.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/forms.4d944dc1c5f9.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/forms.a895c775b4d9.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/forms.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/forms.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/login.a846c0e2ef65.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/login.a846c0e2ef65.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/login.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/login.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/responsive.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/responsive.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/responsive.d1e3572cb104.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/responsive.d1e3572cb104.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/responsive_rtl.2a6652327ccd.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/responsive_rtl.2a6652327ccd.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/responsive_rtl.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/responsive_rtl.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/rtl.306dbf6d5df6.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/rtl.306dbf6d5df6.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/rtl.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/rtl.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/vendor/select2/LICENSE-SELECT2.7cf1de939f3b.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/vendor/select2/LICENSE-SELECT2.7cf1de939f3b.md.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/vendor/select2/LICENSE-SELECT2.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/vendor/select2/LICENSE-SELECT2.md.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/vendor/select2/select2.3805311d5fc1.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/vendor/select2/select2.3805311d5fc1.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/vendor/select2/select2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/vendor/select2/select2.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/vendor/select2/select2.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/vendor/select2/select2.min.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/vendor/select2/select2.min.d44571114a90.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/vendor/select2/select2.min.d44571114a90.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/widgets.5e372b41c483.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/widgets.5e372b41c483.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/widgets.a7251c097987.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/widgets.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/css/widgets.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/fonts/LICENSE.d273d63619c9.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/fonts/LICENSE.d273d63619c9.txt.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/fonts/LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/fonts/LICENSE.txt.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/fonts/README.2c3d0bcdede2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/fonts/README.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/fonts/Roboto-Bold-webfont.2ad99072841e.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/fonts/Roboto-Bold-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/fonts/Roboto-Light-webfont.b446c2399bb6.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/fonts/Roboto-Light-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/fonts/Roboto-Regular-webfont.ec39515ae8c6.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/fonts/Roboto-Regular-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/LICENSE.2c54f4e1ca1c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/LICENSE.2c54f4e1ca1c.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/LICENSE.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/README.837277fa1908.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/README.837277fa1908.txt.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/README.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/README.txt.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/calendar-icons.39b290681a8b.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/calendar-icons.39b290681a8b.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/calendar-icons.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/calendar-icons.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/gis/move_vertex_off.7a23bf31ef8a.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/gis/move_vertex_off.7a23bf31ef8a.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/gis/move_vertex_off.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/gis/move_vertex_off.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/gis/move_vertex_on.0047eba25b67.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/gis/move_vertex_on.0047eba25b67.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/gis/move_vertex_on.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/gis/move_vertex_on.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-addlink.d519b3bab011.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-addlink.d519b3bab011.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-addlink.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-addlink.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-alert.034cc7d8a67f.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-alert.034cc7d8a67f.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-alert.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-alert.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-calendar.ac7aea671bea.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-calendar.ac7aea671bea.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-calendar.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-calendar.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-changelink.18d2fd706348.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-changelink.18d2fd706348.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-changelink.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-changelink.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-clock.e1d4dfac3f2b.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-clock.e1d4dfac3f2b.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-clock.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-clock.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-deletelink.564ef9dc3854.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-deletelink.564ef9dc3854.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-deletelink.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-deletelink.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-no.439e821418cd.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-no.439e821418cd.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-no.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-no.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-unknown-alt.81536e128bb6.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-unknown-alt.81536e128bb6.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-unknown-alt.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-unknown-alt.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-unknown.a18cb4398978.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-unknown.a18cb4398978.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-unknown.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-unknown.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-viewlink.41eb31f7826e.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-viewlink.41eb31f7826e.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-viewlink.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-viewlink.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-yes.d2f9f035226a.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-yes.d2f9f035226a.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-yes.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/icon-yes.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/inline-delete.fec1b761f254.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/inline-delete.fec1b761f254.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/inline-delete.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/inline-delete.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/search.7cf54ff789c6.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/search.7cf54ff789c6.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/search.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/search.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/selector-icons.b4555096cea2.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/selector-icons.b4555096cea2.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/selector-icons.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/selector-icons.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/sorting-icons.3a097b59f104.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/sorting-icons.3a097b59f104.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/sorting-icons.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/sorting-icons.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/tooltag-add.e59d620a9742.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/tooltag-add.e59d620a9742.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/tooltag-add.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/tooltag-add.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/tooltag-arrowright.bbfb788a849e.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/tooltag-arrowright.bbfb788a849e.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/tooltag-arrowright.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/img/tooltag-arrowright.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/SelectBox.b49f008d186b.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/SelectBox.b49f008d186b.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/SelectBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/SelectBox.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/SelectFilter2.bf63c55b78f6.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/SelectFilter2.bf63c55b78f6.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/SelectFilter2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/SelectFilter2.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/actions.2fb8e8349c22.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/actions.2fb8e8349c22.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/actions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/actions.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/actions.min.5fa8cb0403f1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/actions.min.5fa8cb0403f1.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/actions.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/actions.min.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/admin/DateTimeShortcuts.e3407a6ea666.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/admin/DateTimeShortcuts.e3407a6ea666.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/admin/DateTimeShortcuts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/admin/DateTimeShortcuts.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/admin/RelatedObjectLookups.ea0683bea064.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/admin/RelatedObjectLookups.ea0683bea064.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/admin/RelatedObjectLookups.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/admin/RelatedObjectLookups.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/autocomplete.cfd2c4dc8981.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/autocomplete.cfd2c4dc8981.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/autocomplete.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/autocomplete.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/calendar.aae57adab5f6.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/calendar.aae57adab5f6.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/calendar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/calendar.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/cancel.d6b4b556c3aa.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/cancel.d6b4b556c3aa.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/cancel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/cancel.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/change_form.9e85003a1a38.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/change_form.9e85003a1a38.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/change_form.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/change_form.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/collapse.acba97a53595.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/collapse.acba97a53595.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/collapse.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/collapse.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/collapse.min.2ee8a0086864.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/collapse.min.2ee8a0086864.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/collapse.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/collapse.min.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/core.953326603873.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/core.953326603873.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/core.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/core.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/inlines.ff88b5c8f54a.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/inlines.ff88b5c8f54a.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/inlines.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/inlines.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/inlines.min.4d23f8660b21.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/inlines.min.4d23f8660b21.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/inlines.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/inlines.min.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/jquery.init.95b62fa19378.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/jquery.init.95b62fa19378.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/jquery.init.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/jquery.init.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/popup_response.6ce3197f8fc8.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/popup_response.6ce3197f8fc8.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/popup_response.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/popup_response.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/prepopulate.2f90da7170ec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/prepopulate.2f90da7170ec.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/prepopulate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/prepopulate.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/prepopulate.min.85fd5e0fb706.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/prepopulate.min.85fd5e0fb706.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/prepopulate.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/prepopulate.min.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/prepopulate_init.0d3b53c37074.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/prepopulate_init.0d3b53c37074.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/prepopulate_init.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/prepopulate_init.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/timeparse.51258861a46a.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/timeparse.51258861a46a.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/timeparse.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/timeparse.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/urlify.4087f3e18796.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/urlify.4087f3e18796.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/urlify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/urlify.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/jquery/LICENSE.a158210a2737.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/jquery/LICENSE.a158210a2737.txt.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/jquery/LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/jquery/LICENSE.txt.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/jquery/jquery.6a07da9fae93.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/jquery/jquery.6a07da9fae93.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/jquery/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/jquery/jquery.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/jquery/jquery.min.a09e13ee94d5.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/jquery/jquery.min.a09e13ee94d5.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/jquery/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/jquery/jquery.min.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/LICENSE.7cf1de939f3b.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/LICENSE.7cf1de939f3b.md.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/LICENSE.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/LICENSE.md.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/ar.a8bb27ec698c.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/ar.a8bb27ec698c.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/ar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/ar.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/az.498dc667b34e.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/az.498dc667b34e.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/az.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/az.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/bg.89cba4df3c86.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/bg.89cba4df3c86.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/bg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/bg.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/ca.2eaad4eb1950.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/ca.2eaad4eb1950.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/ca.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/cs.a68bcd293adc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/cs.a68bcd293adc.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/cs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/cs.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/da.cbf897a0ae53.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/da.cbf897a0ae53.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/da.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/da.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/de.366d0aacb55f.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/de.366d0aacb55f.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/de.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/de.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/el.5629ce65500f.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/el.5629ce65500f.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/el.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/el.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/en.05649b26c086.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/en.05649b26c086.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/en.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/es.dc9dbf9d65df.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/es.dc9dbf9d65df.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/es.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/es.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/et.c3953fb90b6b.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/et.c3953fb90b6b.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/et.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/et.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/eu.11b925456433.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/eu.11b925456433.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/eu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/eu.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/fa.98e52839b583.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/fa.98e52839b583.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/fa.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/fa.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/fi.659847deefdc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/fi.659847deefdc.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/fi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/fi.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/fr.b06a3340de45.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/fr.b06a3340de45.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/fr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/fr.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/gl.78a87f7c0a51.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/gl.78a87f7c0a51.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/gl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/gl.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/he.222d90ee0344.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/he.222d90ee0344.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/he.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/he.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/hi.116a90b7111b.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/hi.116a90b7111b.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/hi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/hi.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/hr.e1d2c70b4df5.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/hr.e1d2c70b4df5.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/hr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/hr.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/hu.db45641f10b2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/hu.db45641f10b2.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/hu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/hu.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/id.6ee6c9c64b94.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/id.6ee6c9c64b94.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/id.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/id.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/is.808c7d47acb5.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/is.808c7d47acb5.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/is.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/is.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/it.bae1661dbb77.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/it.bae1661dbb77.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/it.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/it.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/ja.19cf1ce8a03d.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/ja.19cf1ce8a03d.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/ja.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/ja.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/km.6074a9c5575c.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/km.6074a9c5575c.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/km.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/km.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/ko.74b17541834f.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/ko.74b17541834f.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/ko.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/ko.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/lt.a0783b1bd159.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/lt.a0783b1bd159.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/lt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/lt.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/lv.07fe2a580d17.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/lv.07fe2a580d17.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/lv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/lv.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/mk.4986d7fc3ff3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/mk.4986d7fc3ff3.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/mk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/mk.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/ms.23e7b4369579.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/ms.23e7b4369579.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/ms.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/ms.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/nb.137e184004aa.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/nb.137e184004aa.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/nb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/nb.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/nl.c363ace8aa05.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/nl.c363ace8aa05.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/nl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/nl.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/pl.76465b54a6b0.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/pl.76465b54a6b0.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/pl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/pl.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/pt-BR.9efbbac4fda8.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/pt-BR.9efbbac4fda8.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/pt-BR.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/pt-BR.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/pt.5d6ccc53b347.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/pt.5d6ccc53b347.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/pt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/pt.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/ro.1ddc2b9980dc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/ro.1ddc2b9980dc.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/ro.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/ro.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/ru.d83609abf2e0.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/ru.d83609abf2e0.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/ru.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/ru.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/sk.a0f1a818d092.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/sk.a0f1a818d092.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/sk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/sk.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/sr-Cyrl.2f3047aad49e.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/sr-Cyrl.2f3047aad49e.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/sr-Cyrl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/sr-Cyrl.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/sr.157bc6eb978e.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/sr.157bc6eb978e.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/sr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/sr.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/sv.2b21bb3f6110.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/sv.2b21bb3f6110.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/sv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/sv.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/th.2a4ece4c4355.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/th.2a4ece4c4355.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/th.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/th.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/tr.c1925d8817db.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/tr.c1925d8817db.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/tr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/tr.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/uk.3d56f311192d.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/uk.3d56f311192d.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/uk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/uk.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/vi.3520aa7bdea8.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/vi.3520aa7bdea8.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/vi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/vi.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/zh-CN.419002d3c6c1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/zh-CN.419002d3c6c1.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/zh-CN.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/zh-CN.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/zh-TW.c021537edf2c.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/zh-TW.c021537edf2c.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/zh-TW.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/i18n/zh-TW.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/select2.full.a95323cb4760.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/select2.full.a95323cb4760.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/select2.full.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/select2.full.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/select2.full.min.da607360bcc6.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/select2.full.min.da607360bcc6.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/select2.full.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/select2/select2.full.min.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/xregexp/LICENSE.d64cecf4f157.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/xregexp/LICENSE.d64cecf4f157.txt.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/xregexp/LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/xregexp/LICENSE.txt.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/xregexp/xregexp.1865b1cf5085.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/xregexp/xregexp.1865b1cf5085.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/xregexp/xregexp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/xregexp/xregexp.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/xregexp/xregexp.min.c95393b8ca4d.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/xregexp/xregexp.min.c95393b8ca4d.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/xregexp/xregexp.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/admin/js/vendor/xregexp/xregexp.min.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/css/bootstrap-theme.8c6ad2433e82.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/css/bootstrap-theme.8c6ad2433e82.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/css/bootstrap-theme.css.006d9779ee60.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/css/bootstrap-theme.css.006d9779ee60.map.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/css/bootstrap-theme.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/css/bootstrap-theme.css.map.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/css/bootstrap-theme.min.95eb835999f0.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/css/bootstrap-theme.min.95eb835999f0.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/css/bootstrap-theme.min.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/css/bootstrap.22ed8c10ae9b.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/css/bootstrap.22ed8c10ae9b.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/css/bootstrap.css.5206fb32306f.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/css/bootstrap.css.5206fb32306f.map.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/css/bootstrap.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/css/bootstrap.css.map.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/css/bootstrap.d2ab08de4855.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/css/bootstrap.min.3ab3438f85ad.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/css/bootstrap.min.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/css/bootstrap.min.d593b1b4cc20.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/css/bootstrap.min.d593b1b4cc20.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/css/main.779ddda78913.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/css/main.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/css/main.d95f70d4a012.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/css/main.d95f70d4a012.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/fonts/glyphicons-halflings-regular.68ed1dac06bf.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/fonts/glyphicons-halflings-regular.7ad17c6085de.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/fonts/glyphicons-halflings-regular.e49d52e74b76.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/fonts/glyphicons-halflings-regular.e49d52e74b76.ttf.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/fonts/glyphicons-halflings-regular.ff423a4251cf.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/fonts/glyphicons-halflings-regular.ff423a4251cf.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/fonts/glyphicons-halflings-regular.svg.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/fonts/glyphicons-halflings-regular.ttf.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/img/soccer-streams-background.9602910e212c.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/img/soccer-streams-background.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/img/soccer-streams-header.f3d0c18753c5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/img/soccer-streams-header.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/js/main.68b329da9893.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/js/vendor/bootstrap.3f0c5a5f186e.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/js/vendor/bootstrap.3f0c5a5f186e.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/js/vendor/bootstrap.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/js/vendor/bootstrap.min.2616d3564578.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/js/vendor/bootstrap.min.2616d3564578.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/js/vendor/bootstrap.min.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/js/vendor/jquery-1.11.2.min.5790ead7ad3b.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/js/vendor/jquery-1.11.2.min.5790ead7ad3b.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/js/vendor/jquery-1.11.2.min.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/js/vendor/modernizr-2.8.3-respond-1.4.2.min.c5de01ee6da0.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/js/vendor/modernizr-2.8.3-respond-1.4.2.min.c5de01ee6da0.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/js/vendor/npm.ccb7f3909e30.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/js/vendor/npm.ccb7f3909e30.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/js/vendor/npm.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/games/static/staticfiles.json" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/games/static/css/main.css" afterPath="$PROJECT_DIR$/games/static/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/games/templates/base.html" afterPath="$PROJECT_DIR$/games/templates/base.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soccerstreams/settings/base.py" afterPath="$PROJECT_DIR$/soccerstreams/settings/base.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soccerstreams/settings/production.py" afterPath="$PROJECT_DIR$/soccerstreams/settings/production.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -544,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="production.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="production.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/soccerstreams/settings/production.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+            <state relative-caret-position="340">
+              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -574,11 +44,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="base.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/soccerstreams/settings/base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="115" column="28" lean-forward="false" selection-start-line="115" selection-start-column="17" selection-end-line="115" selection-end-column="28" />
+            <state relative-caret-position="192">
+              <caret line="112" column="23" lean-forward="true" selection-start-line="112" selection-start-column="23" selection-end-line="112" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -647,8 +127,8 @@
         <option value="$PROJECT_DIR$/games/static/css/main.css" />
         <option value="$PROJECT_DIR$/soccerstreams/settings/dev.py" />
         <option value="$PROJECT_DIR$/soccerstreams/settings/test.py" />
-        <option value="$PROJECT_DIR$/soccerstreams/settings/base.py" />
         <option value="$PROJECT_DIR$/soccerstreams/settings/production.py" />
+        <option value="$PROJECT_DIR$/soccerstreams/settings/base.py" />
       </list>
     </option>
   </component>
@@ -682,17 +162,6 @@
             <path>
               <item name="soccerstreams" type="b2602c69:ProjectViewProjectNode" />
               <item name="soccerstreams" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="soccerstreams" type="b2602c69:ProjectViewProjectNode" />
-              <item name="soccerstreams" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="soccerstreams" type="b2602c69:ProjectViewProjectNode" />
-              <item name="soccerstreams" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1100,6 +569,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/soccerstreams/settings/production.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/static/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1110,16 +587,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/soccerstreams/settings/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="115" column="28" lean-forward="false" selection-start-line="115" selection-start-column="17" selection-end-line="115" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soccerstreams/settings/production.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+        <state relative-caret-position="192">
+          <caret line="112" column="23" lean-forward="true" selection-start-line="112" selection-start-column="23" selection-end-line="112" selection-end-column="23" />
           <folding />
         </state>
       </provider>
