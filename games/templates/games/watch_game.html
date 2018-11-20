@@ -5,27 +5,16 @@
 {% endblock %}
 
 {% block content %}
-<div class="panel panel-default">
-    <div class="panel-heading">AceStream Links</div>
-    <div class="panel-body">
-        <div class="col-lg-4 col-md-4 col-sm-4">
-            <div class="list-group links">
-                {% for link in data.links %}
-                <a href="{{ link.link }}" class="list-group-item">
-                    <span class="badge badge-primary badge-pill">{{ link.linkScore }}</span>
-                    <h4>Acestream Link {{ forloop.counter }}</h4>
-                    <p>Streamer: {{ link.streamer }}</p>
-                </a>
-                {% endfor %}
-            </div>
-        </div>
+<h1>AceStream Links</h1>
+<div class="col-lg-4 col-md-4 col-sm-4">
+    <div class="list-group links">
+        {% for link in data.links %}
+        <a href="{{ link.link }}" class="list-group-item">
+            <span class="badge badge-primary badge-pill">{{ link.linkScore }}</span>
+            <h4>Acestream Link {{ forloop.counter }}</h4>
+            <p>Streamer: {{ link.streamer }}</p>
+        </a>
+        {% endfor %}
     </div>
 </div>
-<!--<div class="panel panel-default">-->
-    <!--<div class="panel-body">-->
-        <!--<div class="alert alert-info">No AceStream links found</div>-->
-        <!--<hr>-->
-        <!--<div style="padding-left:10px;">Post Link: <a href="{{ data.links }}" target="_blank">{{ data.links }}</a></div>-->
-    <!--</div>-->
-<!--</div>-->
 {% endblock %}

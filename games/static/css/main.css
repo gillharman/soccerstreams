@@ -1,10 +1,15 @@
+#game-options {
+    float: right;
+}
+
+#games .list-group-item {
+    margin-bottom: 5px;
+    overflow: auto;
+}
+
 body {
     padding-top: 50px;
     padding-bottom: 20px;
-}
-
-.container {
-    position: relative;
 }
 
 .links h4{
@@ -16,11 +21,10 @@ body {
 }
 
 .panel-body {
-    background: #e6e6fa;
-    height: 90vh;
-    max-height: 90vh;
     overflow: auto;
 }
+
+
 
 
 
