@@ -13,7 +13,15 @@ class GamesQuerySet(models.QuerySet):
 
 class LinksQuerySet(models.QuerySet):
     def get_links(self, gameID):
-        return self.filter(match = gameID).distinct('link')
+        return self.filter(match=gameID).distinct('link')
+
+    def get_values(self, key, value, field):
+        q = {key:value}
+        return self.filter(**q).values_list(field, flat=True)
+
+    def get_count(self, key, value):
+        q = {key:value}
+        return self.filter(**q).count()
 
 class Game(models.Model):
     match = models.CharField(max_length=100)

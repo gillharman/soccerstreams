@@ -1,10 +1,51 @@
-body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+#games .list-group-item {
+    margin-bottom: 5px;
+    overflow: auto;
 }
 
-.container {
-    position: relative;
+#game_info {
+    margin-top: 25px;
+}
+
+#game_info img {
+    background: transparent url("/static/img/loading.gif") center no-repeat;
+    width: 50px;
+    height: 50px;
+}
+
+#game-options {
+    float: right;
+}
+
+#card-close-button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: none;
+}
+
+#card-close-button:hover {
+    color: grey;
+}
+
+#card-close-button:focus {
+    box-shadow: none;
+}
+
+#homeTeam {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+#awayTeam {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+.navbar {
+    margin-bottom: 10px;
 }
 
 .links h4{
@@ -15,26 +56,14 @@ body {
     margin: 0 0 0px;
 }
 
-.panel-body {
-    background: #e6e6fa;
-    height: 90vh;
-    max-height: 90vh;
-    overflow: auto;
+.card {
+    position: fixed;
 }
 
-.list-group-item {
-    margin-bottom: 1px;
+.card-text {
+    margin-bottom: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+.card-text p {
+    margin-bottom: 0px;
+}

@@ -8,25 +8,28 @@ All Games
 {% if not matches %}
 <div class="alert alert-info">There are no games going on right now.</div>
 {% else %}
-<div id="games" class="container col-lg-6 col-md-6 col-sm12">
-    <div class="list-group">
-        {% for match in matches %}
-        <div class="list-group-item col-lg-12 col-md-12 col-sm-12">
-            <h3> {{ match.match }}</h3>
-            <p>{{ match.time }}</p>
-            <div class="pull-right">
-                {% if match.aceLink %}
-                <a class="btn btn-primary" href="{% url 'watch_game' %}match_id={{ match.id }}" role="button">
-                    <i class="fa fa-play-circle-o"></i><span class="hidden-xs"> AceStreams</span>
-                </a>
-                {% endif %}
-                <button class="btn btn-primary" type="button">
-                    <i class="fa fa-info-circle"></i><span class="hidden-xs"> More Info</span>
-                </button>
+<div class="row">
+    <div class="col-lg-5 col-md-5 col-sm-5"  id="games">
+        <div class="list-group">
+            {% for match in matches %}
+            <div class="list-group-item">
+                <h3> {{ match.match }}</h3>
+                <p>{{ match.time }}</p>
+                <div class="pull-right">
+                    {% if match.aceLink %}
+                    <a class="btn btn-primary" href="{% url 'watch_game' %}match_id={{ match.id }}" role="button">
+                        <i class="fa fa-play-circle-o"></i><span class="d-none d-sm-inline"> AceStreams</span>
+                    </a>
+                    {% endif %}
+                    <button id="{{ match.id }}" class="btn btn-primary" type="button" onclick="getMatchInfo(this)">
+                        <i class="fa fa-info-circle"></i><span class="d-none d-sm-inline"> More Info</span>
+                    </button>
+                </div>
             </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
+    <div class="col" id="game_info" style="display: none;"></div>
 </div>
 {% endif %}
 {% endblock %}

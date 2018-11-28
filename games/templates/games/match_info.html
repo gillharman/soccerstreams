@@ -1,0 +1,25 @@
+<div class="card bg-light mb-3">
+    <div class="card-body text-center">
+        <div class="card-title">
+            <div id="homeTeam">
+                <img src="{{ data.home_crest }}" alt="Home Team" onerror="this.style.display='none'">
+                <p>Arsenal</p>
+            </div>
+            <p style="display: inline-block;">vs</p>
+            <div id="awayTeam">
+                <img src="{{ data.away_crest }}" alt="Away Team" onerror="this.style.display='none'">
+                <p>Chelsea</p>
+            </div>
+        </div>
+        <div class="card-text">
+            {% if data.link_count %}
+            <p>Streamers: {{data.streamers}}</p>
+            <p>Total Links: {{ data.link_count }}</p>
+            {% else %}
+            <p>No Acestreams available</p>
+            {% endif %}
+        </div>
+        <button type="button" class="btn btn-primary" onclick="closeCard()">Close</button>
+    </div>
+    <button id="card-close-button" type="button" class="btn" title="Close" onclick="closeCard()"><i class="fa fa-close" style="font-size:24px"></i></button>
+</div>
