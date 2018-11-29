@@ -4,8 +4,8 @@ from datetime import date
 
 class GamesQuerySet(models.QuerySet):
     def get_games(self):
-        # d = date.today()
-        d = date(2018, 11, 10)
+        d = date.today()
+        # d = date(2018, 11, 10)
         return self.filter(created__date=d).distinct('match')
 
     def get_match_name(self, gameID):
