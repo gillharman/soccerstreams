@@ -19,7 +19,9 @@
             <p>No Acestreams available</p>
             {% endif %}
         </div>
-        <button type="button" class="btn btn-primary" onclick="closeCard()">Close</button>
+        <button id="closeBtn_{{ data.match_id }}" type="button" class="btn btn-primary" onclick="closeCard(this)" value="closeBtn_{{ data.match_id }}">Close</button>
     </div>
-    <button id="card-close-button" type="button" class="btn" title="Close" onclick="closeCard()"><i class="fa fa-close" style="font-size:24px"></i></button>
+    {% if not data.is_mobile_tablet %}
+    <button id="card-close-button" type="button" class="btn" title="Close" onclick="closeCard(this)"><i class="fa fa-close" style="font-size:24px"></i></button>
+    {% endif %}
 </div>

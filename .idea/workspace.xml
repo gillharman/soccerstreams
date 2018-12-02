@@ -2,151 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a24984d9-905a-4a1e-8193-849e0157c296" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/bin/is_mobile.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soccerstreams/settings/production.py" beforeDir="false" afterPath="$PROJECT_DIR$/soccerstreams/settings/production.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/autocomplete.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/base.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/changelists.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/dashboard.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/fonts.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/forms.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/responsive.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/responsive_rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/vendor/select2/LICENSE-SELECT2.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/vendor/select2/select2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/vendor/select2/select2.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/widgets.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/fonts/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/fonts/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/fonts/Roboto-Bold-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/fonts/Roboto-Light-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/fonts/Roboto-Regular-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/calendar-icons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/gis/move_vertex_off.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/gis/move_vertex_on.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-addlink.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-alert.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-calendar.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-changelink.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-clock.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-deletelink.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-no.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-unknown-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-unknown.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-viewlink.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-yes.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/inline-delete.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/search.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/selector-icons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/sorting-icons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/tooltag-add.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/tooltag-arrowright.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/SelectBox.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/SelectFilter2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/actions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/actions.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/admin/DateTimeShortcuts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/admin/RelatedObjectLookups.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/autocomplete.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/calendar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/cancel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/change_form.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/collapse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/collapse.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/core.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/inlines.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/inlines.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/jquery.init.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/popup_response.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/prepopulate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/prepopulate.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/prepopulate_init.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/timeparse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/urlify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/jquery/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/jquery/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/jquery/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/ar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/az.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/bg.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/ca.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/cs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/da.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/de.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/el.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/en.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/es.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/et.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/eu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/fa.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/fi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/fr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/gl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/he.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/hi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/hr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/hu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/id.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/is.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/it.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/ja.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/km.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/ko.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/lt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/lv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/mk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/ms.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/nb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/nl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/pl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/pt-BR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/pt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/ro.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/ru.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/sk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/sr-Cyrl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/sr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/sv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/th.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/tr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/uk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/vi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/zh-CN.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/zh-TW.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/select2.full.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/select2.full.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/xregexp/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/xregexp/xregexp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/xregexp/xregexp.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-theme.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-theme.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-theme.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/loading.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/vendor/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/vendor/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/vendor/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/vendor/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/vendor/jquery-1.11.2.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/vendor/jquery-3.3.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/vendor/npm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/games/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/games/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/games/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/games/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/games/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/games/static/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/games/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/games/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/games/templates/games/games.html" beforeDir="false" afterPath="$PROJECT_DIR$/games/templates/games/games.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/games/templates/games/match_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/games/templates/games/match_info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/games/templates/games/watch_game.html" beforeDir="false" afterPath="$PROJECT_DIR$/games/templates/games/watch_game.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/games/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/games/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soccerstreams/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/soccerstreams/settings/base.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -157,19 +24,62 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/soccerstreams/settings/production.py">
+        <entry file="file://$PROJECT_DIR$/games/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+            <state relative-caret-position="499">
+              <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bin/is_mobile.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="19" lean-forward="true" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/games/templates/games/games.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="41" column="4" lean-forward="true" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/games/templates/games/match_info.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="111" selection-start-line="21" selection-start-column="111" selection-end-line="21" selection-end-column="111" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#button#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/games/static/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/games/templates/base.html">
+        <entry file="file://$PROJECT_DIR$/games/static/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-173">
-              <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+            <state relative-caret-position="437">
+              <caret line="66" column="1" lean-forward="true" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -179,8 +89,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -197,6 +107,7 @@
       <find>static</find>
       <find>icon</find>
       <find>links.objects</find>
+      <find>id</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -234,29 +145,30 @@
         <option value="$PROJECT_DIR$/soccerstreams/wsgi.py" />
         <option value="$PROJECT_DIR$/soccerstreams/settings/test.py" />
         <option value="$PROJECT_DIR$/static/css/main.css" />
-        <option value="$PROJECT_DIR$/soccerstreams/settings/base.py" />
         <option value="$PROJECT_DIR$/games/templates/games/welcome.html" />
-        <option value="$PROJECT_DIR$/games/templates/games/watch_game.html" />
         <option value="$PROJECT_DIR$/soccerstreams/urls.py" />
         <option value="$PROJECT_DIR$/games/urls.py" />
         <option value="$PROJECT_DIR$/soccerstreams/settings/dev.py" />
         <option value="$PROJECT_DIR$/games/static/js/vendor/jquery-3.3.1.min.js" />
+        <option value="$PROJECT_DIR$/soccerstreams/settings/production.py" />
         <option value="$PROJECT_DIR$/games/templates/base.html" />
-        <option value="$PROJECT_DIR$/games/templates/games/games.html" />
-        <option value="$PROJECT_DIR$/games/static/js/main.js" />
+        <option value="$PROJECT_DIR$/games/models.py" />
+        <option value="$PROJECT_DIR$/games/templates/games/watch_game.html" />
+        <option value="$PROJECT_DIR$/soccerstreams/settings/base.py" />
         <option value="$PROJECT_DIR$/games/static/css/main.css" />
+        <option value="$PROJECT_DIR$/games/templates/games/games.html" />
+        <option value="$PROJECT_DIR$/bin/is_mobile.py" />
         <option value="$PROJECT_DIR$/games/views.py" />
         <option value="$PROJECT_DIR$/games/templates/games/match_info.html" />
-        <option value="$PROJECT_DIR$/games/models.py" />
-        <option value="$PROJECT_DIR$/soccerstreams/settings/production.py" />
+        <option value="$PROJECT_DIR$/games/static/js/main.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="424" />
-    <option name="y" value="113" />
-    <option name="width" value="1029" />
-    <option name="height" value="728" />
+    <option name="x" value="130" />
+    <option name="y" value="408" />
+    <option name="width" value="1349" />
+    <option name="height" value="639" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -274,6 +186,11 @@
             <path>
               <item name="soccerstreams" type="b2602c69:ProjectViewProjectNode" />
               <item name="soccerstreams" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="soccerstreams" type="b2602c69:ProjectViewProjectNode" />
+              <item name="soccerstreams" type="462c0819:PsiDirectoryNode" />
               <item name="games" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -281,13 +198,6 @@
               <item name="soccerstreams" type="462c0819:PsiDirectoryNode" />
               <item name="games" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="soccerstreams" type="b2602c69:ProjectViewProjectNode" />
-              <item name="soccerstreams" type="462c0819:PsiDirectoryNode" />
-              <item name="games" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="soccerstreams" type="b2602c69:ProjectViewProjectNode" />
@@ -295,20 +205,19 @@
               <item name="games" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="soccerstreams" type="b2602c69:ProjectViewProjectNode" />
-              <item name="soccerstreams" type="462c0819:PsiDirectoryNode" />
-              <item name="games" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="soccerstreams" type="b2602c69:ProjectViewProjectNode" />
               <item name="soccerstreams" type="462c0819:PsiDirectoryNode" />
               <item name="games" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="soccerstreams" type="b2602c69:ProjectViewProjectNode" />
+              <item name="soccerstreams" type="462c0819:PsiDirectoryNode" />
+              <item name="games" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="games" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="soccerstreams" type="b2602c69:ProjectViewProjectNode" />
@@ -320,11 +229,6 @@
               <item name="soccerstreams" type="462c0819:PsiDirectoryNode" />
               <item name="soccerstreams" type="462c0819:PsiDirectoryNode" />
               <item name="settings" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="soccerstreams" type="b2602c69:ProjectViewProjectNode" />
-              <item name="soccerstreams" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -431,6 +335,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19898605" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -445,7 +350,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.51028275" side_tool="true" weight="0.28494623" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3293011" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.3293011" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.48971722" visible="true" weight="0.22715054" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.48971722" visible="true" weight="0.21505377" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -453,8 +358,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js" />
-    <entry file="file://$PROJECT_DIR$/static/js/vendor/jquery-1.11.2.min.js" />
     <entry file="file://$PROJECT_DIR$/static/js/vendor/bootstrap.min.js" />
     <entry file="file://$PROJECT_DIR$/static/js/vendor/bootstrap.js" />
     <entry file="file://$PROJECT_DIR$/static/js/vendor/npm.js" />
@@ -514,13 +417,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/games/templates/games/watch_game.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/games/static/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -543,14 +439,6 @@
     <entry file="file://$PROJECT_DIR$/games/static/css/bootstrap-grid.min.css" />
     <entry file="file://$PROJECT_DIR$/games/static/css/bootstrap-reboot.css.map" />
     <entry file="file://$PROJECT_DIR$/games/static/css/bootstrap-reboot.min.css" />
-    <entry file="file://$PROJECT_DIR$/soccerstreams/settings/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="122" column="36" lean-forward="true" selection-start-line="122" selection-start-column="36" selection-end-line="122" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/games/static/js/vendor/npm.js" />
     <entry file="file://$PROJECT_DIR$/games/static/js/vendor/jquery-1.11.2.min.js" />
     <entry file="file://$PROJECT_DIR$/games/static/js/vendor/jquery-3.3.1.min.js">
@@ -579,61 +467,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/games/static/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/games/templates/games/games.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/games/static/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="63" column="24" selection-start-line="63" selection-start-column="24" selection-end-line="63" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/games/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/games/templates/games/match_info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#button#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/games/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/soccerstreams/settings/dev.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -648,10 +481,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/games/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="19" column="70" selection-start-line="19" selection-start-column="70" selection-end-line="19" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/games/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-173">
-          <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+        <state relative-caret-position="33">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soccerstreams/settings/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="48" column="56" selection-start-line="48" selection-start-column="56" selection-end-line="48" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/games/templates/games/watch_game.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/is_mobile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="19" lean-forward="true" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/games/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/games/templates/games/games.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="41" column="4" lean-forward="true" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/games/static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/games/templates/games/match_info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="111" selection-start-line="21" selection-start-column="111" selection-end-line="21" selection-end-column="111" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#button#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/games/static/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="66" column="1" lean-forward="true" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
         </state>
       </provider>
     </entry>

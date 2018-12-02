@@ -33,7 +33,8 @@ INSTALLED_APPS = [
     'games',
     'users',
     'gunicorn',
-    'django_cron'
+    'django_cron',
+    'django_user_agents',
 ]
 
 MIDDLEWARE = [
@@ -45,6 +46,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django_user_agents.middleware.UserAgentMiddleware',
 ]
 
 CRON_CLASSES = [

@@ -4,8 +4,8 @@ from datetime import date
 
 class GamesQuerySet(models.QuerySet):
     def get_games(self):
-        d = date.today()
-        # d = date(2018, 11, 10)
+        # d = date.today()
+        d = date(2018, 11, 10)
         return self.filter(created__date=d).distinct('match')
 
     def get_match_name(self, gameID):
@@ -13,7 +13,11 @@ class GamesQuerySet(models.QuerySet):
 
 class LinksQuerySet(models.QuerySet):
     def get_links(self, gameID):
-        return self.filter(match=gameID).distinct('link')
+        return self.filter(match=gameID).distinct('link') #Workaround implemented due to data duplication
+
+    def get_streamers(self, gameID):
+        links = self.get_links(gameID)
+        return self.filter(id__in=links).values('streamer', 'linkScore').annotate(models.Count('streamer'))
 
     def get_values(self, key, value, field):
         q = {key:value}

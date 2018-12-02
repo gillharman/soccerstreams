@@ -5,16 +5,20 @@
 {% endblock %}
 
 {% block content %}
-<h1>AceStream Links</h1>
-<div class="col-lg-4 col-md-4 col-sm-4">
-    <div class="list-group links">
-        {% for link in data.links %}
-        <a href="{{ link.link }}" class="list-group-item">
-            <span class="badge badge-primary badge-pill">{{ link.linkScore }}</span>
-            <h4>Acestream Link {{ forloop.counter }}</h4>
-            <p>Streamer: {{ link.streamer }}</p>
-        </a>
-        {% endfor %}
+{% for streamer in data.streamers %}
+<div class="row">
+    <div class="col">
+        <div class="card">
+            <div class="card-body">
+                <div class="card-title">Streamer: {{ streamer.streamer }}
+                <span class="badge badge-primary badge-pill fa fa-arrow-up">{{ streamer.linkScore }}</span>
+                </div>
+                <div class="card-text">
+                    <p>Available links: {{ streamer.streamer__count }}</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+{% endfor %}
 {% endblock %}
