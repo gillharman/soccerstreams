@@ -1,24 +1,38 @@
 {% extends 'base.html' %}
+{% load element_classes %}
 
 {% block title %}
 {{ data.selected_game }}
 {% endblock %}
 
 {% block content %}
-{% for streamer in data.streamers %}
+{% regroup data.links by streamer as streamers_list %}
+{% for streamer in streamers_list %}
+{% with link_score=streamer.list.0.linkScore %}
 <div class="row">
     <div class="col">
-        <div class="card">
+        <div class="card bg-light mb-3">
+            <div class="card-header">Streamer {{ forloop.counter }}
+                <span class="badge badge-{{ link_score|link_score_class }} stream-rating"><i class="fa {{ link_score|link_score_icon_class }}"> {{ link_score }}</i></span>
+            </div>
             <div class="card-body">
-                <div class="card-title">Streamer: {{ streamer.streamer }}
-                <span class="badge badge-primary badge-pill fa fa-arrow-up">{{ streamer.linkScore }}</span>
-                </div>
-                <div class="card-text">
-                    <p>Available links: {{ streamer.streamer__count }}</p>
-                </div>
+                <h6 class="card-title">Name: {{ streamer.grouper }}</h6>
+                <p class="card-text">Available links: {{ streamer.list|length }}</p>
+                <ul class="list-group">
+                    {% for link in streamer.list %}
+                    <li class="list-group-item">
+                        {% if data.is_mobile_tablet %}
+                        {{ link.link }}
+                        {% else %}
+                        <a href="{{ link.link }}">{{ link.link }}</a>
+                        {% endif %}
+                    </li>
+                    {% endfor %}
+                </ul>
             </div>
         </div>
     </div>
 </div>
+{% endwith %}
 {% endfor %}
 {% endblock %}

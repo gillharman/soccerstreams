@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 from .models import Game, Links
-from bin.is_mobile import isMobile
+from bin.helper_scripts import isMobile
 
 def welcome(request):
     return render(request, 'games/welcome.html')
@@ -11,18 +11,18 @@ def matches(request):
     games = Game.objects.get_games()
     return render(request, 'games/games.html',
                   {"data" : {
-                      "matches": games,
                       "is_mobile_tablet": is_mobile,
+                      "matches": games,
                   }})
 
 def watch_game(request, match_id):
-    selected_game_links = Links.objects.get_links(match_id)
-    game_streamers = Links.objects.get_streamers(match_id)
+    is_mobile = isMobile(request)
+    links = Links.objects.get_links(match_id)
     selected_game = Game.objects.get_match_name(match_id)
     return render(request, 'games/watch_game.html',
                   {"data": {
-                      "streamers": game_streamers,
-                      "links": selected_game_links,
+                      "is_mobile_tablet": is_mobile,
+                      "links": links,
                       "selected_game": selected_game
                   }})
 
@@ -38,11 +38,11 @@ def get_match_info(request):
 
     return render(request, 'games/match_info.html',
                   {"data": {
+                      "is_mobile_tablet": is_mobile,
                       "name": name,
                       "match_id": match_id,
                       "home_crest": home_crest,
                       "away_crest": away_crest,
                       "streamers": ', '.join(streamers),
                       "link_count": link_count,
-                      "is_mobile_tablet": is_mobile,
                   }})

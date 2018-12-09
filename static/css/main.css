@@ -31,8 +31,18 @@
     height: 100px;
 }
 
+#team_info img {
+    background: transparent url("/static/img/loading.gif") center no-repeat;
+    width: 50px;
+    height: 50px;
+}
+
 .navbar {
     margin-bottom: 10px;
+}
+
+.list-games {
+    margin-bottom: 5px;
 }
 
 .game-info-hidden {
@@ -47,4 +57,8 @@
     background: transparent url("/static/img/loading.gif") center no-repeat;
     width: 50px;
     height: 50px;
+}
+
+.stream-rating {
+    float: right;
 }
