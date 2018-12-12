@@ -1,6 +1,6 @@
 import re
 
-from .scanner_helper_functions import make_request
+from .scanner_helper_functions import make_request, request_headers
 
 from games.models import Game, Links
 
@@ -8,7 +8,6 @@ def start_scraper():
     new_games = scrape_games()
     # print(new_games)
     stored_games = store_game(new_games)
-    # print(stored_games)
     new_links = scrape_ace_links(stored_games)
     l = store_links(new_links)
     return l
@@ -26,7 +25,7 @@ def store_game(arr):
     return Game.objects.get_games().values('id', 'postUrl')
 
 def store_links(arr):
-    # print(arr)
+    print(arr)
     try:
         for i in arr:
             gameInstance = Game.objects.get(id=i["gameID"])
@@ -47,7 +46,7 @@ def scrape_games():
     matches = []
     url = 'http://www.reddit.com/r/soccerstreams/.json'
 
-    data = make_request(url)
+    data = make_request(url, request_headers["reddit"])
 
     reg_ex = '(\[\d\d\:\d\d\s\D\D\D\])'
 
@@ -62,7 +61,7 @@ def scrape_games():
                 matches.append(soccerMatch)
     except KeyError:
         'Error. Unsuccessful connection...'
-
+    print(matches)
     return matches
 
 def scrape_ace_links(arr):
@@ -73,7 +72,8 @@ def scrape_ace_links(arr):
         urlString = j["postUrl"]
 
         requestUrl = str(urlString) + ".json"
-        responseData = make_request(requestUrl)
+
+        responseData = make_request(requestUrl, request_headers["reddit"])
 
         acestream_reg_ex = 'acestream://\w+'
 

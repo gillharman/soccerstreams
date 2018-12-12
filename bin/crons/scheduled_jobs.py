@@ -10,5 +10,6 @@ class MyCronJob(CronJobBase):
     code = 'soccerstreams.my_cron_job' # a unique code
 
     def do(selfs):
-        print("Hello World")
+        print("Scraping...")
         scanner.start_scraper()
+        print('Scrape Complete')

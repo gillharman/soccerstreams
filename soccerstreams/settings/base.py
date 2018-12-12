@@ -31,6 +31,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'games',
+    'teams',
+    'leagues',
     'users',
     'gunicorn',
     'django_cron',

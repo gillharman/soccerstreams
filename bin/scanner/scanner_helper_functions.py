@@ -1,13 +1,18 @@
 import requests
 from games.models import Logs
 
+import ast
 
-def make_request(url):
-    r = requests.get(url, headers={"user_agent": "laptop:soccerStreams:v 0.1 (by/u/gillhimmy)"})
-    #print('Connecting...')
+request_headers = {
+    "reddit": "{'user_agent': 'laptop:soccerStreams:v 0.1 (by/u/gillhimmy)'}",
+    "football-api": "{'x-auth-token': '335ffd5c439f4d3ea4f5ade02de7b207'}"
+}
+
+def make_request(url, header):
+    r = requests.get(url, headers=ast.literal_eval(header))
+
     while r.status_code != 200:
-        # sleep(1)  # Wait a second to make another request
-        r = requests.get(url, headers={"user_agent": "laptop:soccerStreams:v 0.1 (by/u/gillhimmy)"})
+        r = requests.get(url)
 
     data = r.json()
 

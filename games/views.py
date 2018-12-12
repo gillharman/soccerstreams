@@ -1,7 +1,11 @@
 from django.shortcuts import render
+from django.http import JsonResponse
+from datetime import date
+import requests
 
 from .models import Game, Links
 from bin.helper_scripts import isMobile
+from bin.scanner.scanner_helper_functions import make_request, request_headers
 
 def welcome(request):
     return render(request, 'games/welcome.html')
@@ -46,3 +50,11 @@ def get_match_info(request):
                       "streamers": ', '.join(streamers),
                       "link_count": link_count,
                   }})
+
+
+def new_get_games(request):
+    d = str(date.today())
+    url = "http://api.football-data.org/v2/matches?dateFrom="+d+"&dateTo="+d
+
+    data = make_request(url, request_headers["football-api"])
+    return JsonResponse(data)
