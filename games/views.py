@@ -55,13 +55,7 @@ def get_match_info(request):
 
 def new_get_games(request):
     d = str(date.today())
-    url = "http://api.football-data.org/v2/matches?dateFrom="+d+"&dateTo="+d
+    url = "http://api.football-data.org/v2/matches"
 
     data = make_request(url, request_headers["football-api"])
-    print(data['matches'][0]['homeTeam']['name'])
-    t = Team()
-    t.name = data['matches'][0]['homeTeam']['name']
-    t.venue = 'test'
-    t.short_name = 'Madrid'
-    t.save()
     return JsonResponse(data)
