@@ -3,18 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a24984d9-905a-4a1e-8193-849e0157c296" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/crons/scheduled_jobs.py" beforeDir="false" afterPath="$PROJECT_DIR$/bin/crons/scheduled_jobs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/scanner/scanner.py" beforeDir="false" afterPath="$PROJECT_DIR$/bin/scanner/scanner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/scanner/scanner_helper_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/bin/scanner/scanner_helper_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/games/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/games/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/games/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/games/static/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/games/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/games/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/games/templates/games/games.html" beforeDir="false" afterPath="$PROJECT_DIR$/games/templates/games/games.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/games/templates/games/welcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/games/templates/games/welcome.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/games/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/games/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/games/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/games/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soccerstreams/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/soccerstreams/settings/base.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,43 +14,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/teams/models.py">
+        <entry file="file://$PROJECT_DIR$/games/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="65" lean-forward="true" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
+            <state relative-caret-position="335">
+              <caret line="63" column="20" lean-forward="true" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
               <folding>
-                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#0#35#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/leagues/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="28" lean-forward="true" selection-start-column="28" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/games/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="40" column="34" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/soccerstreams/settings/base.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -148,10 +107,10 @@
         <option value="$PROJECT_DIR$/games/templates/games/welcome.html" />
         <option value="$PROJECT_DIR$/bin/scanner/scanner.py" />
         <option value="$PROJECT_DIR$/bin/scanner/scanner_helper_functions.py" />
-        <option value="$PROJECT_DIR$/games/views.py" />
         <option value="$PROJECT_DIR$/leagues/models.py" />
-        <option value="$PROJECT_DIR$/teams/models.py" />
         <option value="$PROJECT_DIR$/soccerstreams/settings/base.py" />
+        <option value="$PROJECT_DIR$/teams/models.py" />
+        <option value="$PROJECT_DIR$/games/views.py" />
       </list>
     </option>
   </component>
@@ -177,13 +136,7 @@
             <path>
               <item name="soccerstreams" type="b2602c69:ProjectViewProjectNode" />
               <item name="soccerstreams" type="462c0819:PsiDirectoryNode" />
-              <item name="soccerstreams" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="soccerstreams" type="b2602c69:ProjectViewProjectNode" />
-              <item name="soccerstreams" type="462c0819:PsiDirectoryNode" />
-              <item name="soccerstreams" type="462c0819:PsiDirectoryNode" />
-              <item name="settings" type="462c0819:PsiDirectoryNode" />
+              <item name="games" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -289,7 +242,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19898605" />
@@ -495,16 +448,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/scanner/scanner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="77" column="44" lean-forward="true" selection-start-line="77" selection-start-column="44" selection-end-line="77" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bin/scanner/scanner_helper_functions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -515,21 +458,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/games/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="56" column="76" selection-start-line="56" selection-start-column="50" selection-end-line="56" selection-end-column="76" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/games/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/teams/views.py">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leagues/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="28" lean-forward="true" selection-start-column="28" selection-end-column="28" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/games/models.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -541,10 +481,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/leagues/models.py">
+    <entry file="file://$PROJECT_DIR$/bin/scanner/scanner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="28" lean-forward="true" selection-start-column="28" selection-end-column="28" />
+        <state relative-caret-position="357">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -558,9 +501,19 @@
     <entry file="file://$PROJECT_DIR$/teams/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="65" lean-forward="true" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/games/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="63" column="20" lean-forward="true" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>

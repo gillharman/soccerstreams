@@ -4,6 +4,7 @@ from datetime import date
 import requests
 
 from .models import Game, Links
+from teams.models import Team
 from bin.helper_scripts import isMobile
 from bin.scanner.scanner_helper_functions import make_request, request_headers
 
@@ -57,4 +58,10 @@ def new_get_games(request):
     url = "http://api.football-data.org/v2/matches?dateFrom="+d+"&dateTo="+d
 
     data = make_request(url, request_headers["football-api"])
+    print(data['matches'][0]['homeTeam']['name'])
+    t = Team()
+    t.name = data['matches'][0]['homeTeam']['name']
+    t.venue = 'test'
+    t.short_name = 'Madrid'
+    t.save()
     return JsonResponse(data)
