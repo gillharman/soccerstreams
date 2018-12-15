@@ -1,0 +1,168 @@
+{
+    "count": 12,
+    "filters": {
+        "plan": "TIER_ONE"
+    },
+    "competitions": [
+        {
+            "id": 2021,
+            "area": {
+                "id": 2072,
+                "name": "England"
+            },
+            "name": "Premier League",
+            "code": "PL",
+            "emblemUrl": null,
+            "plan": "TIER_ONE",
+            "currentSeason": {
+                "id": 151,
+                "startDate": "2018-08-10",
+                "endDate": "2019-05-12",
+                "currentMatchday": 16,
+                "winner": null
+            },
+            "numberOfAvailableSeasons": 26,
+            "lastUpdated": "2018-12-11T00:55:01Z"
+        },
+        {
+            "id": 2001,
+            "area": {
+                "id": 2077,
+                "name": "Europe"
+            },
+            "name": "UEFA Champions League",
+            "code": "CL",
+            "emblemUrl": "https://upload.wikimedia.org/wikipedia/en/b/bf/UEFA_Champions_League_logo_2.svg",
+            "plan": "TIER_ONE",
+            "currentSeason": {
+                "id": 175,
+                "startDate": "2018-06-26",
+                "endDate": "2019-06-01",
+                "currentMatchday": 6,
+                "winner": null
+            },
+            "numberOfAvailableSeasons": 19,
+            "lastUpdated": "2018-12-13T03:15:01Z"
+        },
+        {
+            "id": 2015,
+            "area": {
+                "id": 2081,
+                "name": "France"
+            },
+            "name": "Ligue 1",
+            "code": "FL1",
+            "emblemUrl": null,
+            "plan": "TIER_ONE",
+            "currentSeason": {
+                "id": 177,
+                "startDate": "2018-08-10",
+                "endDate": "2019-05-25",
+                "currentMatchday": 18,
+                "winner": null
+            },
+            "numberOfAvailableSeasons": 8,
+            "lastUpdated": "2018-12-10T22:20:06Z"
+        },
+        {
+            "id": 2002,
+            "area": {
+                "id": 2088,
+                "name": "Germany"
+            },
+            "name": "Bundesliga",
+            "code": "BL1",
+            "emblemUrl": null,
+            "plan": "TIER_ONE",
+            "currentSeason": {
+                "id": 155,
+                "startDate": "2018-08-24",
+                "endDate": "2019-05-18",
+                "currentMatchday": 15,
+                "winner": null
+            },
+            "numberOfAvailableSeasons": 23,
+            "lastUpdated": "2018-12-09T21:40:11Z"
+        },
+        {
+            "id": 2019,
+            "area": {
+                "id": 2114,
+                "name": "Italy"
+            },
+            "name": "Serie A",
+            "code": "SA",
+            "emblemUrl": null,
+            "plan": "TIER_ONE",
+            "currentSeason": {
+                "id": 290,
+                "startDate": "2018-08-18",
+                "endDate": "2019-05-26",
+                "currentMatchday": 16,
+                "winner": null
+            },
+            "numberOfAvailableSeasons": 14,
+            "lastUpdated": "2018-12-09T23:09:47Z"
+        },
+        {
+            "id": 2003,
+            "area": {
+                "id": 2163,
+                "name": "Netherlands"
+            },
+            "name": "Eredivisie",
+            "code": "DED",
+            "emblemUrl": null,
+            "plan": "TIER_ONE",
+            "currentSeason": {
+                "id": 156,
+                "startDate": "2018-08-10",
+                "endDate": "2019-05-12",
+                "currentMatchday": 16,
+                "winner": null
+            },
+            "numberOfAvailableSeasons": 9,
+            "lastUpdated": "2018-12-10T22:15:06Z"
+        },
+        {
+            "id": 2017,
+            "area": {
+                "id": 2187,
+                "name": "Portugal"
+            },
+            "name": "Primeira Liga",
+            "code": "PPL",
+            "emblemUrl": null,
+            "plan": "TIER_ONE",
+            "currentSeason": {
+                "id": 183,
+                "startDate": "2018-08-10",
+                "endDate": "2019-05-19",
+                "currentMatchday": 12,
+                "winner": null
+            },
+            "numberOfAvailableSeasons": 8,
+            "lastUpdated": "2018-12-11T00:50:01Z"
+        },
+        {
+            "id": 2014,
+            "area": {
+                "id": 2224,
+                "name": "Spain"
+            },
+            "name": "Primera Division",
+            "code": "PD",
+            "emblemUrl": null,
+            "plan": "TIER_ONE",
+            "currentSeason": {
+                "id": 281,
+                "startDate": "2018-08-17",
+                "endDate": "2019-05-26",
+                "currentMatchday": 15,
+                "winner": null
+            },
+            "numberOfAvailableSeasons": 26,
+            "lastUpdated": "2018-12-11T00:55:01Z"
+        }
+    ]
+}
