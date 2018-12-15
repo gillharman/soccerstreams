@@ -10,7 +10,7 @@
         "name": "Ligue 1",
         "code": "FL1",
         "plan": "TIER_ONE",
-        "lastUpdated": "2018-12-15T22:38:16Z"
+        "lastUpdated": "2018-12-15T22:39:42Z"
     },
     "season": {
         "id": 177,
@@ -30,7 +30,7 @@
             "shortName": "Toulouse FC",
             "tla": "TFC",
             "crestUrl": "https://upload.wikimedia.org/wikipedia/fr/thumb/8/8b/Logo_Toulouse_FC_2018.svg/600px-Logo_Toulouse_FC_2018.svg",
-            "address": "1 allée Gabriel Biénèsm, BP 54023 Toulouse 31028",
+            "address": "1 allÃ©e Gabriel BiÃ©nÃ¨sm, BP 54023 Toulouse 31028",
             "phone": "+33 (0892) 704000",
             "website": "http://www.tfc.info",
             "email": null,
@@ -74,7 +74,7 @@
             "email": "om@olympiquedemarseille.com",
             "founded": 1898,
             "clubColors": "White / Blue",
-            "venue": "Orange Vélodrome",
+            "venue": "Orange VÃ©lodrome",
             "lastUpdated": "2018-10-15T15:09:02Z"
         },
         {
@@ -106,7 +106,7 @@
             "shortName": "Lille OSC",
             "tla": "LIL",
             "crestUrl": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/62/Logo_LOSC_Lille_2018.svg/130px-Logo_LOSC_Lille_2018.svg",
-            "address": "Grand Rue 59, 780 Camphin-en-Pévèle Lille null",
+            "address": "Grand Rue 59, 780 Camphin-en-PÃ©vÃ¨le Lille null",
             "phone": "+33 (0892) 685672",
             "website": "http://www.losc.fr",
             "email": "losclillemetropole.500054@ligue59-62.fr",
@@ -121,7 +121,7 @@
                 "id": 2081,
                 "name": "France"
             },
-            "name": "OGC de Nice Côte d'Azur",
+            "name": "OGC de Nice CÃ´te d'Azur",
             "shortName": "OGC Nice",
             "tla": "NIC",
             "crestUrl": "https://upload.wikimedia.org/wikipedia/fr/thumb/b/b1/Logo_OGC_Nice_2013.svg/130px-Logo_OGC_Nice_2013.svg",
@@ -144,7 +144,7 @@
             "shortName": "Olympique Lyon",
             "tla": "LYO",
             "crestUrl": "https://upload.wikimedia.org/wikipedia/fr/thumb/e/e2/Olympique_lyonnais_%28logo%29.svg/130px-Olympique_lyonnais_%28logo%29.svg",
-            "address": "350 avenue Jean Jaurès Lyon 69007",
+            "address": "350 avenue Jean JaurÃ¨s Lyon 69007",
             "phone": "+33 (0426) 296532",
             "website": "http://www.olweb.fr",
             "email": "olympique-lyonnais@lrafoot.org",
@@ -197,11 +197,11 @@
                 "id": 2081,
                 "name": "France"
             },
-            "name": "AS Saint-Étienne",
-            "shortName": "Saint-Étienne",
+            "name": "AS Saint-Ã‰tienne",
+            "shortName": "Saint-Ã‰tienne",
             "tla": "STE",
             "crestUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Logo_AS_Saint-%C3%89tienne.svg/130px-Logo_AS_Saint-%C3%89tienne.svg.png",
-            "address": "11 rue de Verdun L'Étrat 42580",
+            "address": "11 rue de Verdun L'Ã‰trat 42580",
             "phone": "+33 (0477) 929899",
             "website": "http://www.asse.fr",
             "email": "asse@lrafoot.org",
@@ -216,7 +216,7 @@
                 "id": 2081,
                 "name": "France"
             },
-            "name": "Dijon Football Côte d'Or",
+            "name": "Dijon Football CÃ´te d'Or",
             "shortName": "Dijon FCO",
             "tla": "DFC",
             "crestUrl": "https://upload.wikimedia.org/wikipedia/fr/thumb/c/c9/LogoDFCO.svg/130px-LogoDFCO.svg",
@@ -226,7 +226,7 @@
             "email": "sportif.asso@dfco.fr",
             "founded": 1936,
             "clubColors": "Red / White",
-            "venue": "Stade Gaston Gérard",
+            "venue": "Stade Gaston GÃ©rard",
             "lastUpdated": "2018-10-15T15:09:07Z"
         },
         {
@@ -239,7 +239,7 @@
             "shortName": "Stade Rennes",
             "tla": "REN",
             "crestUrl": "https://upload.wikimedia.org/wikipedia/fr/thumb/e/e9/Logo_Stade_Rennais_FC.svg/130px-Logo_Stade_Rennais_FC.svg",
-            "address": "La Piverdière - Chemin de la Taupinais CS 5390 Rennes 35039",
+            "address": "La PiverdiÃ¨re - Chemin de la Taupinais CS 5390 Rennes 35039",
             "phone": "+33 (0820) 000035",
             "website": "http://www.staderennais.com",
             "email": "4500015@footlbf.fr",
@@ -315,7 +315,7 @@
             "shortName": "FC Nantes",
             "tla": "NAN",
             "crestUrl": "https://upload.wikimedia.org/wikipedia/fr/thumb/2/21/Logo_FC_Nantes_2008.svg/130px-Logo_FC_Nantes_2008.svg",
-            "address": "Centre Sportif José Arribas, La Jonelière Nantes 44240",
+            "address": "Centre Sportif JosÃ© Arribas, La JoneliÃ¨re Nantes 44240",
             "phone": "+33 (0892) 707937",
             "website": "http://www.fcnantes.com",
             "email": "contact@fcnantes.com",
@@ -368,17 +368,17 @@
                 "id": 2081,
                 "name": "France"
             },
-            "name": "Nîmes Olympique",
-            "shortName": "Nîmes Ol.",
-            "tla": "NÎM",
+            "name": "NÃ®mes Olympique",
+            "shortName": "NÃ®mes Ol.",
+            "tla": "NÃŽM",
             "crestUrl": "https://upload.wikimedia.org/wikipedia/fr/thumb/f/f0/N%C3%AEmes_Olympique_logo_2018.svg/130px-N%C3%AEmes_Olympique_logo_2018.svg",
-            "address": "Stade des Costières 123<br>Avenue de la Bouvine Nîmes 30900",
+            "address": "Stade des CostiÃ¨res 123<br>Avenue de la Bouvine NÃ®mes 30900",
             "phone": "+33 (0466) 290876",
             "website": "http://www.nimes-olympique.com",
             "email": "nimesolympiqueassociation@wanadoo.fr",
             "founded": 1901,
             "clubColors": "Red / White",
-            "venue": "Stade des Costières",
+            "venue": "Stade des CostiÃ¨res",
             "lastUpdated": "2018-10-15T15:09:14Z"
         },
         {
