@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a24984d9-905a-4a1e-8193-849e0157c296" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/data/bl_teams.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ded_teams.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/fl_teams.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/pd_teams.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ppl_teams.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sa_teams.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/data_transform.py" beforeDir="false" afterPath="$PROJECT_DIR$/bin/data_transform.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bin/data_transform.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="65" column="47" selection-start-line="65" selection-start-column="47" selection-end-line="65" selection-end-column="47" />
+            <state relative-caret-position="383">
+              <caret line="62" column="34" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
               <folding>
                 <element signature="e#0#6#0" expanded="true" />
               </folding>
@@ -158,8 +153,8 @@
         <option value="$PROJECT_DIR$/data/teams.txt" />
         <option value="$PROJECT_DIR$/bin/imports.py" />
         <option value="$PROJECT_DIR$/leagues/models.py" />
-        <option value="$PROJECT_DIR$/bin/data_transform.py" />
         <option value="$PROJECT_DIR$/teams/models.py" />
+        <option value="$PROJECT_DIR$/bin/data_transform.py" />
       </list>
     </option>
   </component>
@@ -297,6 +292,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19898605" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -589,8 +585,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/data_transform.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="65" column="47" selection-start-line="65" selection-start-column="47" selection-end-line="65" selection-end-column="47" />
+        <state relative-caret-position="383">
+          <caret line="62" column="34" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
           <folding>
             <element signature="e#0#6#0" expanded="true" />
           </folding>

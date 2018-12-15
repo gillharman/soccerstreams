@@ -33,8 +33,8 @@ def transform_teams(data):
             team.save()
             insert += 1
 
-    print('Total inserts: ' + str(insert))
-    print('Ignored: ' + str(ignore))
+    print('Team Transform: Total inserts: ' + str(insert))
+    print('Team Transform: Ignored: ' + str(ignore))
 
 def transform_teams_in_league(data):
     ignore = 0
@@ -52,8 +52,8 @@ def transform_teams_in_league(data):
             league_team.save()
             insert += 1
 
-    print('Total inserts: ' + str(insert))
-    print('Ignored: ' + str(ignore))
+    print('Team in Leagues Transform: Total inserts: ' + str(insert))
+    print('Team in Leagues Transform: Ignored: ' + str(ignore))
 
 
 def transform():
