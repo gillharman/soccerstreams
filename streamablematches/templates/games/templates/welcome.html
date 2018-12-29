@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Welcome
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col">
+        <h1>Welcome!</h1>
+        <p>Click <a href="{% url 'all_games' %}">here</a> for Today's streamable games.</p>
+        <p>Click <a href="#">here</a> for new All Games.</p>
+    </div>
+</div>
+{% endblock %}

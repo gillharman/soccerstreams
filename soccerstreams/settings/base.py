@@ -13,7 +13,8 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
@@ -30,9 +31,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'games',
+    'streamablematches',
+    'matches',
     'teams',
     'leagues',
+    'logs',
     'users',
     'gunicorn',
     'django_cron',
@@ -53,14 +56,14 @@ MIDDLEWARE = [
 
 CRON_CLASSES = [
     'bin.crons.scheduled_jobs.StreamScraper',
+    'bin.crons.scheduled_jobs.Get_Games',
 ]
 
 ROOT_URLCONF = 'soccerstreams.urls'
-
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(PROJECT_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -111,12 +114,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
-PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
+STATIC_ROOT = os.path.join(PROJECT_DIR, 'static_collected')
 
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
+    os.path.join(PROJECT_DIR, 'static'),
     os.path.join(PROJECT_DIR, 'games/static'),
 )
 
