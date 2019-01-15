@@ -28,8 +28,8 @@ class Get_Games(CronJobBase):
         streamableGames.match_streamable_games()
         print('Complete.')
 
-class Get_Linueups(CronJobBase):
-    RUNS_EVERY_MINS = 0
+class Get_Lineups(CronJobBase):
+    RUNS_EVERY_MINS = 1
 
     schedule = Schedule(run_every_mins=RUNS_EVERY_MINS)
     code = 'soccerstreams.get_lineups'  # a unique code
