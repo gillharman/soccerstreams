@@ -21,6 +21,6 @@ from streamablematches.views import welcome
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', welcome),
+    # path('', welcome),
     path('', include('streamablematches.urls'))
 ]

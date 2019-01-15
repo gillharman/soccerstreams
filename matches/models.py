@@ -5,9 +5,24 @@ from leagues.models import League
 from teams.models import Team
 
 class MatchQuerySet(models.QuerySet):
-    def get_games(self, date=date.today()):
-        return self.filter(match_date_time__date=date)
+    def get_games(self, date_=date.today()):
+        return self.filter(match_date_time__date=date_)
 
+    def get_match_display_name(self):
+        d = []
+        games =  self.get_games()
+        for game in games:
+            d.append(game.display_name())
+        return d
+
+    def get_match_from_display_name(self, string, date_=''):
+        name = string.split(' vs ')
+        home_team = name[0]
+        away_team = name[1]
+        match = self.filter(home_team__short_name=home_team, away_team__short_name=away_team)
+        if date_:
+            match.filter(match_date_time__date=date_)
+        return match
 
 # Create your models here.
 class Match(models.Model):
@@ -36,6 +51,7 @@ class Match(models.Model):
     home_team = models.ForeignKey(Team, on_delete=models.CASCADE, related_name="homeTeam")
     away_team = models.ForeignKey(Team, on_delete=models.CASCADE, related_name="awayTeam")
     league = models.ForeignKey(League, on_delete=models.CASCADE)
+    ace_link = models.BooleanField(default=False)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 

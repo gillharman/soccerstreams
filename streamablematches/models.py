@@ -48,8 +48,14 @@ class Links(models.Model):
     objects = LinksQuerySet.as_manager()
 
 
+class StreamableMatchQuerySet(models.QuerySet):
+    def get_games(self, date=date.today()):
+        return self.filter(match__match_date_time__date=date)
+
 class StreamableMatch(models.Model):
     match = models.ForeignKey(Match, on_delete=models.CASCADE)
-    streamable_games = models.ForeignKey(ScannedMatch, on_delete=models.CASCADE)
+    scanned_match = models.ForeignKey(ScannedMatch, on_delete=models.CASCADE)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
+
+    objects = StreamableMatchQuerySet.as_manager()

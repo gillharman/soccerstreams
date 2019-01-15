@@ -2,7 +2,7 @@
 {% load staticfiles %}
 
 {% block title %}
-All Games
+Streamable Games
 {% endblock %}
 
 {% block css %}
@@ -19,10 +19,10 @@ All Games
         <div class="list-group">
             {% for match in data.matches %}
             <div class="list-group-item list-games">
-                <h3> {{ match.match }}</h3>
-                <p>{{ match.time }}</p>
+                <h3> {{ match.display_name }}</h3>
+                <p>{{ match.match_date_time|time:"H:i T" }}</p>
                 <div class="pull-right">
-                    {% if match.aceLink %}
+                    {% if match.ace_link %}
                     <a class="btn btn-primary" href="{% url 'watch_game' %}match_id={{ match.id }}" role="button">
                         <i class="fa fa-play-circle-o"></i><span class="d-none d-sm-inline"> AceStreams</span>
                     </a>

@@ -1,6 +1,6 @@
 from django_cron import CronJobBase, Schedule
 
-from bin.cron_helper_scripts import scraper, storeMatches, getMatches, streamableGames
+from bin.crons.bin import streamableGames, getMatches, storeMatches, scraper
 
 
 class StreamScraper(CronJobBase):
@@ -27,3 +27,12 @@ class Get_Games(CronJobBase):
         print('Matching streamable games...')
         streamableGames.match_streamable_games()
         print('Complete.')
+
+class Get_Linueups(CronJobBase):
+    RUNS_EVERY_MINS = 0
+
+    schedule = Schedule(run_every_mins=RUNS_EVERY_MINS)
+    code = 'soccerstreams.get_lineups'  # a unique code
+
+    def do(self):
+        print('Hello World')

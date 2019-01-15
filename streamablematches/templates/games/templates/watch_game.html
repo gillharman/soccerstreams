@@ -11,7 +11,7 @@
 {% endblock %}
 
 {% block content %}
-{% regroup data.links by streamer as streamers_list %}
+{% regroup data.links|dictsort:"streamer" by streamer as streamers_list %}
 {% for streamer in streamers_list %}
 {% with link_score=streamer.list.0.linkScore %}
 <div class="row">

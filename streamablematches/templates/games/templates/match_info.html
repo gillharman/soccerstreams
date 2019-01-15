@@ -1,25 +1,52 @@
+{% load staticfiles %}
 <div class="card bg-light mb-3">
     <div class="card-body text-center">
         <div class="card-title">
             <div id="homeTeam">
-                <img src="{{ data.home_crest }}" alt="Home Team" onerror="this.style.display='none'">
-                <p>Arsenal</p>
+                <img src="{{ data.home_crest }}" alt="Home Team" onload="this.style.background='none'" onerror="this.src='{% static 'img/generic_logo_100x100.png' %}'">
+                <div class="matchup_teams">{{ data.home_team }}</div>
             </div>
-            <p style="display: inline-block;">vs</p>
             <div id="awayTeam">
-                <img src="{{ data.away_crest }}" alt="Away Team" onerror="this.style.display='none'">
-                <p>Chelsea</p>
+                <img src="{{ data.away_crest }}" alt="Away Team" onload="this.style.background='none'" onerror="this.src='{% static 'img/generic_logo_100x100.png' %}'">
+                <div class="matchup_teams">{{ data.away_team }}</div>
             </div>
         </div>
         <div class="card-text">
+            <div class="lineups">
+                <ul class="lineup" id="home_lineup">
+                    {% if data.home_lineup %}
+                    {% for player in data.home_lineup %}
+                    <li><div class="lineup-position">{{player.position}}</div>
+                        <div class="lineup-player">{{player.player}}</div>
+                    </li>
+                    {% endfor %}
+                    {% else %}
+                    <li style="max-width: 200px;">No lineup information available</li>
+                    {% endif %}
+                </ul>
+                <ul class="lineup" id="away_lineup">
+                    {% if data.away_lineup %}
+                    {% for player in data.away_lineup %}
+                    <li><div class="lineup-position">{{player.position}}</div>
+                        <div class="lineup-player">{{player.player}}</div>
+                    </li>
+                    {% endfor %}
+                    {% else %}
+                    <li style="max-width: 200px;">No lineup information available</li>
+                    {% endif %}
+                </ul>
+            </div>
+
+        </div>
+        <div class="card-text">
             {% if data.link_count %}
-            <p>Streamers: {{data.streamers}}</p>
-            <p>Total Links: {{ data.link_count }}</p>
+            <div>Streamers: {{data.streamers}}</div>
+            <div>Total Links: {{ data.link_count }}</div>
             {% else %}
-            <p>No Acestreams available</p>
+            <div>No Acestreams available</div>
             {% endif %}
         </div>
-        <button id="closeBtn_{{ data.match_id }}" type="button" class="btn btn-primary" onclick="closeCard(this)" value="closeBtn_{{ data.match_id }}">Close</button>
+        <button id="closeBtn_{{ data.match_id }}" type="button" class="btn btn-primary card-close-btn" onclick="closeCard(this)" value="closeBtn_{{ data.match_id }}">Close</button>
     </div>
     {% if not data.is_mobile_tablet %}
     <button id="card-close-button" type="button" class="btn" title="Close" onclick="closeCard(this)"><i class="fa fa-close" style="font-size:24px"></i></button>

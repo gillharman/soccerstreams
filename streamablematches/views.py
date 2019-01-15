@@ -1,18 +1,16 @@
 from django.shortcuts import render
-# from django.http import JsonResponse
-# from datetime import date
 
-from .models import ScannedMatch, Links
-from teams.models import Team
+from .models import Links, StreamableMatch
+from matches.models import Match
+from lineups.models import Lineup
 from bin.helper_scripts.isMobile import isMobile
-# from bin.helper_scripts.makeRequest import make_request, request_headers
 
 def welcome(request):
     return render(request, 'games/templates/welcome.html')
 
 def matches(request):
     is_mobile = isMobile(request)
-    games = ScannedMatch.objects.get_games()
+    games = Match.objects.get_games()
     return render(request, 'games/templates/games.html',
                   {"data" : {
                       "is_mobile_tablet": is_mobile,
@@ -21,8 +19,9 @@ def matches(request):
 
 def watch_game(request, match_id):
     is_mobile = isMobile(request)
-    links = Links.objects.get_links(match_id)
-    selected_game = ScannedMatch.objects.get_match_name(match_id)
+    streamable_game = StreamableMatch.objects.get(match__id=match_id)
+    links = Links.objects.get_links(streamable_game.scanned_match.id)
+    selected_game = Match.objects.get(id=match_id).display_name()
     return render(request, 'games/templates/watch_game.html',
                   {"data": {
                       "is_mobile_tablet": is_mobile,
@@ -31,24 +30,35 @@ def watch_game(request, match_id):
                   }})
 
 def get_match_info(request):
-    home_team = ''
-    away_team = ''
     is_mobile = isMobile(request)
     match_id = request.GET['match_id']
-    name = ScannedMatch.objects.get_match_name(match_id)
-    game_links = Links.objects.get_links(match_id)
-    streamers = game_links.distinct('streamer').values_list('streamer', flat=True)
-    link_count = game_links.count()
-    home_crest = "http://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg"
-    away_crest = "http://upload.wikimedia.org/wikipedia/de/5/5c/Chelsea_crest.svg"
+    match = Match.objects.get(id=match_id)
+    streamable_game = StreamableMatch.objects.filter(match__id=match_id)
+    links = []
+    streamers = []
+    link_count = 0
+    if streamable_game:
+        streamable_game = StreamableMatch.objects.get(match__id=match_id)
+        links = Links.objects.get_links(streamable_game.scanned_match.id)
+        streamers = links.distinct('streamer').values_list('streamer', flat=True)
+        link_count = links.count()
+    home_team = match.home_team.short_name
+    away_team = match.away_team.short_name
+    home_crest = match.home_team.crest
+    away_crest = match.away_team.crest
+    home_lineup = Lineup.objects.get_home_lineup(match_id)
+    away_lineup = Lineup.objects.get_away_lineup(match_id)
 
     return render(request, 'games/templates/match_info.html',
                   {"data": {
                       "is_mobile_tablet": is_mobile,
-                      "name": name,
                       "match_id": match_id,
+                      "home_team": home_team,
+                      "away_team": away_team,
                       "home_crest": home_crest,
                       "away_crest": away_crest,
+                      "home_lineup": home_lineup,
+                      "away_lineup": away_lineup,
                       "streamers": ', '.join(streamers),
                       "link_count": link_count,
                   }})

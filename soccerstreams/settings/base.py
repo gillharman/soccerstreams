@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'matches',
     'teams',
     'leagues',
+    'lineups',
     'logs',
     'users',
     'gunicorn',
@@ -57,6 +58,7 @@ MIDDLEWARE = [
 CRON_CLASSES = [
     'bin.crons.scheduled_jobs.StreamScraper',
     'bin.crons.scheduled_jobs.Get_Games',
+    'bin.crons.scheduled_jobs.Get_Lineups',
 ]
 
 ROOT_URLCONF = 'soccerstreams.urls'

@@ -19,16 +19,24 @@
     box-shadow: none;
 }
 
+.card-close-btn {
+    margin-top: 10px;
+}
+
 #homeTeam {
     display: inline-block;
-    width: 100px;
+    width: 150px;
     height: 100px;
 }
 
 #awayTeam {
     display: inline-block;
-    width: 100px;
+    width: 150px;
     height: 100px;
+}
+
+.matchup_teams {
+    padding-top: 10px;
 }
 
 #team_info img {
@@ -57,4 +65,24 @@
 
 .stream-rating {
     float: right;
+}
+
+.lineups {
+    display: inline-block;
+}
+
+.lineup {
+    float: left;
+}
+
+.lineup-position {
+    margin-right: 10px;
+    float: left;
+    text-align: left;
+    width: 32px;
+}
+
+.lineup-player {
+    float: left;
+    text-align: left;
 }

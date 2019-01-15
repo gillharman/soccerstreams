@@ -13,22 +13,28 @@ def match_streamable_games():
     match_name = streamable_matches.values_list('match', flat=True)
 
     for match in todays_matches:
-        ### CREATE MATCH NAME ###
+        # CREATE MATCH NAME
         full_match_name = ' vs '.join([match.home_team.name, match.away_team.name])
 
-        ### RUN CLOSE MATCH ###
+        # RUN CLOSE MATCH
         close_match_full_name = difflib.get_close_matches(full_match_name, match_name, n=1)
 
-        ### SAVE IF MATCH FOUND ###
+        # SAVE IF MATCH FOUND
         if close_match_full_name:
                 if StreamableMatch.objects.filter(match=match):
+                    if not match.ace_link:
+                        match.ace_link = True
+                        match.save()
+                        update += 1
                     ignore += 1
                 else:
                     streamable_game = StreamableMatch()
                     streamable_game.match = match
-                    stream = ScannedMatch.objects.get(id=streamable_matches.get(match=close_match_full_name[0])['id'])
-                    streamable_game.streamable_games = stream
+                    scanned_match = ScannedMatch.objects.get(id=streamable_matches.get(match=close_match_full_name[0])['id'])
+                    streamable_game.scanned_match = scanned_match
                     streamable_game.save()
+                    match.ace_link = True
+                    match.save()
                     insert += 1
     return {
         'insert': str(insert),
