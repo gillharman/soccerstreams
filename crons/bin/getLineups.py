@@ -25,9 +25,17 @@ def getLineups():
         else:
             continue
         rotowire_html = make_request(rotowire_url, request_headers['rotowire'], 'text')
-        lineup_html = BeautifulSoup(rotowire_html['data'], parse_only=SoupStrainer(class_="lineups"))
-        rr = RotowireRequest()
-        rr.html = str(lineup_html)
-        rr.league = League.objects.get(code=league)
-        rr.save()
+        lineup_html = BeautifulSoup(rotowire_html['data'], parse_only=SoupStrainer(class_="lineups"), features="html.parser")
+
+        #ONLY GET NEW LINEUP IF IT CHANGED
+        current_html = RotowireRequest.objects.get_html(league)
+        if current_html:
+            current_html = current_html.html
+        else:
+            current_html = ''
+        if current_html != str(lineup_html):
+            rr = RotowireRequest()
+            rr.html = str(lineup_html)
+            rr.league = League.objects.get(code=league)
+            rr.save()
     return True

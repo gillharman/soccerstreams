@@ -14,7 +14,7 @@ class RequestLogs(models.Model):
 
 
 class RotowireQuerySet(models.QuerySet):
-    def get_(self, league):
+    def get_html(self, league):
         return self.filter(league__code=league).order_by('-created').first()
 
 class RotowireRequest(models.Model):

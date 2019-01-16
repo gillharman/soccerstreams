@@ -29,16 +29,20 @@ def store_links(arr):
     # print(arr)
     try:
         for i in arr:
-            gameInstance = ScannedMatch.objects.get(id=i["gameID"])
-            if(gameInstance.aceLink == False) :
-                gameInstance.aceLink = True
-                gameInstance.save()
-            link = Links()
-            link.match = gameInstance
-            link.streamer = i["author"]
-            link.link = i["link"]
-            link.linkScore = i["score"]
-            link.save()
+            # ONLY SAVE NEW LINKS
+            if not Links.objects.filter(link=i["link"], id=i["gameID"], streamer=i["author"]):
+                gameInstance = ScannedMatch.objects.get(id=i["gameID"])
+                if(gameInstance.aceLink == False) :
+                    gameInstance.aceLink = True
+                    gameInstance.save()
+                link = Links()
+                link.match = gameInstance
+                link.streamer = i["author"]
+                link.link = i["link"]
+                link.linkScore = i["score"]
+                link.save()
+            else:
+                print(i["link"] + ' already exits for game_id=' + i["gameID"])
 
     except Exception as e:
         print('An error occurred: ' + repr(e))

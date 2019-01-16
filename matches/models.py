@@ -19,10 +19,7 @@ class MatchQuerySet(models.QuerySet):
         name = string.split(' vs ')
         home_team = name[0]
         away_team = name[1]
-        match = self.filter(home_team__short_name=home_team, away_team__short_name=away_team)
-        if date_:
-            match.filter(match_date_time__date=date_)
-        return match
+        return self.filter(home_team__short_name=home_team, away_team__short_name=away_team, match_date_time__date=date_)
 
 # Create your models here.
 class Match(models.Model):
