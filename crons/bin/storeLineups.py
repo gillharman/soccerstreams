@@ -41,8 +41,10 @@ def getLineup(tag):
 
 
 def saveLineup(o):
+    retVal = {"update":0, "insert":0}
     existing_lineup = Lineup.objects.filter(match=o['match'], lineup_type=o['lineupType'])
     if existing_lineup:
+        retVal['update'] += 1
         existing_lineup.delete()
     for player in o['lineup']:
         l = Lineup()
@@ -52,7 +54,7 @@ def saveLineup(o):
         l.match = o['match']
         l.confirmed = o['confirmed']
         l.save()
-    return True
+    return retVal
 
 
 def storeLineups(league):
@@ -82,26 +84,24 @@ def storeLineups(league):
             away_lineup = getLineup(lineup.find(class_='lineup__list is-visit'))
 
             if match:
-                # IF LINE UP DOES NOT EXISTS FOR THE MATCH SAVE IT
-                if not Lineup.objects.filter(match__id=match.id):
-                    saved_home_lineup = saveLineup({
-                        'match': match,
-                        'confirmed': home_lineup['confirmed'],
-                        'lineup': home_lineup['lineup'],
-                        'lineupType': 'H',
-                        'team': home_team
-                    })
-                    saved_away_lineup = saveLineup({
-                        'match': match,
-                        'confirmed': away_lineup['confirmed'],
-                        'lineup': away_lineup['lineup'],
-                        'lineupType': 'A',
-                        'team': away_team
-                    })
-                    print(home_team + ' vs ' + away_team + ' added.')
+                saved_home_lineup = saveLineup({
+                    'match': match,
+                    'confirmed': home_lineup['confirmed'],
+                    'lineup': home_lineup['lineup'],
+                    'lineupType': 'H',
+                    'team': home_team
+                })
+                saved_away_lineup = saveLineup({
+                    'match': match,
+                    'confirmed': away_lineup['confirmed'],
+                    'lineup': away_lineup['lineup'],
+                    'lineupType': 'A',
+                    'team': away_team
+                })
+                if saved_away_lineup['update'] == 1:
+                    print(home_team + ' vs ' + away_team + ' updated.')
                 else:
-                    # LINEUP IS UP TO DATE
-                    print(home_team + ' vs ' + away_team + ' is up to date.')
+                    print(home_team + ' vs ' + away_team + ' added.')
             else:
                 print(home_team + ' vs ' + away_team + ' skipped.')
         html.parsed_count += 1

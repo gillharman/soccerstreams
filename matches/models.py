@@ -1,11 +1,13 @@
 from django.db import models
-from datetime import date
+from datetime import datetime
+import pytz
 
 from leagues.models import League
 from teams.models import Team
 
 class MatchQuerySet(models.QuerySet):
-    def get_games(self, date_=date.today()):
+    def get_games(self, date_=datetime.today()):
+        date_ = date_.replace(tzinfo=pytz.utc)
         return self.filter(match_date_time__date=date_)
 
     def get_match_display_name(self):
@@ -32,14 +34,14 @@ class Match(models.Model):
     SUSPENDED = 'SS'
     CANCELED = 'CN'
     STATUS_CHOICES = (
-        (SCHEDULED, 'SCHEDULED'),
-        (LIVE, 'LIVE'),
-        (IN_PLAY, 'IN_PLAY'),
-        (PAUSED, 'PAUSED'),
-        (FINISHED, 'FINISHED'),
-        (POSTPONED, 'POSTPONED'),
-        (SUSPENDED, 'SUSPENDED'),
-        (CANCELED, 'CANCELED'),
+        (SCHEDULED, 'Scheduled'),
+        (LIVE, 'Live'),
+        (IN_PLAY, 'In Play'),
+        (PAUSED, 'Paused'),
+        (FINISHED, 'Finished'),
+        (POSTPONED, 'Postponed'),
+        (SUSPENDED, 'Suspended'),
+        (CANCELED, 'Canceled'),
     )
     api_match_id = models.IntegerField()
     status = models.CharField(max_length=2, choices=STATUS_CHOICES)

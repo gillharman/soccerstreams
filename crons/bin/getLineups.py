@@ -26,7 +26,6 @@ def getLineups():
             continue
         rotowire_html = make_request(rotowire_url, request_headers['rotowire'], 'text')
         lineup_html = BeautifulSoup(rotowire_html['data'], parse_only=SoupStrainer(class_="lineups"), features="html.parser")
-
         #ONLY GET NEW LINEUP IF IT CHANGED
         current_html = RotowireRequest.objects.get_html(league)
         if current_html:
