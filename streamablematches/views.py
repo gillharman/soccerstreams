@@ -1,21 +1,40 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
+from django.http import JsonResponse
+from django.core import serializers
 
 from .models import Links, StreamableMatch
+from teams.models import Team_Logo
 from matches.models import Match
 from lineups.models import Lineup
+from leagues.models import League
 from bin.helper_scripts.isMobile import isMobile
 
 def welcome(request):
     return render(request, 'games/templates/welcome.html')
 
-def matches(request):
+def home(request, league="PL"):
     is_mobile = isMobile(request)
-    games = Match.objects.get_games()
-    return render(request, 'games/templates/games.html',
-                  {"data" : {
+    # games = Match.objects.get_games()
+    games = Match.objects.filter(league__code=league).order_by('match_day')
+    league_title = League.objects.get(code=league).name
+    return render(request, 'games/templates/index.html',
+                  {"data": {
+                      "is_mobile_tablet": is_mobile,
+                      "matches": games,
+                      "league_title": league_title,
+                  }})
+
+def ajax_league_matches(request):
+    league = request.GET['league']
+    # print(league)
+    is_mobile = isMobile(request)
+    games = Match.objects.filter(league__code=league).order_by('match_day')
+    return render(request, 'games/templates/league_matches.html',
+                  {"data": {
                       "is_mobile_tablet": is_mobile,
                       "matches": games,
                   }})
+
 
 def watch_game(request, match_id):
     is_mobile = isMobile(request)

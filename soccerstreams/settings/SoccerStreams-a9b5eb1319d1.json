@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "soccerstreams",
+  "private_key_id": "a9b5eb1319d15e947acabca0b59e18db90b185ff",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCrg0EggcHw8hVG\nUuYIHidyCQUgvCWYu40xTpg/kCdy6KG9rFDP1arNPEIQdSorJnzUBrRVPOlKXGrR\nh/6MMtPihKANE7SJEsC5voI9kAWcOG1+zMFMjqgY04Mk1eohJcRm+tsl/h12Kda0\nodtjg455SwRh5NRY7YLFocXx2CGto07XP5G30sAyEHJazz/HNwcuRE0ICnaQBX2Z\ndKzre5zH78+FRiZ5Wy6xgx6LK3rbVx/H3Ng+vYtlAhXdU0Cfrn9/4sx3rTlhPZxz\nsthExbEsBTwsZV7wpJ1F3cfwVGmzzkhwHc0IHsl7VG5BTW6D+L+T92k1j9tdIteu\ndy02ZlQhAgMBAAECggEAA4K5pZYmWj2toA2AbMwyNkA3Q8ePdPLU1bx+5baC34l3\nDbxOK1I7hL0t+dXYyGk+pEfkBHvNUiggsxvXouFuSxxixXXAwU6vass6nFLl/H/p\nWi9hKbAgrSEU4H8vmPYDu8W40IxPqHx8KwvGQ0vnxwrj2B2gbOwP/CaJgtUP1moh\nBWR1kOpu4/w/G27b8vNeJ0Gc05Du1jNqt5crrHfcV1yHfRof6Orr3etVh2P4+Bbw\nS4FkmfwhSSj9j3J/vjCB6w1pZ4ybCvRQn5bctCOmX2TY6r4PV7PgQTDfonlUVa72\nllDW4BRAwZ3nDpLySQEX7FSfMFlmCtFkP2ZBNFexmQKBgQDhkkLNSTAOijBCZ9Uw\nopL7cXPooNprNL4ypUcua17TeE1eidojeXFNdv8oE0vQBx3PtxaSgFcqpcV0NrHB\nbPtK7Fn+IhC9VCb/UyUviwL9BSFCYuQ5APfA0Ujl/21NmsWgP1CYbwaf+OXYFwW8\n0MpOFdLR6/Bk5u+C7lzuHcN86QKBgQDCpiq+POgduZDMHXHIwrJi8TxLdvg+OI2r\n8gMwb/79EKa1Rtg0xKzMIblV4jmwjuNaz49QltAMzYdZjNtEr7jask66alCuSx8j\njvCBJoipwkLyAFe+ghG19xDZQVbpxyfSt8j+kyt754eHe63sFu7QIXF0cQWjD3SP\nm5zIdue6eQKBgQCNHTnrQRjuT6bnNBvbxCjdYllXs6FQpftCpcEFGiiFdOI5/VVZ\nEfU+t+3h/UhVSM5ujqRxXBar2G7RSBIl5m7CrV+TK257cvS+kB5YQsfIz/fBlyod\nOyzDFGpdcFDJ1sRBfrqF0hc75rKrX6O4PooBFYgAyXBnP02hBEtgr4AHWQKBgG0p\nZ3s9CSfyc8QlFzTyC7z1cU0ZMWsjqEAv/53gkW43Mmcjjgk563anyxrhPl1IJTU+\nhi86BP/JHAkat7WznsX3jbN6ADlfI917QmILzET4DzdM/eh3ZZtZLffJbwa4jBre\nuzgaLR7V3+oZcJag3dmXh9s3r2OdPU90g97g4GBxAoGAPvxjSkkg3JVsjqdreQ3/\n4o56/azlzssAiMXgw4Og8YnMchWOOP3a48ip+Ql/2fGkG/hCvlFyiAmmAIrWMAR9\nHuezjJa4JRN28aDR5Ro7E8Y5pAiM14rFlWcaR2mT5+0E+RZlECCd782u+6212ME4\n9x0+YnqxcGwVX8Gn+c68/Fc=\n-----END PRIVATE KEY-----\n",
+  "client_email": "soccerstreams@soccerstreams.iam.gserviceaccount.com",
+  "client_id": "102432233717608780550",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/soccerstreams%40soccerstreams.iam.gserviceaccount.com"
+}

@@ -1,0 +1,9 @@
+{% extends 'base_2.html' %}
+
+{% block leaguetitle %}
+    {{ data.league_title }}
+{% endblock %}
+
+{% block content %}
+{% include 'games/templates/league_matches.html' %}
+{% endblock %}

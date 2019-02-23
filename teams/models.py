@@ -14,8 +14,17 @@ class Team(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 
+    def get_logo_url(self):
+        team_logo = Team_Logo.objects.get(team=self)
+        return team_logo.logo.url
+
 class Teams_in_League(models.Model):
     team = models.ForeignKey(Team, on_delete=models.CASCADE)
     league = models.ForeignKey(League, on_delete=models.CASCADE)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
+
+
+class Team_Logo(models.Model):
+    team = models.ForeignKey(Team, on_delete=models.CASCADE)
+    logo = models.ImageField(upload_to="")

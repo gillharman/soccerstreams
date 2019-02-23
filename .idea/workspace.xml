@@ -2,17 +2,107 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a24984d9-905a-4a1e-8193-849e0157c296" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/bin/helper_scripts/get_Images.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Bundesliga/augsburg_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Bundesliga/bayer_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Bundesliga/bayern_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Bundesliga/dortmund_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Bundesliga/eintracht_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Bundesliga/fortuna_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Bundesliga/hannover_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Bundesliga/hertha_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Bundesliga/hoffenheim_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Bundesliga/mainz_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Bundesliga/monchengladbach_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Bundesliga/nurmberg_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Bundesliga/rbleipzig_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Bundesliga/scfreiburg_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Bundesliga/schalke_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Bundesliga/vfbstuttgart_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Bundesliga/werder_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Bundesliga/wolfsburg_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Eredivisie/ajax_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Eredivisie/azalkmaar_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Eredivisie/degraafschap_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Eredivisie/denhaag_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Eredivisie/excelsior_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Eredivisie/fcemmen_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Eredivisie/feyenoord_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Eredivisie/fortunasittard_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Eredivisie/groningen_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Eredivisie/heerehveen_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Eredivisie/heracles_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Eredivisie/nac_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Eredivisie/psveindhoven_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Eredivisie/utrecht_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Eredivisie/vitesse_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Eredivisie/vvv_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Eredivisie/willem_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Eredivisie/zwolle_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/La Liga/alaves_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/La Liga/atleticomadrid_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/La Liga/barcelona_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/La Liga/bilbao_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/La Liga/celtavigo_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/La Liga/eibar_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/La Liga/espanyol_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/La Liga/getafe_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/La Liga/girona_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/La Liga/huesca_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/La Liga/leganes_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/La Liga/levante_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/La Liga/rayovallecano_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/La Liga/realbetis_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/La Liga/realmadrid_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/La Liga/realsociedad_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/La Liga/sevilla_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/La Liga/valencia_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/La Liga/valladolid_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/La Liga/villarreal_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Serie A/acmilan_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Serie A/atalanta_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Serie A/bologna_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Serie A/cagliari_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Serie A/chievo_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Serie A/empoli_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Serie A/fiorentina_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Serie A/frosinone_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Serie A/genoa_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Serie A/intermilan_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Serie A/juventus_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Serie A/lazio_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Serie A/napoli_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Serie A/parma_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Serie A/roma_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Serie A/sampdoria_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Serie A/sassuolo_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Serie A/spal_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Serie A/torino_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logos/Serie A/udinese_48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/matches/migrations/0003_auto_20190210_1139.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soccerstreams/settings/SoccerStreams-a9b5eb1319d1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soccerstreams/settings/dev.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/main_2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/main_2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static_collected/css/main_2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static_collected/img/fade-spinner.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static_collected/js/main_2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/streamablematches/templates/games/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/streamablematches/templates/games/templates/league_matches.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teams/migrations/0002_team_logo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teams/migrations/0003_auto_20190216_0954.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/base_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/crons/bin/getLineups.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/crons/bin/getMatches.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/crons/bin/scraper.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/crons/bin/storeLineups.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/crons/bin/storeMatches.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/crons/bin/streamableGames.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/crons/scheduled_jobs.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/logs/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matches/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/matches/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/soccerstreams/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/soccerstreams/settings/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soccerstreams/settings/production.py" beforeDir="false" afterPath="$PROJECT_DIR$/soccerstreams/settings/production.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/templatetags/element_classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/templatetags/element_classes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teams/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/teams/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teams/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/teams/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,61 +113,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crons/scheduled_jobs.py">
+        <entry file="file://$PROJECT_DIR$/streamablematches/templates/games/templates/league_matches.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="e#0#45#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="265">
+              <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base_2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="24" column="10" lean-forward="true" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/crons/bin/storeLineups.py">
+        <entry file="file://$PROJECT_DIR$/static/css/main_2.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="241">
+              <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logs/models.py">
+        <entry file="file://$PROJECT_DIR$/static/js/main_2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="22" column="16" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/matches/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="21" column="121" selection-start-line="21" selection-start-column="121" selection-end-line="21" selection-end-column="121" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crons/bin/streamableGames.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="204">
+              <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -120,6 +186,8 @@
       <find>match</find>
       <find>date_</find>
       <find>lineup_position</find>
+      <find>&lt;a</find>
+      <find>background-colo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -133,43 +201,20 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/games/models.py" />
-        <option value="$PROJECT_DIR$/bin/helper_scripts/storeMatches.py" />
-        <option value="$PROJECT_DIR$/bin/helper_scripts/streamable.py" />
-        <option value="$PROJECT_DIR$/worker.py" />
-        <option value="$PROJECT_DIR$/streamablematches/migrations/0002_game_acelink.py" />
-        <option value="$PROJECT_DIR$/streamablematches/migrations/0004_auto_20181225_1104.py" />
-        <option value="$PROJECT_DIR$/streamablematches/migrations/0003_streamablegames.py" />
-        <option value="$PROJECT_DIR$/streamablematches/apps.py" />
-        <option value="$PROJECT_DIR$/streamablematches/migrations/0001_initial.py" />
-        <option value="$PROJECT_DIR$/leagues/migrations/__init__.py" />
-        <option value="$PROJECT_DIR$/matches/migrations/__init__.py" />
-        <option value="$PROJECT_DIR$/streamablematches/migrations/__init__.py" />
-        <option value="$PROJECT_DIR$/teams/migrations/__init__.py" />
-        <option value="$PROJECT_DIR$/users/migrations/__init__.py" />
-        <option value="$PROJECT_DIR$/bin/helper_scripts/streamableGames.py" />
-        <option value="$PROJECT_DIR$/bin/helper_scripts/getMatches.py" />
-        <option value="$PROJECT_DIR$/bin/scanner/scanner.py" />
-        <option value="$PROJECT_DIR$/bin/cron_helper_scripts/storeMatches.py" />
-        <option value="$PROJECT_DIR$/soccerstreams/settings/production.py" />
         <option value="$PROJECT_DIR$/streamablematches/models.py" />
         <option value="$PROJECT_DIR$/streamablematches/static/js/games.js" />
         <option value="$PROJECT_DIR$/streamablematches/templates/games/templates/watch_game.html" />
         <option value="$PROJECT_DIR$/streamablematches/templates/games/templates/welcome.html" />
         <option value="$PROJECT_DIR$/bin/cron_helper_scripts/scraper.py" />
-        <option value="$PROJECT_DIR$/streamablematches/urls.py" />
         <option value="$PROJECT_DIR$/soccerstreams/urls.py" />
         <option value="$PROJECT_DIR$/data/rotowire.html" />
         <option value="$PROJECT_DIR$/bin/rotowireParser.py" />
         <option value="$PROJECT_DIR$/data/models.py" />
-        <option value="$PROJECT_DIR$/leagues/models.py" />
         <option value="$PROJECT_DIR$/bin/cron_helper_scripts/getMatches.py" />
         <option value="$PROJECT_DIR$/bin/cron_helper_scripts/streamableGames.py" />
         <option value="$PROJECT_DIR$/bin/cron_helper_scripts/getLineups.py" />
         <option value="$PROJECT_DIR$/bin/cron_helper_scripts/storeLineups.py" />
-        <option value="$PROJECT_DIR$/bin/helper_scripts/makeRequest.py" />
         <option value="$PROJECT_DIR$/streamablematches/templates/games/templates/games.html" />
-        <option value="$PROJECT_DIR$/streamablematches/views.py" />
         <option value="$PROJECT_DIR$/streamablematches/static/css/games.css" />
         <option value="$PROJECT_DIR$/streamablematches/templates/games/templates/match_info.html" />
         <option value="$PROJECT_DIR$/Procfile" />
@@ -177,20 +222,43 @@
         <option value="$PROJECT_DIR$/bin/crons/bin/getLineups.py" />
         <option value="$PROJECT_DIR$/lineups/models.py" />
         <option value="$PROJECT_DIR$/bin/crons/bin/storeLineups.py" />
-        <option value="$PROJECT_DIR$/soccerstreams/settings/base.py" />
         <option value="$PROJECT_DIR$/logs/models.py" />
-        <option value="$PROJECT_DIR$/crons/bin/getLineups.py" />
         <option value="$PROJECT_DIR$/crons/bin/scraper.py" />
         <option value="$PROJECT_DIR$/crons/scheduled_jobs.py" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/matches/models.py" />
+        <option value="$PROJECT_DIR$/crons/bin/getMatches.py" />
         <option value="$PROJECT_DIR$/crons/bin/storeLineups.py" />
+        <option value="$PROJECT_DIR$/crons/bin/getLineups.py" />
+        <option value="$PROJECT_DIR$/leagues/views.py" />
+        <option value="$PROJECT_DIR$/leagues/models.py" />
+        <option value="$PROJECT_DIR$/streamablematches/templates/games/templates/matches.html" />
+        <option value="$PROJECT_DIR$/streamablematches/templates/games/templates/games_2.html" />
+        <option value="$PROJECT_DIR$/streamablematches/templates/games/templates/index.html" />
+        <option value="$PROJECT_DIR$/templates/404.html" />
+        <option value="$PROJECT_DIR$/soccerstreams/settings/production.py" />
+        <option value="$PROJECT_DIR$/streamablematches/urls.py" />
+        <option value="$PROJECT_DIR$/streamablematches/templatetags/element_classes.py" />
+        <option value="$PROJECT_DIR$/crons/bin/get_Images.py" />
+        <option value="$PROJECT_DIR$/bin/helper_scripts/makeRequest.py" />
+        <option value="$PROJECT_DIR$/soccerstreams/settings/dev.py" />
+        <option value="$PROJECT_DIR$/teams/admin.py" />
+        <option value="$PROJECT_DIR$/soccerstreams/settings/SoccerStreams-a9b5eb1319d1.json" />
+        <option value="$PROJECT_DIR$/soccerstreams/settings/base.py" />
+        <option value="$PROJECT_DIR$/teams/models.py" />
+        <option value="$PROJECT_DIR$/streamablematches/views.py" />
+        <option value="$PROJECT_DIR$/streamablematches/templates/games/templates/league_matches.html" />
+        <option value="$PROJECT_DIR$/bin/helper_scripts/get_Images.py" />
+        <option value="$PROJECT_DIR$/static/js/main_2.js" />
+        <option value="$PROJECT_DIR$/templates/base_2.html" />
+        <option value="$PROJECT_DIR$/static/css/main_2.css" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="546" />
-    <option name="y" value="127" />
-    <option name="width" value="1114" />
+    <option name="x" value="27" />
+    <option name="y" value="131" />
+    <option name="width" value="961" />
     <option name="height" value="639" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -199,7 +267,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -210,74 +277,34 @@
             <path>
               <item name="soccerstreams" type="b2602c69:ProjectViewProjectNode" />
               <item name="soccerstreams" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="soccerstreams" type="b2602c69:ProjectViewProjectNode" />
-              <item name="soccerstreams" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
-              <item name="helper_scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="soccerstreams" type="b2602c69:ProjectViewProjectNode" />
-              <item name="soccerstreams" type="462c0819:PsiDirectoryNode" />
-              <item name="crons" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="soccerstreams" type="b2602c69:ProjectViewProjectNode" />
-              <item name="soccerstreams" type="462c0819:PsiDirectoryNode" />
-              <item name="crons" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="soccerstreams" type="b2602c69:ProjectViewProjectNode" />
-              <item name="soccerstreams" type="462c0819:PsiDirectoryNode" />
-              <item name="lineups" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="soccerstreams" type="b2602c69:ProjectViewProjectNode" />
-              <item name="soccerstreams" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="soccerstreams" type="b2602c69:ProjectViewProjectNode" />
-              <item name="soccerstreams" type="462c0819:PsiDirectoryNode" />
-              <item name="matches" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="soccerstreams" type="b2602c69:ProjectViewProjectNode" />
-              <item name="soccerstreams" type="462c0819:PsiDirectoryNode" />
-              <item name="soccerstreams" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="soccerstreams" type="b2602c69:ProjectViewProjectNode" />
-              <item name="soccerstreams" type="462c0819:PsiDirectoryNode" />
-              <item name="soccerstreams" type="462c0819:PsiDirectoryNode" />
-              <item name="settings" type="462c0819:PsiDirectoryNode" />
+              <item name="logos" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../django-env/Scripts/python.exe" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../django-env/Scripts/python.exe" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\streamablematches\static\img" />
-      <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\static\img" />
-      <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\games\static" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams" />
-      <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\bin\crons\bin" />
+      <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\soccerstreams\settings" />
       <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\bin\helper_scripts" />
-      <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\bin\cron_helper_scripts" />
-      <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\games\templates\games\templates" />
+      <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\crons\bin" />
+      <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\streamablematches\templates" />
+      <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams" />
+      <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\static\js" />
+      <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\static\css" />
+      <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\templates" />
+      <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\streamablematches\templates\games\templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -359,11 +386,20 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17300381" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2008872" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -372,11 +408,11 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50823826" side_tool="true" weight="0.29166666" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3293011" />
-      <window_info anchor="bottom" id="Python Console" order="9" sideWeight="0.49936628" weight="0.3293011" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4917617" visible="true" weight="0.28494623" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49873257" weight="0.3293011" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50126743" side_tool="true" weight="0.3293011" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49873257" weight="0.3293011" />
+      <window_info anchor="bottom" id="Python Console" order="9" sideWeight="0.49873257" weight="0.3293011" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4898606" visible="true" weight="0.3655914" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -384,248 +420,9 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/teams/migrations/0008_auto_20181215_1141.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/matches/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/streamablematches/migrations/0003_streamablegames.py" />
-    <entry file="file://$PROJECT_DIR$/streamablematches/migrations/0004_auto_20181225_1104.py" />
-    <entry file="file://$PROJECT_DIR$/streamablematches/migrations/0002_game_acelink.py" />
-    <entry file="file://$PROJECT_DIR$/streamablematches/migrations/0001_initial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="75" lean-forward="true" selection-start-line="11" selection-start-column="75" selection-end-line="11" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/teams/migrations/0001_initial.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/streamablematches/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/teams/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leagues/migrations/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/matches/migrations/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/streamablematches/migrations/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/teams/migrations/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/migrations/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/streamablematches/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/teams/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="9" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/streamablematches/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="40" column="51" lean-forward="true" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/streamablematches/static/js/games.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="75" column="1" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/streamablematches/templates/games/templates/watch_game.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="73" selection-start-line="9" selection-start-column="73" selection-end-line="9" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/streamablematches/templates/games/templates/welcome.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soccerstreams/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-          <folding>
-            <element signature="e#637#669#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/pd_teams.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="391" column="25" selection-start-line="391" selection-start-column="25" selection-end-line="391" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/rotowire.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52095">
-          <caret line="3066" selection-start-line="3066" selection-end-line="3066" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#noscript#0;n#head#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#23456#23462#0" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#2;n#div#1;n#div#0;n#div#2;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#1;n#div#2;n#div#1;n#div#0;n#div#2;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#30135#30141#0" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#2;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#2;n#div#1;n#div#1;n#div#2;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#1;n#div#2;n#div#1;n#div#1;n#div#2;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#36799#36805#0" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#2;n#div#2;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#2;n#div#1;n#div#2;n#div#2;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#1;n#div#2;n#div#1;n#div#2;n#div#2;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#43424#43430#0" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#3;n#div#2;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#2;n#div#1;n#div#3;n#div#2;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#1;n#div#2;n#div#1;n#div#3;n#div#2;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#50440#50446#0" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#5;n#div#2;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#2;n#div#1;n#div#5;n#div#2;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#1;n#div#2;n#div#1;n#div#5;n#div#2;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#57109#57115#0" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#6;n#div#2;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#58390#58398#0" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#2;n#div#1;n#div#6;n#div#2;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#1;n#div#2;n#div#1;n#div#6;n#div#2;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#63761#63767#0" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#7;n#div#2;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#2;n#div#1;n#div#7;n#div#2;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#1;n#div#2;n#div#1;n#div#7;n#div#2;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#70434#70440#0" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#8;n#div#2;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#2;n#div#1;n#div#8;n#div#2;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#1;n#div#2;n#div#1;n#div#8;n#div#2;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#77090#77096#0" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#9;n#div#2;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#2;n#div#1;n#div#9;n#div#2;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#1;n#div#2;n#div#1;n#div#9;n#div#2;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#83755#83761#0" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#10;n#div#2;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#2;n#div#1;n#div#10;n#div#2;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#1;n#div#2;n#div#1;n#div#10;n#div#2;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#91824#91830#0" expanded="true" />
-            <element signature="e#92606#92613#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/helper_scripts/data_transform.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="61" column="41" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/matches/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/helper_scripts/rotowireParser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="12" column="74" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="74" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/helper_scripts/rotowireParser.py" />
     <entry file="file://$PROJECT_DIR$/matches/views.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/main.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/streamablematches/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="24" column="11" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/streamablematches/templates/games/templates/games.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/streamablematches/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="48" column="58" selection-start-line="48" selection-start-column="58" selection-end-line="48" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leagues/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/streamablematches/static/css/games.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="74" column="16" selection-start-line="74" selection-start-column="16" selection-end-line="74" selection-end-column="16" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/streamablematches/templates/games/templates/match_info.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -639,79 +436,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soccerstreams/settings/production.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soccerstreams/settings/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="52" column="57" selection-start-line="52" selection-start-column="57" selection-end-line="52" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crons/bin/getLineups.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="124" selection-start-line="27" selection-start-column="102" selection-end-line="27" selection-end-column="124" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lineups/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="26" column="9" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crons/bin/storeMatches.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="29" lean-forward="true" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crons/bin/getMatches.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/helper_scripts/makeRequest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/crons/bin/scraper.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -719,16 +445,6 @@
           <caret line="36" column="39" lean-forward="true" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crons/scheduled_jobs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -743,9 +459,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/crons/bin/storeMatches.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="19" column="57" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streamablematches/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="40" column="51" lean-forward="true" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crons/bin/getMatches.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/databaseHtml.html" />
+    <entry file="file://$PROJECT_DIR$/rotowireHtml.html" />
     <entry file="file://$PROJECT_DIR$/logs/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
+        <state relative-caret-position="340">
           <caret line="22" column="16" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="16" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
@@ -753,23 +508,277 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/matches/models.py">
+    <entry file="file://$PROJECT_DIR$/lineups/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="21" column="121" selection-start-line="21" selection-start-column="121" selection-end-line="21" selection-end-column="121" />
+        <state relative-caret-position="184">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/main.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leagues/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streamablematches/templates/games/templates/games.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-71">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leagues/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/crons/bin/storeLineups.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+        <state relative-caret-position="331">
+          <caret line="113" column="56" lean-forward="true" selection-start-line="113" selection-start-column="56" selection-end-line="113" selection-end-column="56" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streamablematches/static/js/games.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1077">
+          <caret line="75" column="1" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1105">
+          <caret line="65" column="8" lean-forward="true" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soccerstreams/settings/production.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streamablematches/templatetags/element_classes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="25" selection-start-line="25" selection-end-line="26" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/helper_scripts/linkClassClassifier.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streamablematches/templates/games/templates/watch_game.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crons/scheduled_jobs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streamablematches/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.png" />
+    <entry file="file://$PROJECT_DIR$/bin/helper_scripts/makeRequest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crons/bin/getLineups.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="27" column="56" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/teams/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logos/arsenal_48x48.png" />
+    <entry file="file://$PROJECT_DIR$/soccerstreams/settings/dev.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="43" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soccerstreams/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+          <folding>
+            <element signature="e#637#669#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soccerstreams/settings/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="137" column="54" selection-start-line="137" selection-start-column="54" selection-end-line="137" selection-end-column="54" />
+          <folding>
+            <element signature="e#314#323#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streamablematches/static/css/games.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-123">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matches/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="50" column="13" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streamablematches/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logos/9Qhk6gPP9ZpmvhBsZXlANg_48x48.png" />
+    <entry file="file://$PROJECT_DIR$/bin/helper_scripts/get_Images.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-23">
+          <caret line="8" column="22907" selection-start-line="8" selection-start-column="22907" selection-end-line="8" selection-end-column="22907" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/teams/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soccerstreams/settings/SoccerStreams-a9b5eb1319d1.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="70" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streamablematches/templates/games/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/main_2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streamablematches/templates/games/templates/league_matches.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base_2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="24" column="10" lean-forward="true" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/main_2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
         </state>
       </provider>
     </entry>
