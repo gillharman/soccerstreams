@@ -56,7 +56,7 @@ def scrape_games():
         if request['data']:
             data = request['data']
     except Exception as e:
-        print('An error occurred when scraping for games ' + request['message'])
+        print('An error occurred when scraping for games: ' + request['message'])
         raise
 
     reg_ex = '(\[\d\d\:\d\d\s\D\D\D\])'
