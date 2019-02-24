@@ -21,7 +21,7 @@ def make_request(url, header, type="json"):
             retVal['status'] = 'FAILED'
             retVal['message'] = 'Exceeded the max number of tries.'
             return retVal
-        count =+ 1
+        count += 1
 
     retVal['status'] = 'SUCCESS'
     retVal['message'] = 'Connection Successful.'
