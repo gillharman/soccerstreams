@@ -1,13 +1,95 @@
 body {
-    margin-top: 60px;
+    font-family: sans-serif, arial;
+    font-size: small;
+    background-color: #F2F2F2;
 }
 
-.navbar {
-    margin-bottom: 10px;
+#nav {
+    padding: 0px;
+    background-color: #38003C;
+    margin: auto;
+    position: fixed;
+    z-index: 1;
 }
 
-.nav-img {
-    margin: 0 5px;
-    width: 17px;
-    height: 31px;
+#nav-header {
+    color: white;
+}
+
+#nav-title {
+    font-size: 16px;
+    padding-left: 36px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+#nav-pills {
+    text-align: center;
+    padding: 0px;
+    margin: auto;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+#nav-pills ul {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    display: table;
+}
+
+.nav-pill {
+    display: table-cell;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 16px;
+    padding-top: 16px;
+    padding-bottom:14px;
+    min-width: 105px;
+    list-style-type: none;
+    color: white;
+}
+
+.nav-pill:hover {
+    background-color: #2a002d;
+    border-bottom: 3px solid white;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-pill:active {
+    border-bottom: 3px solid white;
+}
+
+.active {
+    border-bottom: 3px solid white;
+}
+
+.content-width {
+    max-width: 868px;
+}
+
+#wrapper {
+    padding: 95px 0px 0px 0px;
+}
+
+.wrapper-outline {
+    box-shadow: 0 1px 3px 0px rgba(0,0,0,0.16);
+}
+
+.is-loading {
+    border: 3px solid grey;
+    border-radius: 50%;
+    border-top: 3px solid #3498db;
+    width: 30px;
+    height: 30px;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
 }

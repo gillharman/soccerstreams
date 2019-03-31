@@ -4,6 +4,8 @@ import random
 
 from bin.helper_scripts.linkClassClassifier import link_class_classifier
 
+from teams.models import Team
+
 register = template.Library()
 
 @register.filter(name="link_score_class")
@@ -37,3 +39,41 @@ def time_format(value):
     else:
         r = ''
     return r
+
+
+@register.filter(name="get_logo_url_48x48")
+def get_logo_url_48x48(team_id):
+    return get_logo_url(team_id, 48)
+
+
+@register.filter(name="get_logo_url_96x96")
+def get_logo_url_96x96(team_id):
+    return get_logo_url(team_id, 96)
+
+
+@register.filter(name="right_border")
+def right_border(value):
+    if (value % 2) == 1:  # LEFT SIDE COLUMN - APPLY RIGHT BORDER
+        return " right-border"
+    else:
+        return ""
+
+@register.filter(name="bottom_border")
+def bottom_border(value, num_matches):
+    last_border_applicable_row = num_matches - 2
+    if num_matches % 2 == 1:  # IF ODD NUMBER OF MATCHES -- BORDER IS APPLICABLE ON THE SECOND TO LAST MATCH
+        last_border_applicable_row = num_matches - 1
+
+    if value <= last_border_applicable_row:
+        return " bottom-border"
+    else:
+        return ""
+
+
+
+# HELPER FUNCTION FOR THE TAGS ABOVE
+def get_logo_url(team_id, logo_dimension):
+    try:
+        return Team.objects.get(id=team_id).get_logo_url(dimension=logo_dimension)
+    except:
+        return ""

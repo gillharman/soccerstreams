@@ -1,4 +1,5 @@
 from django.db import models
+from django.db.models import Q
 
 from matches.models import Match
 
@@ -8,6 +9,9 @@ class LineupQuerySet(models.QuerySet):
 
     def get_away_lineup(self, match_id):
         return self.filter(match__id=match_id, lineup_type='A').order_by('id')
+
+    def get_lineup(self, match_id, team_id):
+        return self.filter(match__id=match_id).filter(Q(match__home_team__id=team_id) | Q(match__away_team__id=team_id)).order_by('id')
 
 
 # Create your models here.

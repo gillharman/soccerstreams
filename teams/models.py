@@ -14,9 +14,12 @@ class Team(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 
-    def get_logo_url(self):
-        team_logo = Team_Logo.objects.get(team=self)
-        return team_logo.logo.url
+    def get_logo_url(self, dimension):
+        team_logo = Team_Logo.objects.filter(team=self).first()
+        if dimension == 48:
+            return team_logo.logo_48x48_url
+        elif dimension == 96:
+            return team_logo.logo_96x96_url
 
 class Teams_in_League(models.Model):
     team = models.ForeignKey(Team, on_delete=models.CASCADE)
@@ -27,4 +30,7 @@ class Teams_in_League(models.Model):
 
 class Team_Logo(models.Model):
     team = models.ForeignKey(Team, on_delete=models.CASCADE)
-    logo = models.ImageField(upload_to="")
+    logo_48x48 = models.ImageField(upload_to="", null=True)
+    logo_48x48_url = models.CharField(max_length=2083, null=True)
+    logo_96x96 = models.ImageField(upload_to="", null=True)
+    logo_96x96_url = models.CharField(max_length=2083, null=True)

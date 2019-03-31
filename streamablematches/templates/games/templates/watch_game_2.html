@@ -1,0 +1,78 @@
+{% extends 'base_2.html' %}
+{% load staticfiles %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/watch_game.css' %}">
+<link rel="stylesheet" href="{% static 'css/lineups.css' %}">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+{% endblock %}
+
+{% block nav %}
+<div id="nav" class="container-fluid">
+    <div id="nav-header">
+        <div id="nav-title">
+            {{ data.display_name }}
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div id="matchup-wrapper" class="container wrapper-outline">
+    <div id="matchup-header" class="row">
+        <div id="matchup-info-wrapper" class="col">
+            <div id="matchup-info">
+                <div class="row">
+                    <div class="col">
+                        <span>
+                            <span id="matchup-league">{{ data.match.league.name }}</span>
+                            <span> &#183; </span>
+                        </span>
+                        <span>{{ data.match.match_date_time }}</span>
+                    </div>
+                    <div class="col-3">
+                        <span id="matchup-status">{{ data.match.get_status_display }}</span>
+                    </div>
+                </div>
+            </div>
+            <div id="matchup-teams">
+                <div class="row">
+                    <div class="col">
+                        <div class="center-aligned">
+                            <img src="{{ data.home_team.team.logo_96x96 }}" width="48" height="48" />
+                        </div>
+                    </div>
+                    <div class="col-4"></div>
+                    <div class="col">
+                        <div class="center-aligned">
+                            <img src="{{ data.away_team.team.logo_96x96 }}" width="48" height="48" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col team-name">{{ data.home_team.name }}</div>
+                    <div class="col-4 separator">VS</div>
+                    <div class="col team-name">{{ data.away_team.name }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="matchup-nav" class="row">
+        <div class="col">
+            <ul role="tablist">
+                <li class="tab-active" role="tab">Lineups</li>
+                <li role="tab">AceStreams</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col lineups-container">
+        {% include 'games/templates/lineups.html' %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block script %}
+<script src="{% static 'js/watch_game.js' %}"></script>
+{% endblock %}

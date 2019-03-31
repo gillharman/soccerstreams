@@ -1,0 +1,60 @@
+.match-day {
+    margin: 0px;
+    padding: 12px 0px 10px 0px;
+    background: #f5f5f5;
+}
+
+.matches {
+    margin: 0px;
+}
+
+.match {
+    background-color: white;
+    padding: 0px;
+}
+
+.match:hover {
+    cursor: pointer;
+    background-color: #FAFAFA;
+}
+
+.match-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.mt-sp {
+    height: 24px;
+}
+
+.team {
+    font-size: 14px;
+    width: 70%;
+    padding-left: 15px;
+    height: 32px;
+}
+
+.right-border {
+    border-right: 1px solid #E0E0E0;
+}
+
+.bottom-border {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.team-logo {
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.score {
+    float: right;
+    display: inline-block;
+    padding-right: 6px;
+}
+
+.date-time {
+    font-size: 12px;
+    text-align: center;
+    border-left: 1px solid rgb(0,0,0,0.05)
+}
