@@ -131,13 +131,3 @@ STATICFILES_DIRS = (
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 AUTH_USER_MODEL = 'users.CustomUser'
-
-# GOOGLE_APPLICATION_CREDENTIALS = "soccerstreams.settings.SoccerStreams-a9b5eb1319d1.json"
-
-GS_CREDENTIALS = service_account.Credentials.from_service_account_file(
-    os.path.join(PROJECT_DIR, 'soccerstreams/settings/SoccerStreams-a9b5eb1319d1.json')
-)
-# GS_PROJECT_ID = "soccerstreams"
-
-DEFAULT_FILE_STORAGE = 'storages.backends.gcloud.GoogleCloudStorage'
-GS_BUCKET_NAME = 'team_logos'
