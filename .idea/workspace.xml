@@ -22,11 +22,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/soccerstreams/settings/production.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="99">
+              <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/soccerstreams/settings/SoccerStreams-a9b5eb1319d1.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -98,7 +107,6 @@
         <option value="$PROJECT_DIR$/templates/404.html" />
         <option value="$PROJECT_DIR$/crons/bin/get_Images.py" />
         <option value="$PROJECT_DIR$/soccerstreams/settings/dev.py" />
-        <option value="$PROJECT_DIR$/soccerstreams/settings/SoccerStreams-a9b5eb1319d1.json" />
         <option value="$PROJECT_DIR$/crons/scheduled_jobs.py" />
         <option value="$PROJECT_DIR$/logs/admin.py" />
         <option value="$PROJECT_DIR$/bin/helper_scripts/makeRequest.py" />
@@ -136,6 +144,7 @@
         <option value="$PROJECT_DIR$/templates/base_2.html" />
         <option value="$PROJECT_DIR$/streamablematches/static/js/watch_game.js" />
         <option value="$PROJECT_DIR$/streamablematches/templates/games/templates/watch_game_2.html" />
+        <option value="$PROJECT_DIR$/soccerstreams/settings/SoccerStreams-a9b5eb1319d1.json" />
         <option value="$PROJECT_DIR$/soccerstreams/settings/production.py" />
       </list>
     </option>
@@ -288,6 +297,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16920152" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -302,7 +312,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.508872" side_tool="true" weight="0.14247312" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49873257" weight="0.3293011" />
       <window_info anchor="bottom" id="Python Console" order="9" sideWeight="0.49873257" weight="0.3293011" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.491128" visible="true" weight="0.35887095" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.491128" visible="true" weight="0.34139785" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -310,13 +320,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/streamablematches/templates/games/templates/games.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="41" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bin/helper_scripts/view_helpers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -676,8 +679,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/soccerstreams/settings/production.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="99">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soccerstreams/settings/SoccerStreams-a9b5eb1319d1.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
         </state>
       </provider>
     </entry>

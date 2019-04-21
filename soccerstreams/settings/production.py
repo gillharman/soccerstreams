@@ -15,11 +15,11 @@ SECRET_KEY = 'secret'
 
 DATABASES = {
     'default' : {
-        'ENGINE': '',
-        'NAME': '',
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': '',
-        'PORT': '',
+        'ENGINE': 'secret',
+        'NAME': 'secret',
+        'USER': 'secret',
+        'PASSWORD': 'secret',
+        'HOST': 'secret',
+        'PORT': 'secret',
     }
 }
