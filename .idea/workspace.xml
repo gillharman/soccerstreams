@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a24984d9-905a-4a1e-8193-849e0157c296" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/soccerstreams/settings/SoccerStreams-a9b5eb1319d1.json" beforeDir="false" afterPath="$PROJECT_DIR$/soccerstreams/settings/SoccerStreams-a9b5eb1319d1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soccerstreams/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/soccerstreams/settings/base.py" afterDir="false" />
-    </list>
+    <list default="true" id="a24984d9-905a-4a1e-8193-849e0157c296" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,16 +22,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/soccerstreams/settings/production.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
+            <state relative-caret-position="329">
               <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/soccerstreams/settings/SoccerStreams-a9b5eb1319d1.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
@@ -312,9 +309,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16920152" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22750317" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -682,13 +678,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/soccerstreams/settings/production.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/soccerstreams/settings/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2108">
@@ -703,6 +692,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soccerstreams/settings/production.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
         </state>
       </provider>
     </entry>

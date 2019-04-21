@@ -13,13 +13,13 @@ SECRET_KEY = 'secret'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
-DATABASES = {
-    'default' : {
-        'ENGINE': 'secret',
-        'NAME': 'secret',
-        'USER': 'secret',
-        'PASSWORD': 'secret',
-        'HOST': 'secret',
-        'PORT': 'secret',
-    }
-}
+# DATABASES = {
+#     'default' : {
+#         'ENGINE': 'secret',
+#         'NAME': 'secret',
+#         'USER': 'secret',
+#         'PASSWORD': 'secret',
+#         'HOST': 'secret',
+#         'PORT': 'secret',
+#     }
+# }
