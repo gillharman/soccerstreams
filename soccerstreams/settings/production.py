@@ -8,7 +8,7 @@ ALLOWED_HOSTS = ['soccer-streams02.herokuapp.com'] # soccer-streams02.herokuapp.
 DEBUG = False
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'djx4q2y-yyvjozclbw4*t1w!ph#l2om^24gc(j$09%njvjbg++'
+SECRET_KEY = ''
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases

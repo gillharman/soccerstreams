@@ -1,10 +1,11 @@
 {% extends 'base_2.html' %}
 {% load staticfiles %}
+{% load element_classes %}
 
 {% block css %}
 <link rel="stylesheet" href="{% static 'css/watch_game.css' %}">
 <link rel="stylesheet" href="{% static 'css/lineups.css' %}">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="{% static 'css/acestreams.css' %}">
 {% endblock %}
 
 {% block nav %}
@@ -25,7 +26,7 @@
                 <div class="row">
                     <div class="col">
                         <span>
-                            <span id="matchup-league">{{ data.match.league.name }}</span>
+                            <a id="matchup-league" href="{{ data.match.league.code|get_league_homepage_url }}">{{ data.match.league.name }}</a>
                             <span> &#183; </span>
                         </span>
                         <span>{{ data.match.match_date_time }}</span>
@@ -60,14 +61,19 @@
     <div id="matchup-nav" class="row">
         <div class="col">
             <ul role="tablist">
-                <li class="tab-active" role="tab">Lineups</li>
-                <li role="tab">AceStreams</li>
+                <li id="default-open" class="tab-active" role="tab" data-tab-content="lineups">Lineups</li>
+                <li role="tab" data-tab-content="acestreams">AceStreams</li>
             </ul>
         </div>
     </div>
-    <div class="row">
+    <div id="lineups" class="row tab-content">
         <div class="col lineups-container">
-        {% include 'games/templates/lineups.html' %}
+            {% include 'games/templates/lineups.html' %}
+        </div>
+    </div>
+    <div id="acestreams" class="row tab-content">
+        <div class="col ace-streams-container">
+            {% include 'games/templates/acestreams.html' %}
         </div>
     </div>
 </div>

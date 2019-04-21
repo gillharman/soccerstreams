@@ -1,11 +1,10 @@
 from django.urls import path, re_path
-from .views import home, ajax_league_matches, watch_game, get_match_info
+from .views import league_matches, watch_game, add_ace_stream
 
 urlpatterns = [
-    path('', home, name="home"),
-    path('ajax/league_matches', ajax_league_matches, name="league_matches"),
-    # path('new_all_games', new_get_games, name="new_all_games"),
-    path('watch_game/<int:match_id>', watch_game, name="watch_game"),
-    # re_path(r'^watch_game/(?:match_id=(?P<match_id>\w+)/)?$', watch_game, name="watch_game"),
-    re_path('ajax/match_info', get_match_info, name="get_match_info"),
+    re_path(r'^$', league_matches, name="league_matches"),  # USES A DEFAULT PARAMETER
+    re_path(r'^(?P<league>\w+)/$', league_matches, name="league_matches"),
+    re_path(r'watch_game/(?P<match_id>\d+)/$', watch_game, name="watch_game"),
+    re_path(r'\w+/watch_game/(?P<match_id>\d+)/$', watch_game, name="watch_game"),
+    path('add-ace-stream', add_ace_stream, name="add_ace_stream")
 ]

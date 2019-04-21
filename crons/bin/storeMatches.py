@@ -5,6 +5,15 @@ from leagues.models import League
 from teams.models import Team
 from matches.models import Match
 
+
+def sanitize_string(string, delimiter='_'):
+    words = string.split(delimiter)
+    capitalized_words = []
+    for word in words:
+        capitalized_words.append(word.capitalize())
+    return ' '.join(capitalized_words)
+
+
 def store_matches(data):
     retVal = {}
     tracked_leagues = League.objects.all().values_list('name', flat=True)
@@ -14,22 +23,25 @@ def store_matches(data):
     update = 0
     try:
         for i in data['matches']:
-            ### IGNORE - IF LEAGUE IS NOT TRACKED ###
+            # SANITIZE STATUS
+            status = sanitize_string(i["status"])
+
+            # IGNORE - IF LEAGUE IS NOT TRACKED
             if i["competition"]["name"] not in tracked_leagues:
                 ignore += 1
                 # print('Match for ' + i["competition"]["name"] + ' are not tracked')
                 continue
-            ### UPDATE - PREEXISTING ###
+            # UPDATE - PREEXISTING
             elif Match.objects.filter(api_match_id=i["id"]):
                 m = Match.objects.get(api_match_id=i["id"])
-                m.status = statuses[i["status"]]
+                m.status = statuses[status]
                 m.save()
                 update += 1
-            ### INSERT - NEW MATCHES ###
+            # INSERT - NEW MATCHES
             else:
                 m = Match()
                 m.api_match_id = i["id"]
-                m.status = statuses[i["status"]]
+                m.status = statuses[status]
                 m.match_day = i["matchday"]
                 mdt = datetime.strptime(i["utcDate"], '%Y-%m-%dT%H:%M:%SZ')
                 mdt = mdt.replace(tzinfo=pytz.utc)  ### SET TIMEZONE

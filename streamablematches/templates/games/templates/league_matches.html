@@ -1,52 +1,88 @@
+{% extends 'base_2.html' %}
+{% load staticfiles %}
 {% load element_classes %}
 
-{% regroup data.matches by match_day as matches %}
-<div id="match-days-wrapper">
-    {% for match_day in matches %}
-    <div id="match-day-{{ match_day.grouper }}" class="bottom-border">
-        <div class="row match-day bottom-border">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <div>Matchday {{ match_day.grouper }}</div>
-            </div>
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/league_matches.css' %}">
+{% endblock %}
+
+{% block nav %}
+<div id="nav" class="container-fluid">
+    <div id="nav-header">
+        <div id="nav-title">
+            {{ data.league_title }}
         </div>
-        <div class="row matches">
-            {% with match_count=match_day.list|length %}
-            {% for match in match_day.list %}
-             <div class="match col-lg-6 col-md-6 col-sm-12{{ forloop.counter|right_border }}{{ forloop.counter|bottom_border:match_count}}" data-match-id="{{ match.id }}">
-                 <table class="match-table">
-                     <tbody>
-                     <tr class="mt-sp"><td colspan="2"></td></tr>
-                     <tr>
-                         <td class="team">
-                             <div class="team-logo"><img src="{{ match.home_team.id|get_logo_url_48x48 }}" height="24px;" width="24px;"></div>
-                             <div style="display: inline-block;">{{ match.home_team.short_name }}</div>
-                             <div class="score">2</div>
-                         </td>
-                         <td rowspan="2" class="date-time">
-                             <div>{{ match.match_date_time|date_format }}</div>
-                             <div>{{ match.match_date_time|time_format }}</div>
-                         </td>
-                     </tr>
-                     <tr>
-                         <td class="team">
-                             <div class="team-logo"><img src="{{ match.away_team.id|get_logo_url_48x48 }}" height="24px;" width="24px;"></div>
-                             <div style="display: inline-block;">{{ match.away_team.short_name }}</div>
-                             <div class="score">2</div>
-                         </td>
-                     </tr>
-                     <tr class="mt-sp"><td colspan="2"></td></tr>
-                     </tbody>
-                 </table>
-            </div>
-            {% if forloop.last %}
-            </div>
-            {% else %}
-            {% if forloop.counter|divisibleby:"2" %}
-            </div><div class="row matches">
-            {% endif %}
-            {% endif %}
-        {% endfor %}
-        {% endwith %}
     </div>
-    {% endfor %}
+    <div id="nav-pills" class="content-width" role="navigation">
+        <ul>
+            <li id="PL" class="nav-pill" data-league-name="Premier League">EPL</li>
+            <li id="PD" class="nav-pill" data-league="PD" data-league-name="La Liga">La Liga</li>
+            <li id="BL1" class="nav-pill" data-league="BL1" data-league-name="Bundesliga">Bundesliga</li>
+            <li id="SA" class="nav-pill" data-league="SA" data-league-name="Seria A">Seria A</li>
+            <li id="FL1" class="nav-pill" data-league="FL1" data-league-name="Ligue 1">Ligue 1</li>
+            <li id="CL" class="nav-pill" data-league="CL" data-league-name="UEFA Champions League">UCL</li>
+            <li id="DED" class="nav-pill" data-league="DED" data-league-name="Eredivisie">Eredivisie</li>
+        </ul>
+    </div>
 </div>
+{% endblock %}
+
+{% block content %}
+<div id="wrapper" class="container content-width wrapper-outline">
+    {% regroup data.matches by match_day as matches %}
+    <div id="match-days-wrapper">
+        {% for match_day in matches %}
+        <div id="match-day-{{ match_day.grouper }}" class="bottom-border">
+            <div class="row match-day bottom-border">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div>Matchday {{ match_day.grouper }}</div>
+                </div>
+            </div>
+            <div class="row matches">
+                {% with match_count=match_day.list|length %}
+                {% for match in match_day.list %}
+                 <div class="match col-lg-6 col-md-6 col-sm-12{{ forloop.counter|right_border }}{{ forloop.counter|bottom_border:match_count}}" data-match-id="{{ match.id }}">
+                     <table class="match-table">
+                         <tbody>
+                         <tr class="mt-sp"><td colspan="2"></td></tr>
+                         <tr>
+                             <td class="team">
+                                 <div class="team-logo"><img src="{{ match.home_team.id|get_logo_url_48x48 }}" height="24px;" width="24px;"></div>
+                                 <div style="display: inline-block;">{{ match.home_team.short_name }}</div>
+                                 <div class="score">2</div>
+                             </td>
+                             <td rowspan="2" class="date-time">
+                                 <div>{{ match.match_date_time|date_format }}</div>
+                                 <div>{{ match.match_date_time|time_format }}</div>
+                             </td>
+                         </tr>
+                         <tr>
+                             <td class="team">
+                                 <div class="team-logo"><img src="{{ match.away_team.id|get_logo_url_48x48 }}" height="24px;" width="24px;"></div>
+                                 <div style="display: inline-block;">{{ match.away_team.short_name }}</div>
+                                 <div class="score">2</div>
+                             </td>
+                         </tr>
+                         <tr class="mt-sp"><td colspan="2"></td></tr>
+                         </tbody>
+                     </table>
+                </div>
+                {% if forloop.last %}
+                </div>
+                {% else %}
+                {% if forloop.counter|divisibleby:"2" %}
+                </div><div class="row matches">
+                {% endif %}
+                {% endif %}
+            {% endfor %}
+            {% endwith %}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+
+
+{% block script %}
+<script src="{% static 'js/main.js' %}"></script>
+{% endblock %}

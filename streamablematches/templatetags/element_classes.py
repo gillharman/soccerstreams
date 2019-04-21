@@ -58,6 +58,7 @@ def right_border(value):
     else:
         return ""
 
+
 @register.filter(name="bottom_border")
 def bottom_border(value, num_matches):
     last_border_applicable_row = num_matches - 2
@@ -68,6 +69,15 @@ def bottom_border(value, num_matches):
         return " bottom-border"
     else:
         return ""
+
+
+
+@register.filter(name="get_league_homepage_url")
+def get_league_homepage_url(league_code):
+    if league_code == 'PL':
+        return '/'
+    else:
+        return '/' + str(league_code)
 
 
 

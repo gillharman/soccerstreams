@@ -39,7 +39,7 @@ class LinksQuerySet(models.QuerySet):
 
 class Links(models.Model):
     match = models.ForeignKey(ScannedMatch, on_delete=models.CASCADE)
-    streamer = models.CharField(max_length=100, default=None)
+    streamer = models.CharField(max_length=100, default="")
     link = models.CharField(max_length=100, default=None)
     linkScore = models.IntegerField()
     created = models.DateTimeField(auto_now_add=True)
