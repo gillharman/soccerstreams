@@ -2,7 +2,7 @@ import os
 import json
 
 from leagues.models import League
-from teams.models import Team, Teams_in_League
+from teams.models import Team, Teams_in_League, Team_Logo
 
 def transform_leagues(data):
     for i in data['competitions']:
@@ -64,3 +64,25 @@ def transform():
                 data = json.load(f)
                 transform_teams(data)
                 transform_teams_in_league(data)
+
+
+def transform_logos():
+    os.chdir('data')
+    with open('logos.json') as f:
+        data = json.load(f)
+
+        for logo in data:
+            team = Team.objects.filter(api_id=logo["team__api_id"]).first()
+            if team:
+                current = Team_Logo.objects.filter(team=team).first()
+                if current:
+                   print('Logo Already exists in database for ' + current.team.name)
+                else:
+                    print('Creating new Logo entry for ' + team.name)
+                    team_logo = Team_Logo()
+                    team_logo.logo_48x48 = logo["logo_48x48"]
+                    team_logo.logo_48x48_url = logo["logo_48x48_url"]
+                    team_logo.logo_96x96 = logo["logo_96x96"]
+                    team_logo.logo_96x96_url = logo["logo_96x96_url"]
+                    team_logo.team = team
+                    team_logo.save()
