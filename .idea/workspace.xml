@@ -1,30 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a24984d9-905a-4a1e-8193-849e0157c296" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/static/angularjs/angularjs-1.7.8.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/favicon-16x16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/streamablematches/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/streamablematches/static/css/acestreams.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/streamablematches/templates/games/templates/acestreams.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crons/bin/storeMatches.py" beforeDir="false" afterPath="$PROJECT_DIR$/crons/bin/storeMatches.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lineups/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/lineups/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamablematches/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamablematches/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamablematches/static/css/lineups.css" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/css/lineups.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamablematches/static/css/watch_game.css" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/css/watch_game.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamablematches/static/js/watch_game.js" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/js/watch_game.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamablematches/templates/games/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamablematches/templates/games/templates/league_matches.html" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/templates/games/templates/league_matches.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamablematches/templates/games/templates/watch_game_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/templates/games/templates/watch_game_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamablematches/templatetags/element_classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/templatetags/element_classes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamablematches/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamablematches/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teams/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/teams/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base_2.html" afterDir="false" />
-    </list>
+    <list default="true" id="a24984d9-905a-4a1e-8193-849e0157c296" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +10,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crons/scheduled_jobs.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="32">
@@ -41,6 +18,15 @@
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/soccerstreams/settings/production.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -110,7 +96,6 @@
         <option value="$PROJECT_DIR$/streamablematches/templates/games/templates/matches.html" />
         <option value="$PROJECT_DIR$/streamablematches/templates/games/templates/games_2.html" />
         <option value="$PROJECT_DIR$/templates/404.html" />
-        <option value="$PROJECT_DIR$/soccerstreams/settings/production.py" />
         <option value="$PROJECT_DIR$/crons/bin/get_Images.py" />
         <option value="$PROJECT_DIR$/soccerstreams/settings/dev.py" />
         <option value="$PROJECT_DIR$/soccerstreams/settings/SoccerStreams-a9b5eb1319d1.json" />
@@ -151,6 +136,7 @@
         <option value="$PROJECT_DIR$/templates/base_2.html" />
         <option value="$PROJECT_DIR$/streamablematches/static/js/watch_game.js" />
         <option value="$PROJECT_DIR$/streamablematches/templates/games/templates/watch_game_2.html" />
+        <option value="$PROJECT_DIR$/soccerstreams/settings/production.py" />
       </list>
     </option>
   </component>
@@ -172,6 +158,17 @@
             <path>
               <item name="soccerstreams" type="b2602c69:ProjectViewProjectNode" />
               <item name="soccerstreams" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="soccerstreams" type="b2602c69:ProjectViewProjectNode" />
+              <item name="soccerstreams" type="462c0819:PsiDirectoryNode" />
+              <item name="soccerstreams" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="soccerstreams" type="b2602c69:ProjectViewProjectNode" />
+              <item name="soccerstreams" type="462c0819:PsiDirectoryNode" />
+              <item name="soccerstreams" type="462c0819:PsiDirectoryNode" />
+              <item name="settings" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -305,7 +302,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.508872" side_tool="true" weight="0.14247312" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49873257" weight="0.3293011" />
       <window_info anchor="bottom" id="Python Console" order="9" sideWeight="0.49873257" weight="0.3293011" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.491128" visible="true" weight="0.8077957" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.491128" visible="true" weight="0.35887095" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -313,13 +310,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/streamablematches/templates/games/templates/games.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -681,6 +671,13 @@
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soccerstreams/settings/production.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
