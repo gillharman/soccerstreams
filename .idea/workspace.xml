@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a24984d9-905a-4a1e-8193-849e0157c296" name="Default" comment="" />
+    <list default="true" id="a24984d9-905a-4a1e-8193-849e0157c296" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/soccerstreams/settings/production.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+            <state relative-caret-position="59">
+              <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -155,9 +157,9 @@
         <option value="$PROJECT_DIR$/templates/base_2.html" />
         <option value="$PROJECT_DIR$/streamablematches/static/js/watch_game.js" />
         <option value="$PROJECT_DIR$/streamablematches/templates/games/templates/watch_game_2.html" />
-        <option value="$PROJECT_DIR$/soccerstreams/settings/production.py" />
         <option value="$PROJECT_DIR$/soccerstreams/settings/base.py" />
         <option value="$PROJECT_DIR$/soccerstreams/settings/SoccerStreams-a9b5eb1319d1.json" />
+        <option value="$PROJECT_DIR$/soccerstreams/settings/production.py" />
       </list>
     </option>
   </component>
@@ -323,7 +325,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.508872" side_tool="true" weight="0.14247312" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49873257" weight="0.3293011" />
       <window_info anchor="bottom" id="Python Console" order="9" sideWeight="0.49873257" weight="0.3293011" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.491128" visible="true" weight="0.30645162" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.491128" visible="true" weight="0.3951613" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -697,8 +699,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/soccerstreams/settings/production.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+        <state relative-caret-position="59">
+          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
         </state>
       </provider>
     </entry>
