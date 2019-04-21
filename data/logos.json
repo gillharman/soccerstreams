@@ -1,0 +1,821 @@
+[
+  {
+    "logo_48x48": "newcastle_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/newcastle_48x48.png",
+    "logo_96x96": "newcastle_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/newcastle_96x96.png",
+    "team__api_id": 67
+  },
+  {
+    "logo_48x48": "brighton_hove_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/brighton_hove_48x48.png",
+    "logo_96x96": "brighton_hove_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/brighton_hove_96x96.png",
+    "team__api_id": 397
+  },
+  {
+    "logo_48x48": "everton_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/everton_48x48.png",
+    "logo_96x96": "everton_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/everton_96x96.png",
+    "team__api_id": 62
+  },
+  {
+    "logo_48x48": "tottenham_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/tottenham_48x48.png",
+    "logo_96x96": "tottenham_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/tottenham_96x96.png",
+    "team__api_id": 73
+  },
+  {
+    "logo_48x48": "fulham_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/fulham_48x48.png",
+    "logo_96x96": "fulham_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/fulham_96x96.png",
+    "team__api_id": 63
+  },
+  {
+    "logo_48x48": "huddersfield_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/huddersfield_48x48.png",
+    "logo_96x96": "huddersfield_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/huddersfield_96x96.png",
+    "team__api_id": 394
+  },
+  {
+    "logo_48x48": "leicester_city_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/leicester_city_48x48.png",
+    "logo_96x96": "leicester_city_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/leicester_city_96x96.png",
+    "team__api_id": 338
+  },
+  {
+    "logo_48x48": "cardiff_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/cardiff_48x48.png",
+    "logo_96x96": "cardiff_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/cardiff_96x96.png",
+    "team__api_id": 715
+  },
+  {
+    "logo_48x48": "liverpool_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/liverpool_48x48.png",
+    "logo_96x96": "liverpool_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/liverpool_96x96.png",
+    "team__api_id": 64
+  },
+  {
+    "logo_48x48": "arsenal_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/arsenal_48x48.png",
+    "logo_96x96": "arsenal_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/arsenal_96x96.png",
+    "team__api_id": 57
+  },
+  {
+    "logo_48x48": "crystal_palace_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/crystal_palace_48x48.png",
+    "logo_96x96": "crystal_palace_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/crystal_palace_96x96.png",
+    "team__api_id": 354
+  },
+  {
+    "logo_48x48": "chelsea_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/chelsea_48x48.png",
+    "logo_96x96": "chelsea_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/chelsea_96x96.png",
+    "team__api_id": 61
+  },
+  {
+    "logo_48x48": "atletico_madrid_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/atletico_madrid_48x48.png",
+    "logo_96x96": "atletico_madrid_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/atletico_madrid_96x96.png",
+    "team__api_id": 78
+  },
+  {
+    "logo_48x48": "southampton_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/southampton_48x48.png",
+    "logo_96x96": "southampton_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/southampton_96x96.png",
+    "team__api_id": 340
+  },
+  {
+    "logo_48x48": "man_city_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/man_city_48x48.png",
+    "logo_96x96": "man_city_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/man_city_96x96.png",
+    "team__api_id": 65
+  },
+  {
+    "logo_48x48": "burnley_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/burnley_48x48.png",
+    "logo_96x96": "burnley_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/burnley_96x96.png",
+    "team__api_id": 328
+  },
+  {
+    "logo_48x48": "west_ham_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/west_ham_48x48.png",
+    "logo_96x96": "west_ham_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/west_ham_96x96.png",
+    "team__api_id": 563
+  },
+  {
+    "logo_48x48": "man_united_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/man_united_48x48.png",
+    "logo_96x96": "man_united_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/man_united_96x96.png",
+    "team__api_id": 66
+  },
+  {
+    "logo_48x48": "bournemouth_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/bournemouth_48x48.png",
+    "logo_96x96": "bournemouth_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/bournemouth_96x96.png",
+    "team__api_id": 1044
+  },
+  {
+    "logo_48x48": "wolverhampton_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/wolverhampton_48x48.png",
+    "logo_96x96": "wolverhampton_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/wolverhampton_96x96.png",
+    "team__api_id": 76
+  },
+  {
+    "logo_48x48": "sevilla_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/sevilla_48x48.png",
+    "logo_96x96": "sevilla_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/sevilla_96x96.png",
+    "team__api_id": 559
+  },
+  {
+    "logo_48x48": "levante_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/levante_48x48.png",
+    "logo_96x96": "levante_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/levante_96x96.png",
+    "team__api_id": 88
+  },
+  {
+    "logo_48x48": "real_madrid_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/real_madrid_48x48.png",
+    "logo_96x96": "real_madrid_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/real_madrid_96x96.png",
+    "team__api_id": 86
+  },
+  {
+    "logo_48x48": "getafe_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/getafe_48x48.png",
+    "logo_96x96": "getafe_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/getafe_96x96.png",
+    "team__api_id": 82
+  },
+  {
+    "logo_48x48": "legan�s_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/legan�s_48x48.png",
+    "logo_96x96": "legan�s_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/legan�s_96x96.png",
+    "team__api_id": 745
+  },
+  {
+    "logo_48x48": "eibar_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/eibar_48x48.png",
+    "logo_96x96": "eibar_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/eibar_96x96.png",
+    "team__api_id": 278
+  },
+  {
+    "logo_48x48": "valencia_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/valencia_48x48.png",
+    "logo_96x96": "valencia_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/valencia_96x96.png",
+    "team__api_id": 95
+  },
+  {
+    "logo_48x48": "villarreal_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/villarreal_48x48.png",
+    "logo_96x96": "villarreal_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/villarreal_96x96.png",
+    "team__api_id": 94
+  },
+  {
+    "logo_48x48": "valladolid_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/valladolid_48x48.png",
+    "logo_96x96": "valladolid_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/valladolid_96x96.png",
+    "team__api_id": 250
+  },
+  {
+    "logo_48x48": "celta_vigo_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/celta_vigo_48x48.png",
+    "logo_96x96": "celta_vigo_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/celta_vigo_96x96.png",
+    "team__api_id": 558
+  },
+  {
+    "logo_48x48": "girona_fc_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/girona_fc_48x48.png",
+    "logo_96x96": "girona_fc_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/girona_fc_96x96.png",
+    "team__api_id": 298
+  },
+  {
+    "logo_48x48": "barcelona_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/barcelona_48x48.png",
+    "logo_96x96": "barcelona_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/barcelona_96x96.png",
+    "team__api_id": 81
+  },
+  {
+    "logo_48x48": "real_sociedad_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/real_sociedad_48x48.png",
+    "logo_96x96": "real_sociedad_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/real_sociedad_96x96.png",
+    "team__api_id": 92
+  },
+  {
+    "logo_48x48": "huesca_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/huesca_48x48.png",
+    "logo_96x96": "huesca_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/huesca_96x96.png",
+    "team__api_id": 299
+  },
+  {
+    "logo_48x48": "real_betis_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/real_betis_48x48.png",
+    "logo_96x96": "real_betis_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/real_betis_96x96.png",
+    "team__api_id": 90
+  },
+  {
+    "logo_48x48": "espanyol_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/espanyol_48x48.png",
+    "logo_96x96": "espanyol_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/espanyol_96x96.png",
+    "team__api_id": 80
+  },
+  {
+    "logo_48x48": "alav�s_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/alav�s_48x48.png",
+    "logo_96x96": "alav�s_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/alav�s_96x96.png",
+    "team__api_id": 263
+  },
+  {
+    "logo_48x48": "rayo_vallecano_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/rayo_vallecano_48x48.png",
+    "logo_96x96": "rayo_vallecano_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/rayo_vallecano_96x96.png",
+    "team__api_id": 87
+  },
+  {
+    "logo_48x48": "athletic_club_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/athletic_club_48x48.png",
+    "logo_96x96": "athletic_club_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/athletic_club_96x96.png",
+    "team__api_id": 77
+  },
+  {
+    "logo_48x48": "augsburg_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/augsburg_48x48.png",
+    "logo_96x96": "augsburg_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/augsburg_96x96.png",
+    "team__api_id": 16
+  },
+  {
+    "logo_48x48": "dortmund_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/dortmund_48x48.png",
+    "logo_96x96": "dortmund_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/dortmund_96x96.png",
+    "team__api_id": 4
+  },
+  {
+    "logo_48x48": "schalke_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/schalke_48x48.png",
+    "logo_96x96": "schalke_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/schalke_96x96.png",
+    "team__api_id": 6
+  },
+  {
+    "logo_48x48": "dortmund_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/dortmund_48x48.png",
+    "logo_96x96": "dortmund_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/dortmund_96x96.png",
+    "team__api_id": 4
+  },
+  {
+    "logo_48x48": "n�rnberg_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/n�rnberg_48x48.png",
+    "logo_96x96": "n�rnberg_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/n�rnberg_96x96.png",
+    "team__api_id": 14
+  },
+  {
+    "logo_48x48": "rb_leipzig_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/rb_leipzig_48x48.png",
+    "logo_96x96": "rb_leipzig_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/rb_leipzig_96x96.png",
+    "team__api_id": 721
+  },
+  {
+    "logo_48x48": "hoffenheim_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/hoffenheim_48x48.png",
+    "logo_96x96": "hoffenheim_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/hoffenheim_96x96.png",
+    "team__api_id": 2
+  },
+  {
+    "logo_48x48": "freiburg_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/freiburg_48x48.png",
+    "logo_96x96": "freiburg_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/freiburg_96x96.png",
+    "team__api_id": 17
+  },
+  {
+    "logo_48x48": "hertha_bsc_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/hertha_bsc_48x48.png",
+    "logo_96x96": "hertha_bsc_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/hertha_bsc_96x96.png",
+    "team__api_id": 9
+  },
+  {
+    "logo_48x48": "mainz_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/mainz_48x48.png",
+    "logo_96x96": "mainz_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/mainz_96x96.png",
+    "team__api_id": 15
+  },
+  {
+    "logo_48x48": "m'gladbach_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/m'gladbach_48x48.png",
+    "logo_96x96": "m'gladbach_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/m'gladbach_96x96.png",
+    "team__api_id": 18
+  },
+  {
+    "logo_48x48": "stuttgart_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/stuttgart_48x48.png",
+    "logo_96x96": "stuttgart_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/stuttgart_96x96.png",
+    "team__api_id": 10
+  },
+  {
+    "logo_48x48": "hannover_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/hannover_48x48.png",
+    "logo_96x96": "hannover_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/hannover_96x96.png",
+    "team__api_id": 8
+  },
+  {
+    "logo_48x48": "wolfsburg_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/wolfsburg_48x48.png",
+    "logo_96x96": "wolfsburg_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/wolfsburg_96x96.png",
+    "team__api_id": 11
+  },
+  {
+    "logo_48x48": "fortuna_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/fortuna_48x48.png",
+    "logo_96x96": "fortuna_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/fortuna_96x96.png",
+    "team__api_id": 24
+  },
+  {
+    "logo_48x48": "eintracht_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/eintracht_48x48.png",
+    "logo_96x96": "eintracht_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/eintracht_96x96.png",
+    "team__api_id": 19
+  },
+  {
+    "logo_48x48": "bayern_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/bayern_48x48.png",
+    "logo_96x96": "bayern_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/bayern_96x96.png",
+    "team__api_id": 5
+  },
+  {
+    "logo_48x48": "werder_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/werder_48x48.png",
+    "logo_96x96": "werder_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/werder_96x96.png",
+    "team__api_id": 12
+  },
+  {
+    "logo_48x48": "cagliari_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/cagliari_48x48.png",
+    "logo_96x96": "cagliari_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/cagliari_96x96.png",
+    "team__api_id": 104
+  },
+  {
+    "logo_48x48": "milan_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/milan_48x48.png",
+    "logo_96x96": "milan_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/milan_96x96.png",
+    "team__api_id": 98
+  },
+  {
+    "logo_48x48": "empoli_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/empoli_48x48.png",
+    "logo_96x96": "empoli_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/empoli_96x96.png",
+    "team__api_id": 445
+  },
+  {
+    "logo_48x48": "parma_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/parma_48x48.png",
+    "logo_96x96": "parma_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/parma_96x96.png",
+    "team__api_id": 112
+  },
+  {
+    "logo_48x48": "sassuolo_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/sassuolo_48x48.png",
+    "logo_96x96": "sassuolo_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/sassuolo_96x96.png",
+    "team__api_id": 471
+  },
+  {
+    "logo_48x48": "lazio_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/lazio_48x48.png",
+    "logo_96x96": "lazio_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/lazio_96x96.png",
+    "team__api_id": 110
+  },
+  {
+    "logo_48x48": "roma_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/roma_48x48.png",
+    "logo_96x96": "roma_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/roma_96x96.png",
+    "team__api_id": 100
+  },
+  {
+    "logo_48x48": "torino_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/torino_48x48.png",
+    "logo_96x96": "torino_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/torino_96x96.png",
+    "team__api_id": 586
+  },
+  {
+    "logo_48x48": "chievo_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/chievo_48x48.png",
+    "logo_96x96": "chievo_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/chievo_96x96.png",
+    "team__api_id": 106
+  },
+  {
+    "logo_48x48": "udinese_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/udinese_48x48.png",
+    "logo_96x96": "udinese_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/udinese_96x96.png",
+    "team__api_id": 115
+  },
+  {
+    "logo_48x48": "bologna_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/bologna_48x48.png",
+    "logo_96x96": "bologna_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/bologna_96x96.png",
+    "team__api_id": 103
+  },
+  {
+    "logo_48x48": "genoa_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/genoa_48x48.png",
+    "logo_96x96": "genoa_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/genoa_96x96.png",
+    "team__api_id": 107
+  },
+  {
+    "logo_48x48": "frosinone_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/frosinone_48x48.png",
+    "logo_96x96": "frosinone_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/frosinone_96x96.png",
+    "team__api_id": 470
+  },
+  {
+    "logo_48x48": "spal_2013_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/spal_2013_48x48.png",
+    "logo_96x96": "spal_2013_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/spal_2013_96x96.png",
+    "team__api_id": 1107
+  },
+  {
+    "logo_48x48": "sampdoria_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/sampdoria_48x48.png",
+    "logo_96x96": "sampdoria_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/sampdoria_96x96.png",
+    "team__api_id": 584
+  },
+  {
+    "logo_48x48": "atalanta_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/atalanta_48x48.png",
+    "logo_96x96": "atalanta_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/atalanta_96x96.png",
+    "team__api_id": 102
+  },
+  {
+    "logo_48x48": "napoli_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/napoli_48x48.png",
+    "logo_96x96": "napoli_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/napoli_96x96.png",
+    "team__api_id": 113
+  },
+  {
+    "logo_48x48": "juventus_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/juventus_48x48.png",
+    "logo_96x96": "juventus_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/juventus_96x96.png",
+    "team__api_id": 109
+  },
+  {
+    "logo_48x48": "inter_milan_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/inter_milan_48x48.png",
+    "logo_96x96": "inter_milan_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/inter_milan_96x96.png",
+    "team__api_id": 108
+  },
+  {
+    "logo_48x48": "sm_caen_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/sm_caen_48x48.png",
+    "logo_96x96": "sm_caen_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/sm_caen_96x96.png",
+    "team__api_id": 514
+  },
+  {
+    "logo_48x48": "psg_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/psg_48x48.png",
+    "logo_96x96": "psg_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/psg_96x96.png",
+    "team__api_id": 524
+  },
+  {
+    "logo_48x48": "stade_de_reims_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/stade_de_reims_48x48.png",
+    "logo_96x96": "stade_de_reims_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/stade_de_reims_96x96.png",
+    "team__api_id": 547
+  },
+  {
+    "logo_48x48": "amiens_sc_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/amiens_sc_48x48.png",
+    "logo_96x96": "amiens_sc_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/amiens_sc_96x96.png",
+    "team__api_id": 530
+  },
+  {
+    "logo_48x48": "angers_sco_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/angers_sco_48x48.png",
+    "logo_96x96": "angers_sco_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/angers_sco_96x96.png",
+    "team__api_id": 532
+  },
+  {
+    "logo_48x48": "as_monaco_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/as_monaco_48x48.png",
+    "logo_96x96": "as_monaco_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/as_monaco_96x96.png",
+    "team__api_id": 548
+  },
+  {
+    "logo_48x48": "stade_rennes_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/stade_rennes_48x48.png",
+    "logo_96x96": "stade_rennes_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/stade_rennes_96x96.png",
+    "team__api_id": 529
+  },
+  {
+    "logo_48x48": "ea_guingamp_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/ea_guingamp_48x48.png",
+    "logo_96x96": "ea_guingamp_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/ea_guingamp_96x96.png",
+    "team__api_id": 538
+  },
+  {
+    "logo_48x48": "fc_nantes_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/fc_nantes_48x48.png",
+    "logo_96x96": "fc_nantes_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/fc_nantes_96x96.png",
+    "team__api_id": 543
+  },
+  {
+    "logo_48x48": "lille_osc_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/lille_osc_48x48.png",
+    "logo_96x96": "lille_osc_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/lille_osc_96x96.png",
+    "team__api_id": 521
+  },
+  {
+    "logo_48x48": "dijon_fco_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/dijon_fco_48x48.png",
+    "logo_96x96": "dijon_fco_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/dijon_fco_96x96.png",
+    "team__api_id": 528
+  },
+  {
+    "logo_48x48": "ogc_nice_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/ogc_nice_48x48.png",
+    "logo_96x96": "ogc_nice_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/ogc_nice_96x96.png",
+    "team__api_id": 522
+  },
+  {
+    "logo_48x48": "rc_strasbourg_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/rc_strasbourg_48x48.png",
+    "logo_96x96": "rc_strasbourg_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/rc_strasbourg_96x96.png",
+    "team__api_id": 576
+  },
+  {
+    "logo_48x48": "toulouse_fc_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/toulouse_fc_48x48.png",
+    "logo_96x96": "toulouse_fc_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/toulouse_fc_96x96.png",
+    "team__api_id": 511
+  },
+  {
+    "logo_48x48": "marseille_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/marseille_48x48.png",
+    "logo_96x96": "marseille_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/marseille_96x96.png",
+    "team__api_id": 516
+  },
+  {
+    "logo_48x48": "saint-�tienne_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/saint-�tienne_48x48.png",
+    "logo_96x96": "saint-�tienne_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/saint-�tienne_96x96.png",
+    "team__api_id": 527
+  },
+  {
+    "logo_48x48": "bordeaux_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/bordeaux_48x48.png",
+    "logo_96x96": "bordeaux_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/bordeaux_96x96.png",
+    "team__api_id": 526
+  },
+  {
+    "logo_48x48": "montpellier_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/montpellier_48x48.png",
+    "logo_96x96": "montpellier_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/montpellier_96x96.png",
+    "team__api_id": 518
+  },
+  {
+    "logo_48x48": "ea_guingamp_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/ea_guingamp_48x48.png",
+    "logo_96x96": "ea_guingamp_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/ea_guingamp_96x96.png",
+    "team__api_id": 538
+  },
+  {
+    "logo_48x48": "n�mes_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/n�mes_48x48.png",
+    "logo_96x96": "n�mes_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/n�mes_96x96.png",
+    "team__api_id": 556
+  },
+  {
+    "logo_48x48": "lyon_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/lyon_48x48.png",
+    "logo_96x96": "lyon_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/lyon_96x96.png",
+    "team__api_id": 523
+  },
+  {
+    "logo_48x48": "f_sittard_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/f_sittard_48x48.png",
+    "logo_96x96": "f_sittard_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/f_sittard_96x96.png",
+    "team__api_id": 1920
+  },
+  {
+    "logo_48x48": "excelsior_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/excelsior_48x48.png",
+    "logo_96x96": "excelsior_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/excelsior_96x96.png",
+    "team__api_id": 670
+  },
+  {
+    "logo_48x48": "willem_ii_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/willem_ii_48x48.png",
+    "logo_96x96": "willem_ii_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/willem_ii_96x96.png",
+    "team__api_id": 672
+  },
+  {
+    "logo_48x48": "heerenveen_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/heerenveen_48x48.png",
+    "logo_96x96": "heerenveen_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/heerenveen_96x96.png",
+    "team__api_id": 673
+  },
+  {
+    "logo_48x48": "zwolle_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/zwolle_48x48.png",
+    "logo_96x96": "zwolle_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/zwolle_96x96.png",
+    "team__api_id": 684
+  },
+  {
+    "logo_48x48": "ajax_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/ajax_48x48.png",
+    "logo_96x96": "ajax_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/ajax_96x96.png",
+    "team__api_id": 678
+  },
+  {
+    "logo_48x48": "ado_den_haag_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/ado_den_haag_48x48.png",
+    "logo_96x96": "ado_den_haag_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/ado_den_haag_96x96.png",
+    "team__api_id": 680
+  },
+  {
+    "logo_48x48": "graafschap_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/graafschap_48x48.png",
+    "logo_96x96": "graafschap_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/graafschap_96x96.png",
+    "team__api_id": 1913
+  },
+  {
+    "logo_48x48": "utrecht_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/utrecht_48x48.png",
+    "logo_96x96": "utrecht_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/utrecht_96x96.png",
+    "team__api_id": 676
+  },
+  {
+    "logo_48x48": "heracles_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/heracles_48x48.png",
+    "logo_96x96": "heracles_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/heracles_96x96.png",
+    "team__api_id": 671
+  },
+  {
+    "logo_48x48": "watford_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/watford_48x48.png",
+    "logo_96x96": "watford_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/watford_96x96.png",
+    "team__api_id": 346
+  },
+  {
+    "logo_48x48": "fiorentina_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/fiorentina_48x48.png",
+    "logo_96x96": "fiorentina_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/fiorentina_96x96.png",
+    "team__api_id": 99
+  },
+  {
+    "logo_48x48": "emmen_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/emmen_48x48.png",
+    "logo_96x96": "emmen_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/emmen_96x96.png",
+    "team__api_id": 1914
+  },
+  {
+    "logo_48x48": "feyenoord_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/feyenoord_48x48.png",
+    "logo_96x96": "feyenoord_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/feyenoord_96x96.png",
+    "team__api_id": 675
+  },
+  {
+    "logo_48x48": "groningen_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/groningen_48x48.png",
+    "logo_96x96": "groningen_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/groningen_96x96.png",
+    "team__api_id": 677
+  },
+  {
+    "logo_48x48": "vitesse_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/vitesse_48x48.png",
+    "logo_96x96": "vitesse_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/vitesse_96x96.png",
+    "team__api_id": 679
+  },
+  {
+    "logo_48x48": "az_alkmaar_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/az_alkmaar_48x48.png",
+    "logo_96x96": "az_alkmaar_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/az_alkmaar_96x96.png",
+    "team__api_id": 682
+  },
+  {
+    "logo_48x48": "psv_eindhoven_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/psv_eindhoven_48x48.png",
+    "logo_96x96": "psv_eindhoven_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/psv_eindhoven_96x96.png",
+    "team__api_id": 674
+  },
+  {
+    "logo_48x48": "vvv_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/vvv_48x48.png",
+    "logo_96x96": "vvv_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/vvv_96x96.png",
+    "team__api_id": 668
+  },
+  {
+    "logo_48x48": "nac_48x48.png",
+    "logo_48x48_url": "https://storage.googleapis.com/team_logos/nac_48x48.png",
+    "logo_96x96": "nac_96x96.png",
+    "logo_96x96_url": "https://storage.googleapis.com/team_logos/nac_96x96.png",
+    "team__api_id": 681
+  }
+]
