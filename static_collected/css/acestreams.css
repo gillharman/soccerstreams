@@ -1,0 +1,52 @@
+.ace-streams-container {
+    width: 100%;
+    text-align: center;
+}
+
+.add-ace-stream {
+    width: 15px;
+    margin: auto;
+    position: relative;
+}
+
+.add-sign {
+    font-size: 24px;
+    color: grey;
+}
+
+.add-sign:hover {
+    color: #000000;
+    cursor: pointer;
+}
+
+.tooltip-text {
+    font-size: 14px;
+    width: 140px;
+    padding: 5px 0px;
+    text-align: center;
+    color: #fff;
+    background-color: black;
+    border-radius: 6px;
+    visibility: hidden;
+
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1;
+}
+
+.add-ace-stream:hover .tooltip-text {
+    visibility: visible;
+}
+
+.add-footer {
+    border-top: 1px solid rgba(0,0,0,.15)
+}
+
+#ace-stream-form {
+    padding-top: 8px;
+}
+
+#ace-stream-form input[name="ace_stream"] {
+    width: 380px;
+}

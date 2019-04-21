@@ -1,16 +1,17 @@
 .gutter {
+    margin-left: -15px;
+    margin-right: -15px;
     background-color: #0B8449;
     height: 4%;
 }
 
 .lineups-container {
+    margin-top: -4px;
     width: 100%;
     background-color: #0F9D58;
 }
 
 .lineups {
-    margin-left: -15px;
-    margin-right: -15px;
     text-align: center;
 }
 
@@ -19,6 +20,8 @@
 }
 
 .half-line {
+    margin-left: -15px;
+    margin-right: -15px;
     height: 1px;
     background-color: rgba(255,255,255,0.3);
 }
@@ -100,4 +103,8 @@
 
 #away-team .player-circle {
     background-color: black;
+}
+
+#away-team .player {
+    z-index: 1;
 }
