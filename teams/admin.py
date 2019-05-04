@@ -19,8 +19,8 @@ class Team_in_LeagueAdmin(admin.ModelAdmin):
 
 
 class Team_LogoAdmin(admin.ModelAdmin):
-    list_display = (team, 'logo_48x48', 'logo_96x96')
-    list_display_links = None
+    list_display = ('id', team, 'logo_48x48', 'logo_48x48_url', 'logo_96x96', 'logo_96x96_url')
+    # list_display_links = None
 
 admin.site.register(Teams_in_League, Team_in_LeagueAdmin)
 admin.site.register(Team_Logo, Team_LogoAdmin)

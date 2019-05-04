@@ -86,3 +86,20 @@ def transform_logos():
                     team_logo.logo_96x96_url = logo["logo_96x96_url"]
                     team_logo.team = team
                     team_logo.save()
+
+
+def updateLogos(data):
+    updated = 0
+    ignored = 0
+    for logo in data:
+        team_logo = Team_Logo.objects.filter(team__api_id=logo["team__api_id"]).first()
+        if team_logo:
+            team_logo.logo_48x48 = logo["logo_48x48"]
+            team_logo.logo_48x48_url = logo["logo_48x48_url"]
+            team_logo.logo_96x96 = logo["logo_96x96"]
+            team_logo.logo_96x96_url = logo["logo_96x96_url"]
+            team_logo.save()
+
+            updated += 1
+        else:
+            ignored += 1

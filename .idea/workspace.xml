@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a24984d9-905a-4a1e-8193-849e0157c296" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/bin/helper_scripts/data_transform.py" beforeDir="false" afterPath="$PROJECT_DIR$/bin/helper_scripts/data_transform.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/helper_scripts/get_Images.py" beforeDir="false" afterPath="$PROJECT_DIR$/bin/helper_scripts/get_Images.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/bl_teams.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ded_teams.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/fl_teams.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/leagues.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/logos.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pd_teams.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pl_teams.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ppl_teams.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/rotowire.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sa_teams.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/teams/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/teams/admin.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,21 +23,33 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/logos.json">
+        <entry file="file://$PROJECT_DIR$/teams/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+            <state relative-caret-position="83">
+              <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data/logos.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="46" lean-forward="true" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bin/helper_scripts/data_transform.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="69" column="20" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
+            <state relative-caret-position="-122">
+              <caret line="60" column="25" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -34,12 +58,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/teams/models.py">
+        <entry file="file://$PROJECT_DIR$/bin/helper_scripts/get_Images.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="35" column="18" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="18" />
+            <state relative-caret-position="-425">
+              <caret line="112" column="33" lean-forward="true" selection-start-line="112" selection-start-column="33" selection-end-line="112" selection-end-column="33" />
               <folding>
-                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -50,18 +74,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>static</find>
-      <find>icon</find>
-      <find>links.objects</find>
-      <find>id</find>
-      <find>make_request</find>
       <find>BASE_DIR</find>
       <find>templates</find>
       <find>STATICFILES</find>
@@ -87,6 +106,11 @@
       <find>status</find>
       <find>lineups</find>
       <find>acestream</find>
+      <find>legan</find>
+      <find>�</find>
+      <find>wat</find>
+      <find>sass</find>
+      <find>udi</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -100,8 +124,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/crons/bin/getMatches.py" />
-        <option value="$PROJECT_DIR$/crons/bin/storeLineups.py" />
         <option value="$PROJECT_DIR$/crons/bin/getLineups.py" />
         <option value="$PROJECT_DIR$/leagues/views.py" />
         <option value="$PROJECT_DIR$/leagues/models.py" />
@@ -110,12 +132,10 @@
         <option value="$PROJECT_DIR$/templates/404.html" />
         <option value="$PROJECT_DIR$/crons/bin/get_Images.py" />
         <option value="$PROJECT_DIR$/soccerstreams/settings/dev.py" />
-        <option value="$PROJECT_DIR$/crons/scheduled_jobs.py" />
         <option value="$PROJECT_DIR$/logs/admin.py" />
         <option value="$PROJECT_DIR$/bin/helper_scripts/makeRequest.py" />
         <option value="$PROJECT_DIR$/crons/bin/scraper.py" />
         <option value="$PROJECT_DIR$/teams/models.py" />
-        <option value="$PROJECT_DIR$/bin/helper_scripts/get_Images.py" />
         <option value="$PROJECT_DIR$/templates/m.html" />
         <option value="$PROJECT_DIR$/static/js/main_2.js" />
         <option value="$PROJECT_DIR$/static/css/main_2.css" />
@@ -125,7 +145,6 @@
         <option value="$PROJECT_DIR$/bin/helper_scripts/view_helpers.py" />
         <option value="$PROJECT_DIR$/static/css/main.css" />
         <option value="$PROJECT_DIR$/streamablematches/templates/games/templates/lineups.html" />
-        <option value="$PROJECT_DIR$/teams/admin.py" />
         <option value="$PROJECT_DIR$/matches/models.py" />
         <option value="$PROJECT_DIR$/crons/bin/storeMatches.py" />
         <option value="$PROJECT_DIR$/static/js/angularjs-1.7.8.min.js" />
@@ -149,15 +168,20 @@
         <option value="$PROJECT_DIR$/soccerstreams/settings/base.py" />
         <option value="$PROJECT_DIR$/soccerstreams/settings/SoccerStreams-a9b5eb1319d1.json" />
         <option value="$PROJECT_DIR$/soccerstreams/settings/production.py" />
-        <option value="$PROJECT_DIR$/data/logos.json" />
+        <option value="$PROJECT_DIR$/data/logos_html.html" />
+        <option value="$PROJECT_DIR$/bin/helper_scripts/get_Images.py" />
+        <option value="$PROJECT_DIR$/data/new_logo_json.json" />
+        <option value="$PROJECT_DIR$/teams/admin.py" />
+        <option value="$PROJECT_DIR$/crons/scheduled_jobs.py" />
         <option value="$PROJECT_DIR$/bin/helper_scripts/data_transform.py" />
+        <option value="$PROJECT_DIR$/data/logos.json" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="551" />
-    <option name="y" value="120" />
-    <option name="width" value="820" />
+    <option name="x" value="72" />
+    <option name="y" value="52" />
+    <option name="width" value="1526" />
     <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -187,6 +211,11 @@
             <path>
               <item name="soccerstreams" type="b2602c69:ProjectViewProjectNode" />
               <item name="soccerstreams" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="soccerstreams" type="b2602c69:ProjectViewProjectNode" />
+              <item name="soccerstreams" type="462c0819:PsiDirectoryNode" />
               <item name="teams" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -198,23 +227,24 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../django-env/Scripts/python.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bin/helper_scripts/get_Images.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/bin/helper_scripts/get_Images.py" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\data" />
+      <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\static\img" />
+      <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\static\angular" />
+      <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\static" />
+      <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\streamablematches\static\css" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams" />
       <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\static\js" />
       <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\static\css" />
       <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\templates" />
       <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\streamablematches\templates\games\templates" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\static\img" />
-      <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\static\angular" />
-      <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\static" />
-      <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\streamablematches\static\css" />
-      <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\soccerstreams\settings" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -307,8 +337,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23067173" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17173637" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -321,14 +352,14 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.508872" side_tool="true" weight="0.14247312" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49873257" weight="0.3293011" />
       <window_info anchor="bottom" id="Python Console" order="9" sideWeight="0.49873257" weight="0.3293011" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.491128" visible="true" weight="0.95564514" />
+      <window_info active="true" anchor="bottom" x="11" y="313" width="1578" height="233" id="Terminal" order="10" sideWeight="0.491128" visible="true" weight="0.34139785" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Data View" order="3" weight="0.32969153" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22750317" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17110266" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -341,7 +372,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.508872" side_tool="true" weight="0.14247312" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49873257" weight="0.3293011" />
       <window_info anchor="bottom" id="Python Console" order="9" sideWeight="0.49873257" weight="0.3293011" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.491128" visible="true" weight="0.38172042" />
+      <window_info active="true" anchor="bottom" x="11" y="313" width="1578" height="233" id="Terminal" order="10" sideWeight="0.491128" visible="true" weight="0.31317204" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -349,22 +380,6 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/worker.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../django-env/Lib/site-packages/django/contrib/auth/base_user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="65" column="8" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/users/models.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -378,19 +393,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/teams/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/rotowire.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/rotowire.html" />
     <entry file="file://$PROJECT_DIR$/crons/bin/storeLineups.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
@@ -674,16 +677,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crons/scheduled_jobs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/soccerstreams/settings/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="365">
@@ -694,13 +687,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/logos">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/data/logos" />
+    <entry file="file://$PROJECT_DIR$/data/new_logo_json.json" />
+    <entry file="file://$PROJECT_DIR$/data/logos_html.html" />
+    <entry file="file://$PROJECT_DIR$/teams/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="36" lean-forward="true" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/test" />
+    <entry file="file://$PROJECT_DIR$/crons/scheduled_jobs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/helper_scripts/get_Images.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-425">
+          <caret line="112" column="33" lean-forward="true" selection-start-line="112" selection-start-column="33" selection-end-line="112" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/helper_scripts/data_transform.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-122">
+          <caret line="60" column="25" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/teams/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="35" column="18" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="18" />
+        <state relative-caret-position="83">
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -709,18 +743,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/logos.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/helper_scripts/data_transform.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="69" column="20" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="289">
+          <caret line="17" column="46" lean-forward="true" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
         </state>
       </provider>
     </entry>

@@ -101,3 +101,57 @@ def updateLogoUrls():
         team_logo.logo_48x48_url = "https://storage.googleapis.com/team_logos/" + team_logo.logo_48x48.name
         team_logo.logo_96x96_url = "https://storage.googleapis.com/team_logos/" + team_logo.logo_96x96.name
         team_logo.save()
+
+
+
+
+def updateLogos(logos):
+    for logo in logos:
+        name_split = logo["name"].split('-')
+        name = name_split[0]
+        print('Name: ' + name)
+        if '48x48' in name_split:
+            team_logo = Team_Logo.objects.filter(logo_48x48__contains=name).first()
+            print('Filter results from 48x48: ')
+            print(team_logo)
+            if team_logo:
+                new_logo = logo["name"] + "." + logo["ext"]
+                new_logo_url = "https://i.postimg.cc/" + logo["hotlink"] + "/" + new_logo
+                print('New logo: ' + new_logo)
+                print('New Logo URL: ' + new_logo_url)
+                team_logo.logo_48x48 = new_logo
+                team_logo.logo_48x48_url = new_logo_url
+                team_logo.save()
+            else:
+                print('Unable to update 48x48 logo using ' + logo["name"])
+
+        else:
+            team_logo = Team_Logo.objects.filter(logo_96x96__contains=name).first()
+            print('Filter results from 96x96: ')
+            print(team_logo)
+            if team_logo:
+                new_logo = logo["name"] + "." + logo["ext"]
+                new_logo_url = "https://i.postimg.cc/" + logo["hotlink"] + "/" +  new_logo
+                print('New logo: ' + new_logo)
+                print('New Logo URL: ' + new_logo_url)
+                team_logo.logo_96x96 = new_logo
+                team_logo.logo_96x96_url = new_logo_url
+                team_logo.save()
+            else:
+                print('Unable to update 96x96 logo using ' + logo["name"])
+
+    return True
+
+
+def extractLogoImagesInfo(html):
+    soup = BeautifulSoup(html)
+    divs = soup.find_all("div", class_="thumb_container")
+    logos_info = []
+    for div in divs:
+        logo_info = {}
+        logo_info["hotlink"] = div["data-hotlink"]
+        logo_info["name"] = div["data-name"]
+        logo_info["ext"] = div["data-ext"]
+        logos_info.append(logo_info)
+
+    return logos_info
