@@ -1,0 +1,20 @@
+<div id="ace-stream-form" class="col add-ace-stream-container">
+    <div class="ace-form clearfix">
+        <form action="{% url 'add_ace_stream' %}" method="post">
+            <div style="overflow: auto;">
+                {{ data.add_stream_formset.management_form }}
+                <input type="hidden" value="{{ data.match.id }}" name="match_id">
+                <input type="hidden" value="{{ data.match.league.code }}" name="league">
+                {% for form in data.add_stream_formset %}
+                <div id="content-ids">
+                    <div class="content-id">{{ form }}</div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="ace-form-buttons">
+                <button id="add-another-ace-stream" type="button" class="btn btn-light">Add Another</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>

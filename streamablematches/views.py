@@ -1,7 +1,10 @@
 from django.shortcuts import render, HttpResponseRedirect
 from django.http import JsonResponse
 from django.core import serializers
+from django.forms import formset_factory
+from django.db.models import Q
 
+from streamablematches.forms import AceStreamForm
 from .models import Links, StreamableMatch, ScannedMatch
 from teams.models import Team_Logo
 from matches.models import Match
@@ -19,7 +22,10 @@ def league_matches(request, league="PL"):
     is_mobile = isMobile(request)
     games = Match.objects.get_games()
     games = Match.objects.filter(league__code=league).order_by('match_day')
-    league_title = League.objects.filter(code=league).first().name
+    try:
+        league_title = League.objects.filter(code=league).first().name
+    except:
+        league_title = ''
     return render(request, 'games/templates/league_matches.html',
                   {"data": {
                       "is_mobile_tablet": is_mobile,
@@ -55,7 +61,8 @@ def watch_game(request, match_id):
         "team": team_info(match.away_team.id),
         "lineup": lineup_info(match.id, home=False),
     }
-    add_ace_stream_form = AceStreamForm()
+    AceStreamFormSet = formset_factory(AceStreamForm)
+    add_stream_formset = AceStreamFormSet()
     return render(request, 'games/templates/watch_game_2.html',
                   {"data": {
                       "is_mobile_tablet": is_mobile,
@@ -64,7 +71,7 @@ def watch_game(request, match_id):
                       "match": match,
                       "home_team": home_team,
                       "away_team": away_team,
-                      "add_ace_stream_form": add_ace_stream_form,
+                      "add_stream_formset": add_stream_formset,
                   }})
 
 def get_match_info(request):
@@ -105,39 +112,58 @@ def get_match_info(request):
 
 # FORMS
 def add_ace_stream(request):
+    links = []
+    inserts = []
+    ignored = []
+    AceStreamFormSet = formset_factory(AceStreamForm)
     if request.method == 'POST':
         request_parameters = request.POST
+        # print("Request Parameters: ")
+        # print(request_parameters)
 
-        form = AceStreamForm(request.POST)
+        form = AceStreamFormSet(request.POST)
+        # print(form)
+
         if form.is_valid():
-            streamable_match = StreamableMatch.objects.filter(match__id=request_parameters['match_id']).first()
-            if not streamable_match:
-                match = Match.objects.filter(id=request_parameters['match_id']).first()
-                # CREATE A SCANNED MATCH
-                scanned_match = ScannedMatch()
-                scanned_match.match = match.display_name()
-                scanned_match.time = str(match.match_date_time.time().hour) + str(match.match_date_time.time().minute) + ' GMT'
-                scanned_match.save()
+            # print(form.cleaned_data)
+            for new_stream in form.cleaned_data:
+                if('ace_stream' in new_stream):
+                    streamable_match = StreamableMatch.objects.filter(match__id=request_parameters['match_id']).first()
+                    if not streamable_match:
+                        match = Match.objects.filter(id=request_parameters['match_id']).first()
+                        # CREATE A SCANNED MATCH
+                        scanned_match = ScannedMatch()
+                        scanned_match.match = match.display_name()
+                        scanned_match.time = str(match.match_date_time.time().hour) + str(match.match_date_time.time().minute) + ' GMT'
+                        scanned_match.save()
 
-                # MAKE THE NEW SCANNED MATCH AS STREAMABLE
-                streamable_match = StreamableMatch()
-                streamable_match.scanned_match = scanned_match
-                streamable_match.match = match
-                streamable_match.save()
+                        # MAKE THE NEW SCANNED MATCH AS STREAMABLE
+                        streamable_match = StreamableMatch()
+                        streamable_match.scanned_match = scanned_match
+                        streamable_match.match = match
+                        streamable_match.save()
 
-            # SAVE THE LINK
-            link = Links()
-            link.match = streamable_match.scanned_match
-            link.link = form.cleaned_data['ace_stream']
-            link.linkScore = 0
-            link.streamer = ''
-            link.save()
+                    if new_stream['ace_stream'].startswith('acestream://') and len(new_stream['ace_stream'].lstrip('acestream://')) > 10:
+                        # SAVE THE LINK
+                        link = Links()
+                        link.match = streamable_match.scanned_match
+                        link.link = new_stream['ace_stream']
+                        link.linkScore = 0
+                        link.streamer = ''
+                        link.save()
 
-    return_url = ''
-    try:
-        if request_parameters['league'] != "PL":
-            return_url += request_parameters['league']
-    except KeyError:
-        print(KeyError)
+                        links.append(link.id)
+                        inserts.append(new_stream['ace_stream'])
 
-    return HttpResponseRedirect(return_url + '/watch_game/' + request_parameters['match_id'])
+                    else:
+                        ignored.append(new_stream['ace_stream'])
+
+            new_links = serializers.serialize("json", Links.objects.filter(id__in=links).distinct('link'))
+
+        return JsonResponse({
+            "data": {
+                "inserts": inserts,
+                "ignored": ignored,
+                "new_links": new_links,
+            }
+        })

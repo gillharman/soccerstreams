@@ -63,6 +63,7 @@
             <ul role="tablist">
                 <li id="default-open" class="tab-active" role="tab" data-tab-content="lineups">Lineups</li>
                 <li role="tab" data-tab-content="acestreams">AceStreams</li>
+                <li role="tab" data-tab-content="add-acestream">New</li>
             </ul>
         </div>
     </div>
@@ -75,6 +76,9 @@
         <div class="col ace-streams-container">
             {% include 'games/templates/acestreams.html' %}
         </div>
+    </div>
+    <div id="add-acestream" class="row tab-content">
+        {% include 'games/templates/add_acestream.html' %}
     </div>
 </div>
 {% endblock %}

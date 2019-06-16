@@ -1,37 +1,18 @@
-<div class="row">
-    <div class="col">
-        <table class="table">
-            <tbody>
-            {% for link in data.links %}
-            <tr>
-                {% if forloop.first %}
-                <td style="border-top: none;">
-                {% elif forloop.last %}
-                <td style="border-bottom: none;">
-                {% else %}
-                <td>
-                {% endif %}
-                {{ link.link }}</td>
-            </tr>
-            {% endfor %}
-            </tbody>
-        </table>
-    </div>
-</div>
-<div class="row add-footer">
-    <div class="col">
-        <div id="ace-stream-form" style="display: none">
-            <form action="/add-ace-stream" method="post">
-                <input type="hidden" value="{{ data.match.id }}" name="match_id">
-                <input type="hidden" value="{{ data.match.league.code }}" name="league">
-                {% csrf_token %}
-                {{ data.add_ace_stream_form }}
-                <input type="submit" value="Add">
-            </form>
-        </div>
-        <div class="add-ace-stream">
-            <span id="add-ace-stream" class="add-sign">&#43;</span>
-            <span class="tooltip-text">Add an AceStream</span>
-        </div>
-    </div>
+<div>
+    <table class="table container">
+        <tbody>
+        {% for link in data.links %}
+        <tr>
+            {% if forloop.first %}
+            <td class="first-row">
+            {% elif forloop.last %}
+            <td class="last-row">
+            {% else %}
+            <td>
+            {% endif %}
+            {{ link.link }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
 </div>
