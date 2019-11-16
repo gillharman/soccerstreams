@@ -1,25 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Login</title>
-</head>
-<body>
-{% if form.errors %}
-<p>You username and password didn't match. Please try again.</p>
-{% endif %}
-{% if next %}
-    {% if user.is_authenticated %}
-    <p>Your account doesn't have access to this page. To proceed, please login with an account that has access.</p>
-    {% else %}
-    <p>Please login to see this page.</p>
-    {% endif %}
-{% endif %}
-<form action="{% url 'login' %}" method="post">
-    {% csrf_token %}
-    {{ form }}
-    <input type="submit" value="login">
-    <input type="hidden" name="next" value="{{ data.next }}">
-</form>
-</body>
-</html>
+{% extends 'base_2.html' %}
+{% load staticfiles %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/auth.css' %}">
+{% endblock %}
+
+{% block title %}
+Log in to Soccerstreams
+{% endblock %}
+
+{% block navtitle %}
+<a class="home-link" href="/">Home</a>
+{% endblock %}
+
+{% block content %}
+<div id="auth-form-wrapper" class="container content">
+    <div class="row auth-form-container wrapper-outline">
+        <div class="col auth-form">
+            <div id="heading-text">Sign in</div>
+            <div id="heading-subtext">with your Soccerstreams account</div>
+            <div id="auth-body">
+                <form action="{% url 'login' %}" method="post">
+                    {% csrf_token %}
+                    <input type="hidden" name="next" value="{{ data.next }}">
+                    <div id="username" class="auth-field-container">
+                        {{ form.username }}
+                        <div class="placeholder placeholder-text" aria-hidden="true">Username</div>
+                        <div class="auth-form-field-border"></div>
+                    </div>
+                    <div id="password" class="auth-field-container">
+                        {{ form.password }}
+                        <div class="placeholder placeholder-text" aria-hidden="true">Password</div>
+                        <div class="auth-form-field-border"></div>
+                    </div>
+                    {% if form.errors %}
+                    {% for key, values in form.errors.items %}
+                    {% for value in values %}
+                    <div class="alert alert-danger">{{ value }}</div>
+                    {% endfor %}
+                    {% endfor %}
+                    {% endif %}
+                    <div class="form-actions">
+                        <div id="action-link">
+                            <a href="#">Forgot password?</a>
+                        </div>
+                        <div id="submit-form-button">
+                            <input class="btn btn-primary" type="submit" value="Login">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block script %}
+<script src="{% static 'js/auth.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,90 @@
+{% extends 'base_2.html' %}
+{% load staticfiles %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/auth.css' %}">
+{% endblock %}
+
+{% block title %}
+Create a new Soccerstreams account
+{% endblock %}
+
+{% block navtitle %}
+<a class="home-link" href="/">Home</a>
+{% endblock %}
+
+{% block content %}
+<div id="auth-form-wrapper" class="container content">
+    <div class="row auth-form-container wrapper-outline">
+        <div class="col auth-form">
+            <div id="heading-text">Create</div>
+            <div id="heading-subtext">your Soccerstreams account</div>
+            <div id="auth-body">
+                <form action="{% url 'register' %}" method="post">
+                    {% csrf_token %}
+                    <div id="username" class="auth-field-container">
+                        {{ data.form.username }}
+                        <div class="placeholder placeholder-text" aria-hidden="true">{{ data.form.username.label }}</div>
+                        <div class="auth-form-field-border"></div>
+                    </div>
+                    <ul id="usernameHelpBlock" class="help-text">
+                        <li class="form-text text-muted">{{ data.form.username.help_text }}</li>
+                    </ul>
+                    <div class="row fields-container">
+                        <div style="margin-right: 15px;" class="col">
+                            <div id="first_name" class="auth-field-container">
+                                {{ data.form.first_name }}
+                                <div class="placeholder placeholder-text" aria-hidden="true">{{ data.form.first_name.label }}</div>
+                                <div class="auth-form-field-border"></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div id="last_name" class="auth-field-container">
+                                {{ data.form.last_name }}
+                                <div class="placeholder placeholder-text" aria-hidden="true">{{ data.form.last_name.label }}</div>
+                                <div class="auth-form-field-border"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="password1" class="auth-field-container">
+                        {{ data.form.password1 }}
+                        <div class="placeholder placeholder-text" aria-hidden="true">{{ data.form.password1.label }}</div>
+                        <div class="auth-form-field-border"></div>
+                    </div>
+                    <ul id="passwordHelpBlock" class="help-text">
+                        {% for text in data.form.password1.help_text %}
+                        <li class="form-text text-muted">{{ text }}</li>
+                        {% endfor %}
+                    </ul>
+                    <div id="password2" class="auth-field-container">
+                        {{ data.form.password2 }}
+                        <div class="placeholder placeholder-text" aria-hidden="true">{{ data.form.password2.label }}</div>
+                        <div class="auth-form-field-border"></div>
+                    </div>
+                    {% if data.form.errors %}
+                    {% for key, values in data.form.errors.items %}
+                    {% for value in values %}
+                    <div class="alert alert-danger">
+                        {{ value }}
+                    </div>
+                    {% endfor %}
+                    {% endfor %}
+                    {% endif %}
+                    <div class="form-actions">
+                        <div id="action-link">
+                            <a href="{% url 'login' %}">Sign in instead</a>
+                        </div>
+                        <div id="submit-form-button">
+                            <input class="btn btn-primary" type="submit" value="Create">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block script %}
+<script src="{% static 'js/auth.js' %}"></script>
+{% endblock %}

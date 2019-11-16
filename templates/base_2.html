@@ -20,8 +20,25 @@
     </title>
 </head>
 <body>
-{% block nav %}
-{% endblock %}
+<div id="nav" class="container-fluid">
+    <div id="nav-header">
+        <div id="nav-title">
+            {% block navtitle %}
+            {% endblock %}
+        </div>
+        <div id="user-profile">
+            {% if user.is_authenticated %}
+            <div>
+                Welcome, {{ user.get_full_name }} | <a href="{% url 'logout' %}">Logout</a>
+            </div>
+            {% else %}
+            <a href="{% url 'login' %}">Login</a> or <a href="{% url 'register' %}">Register</a>
+            {% endif %}
+        </div>
+    </div>
+    {% block navoptions %}
+    {% endblock %}
+</div>
 
 {% block content %}
 {% endblock %}

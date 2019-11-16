@@ -15,15 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from streamablematches.views import welcome
-# from users.views import authenticate
-
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('login', authenticate),
-    # path('', welcome),
     path('', include('streamablematches.urls')),
     path('users/', include('users.urls'))
 ]

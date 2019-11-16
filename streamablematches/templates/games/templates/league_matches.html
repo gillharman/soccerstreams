@@ -6,29 +6,26 @@
 <link rel="stylesheet" href="{% static 'css/league_matches.css' %}">
 {% endblock %}
 
-{% block nav %}
-<div id="nav" class="container-fluid">
-    <div id="nav-header">
-        <div id="nav-title">
-            {{ data.league_title }}
-        </div>
-    </div>
-    <div id="nav-pills" class="content-width" role="navigation">
-        <ul>
-            <li id="PL" class="nav-pill" data-league-name="Premier League">EPL</li>
-            <li id="PD" class="nav-pill" data-league="PD" data-league-name="La Liga">La Liga</li>
-            <li id="BL1" class="nav-pill" data-league="BL1" data-league-name="Bundesliga">Bundesliga</li>
-            <li id="SA" class="nav-pill" data-league="SA" data-league-name="Seria A">Seria A</li>
-            <li id="FL1" class="nav-pill" data-league="FL1" data-league-name="Ligue 1">Ligue 1</li>
-            <li id="CL" class="nav-pill" data-league="CL" data-league-name="UEFA Champions League">UCL</li>
-            <li id="DED" class="nav-pill" data-league="DED" data-league-name="Eredivisie">Eredivisie</li>
-        </ul>
-    </div>
+{% block navtitle %}
+{{ data.league_title }}
+{% endblock %}
+
+{% block navoptions %}
+<div id="nav-pills" class="content-width" role="navigation">
+    <ul>
+        <li id="PL" class="nav-pill" data-league-name="Premier League">EPL</li>
+        <li id="PD" class="nav-pill" data-league="PD" data-league-name="La Liga">La Liga</li>
+        <li id="BL1" class="nav-pill" data-league="BL1" data-league-name="Bundesliga">Bundesliga</li>
+        <li id="SA" class="nav-pill" data-league="SA" data-league-name="Seria A">Seria A</li>
+        <li id="FL1" class="nav-pill" data-league="FL1" data-league-name="Ligue 1">Ligue 1</li>
+        <li id="CL" class="nav-pill" data-league="CL" data-league-name="UEFA Champions League">UCL</li>
+        <li id="DED" class="nav-pill" data-league="DED" data-league-name="Eredivisie">Eredivisie</li>
+    </ul>
 </div>
 {% endblock %}
 
 {% block content %}
-<div id="wrapper" class="container content-width wrapper-outline">
+<div id="wrapper" class="container content content-width wrapper-outline">
     {% regroup data.matches by match_day as matches %}
     <div id="match-days-wrapper">
         {% for match_day in matches %}

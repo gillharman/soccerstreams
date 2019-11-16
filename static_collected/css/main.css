@@ -14,13 +14,12 @@ body {
 
 #nav-header {
     color: white;
+    font-size: 16px;
+    padding: 11px 36px;
 }
 
 #nav-title {
-    font-size: 16px;
-    padding-left: 36px;
-    padding-top: 11px;
-    padding-bottom: 11px;
+    display: inline-block;
 }
 
 #nav-pills {
@@ -67,6 +66,10 @@ body {
     border-bottom: 3px solid white;
 }
 
+.content {
+    padding-top: 46px;
+}
+
 .content-width {
     max-width: 868px;
 }
@@ -76,7 +79,7 @@ body {
 }
 
 .wrapper-outline {
-    box-shadow: 0 1px 3px 0px rgba(0,0,0,0.16);
+    box-shadow: none;
 }
 
 .is-loading {
@@ -92,4 +95,19 @@ body {
 @keyframes spin {
     0% {transform: rotate(0deg);}
     100% {transform: rotate(360deg);}
+}
+
+#user-profile {
+    display: inline-block;
+    float: right;
+}
+
+#user-profile a {
+    color: #ded5d5;
+}
+
+@media only screen and (min-width: 450px) {
+    .wrapper-outline {
+        box-shadow: 0 1px 3px 0px rgba(0,0,0,0.16);
+    }
 }

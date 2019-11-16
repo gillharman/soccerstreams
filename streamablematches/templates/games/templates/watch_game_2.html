@@ -8,18 +8,12 @@
 <link rel="stylesheet" href="{% static 'css/acestreams.css' %}">
 {% endblock %}
 
-{% block nav %}
-<div id="nav" class="container-fluid">
-    <div id="nav-header">
-        <div id="nav-title">
-            {{ data.display_name }}
-        </div>
-    </div>
-</div>
+{% block navtitle %}
+{{ data.display_name }}
 {% endblock %}
 
 {% block content %}
-<div id="matchup-wrapper" class="container wrapper-outline">
+<div id="matchup-wrapper" class="container content wrapper-outline">
     <div id="matchup-header" class="row">
         <div id="matchup-info-wrapper" class="col">
             <div id="matchup-info">
@@ -78,7 +72,11 @@
         </div>
     </div>
     <div id="add-acestream" class="row tab-content">
+        {% if user.is_authenticated %}
         {% include 'games/templates/add_acestream.html' %}
+        {% else %}
+        <div style="margin: auto; text-align: center; padding: 15px 0px 15px 0px;"><a href="{% url 'login' %}">Login</a> required to add AceStreams</div>
+        {% endif %}
     </div>
 </div>
 {% endblock %}

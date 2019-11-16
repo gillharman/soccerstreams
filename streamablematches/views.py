@@ -2,6 +2,7 @@ from django.shortcuts import render, HttpResponseRedirect
 from django.http import JsonResponse
 from django.core import serializers
 from django.forms import formset_factory
+from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 
 from streamablematches.forms import AceStreamForm
@@ -111,6 +112,7 @@ def get_match_info(request):
 
 
 # FORMS
+@login_required
 def add_ace_stream(request):
     links = []
     inserts = []
