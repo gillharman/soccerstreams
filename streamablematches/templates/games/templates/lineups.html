@@ -6,7 +6,7 @@
     <div id="home-team" class="half">
         <div class="gutter"></div>
         <div class="row" style="height:24%;">
-            {% for player in data.home_team.lineup.goalkeeper %}
+            {% for player in data.home_team.lineup.players.goalkeeper %}
             <div class="col player">
                 <div class="player-circle"></div>
                 <div>{{player.player}}</div>
@@ -14,7 +14,7 @@
             {% endfor %}
         </div>
         <div class="row" style="height:24%;">
-            {% for player in data.home_team.lineup.defense %}
+            {% for player in data.home_team.lineup.players.defense %}
             <div class="col player">
                 <div class="player-circle"></div>
                 <div>{{player.player}}</div>
@@ -22,7 +22,7 @@
             {% endfor %}
         </div>
         <div class="row" style="height:24%;">
-            {% for player in data.home_team.lineup.midfield %}
+            {% for player in data.home_team.lineup.players.midfield %}
             <div class="col player">
                 <div class="player-circle"></div>
                 <div>{{player.player}}</div>
@@ -30,7 +30,7 @@
             {% endfor %}
         </div>
         <div class="row" style="height:24%;">
-            {% for player in data.home_team.lineup.attack %}
+            {% for player in data.home_team.lineup.players.attack %}
             <div class="col player">
                 <div class="player-circle"></div>
                 <div>{{player.player}}</div>
@@ -41,7 +41,7 @@
     <div class="half-line"></div>
     <div id="away-team" class="half">
         <div class="row" style="height:24%;">
-            {% for player in data.away_team.lineup.attack %}
+            {% for player in data.away_team.lineup.players.attack %}
             <div class="col player">
                 <div class="player-circle"></div>
                 <div>{{player.player}}</div>
@@ -49,7 +49,7 @@
             {% endfor %}
         </div>
         <div class="row" style="height:24%;">
-            {% for player in data.away_team.lineup.midfield %}
+            {% for player in data.away_team.lineup.players.midfield %}
             <div class="col player">
                 <div class="player-circle"></div>
                 <div>{{player.player}}</div>
@@ -57,7 +57,7 @@
             {% endfor %}
         </div>
         <div class="row" style="height:24%;">
-            {% for player in data.away_team.lineup.defense %}
+            {% for player in data.away_team.lineup.players.defense %}
             <div class="col player">
                 <div class="player-circle"></div>
                 <div>{{player.player}}</div>
@@ -65,7 +65,7 @@
             {% endfor %}
         </div>
         <div class="row" style="height:24%;">
-            {% for player in data.away_team.lineup.goalkeeper %}
+            {% for player in data.away_team.lineup.players.goalkeeper %}
             <div class="col player">
                 <div class="player-circle"></div>
                 <div>{{player.player}}</div>

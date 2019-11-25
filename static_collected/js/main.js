@@ -30,6 +30,10 @@ function onPageLoad(){
     })
 }
 
+function toggleDropDown() {
+    console.log("Click!");
+    $(".dropdown .dropdown-content").css("display", "block");
+}
 
 
 // $('#match-days-wrapper').remove();

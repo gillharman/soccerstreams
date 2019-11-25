@@ -9,6 +9,7 @@
 
     <link rel="icon" type="image/png" href="{% static 'img/favicon-16x16.png' %}" >
     <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
     {% block css %}
     {% endblock %}
@@ -21,18 +22,29 @@
 </head>
 <body>
 <div id="nav" class="container-fluid">
-    <div id="nav-header">
+    <div id="nav-header" class="clearfix">
         <div id="nav-title">
             {% block navtitle %}
             {% endblock %}
         </div>
         <div id="user-profile">
             {% if user.is_authenticated %}
-            <div>
-                Welcome, {{ user.get_full_name }} | <a href="{% url 'logout' %}">Logout</a>
+            <div class="dropdown user-profile-item">
+                <div id="user-profile-avatar">
+                    <i class="fa fa-user-circle"></i>
+                </div>
+                <button class="dropbtn" onclick="toggleDropDown()">{{ user.get_full_name }}
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="{% url 'change_password' %}">Change Password</a>
+                    <a href="{% url 'user_profile' %}">User Profile</a>
+                </div>
             </div>
+            <!--<span class="separator">|</span>-->
+            <a class="user-profile-item" href="{% url 'logout' %}">Logout</a>
             {% else %}
-            <a href="{% url 'login' %}">Login</a> or <a href="{% url 'register' %}">Register</a>
+            <a class="user-profile-item" href="{% url 'login' %}">Login</a> or <a class="user-profile-item" href="{% url 'register' %}">Register</a>
             {% endif %}
         </div>
     </div>

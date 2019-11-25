@@ -50,3 +50,7 @@ def UserProfileView(request):
                   { "data": {
                       "form": form,
                   }})
+
+
+def ChangePasswordView(request):
+    pass

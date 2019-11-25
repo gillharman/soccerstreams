@@ -9,13 +9,13 @@
 }
 
 .add-ace-stream-container {
-    padding-top: 10px;
-    padding-bottom: 10px;
     text-align: center;
     overflow: hidden;
 }
 
 .ace-form {
+    padding-top: 15px;
+    padding-bottom: 15px;
     margin: auto;
 }
 

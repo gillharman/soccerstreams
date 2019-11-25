@@ -15,7 +15,9 @@ body {
 #nav-header {
     color: white;
     font-size: 16px;
-    padding: 11px 36px;
+    line-height: 32px;
+    margin: 0px 36px;
+    padding: 5px 0px;
 }
 
 #nav-title {
@@ -25,7 +27,7 @@ body {
 #nav-pills {
     text-align: center;
     padding: 0px;
-    margin: auto;
+    margin: 5px auto 0px;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
 }
@@ -102,8 +104,81 @@ body {
     float: right;
 }
 
-#user-profile a {
+#user-profile a:hover {
+    background-color: #2a002d;
+}
+
+#user-profile .user-profile-item {
     color: #ded5d5;
+    padding: 11px 10px;
+    text-decoration: none;
+}
+
+#user-profile .user-profile-item:hover {
+    background-color: #2a002d;
+    border-bottom: 2px solid white;
+    /*text-decoration: underline;*/
+}
+
+#user-profile-avatar {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 2px;
+    color: #ded5d5;
+    text-align: center;
+}
+
+#user-profile-avatar i {
+    font-size: 25px;
+}
+
+.dropdown {
+    display: inline;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    color: inherit;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+    padding: 0px;
+    text-decoration: inherit;
+    cursor: inherit;
+}
+
+.dropdown:hover {
+    cursor: pointer;
+    /*text-decoration: underline;*/
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 5px 13px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    color: white;
+}
+
+.separator {
+    padding: 0px 2px;
 }
 
 @media only screen and (min-width: 450px) {

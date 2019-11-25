@@ -62,21 +62,33 @@
         </div>
     </div>
     <div id="lineups" class="row tab-content">
-        <div class="col lineups-container">
+        {% if data.home_team.lineup.lineupAvailable and data.away_team.lineup.lineupAvailable %}
+            <div class="col lineups-container">
             {% include 'games/templates/lineups.html' %}
-        </div>
+            </div>
+        {% else %}
+            <div class="col lineups-container" style="margin: 0px; background-color: #ffffff;">
+                <div class="informational">No lineup information available.</div>
+            </div>
+        {% endif %}
     </div>
     <div id="acestreams" class="row tab-content">
         <div class="col ace-streams-container">
+            {% if data.links %}
             {% include 'games/templates/acestreams.html' %}
+            {% else %}
+            <div class="informational">No AceStreams available.</div>
+            {% endif %}
         </div>
     </div>
     <div id="add-acestream" class="row tab-content">
-        {% if user.is_authenticated %}
-        {% include 'games/templates/add_acestream.html' %}
-        {% else %}
-        <div style="margin: auto; text-align: center; padding: 15px 0px 15px 0px;"><a href="{% url 'login' %}">Login</a> required to add AceStreams</div>
-        {% endif %}
+        <div class="col add-ace-stream-container">
+            {% if user.is_authenticated %}
+            {% include 'games/templates/add_acestream.html' %}
+            {% else %}
+            <div class="informational"><a href="{% url 'login' %}">Login</a> required to add AceStreams.</div>
+            {% endif %}
+        </div>
     </div>
 </div>
 {% endblock %}

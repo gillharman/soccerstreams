@@ -13,6 +13,7 @@ def team_info(team_id):
         return {}
 
 def lineup_info(match_id, home):
+    lineupAvailable = False
     goalkeeper = []
     defense = []
     midfield = []
@@ -23,6 +24,7 @@ def lineup_info(match_id, home):
         lineup = Lineup.objects.get_away_lineup(match_id=match_id)
 
     if lineup:
+        lineupAvailable = True
         for player in lineup:
             if player.position.startswith('G'):
                 goalkeeper.append(player)
@@ -34,8 +36,11 @@ def lineup_info(match_id, home):
                 attack.append(player)
 
     return {
-        "goalkeeper": goalkeeper,
-        "defense": defense,
-        "midfield": midfield,
-        "attack": attack
+        "lineupAvailable": lineupAvailable,
+        "players": {
+            "goalkeeper": goalkeeper,
+            "defense": defense,
+            "midfield": midfield,
+            "attack": attack
+        }
     }
