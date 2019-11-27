@@ -16,8 +16,19 @@ body {
     color: white;
     font-size: 16px;
     line-height: 32px;
-    margin: 0px 36px;
+    margin: 0px 18px;
     padding: 5px 0px;
+}
+
+#nav-header a {
+    color: #ded5d5;
+    padding: 11px 10px;
+    text-decoration: none;
+}
+
+#nav-header a:hover {
+    background-color: #2a002d;
+    border-bottom: 2px solid white;
 }
 
 #nav-title {
@@ -108,17 +119,21 @@ body {
     background-color: #2a002d;
 }
 
+/*
 #user-profile .user-profile-item {
     color: #ded5d5;
     padding: 11px 10px;
     text-decoration: none;
 }
+*/
 
+/*
 #user-profile .user-profile-item:hover {
     background-color: #2a002d;
     border-bottom: 2px solid white;
-    /*text-decoration: underline;*/
+    text-decoration: underline;
 }
+*/
 
 #user-profile-avatar {
     display: inline-block;
@@ -134,8 +149,11 @@ body {
 }
 
 .dropdown {
+    color: #ded5d5;
+    padding: 11px 10px;
     display: inline;
     overflow: hidden;
+    text-decoration: none;
 }
 
 .dropdown .dropbtn {
@@ -151,7 +169,9 @@ body {
 }
 
 .dropdown:hover {
+    background-color: #2a002d;
     cursor: pointer;
+    border-bottom: 2px solid white;
     /*text-decoration: underline;*/
 }
 
@@ -164,7 +184,7 @@ body {
     z-index: 1;
 }
 
-.dropdown-content a {
+#user-profile-dropdown a {
     float: none;
     color: black;
     padding: 5px 13px;
@@ -173,8 +193,12 @@ body {
     text-align: left;
 }
 
-.dropdown-content a:hover {
+#user-profile-dropdown a:hover {
     color: white;
+}
+
+.show {
+    display: block;
 }
 
 .separator {
@@ -182,6 +206,10 @@ body {
 }
 
 @media only screen and (min-width: 450px) {
+    #nav-header {
+        margin: 0px 32px;
+    }
+
     .wrapper-outline {
         box-shadow: 0 1px 3px 0px rgba(0,0,0,0.16);
     }

@@ -31,37 +31,20 @@ function onPageLoad(){
 }
 
 function toggleDropDown() {
-    console.log("Click!");
-    $(".dropdown .dropdown-content").css("display", "block");
+    $("#user-profile-dropdown").addClass("show");
 }
 
-
-// $('#match-days-wrapper').remove();
-
-//                $('#nav-title').text($(this).attr('data-league-name'));
-//                $('#wrapper').removeClass('wrapper-outline');
-//                $('#wrapper').append("<div class='loader' style='width: 30px; height: 30px; margin: 15px auto;'><div class='is-loading'></div></div>");
-//                $.ajax({
-//                    url: 'ajax/league_matches',
-//                    async: true,
-//                    data: {'league' : $(this).attr('data-league')},
-//                    success: function(result) {
-//                        $('.loader').remove();
-//                        $('.is_loading').remove();
-//                        $('#wrapper').append(result);
-//                        $('#wrapper').addClass('wrapper-outline');
-//                        onPageLoad();  // ADD HANDLERS AFTER THE AJAX CALL
-//                    },
-//                    error: function(result, exception) {
-//                        var msg = '';
-//                        if(result.responseText) {
-//                            msg = result.responseText;
-//                        } else {
-//                            msg = 'Temporary Unavailable. Please try at a later time.'
-//                        }
-//                        $('.loader').remove();
-//                        $('.is_loading').remove();
-//                        $('#wrapper').html(msg);
-//                        $('#wrapper').addClass('wrapper-outline');
-//                    },
-//                })
+// CLOSES THE DROPDOWN MENU IF THE USER CLICKS OUTSIDE OF IT
+window.onclick = function(event) {
+    console.log('event ' + event);
+//    if(event.target.matches('.drip'))
+    if(!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for(var i = 0; i < dropdowns.length; ++i) {
+            var openDropdown = dropdowns[i];
+            if(openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
