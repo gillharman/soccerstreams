@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a24984d9-905a-4a1e-8193-849e0157c296" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/soccerstreams.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/soccerstreams.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/helper_scripts/makeRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/bin/helper_scripts/makeRequest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crons/bin/getMatches.py" beforeDir="false" afterPath="$PROJECT_DIR$/crons/bin/getMatches.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crons/scheduled_jobs.py" beforeDir="false" afterPath="$PROJECT_DIR$/crons/scheduled_jobs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leagues/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/leagues/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leagues/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/leagues/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soccerstreams/settings/SoccerStreams-a9b5eb1319d1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/soccerstreams/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/soccerstreams/settings/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teams/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/teams/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teams/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/teams/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

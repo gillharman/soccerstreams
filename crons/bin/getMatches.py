@@ -1,17 +1,22 @@
 from django.core.exceptions import ObjectDoesNotExist
 from django.db.models import Q
-from datetime import datetime, date
+from calendar import monthrange
+from datetime import datetime
+import pytz
 
 from bin.helper_scripts.makeRequest import make_request, request_headers
 
 from leagues.models import League
-from teams.models import Team, Teams_in_League
+from teams.models import Team
+from matches.models import Match
 
 FOOTBALL_API_BASE_URL = "https://api.football-data.org/v2"
 FOOTBALL_API_URLS = {
-    "competitions": "/competitions/",
-    "teams": "/teams/"
-    }
+    "competitions": "/competitions",
+    "competitionSeasons": "/competitions/%s",
+    "teams": "/competitions/%s/teams",
+    "matches": "/competitions/%s/matches"
+}
 
 
 def get_leagues():
@@ -23,7 +28,7 @@ def get_leagues():
             if league["plan"] == "TIER_ONE":
                 try:
                     new_league = League.objects.get(
-                        Q(api_id= league["id"]) | Q(name=league["name"])
+                        Q(api_id=league["id"]) | Q(name=league["name"])
                     )
                     if new_league and new_league.api_id is None:
                         new_league.api_id = league["id"]
@@ -56,11 +61,7 @@ def get_teams():
     # Get new teams and update leagues on current teams only for the supported leagues
     tracked_leagues = League.objects.filter(tracked=True)
     for tracked_league in tracked_leagues:
-        url = FOOTBALL_API_BASE_URL + \
-              FOOTBALL_API_URLS["competitions"] + \
-              str(tracked_league.api_id) + \
-              FOOTBALL_API_URLS["teams"]
-
+        url = FOOTBALL_API_BASE_URL + FOOTBALL_API_URLS["teams"] % str(tracked_league.api_id)
         request = make_request(url, request_headers["football-api"])
         try:
             data = request["data"]
@@ -90,18 +91,69 @@ def get_teams():
     return True
 
 
-def get_matches(date=date.today()):
-    data = {}
+def sanitize_status(string):
+    words = string.split("_")
+    capitalized_words = []
+    for word in words:
+        capitalized_words.append(word.capitalize())
+    return " ".join(capitalized_words)
+
+
+def get_matches(start_date=None, end_date=None):
+    today = datetime.today()
+    last_day_of_month = monthrange(today.year, today.month)[1]  # Returns tuple Ex. (3, 31)
+    if start_date is None:
+        start_date = datetime(today.year, today.month, 1)
+    if end_date is None:
+        end_date = datetime(today.year, today.month, last_day_of_month)
+
     try:
-        d = datetime.strftime(date, '%Y-%m-%d')
-        url = "http://api.football-data.org/v2/matches?dateFrom=" + d + "&dateTo=" + d
+        start_date = datetime.strftime(start_date, '%Y-%m-%d')
+        end_date = datetime.strftime(end_date, '%Y-%m-%d')
+    except ValueError:
+        raise ValueError("Invalid Date Format!")
+
+    query = "?dateFrom=%s&dateTo=%s" % (start_date, end_date)
+    tracked_leagues = League.objects.filter(tracked=True)
+    match_status_choices = dict((key, value) for (value, key) in Match.STATUS_CHOICES)
+    for tracked_league in tracked_leagues:
+        url = FOOTBALL_API_BASE_URL + FOOTBALL_API_URLS["matches"] % str(tracked_league.api_id) + query
         request = make_request(url, request_headers["football-api"])
         try:
-            data = request['data']
+            data = request["data"]
+            for match in data["matches"]:
+                try:
+                    home_team = Team.objects.get(api_id=match["homeTeam"]["id"])
+                    away_team = Team.objects.get(api_id=match["awayTeam"]["id"])
+                    match_status = sanitize_status(match["status"])  # Ex. IN_PLAY -> In Play
+                    match_datetime = datetime.strptime(match["utcDate"], "%Y-%m-%dT%H:%M:%SZ")
+                    match_datetime = match_datetime.replace(tzinfo=pytz.utc)
+                    try:
+                        new_match = Match.objects.get(api_match_id=match["id"])
+                        new_match.status = match_status_choices[match_status]
+                        new_match.save()
+                    except ObjectDoesNotExist:
+                        print(match["homeTeam"]["name"] +
+                              " vs " + match["awayTeam"]["name"] +
+                              " does not exist. Creating...")
+                        new_match = Match()
+                        new_match.api_match_id = match["id"]
+                        new_match.status = match_status_choices[match_status]
+                        new_match.match_day = match["matchday"]
+                        new_match.match_date_time = match_datetime
+                        new_match.home_team = home_team
+                        new_match.away_team = away_team
+                        new_match.league = League.objects.get(id=tracked_league.id)
+                        new_match.save()
+                except ObjectDoesNotExist:
+                    print("Home or Away does not exists...")
+                    raise
+                except KeyError:
+                    raise KeyError
+                except ValueError:
+                    raise ValueError("Invalid Date Format!")
         except KeyError:
-            print(request['message'])
+            print(request["message"])
             raise
-    except ValueError:
-        raise ValueError('Invalid Date Format')
-
-    return data
+    print("Matches created/updated successfully!")
+    return True

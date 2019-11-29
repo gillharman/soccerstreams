@@ -15,6 +15,7 @@ def make_request(url, header, type="json"):
     retVal = {}
 
     r = requests.get(url, headers=ast.literal_eval(header))
+    print(r)
     while r.status_code != 200:
         # print(r.status_code)
         r = requests.get(url)
