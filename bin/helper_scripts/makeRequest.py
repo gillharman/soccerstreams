@@ -9,6 +9,7 @@ request_headers = {
     "rotowire": "{'user_agent': 'pc'}"
 }
 
+
 def make_request(url, header, type="json"):
     count = 0
     retVal = {}
@@ -30,7 +31,7 @@ def make_request(url, header, type="json"):
     else:
         retVal['data'] = r.text
 
-    #Log the request call
+    # Log the request call
     log = RequestLogs()
     log.endPoint = url
     log.httpStatusCode = r.status_code

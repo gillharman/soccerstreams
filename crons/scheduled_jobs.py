@@ -14,6 +14,7 @@ class StreamScraper(CronJobBase):
         scraper.start()
         print('Scrape Complete')
 
+
 class Get_Games(CronJobBase):
     RUNS_EVERY_MINS = 0
 
@@ -27,6 +28,7 @@ class Get_Games(CronJobBase):
         print('Matching streamable games...')
         streamableGames.match_streamable_games()
         print('Complete.')
+
 
 class Get_Lineups(CronJobBase):
     RUNS_EVERY_MINS = 0
