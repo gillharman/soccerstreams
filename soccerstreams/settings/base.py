@@ -60,6 +60,7 @@ CRON_CLASSES = [
     'crons.scheduled_jobs.StreamScraper',
     'crons.scheduled_jobs.Get_Games',
     'crons.scheduled_jobs.Get_Lineups',
+    'crons.scheduled_jobs.Cleanup'
 ]
 
 ROOT_URLCONF = 'soccerstreams.urls'

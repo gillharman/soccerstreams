@@ -5,6 +5,7 @@ import pytz
 from leagues.models import League
 from teams.models import Team
 
+
 class MatchQuerySet(models.QuerySet):
     def get_games(self, date_=datetime.today()):
         date_ = date_.replace(tzinfo=pytz.utc)
@@ -12,7 +13,7 @@ class MatchQuerySet(models.QuerySet):
 
     def get_match_display_name(self):
         d = []
-        games =  self.get_games()
+        games = self.get_games()
         for game in games:
             d.append(game.display_name())
         return d

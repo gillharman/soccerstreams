@@ -3,8 +3,8 @@ import difflib
 from matches.models import Match
 from streamablematches.models import ScannedMatch, StreamableMatch
 
+
 def match_streamable_games():
-    # d = '2018-12-22'
     ignore = 0
     insert = 0
     update = 0

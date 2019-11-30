@@ -2,6 +2,7 @@ from django.db import models
 
 from leagues.models import League
 
+
 # Create your models here.
 class RequestLogs(models.Model):
     httpStatusCode = models.CharField(max_length=10)
@@ -16,6 +17,7 @@ class RequestLogs(models.Model):
 class RotowireQuerySet(models.QuerySet):
     def get_html(self, league):
         return self.filter(league__code=league).order_by('-created').first()
+
 
 class RotowireRequest(models.Model):
     html = models.TextField()
