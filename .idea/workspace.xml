@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a24984d9-905a-4a1e-8193-849e0157c296" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crons/bin/storeMatches.py" beforeDir="false" afterPath="$PROJECT_DIR$/crons/bin/deprecated/storeMatches_deprecated.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crons/bin/streamableGames.py" beforeDir="false" afterPath="$PROJECT_DIR$/crons/bin/streamableGames.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crons/scheduled_jobs.py" beforeDir="false" afterPath="$PROJECT_DIR$/crons/scheduled_jobs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/logs/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matches/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/matches/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soccerstreams/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/soccerstreams/settings/base.py" afterDir="false" />
-    </list>
+    <list default="true" id="a24984d9-905a-4a1e-8193-849e0157c296" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
