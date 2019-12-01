@@ -24,21 +24,25 @@ $(document).ready(function() {
 })
 
 function onPageLoad(){
-    //ADD WATCH GAME HANDLER ON MATCHES
+    // ADD CLICK HANDLER FOR USER PROFILE
+    $(".dropdown").on("click", function() {
+        if($("#user-profile-dropdown").hasClass("show")) {
+            $("#user-profile-dropdown").removeClass("show");
+        } else {
+            $("#user-profile-dropdown").addClass("show");
+        }
+    })
+
+    // ADD WATCH GAME HANDLER ON MATCHES
     $(".match").click(function() {
             window.location = "watch_game/" + $(this).data("match-id")
     })
 }
 
-function toggleDropDown() {
-    $("#user-profile-dropdown").addClass("show");
-}
 
 // CLOSES THE DROPDOWN MENU IF THE USER CLICKS OUTSIDE OF IT
 window.onclick = function(event) {
-    console.log('event ' + event);
-//    if(event.target.matches('.drip'))
-    if(!event.target.matches('.dropbtn')) {
+    if(!event.target.matches('.dropdown')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
         for(var i = 0; i < dropdowns.length; ++i) {
             var openDropdown = dropdowns[i];

@@ -30,12 +30,15 @@
         <div id="user-profile">
             {% if user.is_authenticated %}
             <div class="dropdown">
-                <div id="user-profile-avatar">
-                    <i class="fa fa-user-circle"></i>
+                <div class="user-display-name">
+                    <div id="user-profile-avatar">
+                        <i class="fa fa-user-circle"></i>
+                    </div>
+                    <div>
+                        {{ user.get_full_name }}
+                        <i class="fa fa-caret-down"></i>
+                    </div>
                 </div>
-                <button class="dropbtn" onclick="toggleDropDown()">{{ user.get_full_name }}
-                    <i class="fa fa-caret-down"></i>
-                </button>
                 <div id="user-profile-dropdown" class="dropdown-content">
                     <a href="{% url 'change_password' %}">Change Password</a>
                     <a href="{% url 'user_profile' %}">User Profile</a>

@@ -136,7 +136,6 @@ body {
 */
 
 #user-profile-avatar {
-    display: inline-block;
     width: 25px;
     height: 25px;
     margin-right: 2px;
@@ -156,9 +155,8 @@ body {
     text-decoration: none;
 }
 
-.dropdown .dropbtn {
-    border: none;
-    outline: none;
+.dropdown .user-display-name {
+    display: inline-block;
     color: inherit;
     background-color: inherit;
     font-family: inherit; /* Important for vertical align on mobile phones */
@@ -166,6 +164,11 @@ body {
     padding: 0px;
     text-decoration: inherit;
     cursor: inherit;
+    pointer-events: none;
+}
+
+.dropdown .user-display-name div {
+    display: inline-block;
 }
 
 .dropdown:hover {
@@ -179,7 +182,7 @@ body {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    width: 100%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
