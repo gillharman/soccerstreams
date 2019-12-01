@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.exceptions import ObjectDoesNotExist
 
 from leagues.models import League
 
@@ -17,11 +18,15 @@ class Team(models.Model):
     updated = models.DateTimeField(auto_now=True)
 
     def get_logo_url(self, dimension):
-        team_logo = Team_Logo.objects.filter(team=self).first()
-        if dimension == 48:
-            return team_logo.logo_48x48_url
-        elif dimension == 96:
-            return team_logo.logo_96x96_url
+        try:
+            team_logo = Team_Logo.objects.get(team=self)
+        except ObjectDoesNotExist:
+            print("Team logo entry for {0} not found!".format(self.name))
+        else:
+            if dimension == 48:
+                return team_logo.logo_48x48_url
+            elif dimension == 96:
+                return team_logo.logo_96x96_url
 
 
 class Teams_in_League(models.Model):
