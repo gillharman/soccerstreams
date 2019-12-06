@@ -1,7 +1,8 @@
-from .models import User
 from django import forms
 from django.contrib.auth import password_validation
 from django.contrib.auth.forms import AuthenticationForm, UserCreationForm, UsernameField
+
+from .models import User
 
 class customAuthForm(AuthenticationForm):
     username = UsernameField(widget=forms.TextInput(
@@ -91,6 +92,9 @@ class customUserCreationForm(UserCreationForm):
         field_classes = {'username': UsernameField}
 
 
-class UserProfileForm(forms.Form):
-    avatar = forms.ImageField()
-    username = forms.CharField(widget=forms.TextInput())
+class UserProfileForm(forms.ModelForm):
+    class Meta:
+        model = User
+        fields = ['avatar', 'first_name', 'last_name', 'email']
+    # avatar = forms.ImageField()
+    # name = forms.CharField(widget=forms.TextInput())

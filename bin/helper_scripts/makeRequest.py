@@ -4,8 +4,8 @@ from logs.models import RequestLogs
 import ast
 
 request_headers = {
-    "reddit": "{'user_agent': 'laptop:soccerStreams:v 0.1 (by/u/gillhimmy)'}",
-    "football-api": "{'x-auth-token': '335ffd5c439f4d3ea4f5ade02de7b207'}",
+    "reddit": "{'user_agent': 'laptop:soccerStreams:v 0.1'}",
+    "football-api": "{'x-auth-token': ''}",
     "rotowire": "{'user_agent': 'pc'}"
 }
 

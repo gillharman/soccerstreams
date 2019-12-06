@@ -127,6 +127,10 @@ STATICFILES_DIRS = (
 #     os.path.join(PROJECT_DIR, 'streamablematches/static'),
 )
 
+# MEDIA_ROOT = os.path.join(PROJECT_DIR, 'users/media/')
+
+MEDIA_URL = 'users/media/'
+
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

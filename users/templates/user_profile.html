@@ -1,10 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-{{ data.form }}
-</body>
-</html>
+{% extends 'base_2.html' %}
+{% load staticfiles %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/user_profile.css' %}">
+{% endblock %}
+
+{% block navtitle %}
+<a href="/">Home</a>
+{% endblock %}
+
+{% block content %}
+<div class="container content">
+    <div class="user-profile-container wrapper-outline">
+        <form id="user-profile-form" enctype="multipart/form-data" method="post" action="{% url 'user_profile' %}">
+            {% csrf_token %}
+            <div>
+                <img src="{% static 'soccer-ball.jpg' %}" />
+            </div>
+            <div>
+                {{ data.form.avatar.label }}
+                {{ data.form.avatar }}
+            </div>
+            <div>
+                {{ data.form.first_name.label }}
+                {{ data.form.first_name }}
+            </div>
+            <div>
+                {{ data.form.last_name.label }}
+                {{ data.form.last_name }}
+            </div>
+            <div>
+                {{ data.form.email.label }}
+                {{ data.form.email }}
+            </div>
+            <div>
+                <input type="submit" value="Save" />
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

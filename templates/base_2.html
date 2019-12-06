@@ -58,13 +58,14 @@
 
 {% block content %}
 {% endblock %}
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
-    <script>
-        window.jQuery || document.write('<script src="{% static 'bootstrap/js/vendor/jquery-3.3.1.min.js' %}"><\/script>')
-        window.angular || document.write('<script src="{% static 'angularjs/angularjs-1.7.8.min.js' %}"><\/script>')
-    </script>
-    {% block script %}
-    {% endblock %}
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="{% static 'bootstrap/js/vendor/jquery-3.3.1.min.js' %}"><\/script>')
+    window.angular || document.write('<script src="{% static 'angularjs/angularjs-1.7.8.min.js' %}"><\/script>')
+</script>
+<script src="{% static 'js/main.js' %}"></script>
+{% block script %}
+{% endblock %}
 </body>
 </html>
