@@ -5,7 +5,7 @@ import ast
 
 request_headers = {
     "reddit": "{'user_agent': 'laptop:soccerStreams:v 0.1'}",
-    "football-api": "{'x-auth-token': ''}",
+    "football-api": "{'x-auth-token': '335ffd5c439f4d3ea4f5ade02de7b207'}",
     "rotowire": "{'user_agent': 'pc'}"
 }
 
