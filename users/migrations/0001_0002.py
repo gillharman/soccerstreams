@@ -8,6 +8,8 @@ import django.utils.timezone
 
 class Migration(migrations.Migration):
 
+    replaces = [('users', '0001_initial'), ('users', '0002_auto_20190616_0951')]
+
     dependencies = [
         ('auth', '0009_alter_user_last_name_max_length'),
     ]
