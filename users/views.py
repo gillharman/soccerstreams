@@ -56,7 +56,7 @@ def user_profile_view(request):
             user.first_name = form.cleaned_data["first_name"]
             user.last_name = form.cleaned_data["last_name"]
             user.email = form.cleaned_data["email"]
-            user.avatar = form.cleaned_data["avatar"]
+            # user.avatar = form.cleaned_data["avatar"]
             user.save()
 
     user = User.objects.get(id=request.user.id)
