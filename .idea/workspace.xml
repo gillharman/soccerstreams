@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a24984d9-905a-4a1e-8193-849e0157c296" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/migrations/0001_squashed_0010_remove_user_avatar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/migrations/0002_auto_20191209_1614.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/migrations/0003_auto_20191211_2104.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/migrations/0004_remove_useravatar_size.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/migrations/0005_useravatar_format.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/migrations/0006_remove_useravatar_avatar_size.py" beforeDir="false" />
-    </list>
+    <list default="true" id="a24984d9-905a-4a1e-8193-849e0157c296" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
