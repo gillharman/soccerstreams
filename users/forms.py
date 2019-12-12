@@ -93,8 +93,11 @@ class customUserCreationForm(UserCreationForm):
 
 
 class UserProfileForm(forms.ModelForm):
+    avatar = forms.CharField(
+        widget=forms.ClearableFileInput(),
+        label="Avatar",
+    )
+
     class Meta:
         model = User
         fields = ['first_name', 'last_name', 'email']
-    # avatar = forms.ImageField()
-    # name = forms.CharField(widget=forms.TextInput())

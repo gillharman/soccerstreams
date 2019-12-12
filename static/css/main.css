@@ -208,6 +208,10 @@ body {
     padding: 0px 2px;
 }
 
+#footer {
+    text-align: right;
+}
+
 @media only screen and (min-width: 450px) {
     #nav-header {
         margin: 0px 32px;
