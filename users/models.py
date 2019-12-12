@@ -3,8 +3,9 @@ from django.contrib.auth.models import AbstractUser
 
 
 class User(AbstractUser):
-    created = models.DateTimeField(auto_now_add=True)
-    updated = models.DateTimeField(auto_now=True)
+    pass
+    # created = models.DateTimeField(auto_now_add=True)
+    # updated = models.DateTimeField(auto_now=True)
 
 
 # class UserAvatar(models.Model):

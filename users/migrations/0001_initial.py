@@ -45,19 +45,4 @@ class Migration(migrations.Migration):
                 ('objects', django.contrib.auth.models.UserManager()),
             ],
         ),
-        migrations.CreateModel(
-            name='UserAvatar',
-            fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('avatar_bytes', models.BinaryField()),
-                ('name', models.CharField(max_length=140)),
-                ('width', models.IntegerField()),
-                ('height', models.IntegerField()),
-                ('format', models.CharField(max_length=10, null=True)),
-                ('image_mode', models.CharField(max_length=10)),
-                ('created', models.DateTimeField(auto_now_add=True)),
-                ('updated', models.DateTimeField(auto_now=True)),
-                ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
-            ],
-        ),
     ]
