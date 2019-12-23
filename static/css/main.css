@@ -88,7 +88,7 @@ body {
 }
 
 #wrapper {
-    padding: 95px 0px 0px 0px;
+    padding: 95px 0px 26px 0px;
 }
 
 .wrapper-outline {
@@ -209,12 +209,28 @@ body {
 }
 
 #footer {
+    background-color: #ddd;
+    padding: 4px 18px;
     text-align: right;
+    position: fixed;
+    bottom: 0;
+}
+
+#footer a {
+    color: #757575;
 }
 
 @media only screen and (min-width: 450px) {
     #nav-header {
         margin: 0px 32px;
+    }
+
+    #footer {
+        padding: 8px 32px;
+    }
+
+    #wrapper {
+        padding: 95px 0px 35px 0px;
     }
 
     .wrapper-outline {

@@ -129,7 +129,7 @@ STATICFILES_DIRS = (
 
 # MEDIA_ROOT = os.path.join(PROJECT_DIR, 'users/media/')
 
-MEDIA_URL = 'users/media/'
+# MEDIA_URL = 'users/media/'
 
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/

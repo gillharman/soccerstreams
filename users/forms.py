@@ -4,6 +4,7 @@ from django.contrib.auth.forms import AuthenticationForm, UserCreationForm, User
 
 from .models import User
 
+
 class customAuthForm(AuthenticationForm):
     username = UsernameField(widget=forms.TextInput(
         attrs={
@@ -23,6 +24,7 @@ class customAuthForm(AuthenticationForm):
             "aria-label": "Password"
         }
     ))
+
 
 class customUserCreationForm(UserCreationForm):
     first_name = forms.CharField(
@@ -93,11 +95,7 @@ class customUserCreationForm(UserCreationForm):
 
 
 class UserProfileForm(forms.ModelForm):
-    avatar = forms.CharField(
-        widget=forms.ClearableFileInput(),
-        label="Avatar",
-    )
-
+    avatar = forms.ImageField()
     class Meta:
         model = User
         fields = ['first_name', 'last_name', 'email']

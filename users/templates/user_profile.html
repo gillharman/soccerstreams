@@ -15,7 +15,7 @@
         <form id="user-profile-form" enctype="multipart/form-data" method="post" action="{% url 'user_profile' %}">
             {% csrf_token %}
             <div>
-                <img src="{% static 'soccer-ball.jpg' %}" />
+                <img src="data:image/{{ data.avatar.format }};base64,{{ data.avatar_bytes }}" />
             </div>
             <div>
                 {{ data.form.avatar.label }}

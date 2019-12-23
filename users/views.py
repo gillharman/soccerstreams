@@ -1,11 +1,14 @@
+from io import BytesIO
+from base64 import b64encode
 from PIL import Image
 
-from django.core.files.uploadedfile import SimpleUploadedFile
 from django.contrib.auth.views import LoginView, LogoutView
 from django.shortcuts import render, redirect, HttpResponse
 
 from .forms import customAuthForm, customUserCreationForm, UserProfileForm
-from .models import User
+from .models import User, UserAvatar
+
+from bin.helper_scripts.storage import AvatarFileStorage, AvatarFileRetrieval
 
 # Create your views here.
 
@@ -53,21 +56,44 @@ def user_profile_view(request):
         user = User.objects.get(id=request.user.id)
         form = UserProfileForm(request.POST, request.FILES)
         if form.is_valid():
+            image = AvatarFileStorage(file=form.cleaned_data['avatar'], user=user)
+            image.update()
             user.first_name = form.cleaned_data["first_name"]
             user.last_name = form.cleaned_data["last_name"]
             user.email = form.cleaned_data["email"]
-            # user.avatar = form.cleaned_data["avatar"]
-            # user.save()
+            user.save()
 
     user = User.objects.get(id=request.user.id)
     form = UserProfileForm(instance=user)
+    avatar = AvatarFileRetrieval(user)
+    avatar_instance = ""
+    avatar_bytes = ""
+    try:
+        avatar_instance = avatar.getavatarinstance()
+    except UserAvatar.DoesNotExist as e:
+        print("An error occurred: {0}".format(e.__str__()))
+    else:
+        avatar_bytes = str(avatar.getb64encodedimage())[2:-1]  # Removes [b']......[']
 
     return render(request, "user_profile.html",
                   { "data": {
                       "user": user,
                       "form": form,
+                      "avatar": avatar_instance,
+                      "avatar_bytes": avatar_bytes,
                   }})
 
 
 def ChangePasswordView(request):
     pass
+
+
+def about_the_author_view(request):
+    return render(request, "author.html")
+
+
+def get_avatar(request):
+    user = User.objects.get(id=request.user.id)
+    avatar = AvatarFileRetrieval(user).get()
+    avatar_bytes = str(b64encode(avatar.avatar.tobytes()))[2:-1]
+    return HttpResponse("data:image/png;base64," + avatar_bytes)

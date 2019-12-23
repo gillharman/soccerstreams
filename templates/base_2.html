@@ -1,4 +1,5 @@
 {% load staticfiles %}
+{% load base_template_methods %}
 
 <!doctype html>
 <html>
@@ -32,7 +33,11 @@
             <div class="dropdown">
                 <div class="user-display-name">
                     <div id="user-profile-avatar">
+                        {% if user.useravatar %}
+                        <img src="" />
+                        {% else %}
                         <i class="fa fa-user-circle"></i>
+                        {% endif %}
                     </div>
                     <div>
                         {{ user.get_full_name }}
@@ -58,7 +63,13 @@
 
 {% block content %}
 {% endblock %}
-<div id="footer" class="container-fluid">About</div>
+<div id="footer" class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <a href="{% url 'about' %}">About</a>
+        </div>
+    </div>
+</div>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
 <script>
