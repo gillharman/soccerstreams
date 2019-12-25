@@ -1,3 +1,42 @@
 .user-profile-container {
     background-color: #ffffff;
+    max-width: 768px;
+    margin: auto;
+    padding: 24px 24px 36px;
+    text-align: center;
+}
+
+#user-avatar i {
+    font-size: 70px;
+}
+
+.user-profile-form {
+    text-align: center;
+}
+
+.preview {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin: auto;
+}
+
+.preview img {
+    border-radius: inherit;
+}
+
+.file-selector-input {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .user-profile-container {
+        padding: 48px 40px 36px;
+        margin-top: 30px;
+        border-radius: 8px;
+    }
+
+    .user-profile-form {
+        text-align: left;
+    }
 }

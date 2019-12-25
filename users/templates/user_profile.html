@@ -13,28 +13,47 @@
 <div class="container content">
     <div class="user-profile-container wrapper-outline">
         <form id="user-profile-form" enctype="multipart/form-data" method="post" action="{% url 'user_profile' %}">
-            {% csrf_token %}
-            <div>
-                <img src="data:image/{{ data.avatar.format }};base64,{{ data.avatar_bytes }}" />
-            </div>
-            <div>
-                {{ data.form.avatar.label }}
-                {{ data.form.avatar }}
-            </div>
-            <div>
-                {{ data.form.first_name.label }}
-                {{ data.form.first_name }}
-            </div>
-            <div>
-                {{ data.form.last_name.label }}
-                {{ data.form.last_name }}
-            </div>
-            <div>
-                {{ data.form.email.label }}
-                {{ data.form.email }}
-            </div>
-            <div>
-                <input type="submit" value="Save" />
+            <div class="row">
+                {% csrf_token %}
+                <div id="user-avatar" class="col-12 col-md-3">
+                    <div class="preview">
+                        {% if data.avatar %}
+                        <img src="data:image/{{ data.avatar.format }};base64,{{ data.avatar_bytes }}" width="70" height="70"/>
+                        {% else %}
+                        <i class="fa fa-user-circle"></i>
+                        {% endif %}
+                    </div>
+                    <div>
+                        <label for="id_{{ data.form.avatar.name }}" class="btn btn-link">{{ data.form.avatar.label }}</label>
+<!--                        {{ data.form.avatar.label }}-->
+                        {{ data.form.avatar }}
+                    </div>
+                </div>
+                <div class="col-12 col-md-9 user-profile-form">
+                        <div class="row">
+                            <div class="col">
+                                <label for="id_{{ data.form.first_name.name }}">{{ data.form.first_name.label }}</label>
+                                {{ data.form.first_name }}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="id_{{ data.form.last_name.name }}">{{ data.form.last_name.label }}</label>
+                                {{ data.form.last_name }}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="id_{{ data.form.email.name }}">{{ data.form.email.label }}</label>
+                                {{ data.form.email }}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <input class="btn btn-primary" type="submit" value="Save" />
+                            </div>
+                        </div>
+                </div>
             </div>
         </form>
     </div>

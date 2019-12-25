@@ -141,6 +141,11 @@ body {
     margin-right: 2px;
     color: #ded5d5;
     text-align: center;
+    border-radius: 50%;
+}
+
+#user-profile-avatar img {
+    border-radius: inherit;
 }
 
 #user-profile-avatar i {

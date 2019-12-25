@@ -95,7 +95,15 @@ class customUserCreationForm(UserCreationForm):
 
 
 class UserProfileForm(forms.ModelForm):
-    avatar = forms.ImageField()
+    avatar = forms.ImageField(
+        label="Click to select...",
+        widget=forms.ClearableFileInput(
+            attrs={
+                "class": "file-selector-input",
+            }),
+        required=False
+    )
+
     class Meta:
         model = User
         fields = ['first_name', 'last_name', 'email']

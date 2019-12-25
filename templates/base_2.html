@@ -34,7 +34,9 @@
                 <div class="user-display-name">
                     <div id="user-profile-avatar">
                         {% if user.useravatar %}
-                        <img src="" />
+                        {% with avatar=get_avatar_instance %}
+                        <img src="data:image/{{ avatar.format }};base64,{{ user|get_avatar }}" width="25" height="25"/>
+                        {% endwith %}
                         {% else %}
                         <i class="fa fa-user-circle"></i>
                         {% endif %}
