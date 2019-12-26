@@ -56,22 +56,27 @@ def user_profile_view(request):
         user = User.objects.get(id=request.user.id)
         form = UserProfileForm(request.POST, request.FILES)
         if form.is_valid():
-            image = AvatarFileStorage(file=form.cleaned_data['avatar'], user=user)
-            image.update()
+            if form.cleaned_data['avatar'] is not None:
+                image = AvatarFileStorage(file=form.cleaned_data['avatar'], user=user)
+                image.update()
             user.first_name = form.cleaned_data["first_name"]
             user.last_name = form.cleaned_data["last_name"]
             user.email = form.cleaned_data["email"]
             user.save()
 
     user = User.objects.get(id=request.user.id)
-    form = UserProfileForm(instance=user)
+    form = UserProfileForm({
+        "first_name": user.first_name,
+        "last_name": user.last_name,
+        "email": user.email
+    })
     avatar = AvatarFileRetrieval(user)
     avatar_instance = ""
     avatar_bytes = ""
     try:
         avatar_instance = avatar.getavatarinstance()
     except UserAvatar.DoesNotExist as e:
-        print("An error occurred: {0}".format(e.__str__()))
+        print("An error occurred: {0} - inspect user_profile_view.".format(e.__str__()))
     else:
         avatar_bytes = str(avatar.getb64encodedimage())[2:-1]  # Removes [b']......[']
 
@@ -85,7 +90,7 @@ def user_profile_view(request):
 
 
 def ChangePasswordView(request):
-    pass
+    return HttpResponse("Under Construction")
 
 
 def about_the_author_view(request):

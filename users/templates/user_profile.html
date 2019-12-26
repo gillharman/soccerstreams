@@ -2,6 +2,7 @@
 {% load staticfiles %}
 
 {% block css %}
+<link rel="stylesheet" href="{% static 'css/auth.css' %}">
 <link rel="stylesheet" href="{% static 'css/user_profile.css' %}">
 {% endblock %}
 
@@ -25,11 +26,10 @@
                     </div>
                     <div>
                         <label for="id_{{ data.form.avatar.name }}" class="btn btn-link">{{ data.form.avatar.label }}</label>
-<!--                        {{ data.form.avatar.label }}-->
                         {{ data.form.avatar }}
                     </div>
                 </div>
-                <div class="col-12 col-md-9 user-profile-form">
+                <div id="user-profile" class="col-12 col-md-9 user-profile">
                         <div class="row">
                             <div class="col">
                                 <label for="id_{{ data.form.first_name.name }}">{{ data.form.first_name.label }}</label>
@@ -48,7 +48,7 @@
                                 {{ data.form.email }}
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row submit-button">
                             <div class="col">
                                 <input class="btn btn-primary" type="submit" value="Save" />
                             </div>

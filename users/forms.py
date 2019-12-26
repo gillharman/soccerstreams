@@ -14,28 +14,31 @@ class customAuthForm(AuthenticationForm):
             "autofocus": True
         }
     ))
+
     password = forms.CharField(
         label="Password",
         strip=False,
         widget=forms.PasswordInput(
-        attrs={
-            "class": "password auth-form-field",
-            "autocomplete": "off",
-            "aria-label": "Password"
-        }
-    ))
+            attrs={
+                "class": "password auth-form-field",
+                "autocomplete": "off",
+                "aria-label": "Password"
+            }
+        )
+    )
 
 
 class customUserCreationForm(UserCreationForm):
     first_name = forms.CharField(
         label="First name",
         widget=forms.TextInput(
-        attrs={
-            "class": "name auth-form-field",
-            "autocomplete": "off",
-            "aria-label": "First name",
-        }
-    ))
+            attrs={
+                "class": "name auth-form-field",
+                "autocomplete": "off",
+                "aria-label": "First name",
+            }
+        )
+    )
 
     last_name = forms.CharField(
         label="Last name",
@@ -94,7 +97,7 @@ class customUserCreationForm(UserCreationForm):
         field_classes = {'username': UsernameField}
 
 
-class UserProfileForm(forms.ModelForm):
+class UserProfileForm(forms.Form):
     avatar = forms.ImageField(
         label="Click to select...",
         widget=forms.ClearableFileInput(
@@ -104,6 +107,35 @@ class UserProfileForm(forms.ModelForm):
         required=False
     )
 
-    class Meta:
-        model = User
-        fields = ['first_name', 'last_name', 'email']
+    first_name = forms.CharField(
+        label="First name",
+        widget=forms.TextInput(
+            attrs={
+                "class": "user-profile-field auth-form-field",
+                "autocomplete": "off",
+                "aria-label": "First name"
+            }
+        )
+    )
+
+    last_name = forms.CharField(
+        label="Last name",
+        widget=forms.TextInput(
+            attrs={
+                "class": "user-profile-field auth-form-field",
+                "autocomplete": "off",
+                "aria-label": "Last name"
+            }
+        )
+    )
+
+    email = forms.EmailField(
+        label="Email",
+        widget=forms.EmailInput(
+            attrs={
+                "class": "user-profile-field auth-form-field",
+                "autocomplete": "off",
+                "aria-label": "Email"
+            }
+        )
+    )
