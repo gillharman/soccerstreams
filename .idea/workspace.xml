@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a24984d9-905a-4a1e-8193-849e0157c296" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static_collected/css/user_profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/static_collected/css/user_profile.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/static/css/user_profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/users/static/css/user_profile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/user_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/user_profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -133,9 +129,9 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.views" />
-      <item itemvalue="Python.test" />
       <item itemvalue="Python.forms" />
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python.views" />
     </list>
     <recent_temporary>
       <list>

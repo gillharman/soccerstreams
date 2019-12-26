@@ -113,7 +113,8 @@ class UserProfileForm(forms.Form):
             attrs={
                 "class": "user-profile-field auth-form-field",
                 "autocomplete": "off",
-                "aria-label": "First name"
+                "aria-label": "First name",
+                "placeholder": "First name (Required)"
             }
         )
     )
@@ -124,7 +125,8 @@ class UserProfileForm(forms.Form):
             attrs={
                 "class": "user-profile-field auth-form-field",
                 "autocomplete": "off",
-                "aria-label": "Last name"
+                "aria-label": "Last name",
+                "placeholder": "Last name (Required)"
             }
         )
     )
@@ -135,7 +137,9 @@ class UserProfileForm(forms.Form):
             attrs={
                 "class": "user-profile-field auth-form-field",
                 "autocomplete": "off",
-                "aria-label": "Email"
+                "aria-label": "Email",
+                "placeholder": "Email address"
             }
-        )
+        ),
+        required=False
     )
