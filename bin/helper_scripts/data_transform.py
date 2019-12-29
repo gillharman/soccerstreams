@@ -66,26 +66,22 @@ def transform():
                 transform_teams_in_league(data)
 
 
-def transform_logos():
-    os.chdir('data')
-    with open('logos.json') as f:
-        data = json.load(f)
-
-        for logo in data:
-            team = Team.objects.filter(api_id=logo["team__api_id"]).first()
-            if team:
-                current = Team_Logo.objects.filter(team=team).first()
-                if current:
-                   print('Logo Already exists in database for ' + current.team.name)
-                else:
-                    print('Creating new Logo entry for ' + team.name)
-                    team_logo = Team_Logo()
-                    team_logo.logo_48x48 = logo["logo_48x48"]
-                    team_logo.logo_48x48_url = logo["logo_48x48_url"]
-                    team_logo.logo_96x96 = logo["logo_96x96"]
-                    team_logo.logo_96x96_url = logo["logo_96x96_url"]
-                    team_logo.team = team
-                    team_logo.save()
+def transform_logos(data):
+    for logo in data:
+        team = Team.objects.filter(api_id=logo["team__api_id"]).first()
+        if team:
+            current = Team_Logo.objects.filter(team=team).first()
+            if current:
+               print('Logo Already exists in database for ' + current.team.name)
+            else:
+                print('Creating new Logo entry for ' + team.name)
+                team_logo = Team_Logo()
+                team_logo.logo_48x48 = logo["logo_48x48"]
+                team_logo.logo_48x48_url = logo["logo_48x48_url"]
+                team_logo.logo_96x96 = logo["logo_96x96"]
+                team_logo.logo_96x96_url = logo["logo_96x96_url"]
+                team_logo.team = team
+                team_logo.save()
 
 
 def updateLogos(data):
@@ -103,3 +99,15 @@ def updateLogos(data):
             updated += 1
         else:
             ignored += 1
+
+
+def read_file():
+    path = input("Path of the file: ")
+    json_object = input("Load into json object? (Y/N) ")
+    with open(path, "r") as f:
+        if json_object.lower() == "y":
+            data = json.load(f)
+        else:
+            data = f.read()
+
+    return data
