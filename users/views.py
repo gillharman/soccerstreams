@@ -52,6 +52,12 @@ def RegistrationSuccessfulView(request):
 
 
 def user_profile_view(request):
+    user = User.objects.get(id=request.user.id)
+    form = UserProfileForm({
+        "first_name": user.first_name,
+        "last_name": user.last_name,
+        "email": user.email
+    }, {})
     if request.method == "POST":
         user = User.objects.get(id=request.user.id)
         form = UserProfileForm(request.POST, request.FILES)
@@ -64,12 +70,6 @@ def user_profile_view(request):
             user.email = form.cleaned_data["email"]
             user.save()
 
-    user = User.objects.get(id=request.user.id)
-    form = UserProfileForm({
-        "first_name": user.first_name,
-        "last_name": user.last_name,
-        "email": user.email
-    })
     avatar = AvatarFileRetrieval(user)
     avatar_instance = ""
     avatar_bytes = ""

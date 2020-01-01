@@ -80,6 +80,13 @@ def get_league_homepage_url(league_code):
         return '/' + str(league_code)
 
 
+@register.filter(name="has_errors")
+def has_errors(form):
+    if form.errors:
+        return "display: block;"
+    else:
+        return ""
+
 
 # HELPER FUNCTION FOR THE TAGS ABOVE
 def get_logo_url(team_id, logo_dimension):

@@ -1,5 +1,6 @@
 {% extends 'base_2.html' %}
 {% load staticfiles %}
+{% load element_classes %}
 
 {% block css %}
 <link rel="stylesheet" href="{% static 'css/auth.css' %}">
@@ -14,9 +15,20 @@
 <div class="container content">
     <div class="user-profile-container wrapper-outline">
         <form id="user-profile-form" enctype="multipart/form-data" method="post" action="{% url 'user_profile' %}">
+            <div id="form-errors" class="row" style="{{ data.form|has_errors }}">
+                <div class="col alert alert-danger">
+                    {% if data.form.errors %}
+                    {% for key, values in data.form.errors.items %}
+                    {% for value in values %}
+                    {{ value }}
+                    {% endfor %}
+                    {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
             <div class="row">
                 {% csrf_token %}
-                <div id="user-avatar" class="col-12 col-md-3">
+                <div id="user-avatar" class="col-12 col-md-4">
                     <div class="preview">
                         {% if data.avatar %}
                         <img src="data:image/{{ data.avatar.format }};base64,{{ data.avatar_bytes }}" width="70" height="70"/>
@@ -25,37 +37,41 @@
                         {% endif %}
                     </div>
                     <div>
-                        <label for="id_{{ data.form.avatar.name }}" class="btn btn-link">{{ data.form.avatar.label }}</label>
+                        <label for="id_{{ data.form.avatar.name }}" class="btn btn-link file-selector-label">{{ data.form.avatar.label }}</label>
                         {{ data.form.avatar }}
                     </div>
                 </div>
-                <div id="user-profile" class="col-12 col-md-9 user-profile">
-                        <div class="row">
-                            <div class="col">
-                                <label for="id_{{ data.form.first_name.name }}">{{ data.form.first_name.label }}</label>
-                                {{ data.form.first_name }}
-                            </div>
+                <div id="user-profile" class="col-12 col-md-8 user-profile">
+                    <div class="row">
+                        <div class="col">
+                            <label for="id_{{ data.form.first_name.name }}">{{ data.form.first_name.label }}</label>
+                            {{ data.form.first_name }}
                         </div>
-                        <div class="row">
-                            <div class="col">
-                                <label for="id_{{ data.form.last_name.name }}">{{ data.form.last_name.label }}</label>
-                                {{ data.form.last_name }}
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="id_{{ data.form.last_name.name }}">{{ data.form.last_name.label }}</label>
+                            {{ data.form.last_name }}
                         </div>
-                        <div class="row">
-                            <div class="col">
-                                <label for="id_{{ data.form.email.name }}">{{ data.form.email.label }}</label>
-                                {{ data.form.email }}
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="id_{{ data.form.email.name }}">{{ data.form.email.label }}</label>
+                            {{ data.form.email }}
                         </div>
-                        <div class="row submit-button">
-                            <div class="col">
-                                <input class="btn btn-primary" type="submit" value="Save" />
-                            </div>
+                    </div>
+                    <div class="row submit-button">
+                        <div class="col">
+                            <input class="btn btn-primary" type="submit" value="Save" />
                         </div>
+                    </div>
                 </div>
             </div>
         </form>
     </div>
 </div>
+{% endblock %}
+
+{% block script %}
+<script src="{% static 'js/user_profile.js' %}"></script>
 {% endblock %}

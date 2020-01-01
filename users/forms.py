@@ -99,11 +99,12 @@ class customUserCreationForm(UserCreationForm):
 
 class UserProfileForm(forms.Form):
     avatar = forms.ImageField(
-        label="Click to select...",
+        label="Click to select",
         widget=forms.ClearableFileInput(
             attrs={
                 "class": "file-selector-input",
             }),
+        allow_empty_file=True,
         required=False
     )
 

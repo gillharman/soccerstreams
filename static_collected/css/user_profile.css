@@ -24,6 +24,11 @@
     font-size: 70px;
 }
 
+#form-errors {
+    display: none;
+    text-align: center;
+}
+
 .user-profile {
     text-align: left;
 }
@@ -40,8 +45,18 @@
     border-radius: inherit;
 }
 
+.file-selector-label {
+    display: block;
+    max-width: 130px;
+    margin: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .file-selector-input {
-    display: none;
+    opacity: 0;
+    left: 0;
+    position: absolute; /* Retains layout with a "hidden" element */
 }
 
 .submit-button {
