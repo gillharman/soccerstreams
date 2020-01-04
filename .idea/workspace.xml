@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="a24984d9-905a-4a1e-8193-849e0157c296" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/static/css/user_profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/users/static/css/user_profile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/static/js/user_profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/users/static/js/user_profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/user_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/user_profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crons/bin/getMatches.py" beforeDir="false" afterPath="$PROJECT_DIR$/crons/bin/getMatches.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matches/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/matches/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/static/css/league_matches.css" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/css/league_matches.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/templates/games/templates/league_matches.html" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/templates/games/templates/league_matches.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/templatetags/element_classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/templatetags/element_classes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

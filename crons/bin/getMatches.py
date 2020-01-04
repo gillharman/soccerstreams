@@ -91,12 +91,15 @@ def get_teams():
     return True
 
 
-def sanitize_status(string):
-    words = string.split("_")
-    capitalized_words = []
-    for word in words:
-        capitalized_words.append(word.capitalize())
-    return " ".join(capitalized_words)
+def sanitize_string(string):
+    if string is not None or string != "null":
+        words = string.split("_")
+        capitalized_words = []
+        for word in words:
+            capitalized_words.append(word.capitalize())
+        return " ".join(capitalized_words)
+
+    return ""
 
 
 def get_matches(start_date=None, end_date=None):
@@ -116,6 +119,7 @@ def get_matches(start_date=None, end_date=None):
     query = "?dateFrom=%s&dateTo=%s" % (start_date, end_date)
     tracked_leagues = League.objects.filter(tracked=True)
     match_status_choices = dict((key, value) for (value, key) in Match.STATUS_CHOICES)
+    match_winner_choices = dict((key, value) for (value, key) in Match.WINNER_CHOICES)
     for tracked_league in tracked_leagues:
         url = FOOTBALL_API_BASE_URL + FOOTBALL_API_URLS["matches"] % str(tracked_league.api_id) + query
         request = make_request(url, request_headers["football-api"])
@@ -125,27 +129,32 @@ def get_matches(start_date=None, end_date=None):
                 try:
                     home_team = Team.objects.get(api_id=match["homeTeam"]["id"])
                     away_team = Team.objects.get(api_id=match["awayTeam"]["id"])
-                    match_status = sanitize_status(match["status"])  # Ex. IN_PLAY -> In Play
+                    match_status = sanitize_string(str(match["status"]))  # Ex. IN_PLAY -> In Play
+                    match_winner = sanitize_string(str(match["score"]["winner"]))
                     match_datetime = datetime.strptime(match["utcDate"], "%Y-%m-%dT%H:%M:%SZ")
                     match_datetime = match_datetime.replace(tzinfo=pytz.utc)
+                    new_match = Match()
                     try:
                         new_match = Match.objects.get(api_match_id=match["id"])
-                        new_match.status = match_status_choices[match_status]
-                        new_match.save()
-                    except ObjectDoesNotExist:
+                    except Match.DOESNOTEXIST as e:
                         print(match["homeTeam"]["name"] +
                               " vs " + match["awayTeam"]["name"] +
                               " does not exist. Creating...")
-                        new_match = Match()
                         new_match.api_match_id = match["id"]
-                        new_match.status = match_status_choices[match_status]
                         new_match.match_day = match["matchday"]
                         new_match.match_date_time = match_datetime
                         new_match.home_team = home_team
                         new_match.away_team = away_team
                         new_match.league = League.objects.get(id=tracked_league.id)
+                    finally:
+                        new_match.status = match_status_choices[match_status]
+                        new_match.goals_scored_home_team = match["score"]["fullTime"]["homeTeam"]
+                        new_match.goals_scored_away_team = match["score"]["fullTime"]["awayTeam"]
+                        new_match.penalty_goals_home_team = match["score"]["penalties"]["homeTeam"]
+                        new_match.penalty_goals_away_team = match["score"]["penalties"]["awayTeam"]
+                        new_match.winner = match_winner_choices[match_winner]
                         new_match.save()
-                except ObjectDoesNotExist:
+                except Team.DOESNOTEXIST as e:
                     print("Home or Away does not exists...")
                     raise
                 except KeyError:
@@ -156,4 +165,5 @@ def get_matches(start_date=None, end_date=None):
             print(request["message"])
             raise
     print("Matches created/updated successfully!")
+
     return True

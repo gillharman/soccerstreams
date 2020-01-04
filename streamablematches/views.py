@@ -22,7 +22,7 @@ def welcome(request):
 def league_matches(request, league="PL"):
     is_mobile = isMobile(request)
     games = Match.objects.get_games()
-    games = Match.objects.filter(league__code=league).order_by('match_day')
+    games = Match.objects.filter(league__code=league).order_by('match_day', 'match_date_time')
     try:
         league_title = League.objects.filter(code=league).first().name
     except:

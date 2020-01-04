@@ -28,6 +28,7 @@ def date_format(value):
         r = datetime.strftime(value, "%m/%d")
     return r
 
+
 @register.filter(name="time_format")
 def time_format(value):
     n = random.randint(1,3)
@@ -39,6 +40,37 @@ def time_format(value):
     else:
         r = ''
     return r
+
+
+@register.filter(name="get_status_class")
+def get_status_class(match):
+    element_class = ""
+    if match.status == match.FINISHED:
+        element_class = "full-time"
+
+    return element_class
+
+
+@register.filter(name="get_result")
+def get_result(match, side):
+    result = ""
+    if match.status == match.FINISHED:
+        if match.winner == match.HOME_TEAM:
+            if side == "home":
+                result = "winner"
+            else:
+                result = "loser"
+
+        elif match.winner == match.AWAY_TEAM:
+            if side == "home":
+                result = "loser"
+            else:
+                result = "winner"
+
+        elif match.winner == match.DRAW:
+            result = "draw"
+
+    return result
 
 
 @register.filter(name="get_logo_url_48x48")

@@ -24,6 +24,7 @@ class MatchQuerySet(models.QuerySet):
         away_team = name[1]
         return self.filter(home_team__short_name=home_team, away_team__short_name=away_team, match_date_time__date=date_)
 
+
 # Create your models here.
 class Match(models.Model):
     SCHEDULED = 'SH'
@@ -34,6 +35,7 @@ class Match(models.Model):
     POSTPONED = 'PP'
     SUSPENDED = 'SS'
     CANCELED = 'CN'
+
     STATUS_CHOICES = (
         (SCHEDULED, 'Scheduled'),
         (LIVE, 'Live'),
@@ -44,6 +46,17 @@ class Match(models.Model):
         (SUSPENDED, 'Suspended'),
         (CANCELED, 'Canceled'),
     )
+
+    HOME_TEAM = 'HO'
+    AWAY_TEAM = 'AT'
+    DRAW = 'DW'
+
+    WINNER_CHOICES = (
+        (HOME_TEAM, 'Home Team'),
+        (AWAY_TEAM, 'Away Team'),
+        (DRAW, 'Draw')
+    )
+
     api_match_id = models.IntegerField()
     status = models.CharField(max_length=2, choices=STATUS_CHOICES)
     match_day = models.IntegerField()
@@ -51,6 +64,11 @@ class Match(models.Model):
     home_team = models.ForeignKey(Team, on_delete=models.CASCADE, related_name="homeTeam")
     away_team = models.ForeignKey(Team, on_delete=models.CASCADE, related_name="awayTeam")
     league = models.ForeignKey(League, on_delete=models.CASCADE)
+    goals_scored_home_team = models.IntegerField(null=True)
+    goals_scored_away_team = models.IntegerField(null=True)
+    penalty_goals_home_team = models.IntegerField(null=True)
+    penalty_goals_away_team = models.IntegerField(null=True)
+    winner = models.CharField(max_length=2, choices=WINNER_CHOICES, default="")
     ace_link = models.BooleanField(default=False)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)

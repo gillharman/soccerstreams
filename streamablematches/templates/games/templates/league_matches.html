@@ -43,21 +43,40 @@
                          <tbody>
                          <tr class="mt-sp"><td colspan="2"></td></tr>
                          <tr>
-                             <td class="team">
+                             <td class="team {{ match|get_result:'home' }}">
                                  <div class="team-logo"><img src="{{ match.home_team.id|get_logo_url_48x48 }}" height="24px;" width="24px;"></div>
                                  <div style="display: inline-block;">{{ match.home_team.short_name }}</div>
-                                 <div class="score">2</div>
+                                 {% if match.status == match.FINISHED %}
+                                 <div class="result">
+                                    <div class="score">{{ match.goals_scored_home_team }}</div>
+                                    {% if match.winner == match.HOME_TEAM %}
+                                    <i class="fa fa-caret-left"></i>
+                                    {% endif %}
+                                    {% endif %}
+                                 </div>
                              </td>
-                             <td rowspan="2" class="date-time">
-                                 <div>{{ match.match_date_time|date_format }}</div>
-                                 <div>{{ match.match_date_time|time_format }}</div>
+                             <td rowspan="2" class="date-time {{ match|get_status_class }}">
+                                 {% if match.status == match.FINISHED %}
+                                 <div>FT</div>
+                                 {% endif %}
+                                 <div class="date">{{ match.match_date_time|date_format }}</div>
+                                 {% if match.status == match.SCHEDULED or match.status == match.POSTPONED %}
+                                 <div class="time">{{ match.match_date_time|time_format }}</div>
+                                 {% endif %}
                              </td>
                          </tr>
                          <tr>
-                             <td class="team">
+                             <td class="team {{ match|get_result:'away' }}">
                                  <div class="team-logo"><img src="{{ match.away_team.id|get_logo_url_48x48 }}" height="24px;" width="24px;"></div>
                                  <div style="display: inline-block;">{{ match.away_team.short_name }}</div>
-                                 <div class="score">2</div>
+                                 {% if match.status == match.FINISHED %}
+                                 <div class="result">
+                                    <div class="score">{{ match.goals_scored_away_team }}</div>
+                                    {% if match.winner == match.AWAY_TEAM %}
+                                    <i class="fa fa-caret-left"></i>
+                                 </div>
+                                 {% endif %}
+                                 {% endif %}
                              </td>
                          </tr>
                          <tr class="mt-sp"><td colspan="2"></td></tr>
