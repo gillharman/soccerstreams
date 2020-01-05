@@ -47,14 +47,36 @@
     padding-right: 5px;
 }
 
-.score {
+.result {
     float: right;
+}
+
+.result > .fa-caret-left {
+    margin-left: -6px;
+}
+
+.score {
     display: inline-block;
-    padding-right: 6px;
+    padding-right: 8px;
 }
 
 .date-time {
     font-size: 12px;
     text-align: center;
-    border-left: 1px solid rgb(0,0,0,0.05)
+    border-left: 1px solid rgb(0,0,0,0.05);
+}
+
+.full-time > .date {
+    color: rgb(0,0,0,.54);
+}
+
+.loser {
+    color: rgb(0,0,0,.54);
+}
+
+.time-information {
+    background-color: white;
+    font-style: italic;
+    padding: 16px 24px;
+    border-top: 1px solid #ebebeb;
 }

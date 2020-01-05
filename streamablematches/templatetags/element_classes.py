@@ -1,6 +1,6 @@
 from django import template
 from datetime import date, datetime
-import random
+from pytz import timezone
 
 from bin.helper_scripts.linkClassClassifier import link_class_classifier
 
@@ -8,38 +8,44 @@ from teams.models import Team
 
 register = template.Library()
 
+
 @register.filter(name="link_score_class")
 def link_score_class(value):
     classes = ['success', 'danger', 'secondary']
     return link_class_classifier(value, classes)
+
 
 @register.filter(name="link_score_icon_class")
 def link_score_icon_class(value):
     classes = ['fa-arrow-circle-o-up', 'fa-arrow-circle-o-down', 'fa fa-star-o']
     return link_class_classifier(value, classes)
 
+
 @register.filter(name="date_format")
 def date_format(value):
     match_date = value.date()
     today_day = date.today()
     if match_date == today_day:
-        r = 'Today'
+        d = 'Today'
     else:
-        r = datetime.strftime(value, "%m/%d")
-    return r
+        day = datetime.strftime(value, "%a, ")
+        date_of_month = datetime.strftime(value, "%m/%d")
+        if date_of_month.startswith("0"):
+            date_of_month = date_of_month[1:]
+        d = day + date_of_month
+
+    return d
 
 
 @register.filter(name="time_format")
 def time_format(value):
-    n = random.randint(1,3)
-    match_date = value.date()
-    today_day = date.today()
-    # if match_date >= today_day:
-    if n == 3:
-        r = datetime.strftime(value, "%I:%M %p")
-    else:
-        r = ''
-    return r
+    eastern = timezone("US/Eastern")
+    eastern_time = value.astimezone(eastern)
+    t = datetime.strftime(eastern_time, "%I:%M %p")
+    if t.startswith("0"):
+        t = t[1:]
+
+    return t
 
 
 @register.filter(name="get_status_class")
@@ -101,7 +107,6 @@ def bottom_border(value, num_matches):
         return " bottom-border"
     else:
         return ""
-
 
 
 @register.filter(name="get_league_homepage_url")

@@ -73,3 +73,10 @@
 .loser {
     color: rgb(0,0,0,.54);
 }
+
+.time-information {
+    background-color: white;
+    font-style: italic;
+    padding: 16px 24px;
+    border-top: 1px solid #ebebeb;
+}
