@@ -26,6 +26,7 @@
 
 {% block content %}
 <div id="wrapper" class="container content content-width wrapper-outline">
+    {% if data.matches %}
     {% regroup data.matches by match_day as matches %}
     <div id="match-days-wrapper">
         {% for match_day in matches %}
@@ -96,5 +97,8 @@
         {% endfor %}
     </div>
     <div class="time-information">All times are in Eastern Time</div>
+    {% else %}
+    <div class="no-matches">No matches available for this competition.</div>
+    {% endif %}
 </div>
 {% endblock %}

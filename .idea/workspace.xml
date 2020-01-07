@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a24984d9-905a-4a1e-8193-849e0157c296" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/streamablematches/static/css/league_matches.css" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/css/league_matches.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/streamablematches/templates/games/templates/league_matches.html" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/templates/games/templates/league_matches.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamablematches/templatetags/element_classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/templatetags/element_classes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/templates/author.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/author.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

@@ -9,7 +9,6 @@
 }
 
 .match {
-    background-color: white;
     padding: 0px;
 }
 
@@ -75,8 +74,13 @@
 }
 
 .time-information {
-    background-color: white;
     font-style: italic;
     padding: 16px 24px;
     border-top: 1px solid #ebebeb;
+}
+
+.no-matches {
+    font-style: italic;
+    text-align: center;
+    padding: 60px;
 }
