@@ -92,7 +92,7 @@ def get_teams():
 
 
 def sanitize_string(string):
-    if string is not None or string != "null":
+    if string is not None:
         words = string.split("_")
         capitalized_words = []
         for word in words:
@@ -129,14 +129,14 @@ def get_matches(start_date=None, end_date=None):
                 try:
                     home_team = Team.objects.get(api_id=match["homeTeam"]["id"])
                     away_team = Team.objects.get(api_id=match["awayTeam"]["id"])
-                    match_status = sanitize_string(str(match["status"]))  # Ex. IN_PLAY -> In Play
-                    match_winner = sanitize_string(str(match["score"]["winner"]))
+                    match_status = sanitize_string(match["status"])  # Ex. IN_PLAY -> In Play
+                    match_winner = sanitize_string(match["score"]["winner"])
                     match_datetime = datetime.strptime(match["utcDate"], "%Y-%m-%dT%H:%M:%SZ")
                     match_datetime = match_datetime.replace(tzinfo=pytz.utc)
                     new_match = Match()
                     try:
                         new_match = Match.objects.get(api_match_id=match["id"])
-                    except Match.DOESNOTEXIST as e:
+                    except Match.DoesNotExist as e:
                         print(match["homeTeam"]["name"] +
                               " vs " + match["awayTeam"]["name"] +
                               " does not exist. Creating...")
@@ -152,18 +152,38 @@ def get_matches(start_date=None, end_date=None):
                         new_match.goals_scored_away_team = match["score"]["fullTime"]["awayTeam"]
                         new_match.penalty_goals_home_team = match["score"]["penalties"]["homeTeam"]
                         new_match.penalty_goals_away_team = match["score"]["penalties"]["awayTeam"]
-                        new_match.winner = match_winner_choices[match_winner]
+                        if match_winner is not None and match_winner != "":
+                            new_match.winner = match_winner_choices[match_winner]
                         new_match.save()
-                except Team.DOESNOTEXIST as e:
+                except Team.DoesNotExist as e:
                     print("Home or Away does not exists...")
                     raise
                 except KeyError:
-                    raise KeyError
+                    raise
                 except ValueError:
                     raise ValueError("Invalid Date Format!")
         except KeyError:
             print(request["message"])
             raise
     print("Matches created/updated successfully!")
+
+    return True
+
+
+def update_match_day():
+    leagues = League.objects.filter(tracked=True)
+    for league in leagues:
+        url = FOOTBALL_API_BASE_URL + FOOTBALL_API_URLS["competitionSeasons"] % str(league.api_id)
+        request = make_request(url, request_headers["football-api"])
+        try:
+            data = request["data"]
+            try:
+
+                league.current_match_day = data["currentSeason"]["currentMatchday"]
+                league.save()
+            except KeyError as e:
+                print(e)
+        except KeyError as e:
+            print("{0} - {1}".format(str(request["message"]), e.__str__()))
 
     return True

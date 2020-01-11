@@ -2,7 +2,8 @@ from django_cron import CronJobBase, Schedule
 from datetime import datetime, timedelta
 import pytz
 
-from .bin import streamableGames, storeLineups, getMatches, getLineups, scraper
+from .bin import (streamableGames, storeLineups, getMatches,
+                  getLineups, scraper)
 
 from logs.models import RequestLogs, RotowireRequest
 from matches.models import Match
@@ -32,6 +33,7 @@ class Get_Games(CronJobBase):
         getMatches.get_matches()
         print('Matching streamable games...')
         streamableGames.match_streamable_games()
+        getMatches.update_match_day()
         print('Complete.')
 
 
