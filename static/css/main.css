@@ -220,10 +220,13 @@ body {
     text-align: right;
     position: fixed;
     bottom: 0;
+    z-index: 10;
 }
 
-#footer a {
+#footer button {
     color: #757575;
+    font-size: inherit;
+    padding: inherit;
 }
 
 @media only screen and (min-width: 450px) {
