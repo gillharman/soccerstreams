@@ -21,6 +21,13 @@ $(document).ready(function() {
         }
         onPageLoad();  // ADD HANDLERS AFTER THE FIRST TIME THE PAGE LOAD
     }
+
+    var current_match_day = $("#current-match-day").val();
+    if(current_match_day) {
+      var position_from_top = $("#match-day-" + current_match_day).offset().top;
+      position_from_top = position_from_top - 200;  // Scrolls the element into view.
+      window.scroll(0, position_from_top);
+    }
 })
 
 function onPageLoad(){

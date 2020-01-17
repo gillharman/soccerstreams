@@ -7,7 +7,9 @@
 {% endblock %}
 
 {% block navtitle %}
-{{ data.league_title }}
+{% if data.league %}
+{{ data.league.name }}
+{% endif %}
 {% endblock %}
 
 {% block navoptions %}
@@ -95,6 +97,7 @@
             {% endwith %}
         </div>
         {% endfor %}
+        <input id="current-match-day" type="hidden" value="{{ data.league.current_match_day }}" />
     </div>
     <div class="time-information">All times are in Eastern Time</div>
     {% else %}

@@ -11,7 +11,8 @@
     <link rel="icon" type="image/png" href="{% static 'img/favicon-16x16.png' %}" >
     <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" >
+    <link rel="stylesheet" href="{% static 'css/main.about.css' %}" >
     {% block css %}
     {% endblock %}
 
@@ -21,7 +22,7 @@
         {% endblock %}
     </title>
 </head>
-<body>
+<div>
 <div id="nav" class="container-fluid">
     <div id="nav-header" class="clearfix">
         <div id="nav-title">
@@ -62,23 +63,27 @@
     {% block navoptions %}
     {% endblock %}
 </div>
-
+<div>
+{% include 'author.html' %}
+</div>
 {% block content %}
 {% endblock %}
 <div id="footer" class="container-fluid">
     <div class="row">
         <div class="col">
-            <a href="{% url 'about' %}">About</a>
+            <button id="aboutMe" class="btn btn-link">About Me</button>
         </div>
     </div>
 </div>
+
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
 <script>
-    window.jQuery || document.write('<script src="{% static 'bootstrap/js/vendor/jquery-3.3.1.min.js' %}"><\/script>')
-    window.angular || document.write('<script src="{% static 'angularjs/angularjs-1.7.8.min.js' %}"><\/script>')
+    window.jQuery || document.write('<script src="{% static 'bootstrap/js/vendor/jquery-3.3.1.min.js' %}" type="text/javascript"><\/script>')
+    window.angular || document.write('<script src="{% static 'node_modules/angular/angular.js' %}" type="text/javascript"><\/script>')
 </script>
 <script src="{% static 'js/main.js' %}"></script>
+<script src="{% static 'js/main.about.js' %}"></script>
 {% block script %}
 {% endblock %}
 </body>

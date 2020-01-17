@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a24984d9-905a-4a1e-8193-849e0157c296" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/static/css/main.about.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/main.about.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crons/bin/getMatches.py" beforeDir="false" afterPath="$PROJECT_DIR$/crons/bin/getMatches.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leagues/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/leagues/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/soccerstreams/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/soccerstreams/settings/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/templates/games/templates/league_matches.html" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/templates/games/templates/league_matches.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base_2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/templates/author.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/author.html" afterDir="false" />
     </list>
