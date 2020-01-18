@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a24984d9-905a-4a1e-8193-849e0157c296" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/users/static/img/linkedin-icon_square_32x32.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/soccerstreams/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/soccerstreams/settings/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/main.about.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/main.about.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/templates/author.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/author.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,19 +40,19 @@
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/bin/helper_scripts/get_Images.py" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gillh\PycharmProjects\soccerstreams\users\static\img" />
+      <recent name="C:\Users\gillh\PycharmProjects\soccerstreams\streamablematches\templatetags" />
+      <recent name="C:\Users\gillh\PycharmProjects\soccerstreams\users" />
+      <recent name="C:\Users\gillh\PycharmProjects\soccerstreams" />
+      <recent name="C:\Users\gillh\PycharmProjects\soccerstreams\crons\bin\deprecated" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams" />
       <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\static\js" />
       <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\static\css" />
       <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\templates" />
       <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\streamablematches\templates\games\templates" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\gillh\PycharmProjects\soccerstreams\streamablematches\templatetags" />
-      <recent name="C:\Users\gillh\PycharmProjects\soccerstreams\users" />
-      <recent name="C:\Users\gillh\PycharmProjects\soccerstreams" />
-      <recent name="C:\Users\gillh\PycharmProjects\soccerstreams\crons\bin\deprecated" />
-      <recent name="C:\Users\gillh\PycharmProjects\soccerstreams\soccerstreams\settings" />
     </key>
   </component>
   <component name="RunDashboard">

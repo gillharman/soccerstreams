@@ -10,14 +10,17 @@
 .modal-content {
     border: 0px;
     margin: 10% auto;
-    height: 500px;
-    max-width: 720px;
+    max-width: 620px;
     overflow-y: auto;
     overflow-x: hidden;
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
     animation-duration: 0.4s;
+}
+
+.modal-body {
+    min-height: 250px;
 }
 
 /* Add Animation */

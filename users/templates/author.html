@@ -1,3 +1,5 @@
+{% load staticfiles %}
+
 <div id="aboutMeModal" class="container modal">
     <div class="modal-content">
         <div class="row">
@@ -14,16 +16,22 @@
             <div class="col">
                 <div class="modal-body">
                     <div class="row">
-                        <div style="text-align: center;" class="col-md-4">
-                            <i style="font-size: 120px;" class="fa fa-user-circle"></i>
-                        </div>
-                        <div class="col-md-8 about-me-text">
+                        <div class="col about-me-text">
                             <p>Hi, Welcome to SoccerStreams!</p>
                             <p>I created this website to make it easy for you to find AceStreams for the soccer matches that are happening today.</p>
                             <p>You will also find other information like lineups prior to the start of the match. And if logged in, you can also submit your own AceStreams links!</p>
                             <p>A little about me -- In my free time, I'm usually working on my personal projects or playing Fifa 20.</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="modal-footer">
+                    <a href="https://www.linkedin.com/in/harman-gill-b85524199" target="_blank">
+                        <img src="{% static 'img/linkedin-icon_square_32x32.png' %}" alt="LinkedIn" />
+                    </a>
                 </div>
             </div>
         </div>
