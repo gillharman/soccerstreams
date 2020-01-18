@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a24984d9-905a-4a1e-8193-849e0157c296" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/users/static/img/linkedin-icon_square_32x32.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/soccerstreams/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/soccerstreams/settings/base.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/main.about.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/main.about.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/main.about.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/main.about.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/templates/author.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/author.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

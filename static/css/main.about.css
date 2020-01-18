@@ -35,15 +35,17 @@
 }
 
 .close-button {
+    border-radius: 3px;
     font-size: 16px;
-    text-align: right;
+    padding: 4px 10px;
 }
 
-.close-button .fa:hover,
-.close-button .fa:focus {
-    color: #ddd;
+.close-button:hover,
+.close-button:focus {
+    color: #ffffff;
     text-decoration: none;
     cursor: pointer;
+    background-color: #ddd;
 }
 
 .about-me-text {

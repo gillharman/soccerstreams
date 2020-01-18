@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $("#aboutMe").on("click", openAboutMeModal);
-    $(".close-button .fa.fa-times").on("click", closeAboutMeModal);
+    $(".close-button").on("click", closeAboutMeModal);
 });
 
 function openAboutMeModal() {
