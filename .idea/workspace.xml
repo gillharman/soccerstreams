@@ -2,11 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a24984d9-905a-4a1e-8193-849e0157c296" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/helper_scripts/data_transform.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/datatransform.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/helper_scripts/get_Images.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/getimages.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/helper_scripts/groupByStreamer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/helper_scripts/isMobile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/helper_scripts/linkClassClassifier.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/helper_scripts/makeRequest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/helper_scripts/storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/storage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/helper_scripts/view_helpers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crons/bin/deprecated/storeMatches_deprecated.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crons/bin/getLineups.py" beforeDir="false" afterPath="$PROJECT_DIR$/crons/scripts/getlineups.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crons/bin/getMatches.py" beforeDir="false" afterPath="$PROJECT_DIR$/crons/scripts/getmatches.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crons/bin/scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/crons/scripts/scraper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crons/bin/storeLineups.py" beforeDir="false" afterPath="$PROJECT_DIR$/crons/scripts/storelineups.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crons/bin/streamableGames.py" beforeDir="false" afterPath="$PROJECT_DIR$/crons/scripts/streamablegames.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crons/scheduled_jobs.py" beforeDir="false" afterPath="$PROJECT_DIR$/crons/crons.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/logos.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/new_logos.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/soccerstreams/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/soccerstreams/settings/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/main.about.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/main.about.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/main.about.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/main.about.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/author.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/author.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/templatetags/base_template_methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/templatetags/base_template_methods.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/templatetags/element_classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/templatetags/element_classes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/worker.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,17 +56,18 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/djano-default" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/bin/helper_scripts/get_Images.py" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\gillh\PycharmProjects\soccerstreams\users\static\img" />
-      <recent name="C:\Users\gillh\PycharmProjects\soccerstreams\streamablematches\templatetags" />
-      <recent name="C:\Users\gillh\PycharmProjects\soccerstreams\users" />
+      <recent name="C:\Users\gillh\PycharmProjects\soccerstreams\streamablematches\static" />
+      <recent name="C:\Users\gillh\PycharmProjects\soccerstreams\streamablematches" />
       <recent name="C:\Users\gillh\PycharmProjects\soccerstreams" />
-      <recent name="C:\Users\gillh\PycharmProjects\soccerstreams\crons\bin\deprecated" />
+      <recent name="C:\Users\gillh\PycharmProjects\soccerstreams\crons\scripts" />
+      <recent name="C:\Users\gillh\PycharmProjects\soccerstreams\users\static\img" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams" />

@@ -11,8 +11,9 @@ from teams.models import Team_Logo
 from matches.models import Match
 from lineups.models import Lineup
 from leagues.models import League
-from bin.helper_scripts.isMobile import isMobile
-from bin.helper_scripts.view_helpers import team_info, lineup_info
+from utils import (
+    is_mobile, team_info, lineup_info
+)
 
 from .forms import AceStreamForm
 
@@ -21,7 +22,7 @@ def welcome(request):
 
 
 def league_matches(request, league="PL"):
-    is_mobile = isMobile(request)
+    _is_mobile = is_mobile(request)
     games = Match.objects.filter(league__code=league).order_by('match_day', 'match_date_time')
     try:
         league = League.objects.get(code=league)
@@ -48,7 +49,7 @@ def league_matches(request, league="PL"):
 
 
 def watch_game(request, match_id):
-    is_mobile = isMobile(request)
+    _is_mobile = is_mobile(request)
     streamable_game = StreamableMatch.objects.filter(match__id=match_id).first()
     links = []
     if streamable_game:
@@ -67,7 +68,7 @@ def watch_game(request, match_id):
     add_stream_formset = AceStreamFormSet()
     return render(request, 'games/templates/watch_game_2.html',
                   {"data": {
-                      "is_mobile_tablet": is_mobile,
+                      "is_mobile_tablet": _is_mobile,
                       "links": links,
                       "display_name": display_name,
                       "match": match,
@@ -77,7 +78,7 @@ def watch_game(request, match_id):
                   }})
 
 def get_match_info(request):
-    is_mobile = isMobile(request)
+    _is_mobile = is_mobile(request)
     match_id = request.GET['match_id']
     match = Match.objects.get(id=match_id)
     streamable_game = StreamableMatch.objects.filter(match__id=match_id)
@@ -98,7 +99,7 @@ def get_match_info(request):
 
     return render(request, 'games/templates/match_info.html',
                   {"data": {
-                      "is_mobile_tablet": is_mobile,
+                      "is_mobile_tablet": _is_mobile,
                       "match_id": match_id,
                       "home_team": home_team,
                       "away_team": away_team,

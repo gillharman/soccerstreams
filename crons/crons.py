@@ -2,8 +2,7 @@ from django_cron import CronJobBase, Schedule
 from datetime import datetime, timedelta
 import pytz
 
-from .bin import (streamableGames, storeLineups, getMatches,
-                  getLineups, scraper)
+from crons.scripts import getmatches, scraper, storelineups, getlineups, streamablegames
 
 from logs.models import RequestLogs, RotowireRequest
 from matches.models import Match
@@ -22,7 +21,7 @@ class StreamScraper(CronJobBase):
         print('Scrape Complete')
 
 
-class Get_Games(CronJobBase):
+class GetGames(CronJobBase):
     RUNS_EVERY_MINS = 0
 
     schedule = Schedule(run_every_mins=RUNS_EVERY_MINS)
@@ -30,14 +29,15 @@ class Get_Games(CronJobBase):
 
     def do(self):
         print('Retrieving games...')
-        getMatches.get_matches()
+        getmatches.get_matches()
         print('Matching streamable games...')
-        streamableGames.match_streamable_games()
-        getMatches.update_match_day()
-        print('Complete.')
+        streamablegames.match_streamable_games()
+        print("Updating current match day...")
+        getmatches.update_match_day()
+        print('Complete')
 
 
-class Get_Lineups(CronJobBase):
+class GetLineups(CronJobBase):
     RUNS_EVERY_MINS = 0
 
     schedule = Schedule(run_every_mins=RUNS_EVERY_MINS)
@@ -45,10 +45,10 @@ class Get_Lineups(CronJobBase):
 
     def do(self):
         print('Scrapping for lineups...')
-        getLineups.getLineups()
+        getlineups.get_lineups()
         print('Scrape complete')
         print('Storing lineups')
-        storeLineups.start()
+        storelineups.start()
         print('Complete')
 
 

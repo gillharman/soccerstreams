@@ -4,6 +4,7 @@ import json
 from leagues.models import League
 from teams.models import Team, Teams_in_League, Team_Logo
 
+
 def transform_leagues(data):
     for i in data['competitions']:
         league = League()
@@ -17,7 +18,7 @@ def transform_teams(data):
     ignore = 0
     insert = 0
     for i in data['teams']:
-        ### CHECK IF TEAM ALREADY EXITS ###
+        # CHECK IF TEAM ALREADY EXITS
         if Team.objects.filter(api_id=i['id'], name=i['name']):
             ignore += 1
             print(i['name'] + ' already exists')
@@ -35,6 +36,7 @@ def transform_teams(data):
 
     print('Team Transform: Total inserts: ' + str(insert))
     print('Team Transform: Ignored: ' + str(ignore))
+
 
 def transform_teams_in_league(data):
     ignore = 0
@@ -72,7 +74,7 @@ def transform_logos(data):
         if team:
             current = Team_Logo.objects.filter(team=team).first()
             if current:
-               print('Logo Already exists in database for ' + current.team.name)
+                print('Logo Already exists in database for ' + current.team.name)
             else:
                 print('Creating new Logo entry for ' + team.name)
                 team_logo = Team_Logo()
@@ -84,7 +86,7 @@ def transform_logos(data):
                 team_logo.save()
 
 
-def updateLogos(data):
+def update_logos(data):
     updated = 0
     ignored = 0
     for logo in data:

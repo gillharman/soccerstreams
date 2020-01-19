@@ -1,6 +1,6 @@
 from django import template
 
-from bin.helper_scripts.storage import AvatarFileRetrieval
+from storage import AvatarFileRetrieval
 
 from users.models import UserAvatar
 

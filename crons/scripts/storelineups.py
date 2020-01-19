@@ -8,7 +8,7 @@ from lineups.models import Lineup
 from logs.models import RotowireRequest
 
 
-def getMatchInstance(string, date_):
+def get_match_instance(string, date_):
     matches = Match.objects.get_match_display_name()
     close_match = difflib.get_close_matches(string, matches, n=1)
 
@@ -20,14 +20,14 @@ def getMatchInstance(string, date_):
             return m.first()
 
 
-def getLineup(tag):
-    retVal = {
+def get_lineup(tag):
+    ret_val = {
         'confirmed': False,
         'lineup': []
     }
     lineup_status = tag.find(class_=re.compile('lineup__status'))['class']
     if 'is-confirmed' in lineup_status:
-        retVal['confirmed'] = True
+        ret_val['confirmed'] = True
     line = tag.find_all(class_=re.compile('lineup__player'))
 
     for l in line:
@@ -36,15 +36,15 @@ def getLineup(tag):
         p = l.a.string
         player['position'] = pos.string
         player['name'] = p
-        retVal['lineup'].append(player)
-    return retVal
+        ret_val['lineup'].append(player)
+    return ret_val
 
 
-def saveLineup(o):
-    retVal = {"update":0, "insert":0}
+def save_lineup(o):
+    ret_val = {"update":0, "insert":0}
     existing_lineup = Lineup.objects.filter(match=o['match'], lineup_type=o['lineupType'])
     if existing_lineup:
-        retVal['update'] += 1
+        ret_val['update'] += 1
         existing_lineup.delete()
     for player in o['lineup']:
         l = Lineup()
@@ -54,10 +54,10 @@ def saveLineup(o):
         l.match = o['match']
         l.confirmed = o['confirmed']
         l.save()
-    return retVal
+    return ret_val
 
 
-def storeLineups(league):
+def store_lineups(league):
     lineup_html = ''
     html = RotowireRequest.objects.get_html(league)
     if html and html.parsed_count == 0:
@@ -78,20 +78,20 @@ def storeLineups(league):
                 else:
                     print('Invalid match up')
 
-            match = getMatchInstance(home_team + ' vs ' + away_team, date_.date())
+            match = get_match_instance(home_team + ' vs ' + away_team, date_.date())
             # print('match ' + match)
-            home_lineup = getLineup(lineup.find(class_='lineup__list is-home'))
-            away_lineup = getLineup(lineup.find(class_='lineup__list is-visit'))
+            home_lineup = get_lineup(lineup.find(class_='lineup__list is-home'))
+            away_lineup = get_lineup(lineup.find(class_='lineup__list is-visit'))
 
             if match:
-                saved_home_lineup = saveLineup({
+                saved_home_lineup = save_lineup({
                     'match': match,
                     'confirmed': home_lineup['confirmed'],
                     'lineup': home_lineup['lineup'],
                     'lineupType': 'H',
                     'team': home_team
                 })
-                saved_away_lineup = saveLineup({
+                saved_away_lineup = save_lineup({
                     'match': match,
                     'confirmed': away_lineup['confirmed'],
                     'lineup': away_lineup['lineup'],
@@ -113,5 +113,5 @@ def storeLineups(league):
 def start():
     LEAGUES = ["PL", "CL", "FL1", "BL1", "SA", "DED", "PPL", "PD"]
     for league in LEAGUES:
-        storeLineups(league)
+        store_lineups(league)
     return 'Complete'

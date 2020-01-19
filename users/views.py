@@ -1,6 +1,4 @@
-from io import BytesIO
 from base64 import b64encode
-from PIL import Image
 
 from django.contrib.auth.views import LoginView, LogoutView
 from django.shortcuts import render, redirect, HttpResponse
@@ -8,7 +6,7 @@ from django.shortcuts import render, redirect, HttpResponse
 from .forms import customAuthForm, customUserCreationForm, UserProfileForm
 from .models import User, UserAvatar
 
-from bin.helper_scripts.storage import AvatarFileStorage, AvatarFileRetrieval
+from storage import AvatarFileStorage, AvatarFileRetrieval
 
 # Create your views here.
 

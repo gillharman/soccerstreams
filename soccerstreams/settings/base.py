@@ -57,13 +57,14 @@ MIDDLEWARE = [
 ]
 
 CRON_CLASSES = [
-    'crons.scheduled_jobs.StreamScraper',
-    'crons.scheduled_jobs.Get_Games',
-    'crons.scheduled_jobs.Get_Lineups',
-    'crons.scheduled_jobs.Cleanup'
+    'crons.crons.StreamScraper',
+    'crons.crons.GetGames',
+    'crons.crons.GetLineups',
+    'crons.crons.Cleanup'
 ]
 
 ROOT_URLCONF = 'soccerstreams.urls'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -124,15 +125,48 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
     os.path.join(PROJECT_DIR, 'static'),
-#     os.path.join(PROJECT_DIR, 'streamablematches/static'),
 )
 
 # MEDIA_ROOT = os.path.join(PROJECT_DIR, 'users/media/')
 
 # MEDIA_URL = 'users/media/'
 
-# Simplified static file serving.
-# https://warehouse.python.org/project/whitenoise/
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
 AUTH_USER_MODEL = 'users.User'
+
+########################
+# API RELATED SETTINGS #
+########################
+
+REQUEST_HEADERS = {
+    "reddit": "{'user_agent': 'laptop:soccerStreams:v 0.1'}",
+    "footballApi": "{'x-auth-token': '335ffd5c439f4d3ea4f5ade02de7b207'}",
+    "rotowire": "{'user_agent': 'pc'}"
+}
+
+FOOTBALL_API_BASE_URL = "https://api.football-data.org/v2"
+
+FOOTBALL_API_URLS = {
+    "competitions": "/competitions",
+    "competitionSeasons": "/competitions/%s",
+    "teams": "/competitions/%s/teams",
+    "matches": "/competitions/%s/matches"
+}
+
+REDDIT_BASE_URL = "http://www.reddit.com/r/"
+
+REDDIT_API_URL = {
+    "soccerstreams": "soccerstreams/.json"
+}
+
+ROTOWIRE_BASE_URL = "https://www.rotowire.com/soccer/lineups.php"
+
+ROTOWIRE_LEAGUE_URLS = {
+    "PL": "",
+    "FL1": "?league=FRAN",
+    "PD": "?league=LIGA",
+    "SA": "?league=SERI",
+    "BL1": "?league=BUND",
+    "MLS": "?league=MLS",
+    "CL": "?league=UCL",
+    "LMX": "?league=LMX"
+}

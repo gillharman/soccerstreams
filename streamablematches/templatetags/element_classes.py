@@ -2,7 +2,7 @@ from django import template
 from datetime import date, datetime
 from pytz import timezone
 
-from bin.helper_scripts.linkClassClassifier import link_class_classifier
+from utils import link_class_classifier
 
 from teams.models import Team
 

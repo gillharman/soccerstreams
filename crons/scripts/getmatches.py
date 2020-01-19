@@ -1,27 +1,20 @@
-from django.core.exceptions import ObjectDoesNotExist
 from django.db.models import Q
 from calendar import monthrange
 from datetime import datetime
 import pytz
 
-from bin.helper_scripts.makeRequest import make_request, request_headers
+from utils import make_request, sanitize_string
 
 from leagues.models import League
 from teams.models import Team
 from matches.models import Match
 
-FOOTBALL_API_BASE_URL = "https://api.football-data.org/v2"
-FOOTBALL_API_URLS = {
-    "competitions": "/competitions",
-    "competitionSeasons": "/competitions/%s",
-    "teams": "/competitions/%s/teams",
-    "matches": "/competitions/%s/matches"
-}
+from soccerstreams.settings import base as settings
 
 
 def get_leagues():
-    url = FOOTBALL_API_BASE_URL + FOOTBALL_API_URLS["competitions"]
-    request = make_request(url, request_headers["football-api"])
+    url = settings.FOOTBALL_API_BASE_URL + settings.FOOTBALL_API_URLS["competitions"]
+    request = make_request(url, settings.REQUEST_HEADERS["footballApi"])
     try:
         data = request["data"]
         for league in data["competitions"]:
@@ -33,7 +26,7 @@ def get_leagues():
                     if new_league and new_league.api_id is None:
                         new_league.api_id = league["id"]
                         new_league.save()
-                except ObjectDoesNotExist:
+                except League.DoesNotExist:
                     print(league["name"] + " does not exists. Creating...")
                     new_league = League()
                     new_league.api_id = league["id"]
@@ -61,8 +54,8 @@ def get_teams():
     # Get new teams and update leagues on current teams only for the supported leagues
     tracked_leagues = League.objects.filter(tracked=True)
     for tracked_league in tracked_leagues:
-        url = FOOTBALL_API_BASE_URL + FOOTBALL_API_URLS["teams"] % str(tracked_league.api_id)
-        request = make_request(url, request_headers["football-api"])
+        url = settings.FOOTBALL_API_BASE_URL + settings.FOOTBALL_API_URLS["teams"] % str(tracked_league.api_id)
+        request = make_request(url, settings.REQUEST_HEADERS["footballApi"])
         try:
             data = request["data"]
             for team in data["teams"]:
@@ -70,7 +63,7 @@ def get_teams():
                     new_team = Team.objects.get(api_id=team["id"])
                     if new_team:
                         new_team.leagues.add(League.objects.get(id=tracked_league.id))
-                except ObjectDoesNotExist:
+                except Team.DoesNotExist:
                     print(team["name"] + " does not exist. Creating...")
                     new_team = Team()
                     new_team.api_id = team["id"]
@@ -89,17 +82,6 @@ def get_teams():
             raise
     print("Teams created/updated successfully!")
     return True
-
-
-def sanitize_string(string):
-    if string is not None:
-        words = string.split("_")
-        capitalized_words = []
-        for word in words:
-            capitalized_words.append(word.capitalize())
-        return " ".join(capitalized_words)
-
-    return ""
 
 
 def get_matches(start_date=None, end_date=None):
@@ -121,16 +103,16 @@ def get_matches(start_date=None, end_date=None):
     match_status_choices = dict((key, value) for (value, key) in Match.STATUS_CHOICES)
     match_winner_choices = dict((key, value) for (value, key) in Match.WINNER_CHOICES)
     for tracked_league in tracked_leagues:
-        url = FOOTBALL_API_BASE_URL + FOOTBALL_API_URLS["matches"] % str(tracked_league.api_id) + query
-        request = make_request(url, request_headers["football-api"])
+        url = settings.FOOTBALL_API_BASE_URL + settings.FOOTBALL_API_URLS["matches"] % str(tracked_league.api_id) + query
+        request = make_request(url, settings.REQUEST_HEADERS["footballApi"])
         try:
             data = request["data"]
             for match in data["matches"]:
                 try:
                     home_team = Team.objects.get(api_id=match["homeTeam"]["id"])
                     away_team = Team.objects.get(api_id=match["awayTeam"]["id"])
-                    match_status = sanitize_string(match["status"])  # Ex. IN_PLAY -> In Play
-                    match_winner = sanitize_string(match["score"]["winner"])
+                    match_status = sanitize_string(match["status"], delimiter="_")  # Ex. IN_PLAY -> In Play
+                    match_winner = sanitize_string(match["score"]["winner"], delimiter="_")
                     match_datetime = datetime.strptime(match["utcDate"], "%Y-%m-%dT%H:%M:%SZ")
                     match_datetime = match_datetime.replace(tzinfo=pytz.utc)
                     new_match = Match()
@@ -173,8 +155,8 @@ def get_matches(start_date=None, end_date=None):
 def update_match_day():
     leagues = League.objects.filter(tracked=True)
     for league in leagues:
-        url = FOOTBALL_API_BASE_URL + FOOTBALL_API_URLS["competitionSeasons"] % str(league.api_id)
-        request = make_request(url, request_headers["football-api"])
+        url = settings.FOOTBALL_API_BASE_URL + settings.FOOTBALL_API_URLS["competitionSeasons"] % str(league.api_id)
+        request = make_request(url, settings.REQUEST_HEADERS["footballApi"])
         try:
             data = request["data"]
             try:
@@ -184,6 +166,6 @@ def update_match_day():
             except KeyError as e:
                 print(e)
         except KeyError as e:
-            print("{0} - {1}".format(str(request["message"]), e.__str__()))
+            print("{0} KeyError - {1}".format(str(request["message"]), e.__str__()))
 
     return True
