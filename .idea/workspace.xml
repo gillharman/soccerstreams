@@ -3,65 +3,53 @@
   <component name="ChangeListManager">
     <list default="true" id="a24984d9-905a-4a1e-8193-849e0157c296" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soccerstreams/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/soccerstreams/settings/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/static/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/static/bootstrap/css/bootstrap.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/static/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/static/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap/fonts/glyphicons-halflings-regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/static/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/static/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/static/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap/fonts/glyphicons-halflings-regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/static/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/static/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap/js/vendor/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/static/bootstrap/js/vendor/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap/js/vendor/bootstrap.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/static/bootstrap/js/vendor/bootstrap.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap/js/vendor/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/static/bootstrap/js/vendor/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap/js/vendor/bootstrap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/static/bootstrap/js/vendor/bootstrap.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap/js/vendor/jquery-3.3.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/static/bootstrap/js/vendor/jquery-3.3.1.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/static/bootstrap/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/main.about.css" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/static/css/main.about.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/static/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/main_old.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/caret-down-solid.svg" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/static/img/caret-down-solid.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/favicon-16x16.png" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/static/img/favicon-16x16.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/loading.gif" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/static/img/loading.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/soccer-streams-brand.png" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/static/img/soccer-streams-brand.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/user-circle-solid.svg" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/static/img/user-circle-solid.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/main.about.js" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/static/js/main.about.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/static/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/main_old.js" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/static/js/main_old.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamablematches/static/css/acestreams.css" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/games/static/css/acestreams.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamablematches/static/css/games.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamablematches/static/css/league_matches.css" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/games/static/css/league_matches.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamablematches/static/css/lineups.css" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/games/static/css/lineups.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamablematches/static/css/watch_game.css" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/games/static/css/watch_game.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamablematches/static/img/generic_logo_100x100.png" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/games/static/img/generic_logo_100x100.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamablematches/static/js/games.js" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/games/static/js/games.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamablematches/static/js/watch_game.js" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/games/static/js/watch_game.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamablematches/templates/games/templates/games.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/static/games/static/css/acestreams.css" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/games/css/acestreams.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/static/games/static/css/league_matches.css" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/games/css/league_matches.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/static/games/static/css/lineups.css" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/games/css/lineups.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/static/games/static/css/watch_game.css" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/games/css/watch_game.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/static/games/static/img/generic_logo_100x100.png" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/games/img/generic_logo_100x100.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/static/games/static/js/games.js" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/games/js/games.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/static/games/static/js/watch_game.js" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/games/js/watch_game.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/static/main/static/bootstrap/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/static/main/static/bootstrap/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/static/main/static/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/static/main/static/bootstrap/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/static/main/static/bootstrap/fonts/glyphicons-halflings-regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/static/main/static/bootstrap/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/static/main/static/bootstrap/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/static/main/static/bootstrap/fonts/glyphicons-halflings-regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/static/main/static/bootstrap/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/static/main/static/bootstrap/js/vendor/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/bootstrap/js/vendor/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/static/main/static/bootstrap/js/vendor/bootstrap.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/bootstrap/js/vendor/bootstrap.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/static/main/static/bootstrap/js/vendor/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/bootstrap/js/vendor/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/static/main/static/bootstrap/js/vendor/bootstrap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/bootstrap/js/vendor/bootstrap.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/static/main/static/bootstrap/js/vendor/jquery-3.3.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/bootstrap/js/vendor/jquery-3.3.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/static/main/static/bootstrap/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/bootstrap/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/static/main/static/css/main.about.css" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/css/main.about.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/static/main/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/static/main/static/img/caret-down-solid.svg" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/img/caret-down-solid.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/static/main/static/img/favicon-16x16.png" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/img/favicon-16x16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/static/main/static/img/linkedin-icon_square_32x32.png" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/users/img/linkedin-icon_square_32x32.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/static/main/static/img/loading.gif" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/img/loading.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/static/main/static/img/soccer-streams-brand.png" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/img/soccer-streams-brand.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/static/main/static/img/user-circle-solid.svg" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/img/user-circle-solid.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/static/main/static/js/main.about.js" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/js/main.about.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/static/main/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/static/main/static/js/main_old.js" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/js/main_old.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/static/users/static/css/auth.css" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/users/css/auth.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/static/users/static/css/user_profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/users/css/user_profile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/static/users/static/js/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/users/js/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/static/users/static/js/user_profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/users/js/user_profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/streamablematches/templates/games/templates/league_matches.html" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/templates/games/templates/league_matches.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamablematches/templates/games/templates/match_info.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/streamablematches/templates/games/templates/watch_game.html" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/templates/games/templates/watch_game.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamablematches/templates/games/templates/watch_game_2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamablematches/templates/games/templates/welcome.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamablematches/templatetags/base_template_methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/templatetags/custom_templatetags.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamablematches/templatetags/element_classes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamablematches/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/templates/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/static/css/auth.css" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/users/static/css/auth.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/static/css/user_profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/users/static/css/user_profile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/static/img/linkedin-icon_square_32x32.png" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/main/static/img/linkedin-icon_square_32x32.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/static/js/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/users/static/js/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/static/js/user_profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/users/static/js/user_profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/author.html" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/templates/users/templates/author.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/templates/users/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/logout.html" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/templates/users/templates/logout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/templates/users/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/registration_successful.html" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/templates/users/templates/registration_successful.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/user_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/templates/users/templates/user_profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/templates/users/templates/author.html" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/templates/users/templates/author.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/templates/users/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/templates/users/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/templates/users/templates/logout.html" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/templates/users/templates/logout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/templates/users/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/templates/users/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/templates/users/templates/registration_successful.html" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/templates/users/templates/registration_successful.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/templates/users/templates/user_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/templates/users/templates/user_profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teams/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/teams/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,19 +84,19 @@
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/bin/helper_scripts/get_Images.py" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\gillh\PycharmProjects\soccerstreams\streamablematches\static\main\static\img" />
-      <recent name="C:\Users\gillh\PycharmProjects\soccerstreams\streamablematches\static\main\static" />
-      <recent name="C:\Users\gillh\PycharmProjects\soccerstreams\streamablematches\static" />
-      <recent name="C:\Users\gillh\PycharmProjects\soccerstreams\streamablematches\templates" />
-      <recent name="C:\Users\gillh\PycharmProjects\soccerstreams\streamablematches\templatetags" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams" />
       <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\static\js" />
       <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\static\css" />
       <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\templates" />
       <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\streamablematches\templates\games\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gillh\PycharmProjects\soccerstreams\streamablematches\static\users\img" />
+      <recent name="C:\Users\gillh\PycharmProjects\soccerstreams\streamablematches\static\users" />
+      <recent name="C:\Users\gillh\PycharmProjects\soccerstreams\streamablematches\static\main" />
+      <recent name="C:\Users\gillh\PycharmProjects\soccerstreams\streamablematches\static\games" />
+      <recent name="C:\Users\gillh\PycharmProjects\soccerstreams\streamablematches\static\main\static\img" />
     </key>
   </component>
   <component name="RunDashboard">

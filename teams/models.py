@@ -20,8 +20,10 @@ class Team(models.Model):
     def get_logo_url(self, dimension):
         try:
             team_logo = Team_Logo.objects.get(team=self)
-        except ObjectDoesNotExist:
+        except Team_Logo.DoesNotExist:
             print("Team logo entry for {0} not found!".format(self.name))
+        except Team_Logo.MultipleObjectsReturned as e:
+            print("Multiple logo entry for {0} - {1}".format(self.name, e))
         else:
             if dimension == 48:
                 return team_logo.logo_48x48_url
