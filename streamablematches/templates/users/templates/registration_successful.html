@@ -1,20 +1,19 @@
-{% extends 'base_2.html' %}
+{% extends 'base.html' %}
 {% load staticfiles %}
 
 {% block css %}
-<link rel="stylesheet" href="{% static 'css/auth.css' %}">
+<link rel="stylesheet" href="{% static 'users/static/css/auth.css' %}">
 {% endblock %}
 
 {% block title %}
-Log out successful!
+Registration successful!
 {% endblock %}
 
 {% block content %}
 <div id="auth-form-wrapper" class="container content">
     <div class="row auth-form-container wrapper-outline">
         <div class="col auth-form">
-            You are now successfully logged out.
-            <a href="{% url 'login' %}">Log back in</a> or go to <a href="/">homepage</a>.
+            User successfully created. <a href="{% url 'login' %}">Login</a> or go to <a href="/">homepage.</a>
         </div>
     </div>
 </div>

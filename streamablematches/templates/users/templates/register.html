@@ -1,8 +1,8 @@
-{% extends 'base_2.html' %}
+{% extends 'base.html' %}
 {% load staticfiles %}
 
 {% block css %}
-<link rel="stylesheet" href="{% static 'css/auth.css' %}">
+<link rel="stylesheet" href="{% static 'users/static/css/auth.css' %}">
 {% endblock %}
 
 {% block title %}
@@ -86,5 +86,5 @@ Create a new Soccerstreams account
 {% endblock %}
 
 {% block script %}
-<script src="{% static 'js/auth.js' %}"></script>
+<script src="{% static 'users/static/js/auth.js' %}"></script>
 {% endblock %}

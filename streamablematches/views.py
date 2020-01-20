@@ -17,9 +17,6 @@ from utils import (
 
 from .forms import AceStreamForm
 
-def welcome(request):
-    return render(request, 'games/templates/welcome.html')
-
 
 def league_matches(request, league="PL"):
     _is_mobile = is_mobile(request)
@@ -35,17 +32,6 @@ def league_matches(request, league="PL"):
                       "matches": games,
                       "league": league,
                   }})
-
-# def ajax_league_matches(request):
-#     league = request.GET['league']
-#     # print(league)
-#     is_mobile = isMobile(request)
-#     games = Match.objects.filter(league__code=league).order_by('match_day')
-#     return render(request, 'games/templates/league_matches.html',
-#                   {"data": {
-#                       "is_mobile_tablet": is_mobile,
-#                       "matches": games,
-#                   }})
 
 
 def watch_game(request, match_id):
@@ -66,7 +52,7 @@ def watch_game(request, match_id):
     }
     AceStreamFormSet = formset_factory(AceStreamForm)
     add_stream_formset = AceStreamFormSet()
-    return render(request, 'games/templates/watch_game_2.html',
+    return render(request, 'games/templates/watch_game.html',
                   {"data": {
                       "is_mobile_tablet": _is_mobile,
                       "links": links,
@@ -77,41 +63,6 @@ def watch_game(request, match_id):
                       "add_stream_formset": add_stream_formset,
                   }})
 
-def get_match_info(request):
-    _is_mobile = is_mobile(request)
-    match_id = request.GET['match_id']
-    match = Match.objects.get(id=match_id)
-    streamable_game = StreamableMatch.objects.filter(match__id=match_id)
-    links = []
-    streamers = []
-    link_count = 0
-    if streamable_game:
-        streamable_game = StreamableMatch.objects.get(match__id=match_id)
-        links = Links.objects.get_links(streamable_game.scanned_match.id)
-        streamers = links.distinct('streamer').values_list('streamer', flat=True)
-        link_count = links.count()
-    home_team = match.home_team.short_name
-    away_team = match.away_team.short_name
-    home_crest = match.home_team.crest
-    away_crest = match.away_team.crest
-    home_lineup = Lineup.objects.get_home_lineup(match_id)
-    away_lineup = Lineup.objects.get_away_lineup(match_id)
-
-    return render(request, 'games/templates/match_info.html',
-                  {"data": {
-                      "is_mobile_tablet": _is_mobile,
-                      "match_id": match_id,
-                      "home_team": home_team,
-                      "away_team": away_team,
-                      "home_crest": home_crest,
-                      "away_crest": away_crest,
-                      "home_lineup": home_lineup,
-                      "away_lineup": away_lineup,
-                      "streamers": ', '.join(streamers),
-                      "link_count": link_count,
-                  }})
-
-
 
 # FORMS
 @login_required
@@ -119,13 +70,13 @@ def add_ace_stream(request):
     links = []
     inserts = []
     ignored = []
-    AceStreamFormSet = formset_factory(AceStreamForm)
+    ace_stream_form_set = formset_factory(AceStreamForm)
     if request.method == 'POST':
         request_parameters = request.POST
         # print("Request Parameters: ")
         # print(request_parameters)
 
-        form = AceStreamFormSet(request.POST)
+        form = ace_stream_form_set(request.POST)
         # print(form)
 
         if form.is_valid():

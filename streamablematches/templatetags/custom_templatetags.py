@@ -1,12 +1,39 @@
-from django import template
 from datetime import date, datetime
 from pytz import timezone
+from django import template
 
+from storage import AvatarFileRetrieval
 from utils import link_class_classifier
 
 from teams.models import Team
+from users.models import UserAvatar
 
 register = template.Library()
+
+#################
+# Template tags #
+#################
+@register.filter(name="get_avatar_instance")
+def get_avatar_instance(user):
+    avatar_instance = ""
+    try:
+        avatar_instance = AvatarFileRetrieval(user).getavatarinstance()
+    except UserAvatar.DoesNotExist:
+        pass
+    return avatar_instance
+
+
+@register.filter(name="get_avatar")
+def get_avatar(user):
+    avatar_bytes = ""
+    try:
+        avatar = AvatarFileRetrieval(user)
+        avatar_bytes = avatar.getb64encodedimage()
+        avatar_bytes = str(avatar_bytes)[2:-1]  # Removes [b']......[']
+    except UserAvatar.DoesNotExist:
+        pass
+
+    return avatar_bytes
 
 
 @register.filter(name="link_score_class")
@@ -81,12 +108,22 @@ def get_result(match, side):
 
 @register.filter(name="get_logo_url_48x48")
 def get_logo_url_48x48(team_id):
-    return get_logo_url(team_id, 48)
+    try:
+        team = Team.objects.get(id=team_id)
+    except Team.DoesNotExist as e:
+        print(e)
+    else:
+        return team.get_logo_url(48)
 
 
 @register.filter(name="get_logo_url_96x96")
 def get_logo_url_96x96(team_id):
-    return get_logo_url(team_id, 96)
+    try:
+        team = Team.objects.get(id=team_id)
+    except Team.DoesNotExist as e:
+        print(e)
+    else:
+        return team.get_logo_url(96)
 
 
 @register.filter(name="right_border")
@@ -122,12 +159,4 @@ def has_errors(form):
     if form.errors:
         return "display: block;"
     else:
-        return ""
-
-
-# HELPER FUNCTION FOR THE TAGS ABOVE
-def get_logo_url(team_id, logo_dimension):
-    try:
-        return Team.objects.get(id=team_id).get_logo_url(dimension=logo_dimension)
-    except:
         return ""

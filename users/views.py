@@ -12,7 +12,7 @@ from storage import AvatarFileStorage, AvatarFileRetrieval
 
 class CustomLoginView(LoginView):
     form_class = customAuthForm
-    template_name = 'login.html'
+    template_name = 'users/templates/login.html'
     extra_context = {
         "data": {
             "next": "/"
@@ -21,7 +21,7 @@ class CustomLoginView(LoginView):
 
 
 class CustomLogoutView(LogoutView):
-    template_name = 'logout.html'
+    template_name = 'users/templates/logout.html'
 
 
 def RegisterNewUserView(request):
@@ -39,14 +39,14 @@ def RegisterNewUserView(request):
     else:
         form = customUserCreationForm()
 
-    return render(request, 'register.html',
+    return render(request, 'users/templates/register.html',
                   {"data": {
                           "form": form,
                   }})
 
 
 def RegistrationSuccessfulView(request):
-    return render(request, 'registration_successful.html')
+    return render(request, 'users/templates/registration_successful.html')
 
 
 def user_profile_view(request):
@@ -78,7 +78,7 @@ def user_profile_view(request):
     else:
         avatar_bytes = str(avatar.getb64encodedimage())[2:-1]  # Removes [b']......[']
 
-    return render(request, "user_profile.html",
+    return render(request, "users/templates/user_profile.html",
                   { "data": {
                       "user": user,
                       "form": form,
@@ -92,7 +92,7 @@ def ChangePasswordView(request):
 
 
 def about_the_author_view(request):
-    return render(request, "author.html")
+    return render(request, "users/templates/author.html")
 
 
 def get_avatar(request):
