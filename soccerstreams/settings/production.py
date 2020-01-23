@@ -1,6 +1,4 @@
-import os
-
-from .base import *
+from soccerstreams.settings.base import *
 
 ALLOWED_HOSTS = ['soccer-streams02.herokuapp.com']
 
