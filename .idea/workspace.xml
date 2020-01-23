@@ -129,9 +129,9 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.forms" />
-      <item itemvalue="Python.test" />
       <item itemvalue="Python.views" />
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python.forms" />
     </list>
     <recent_temporary>
       <list>
