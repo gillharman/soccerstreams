@@ -9,7 +9,7 @@ from leagues.models import League
 from teams.models import Team
 from matches.models import Match
 
-from soccerstreams.settings import base as settings
+from soccerstreams import settings as settings
 
 
 def get_leagues():

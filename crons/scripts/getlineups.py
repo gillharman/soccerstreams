@@ -6,7 +6,7 @@ from utils import make_request
 from logs.models import RotowireRequest
 from leagues.models import League
 
-from soccerstreams.settings import base as settings
+from soccerstreams import settings as settings
 
 LEAGUES = ["PL", "CL", "FL1", "BL1", "SA", "DED", "PPL", "PD"]
 

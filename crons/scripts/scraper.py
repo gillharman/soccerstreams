@@ -4,7 +4,7 @@ from utils import make_request
 
 from streamablematches.models import ScannedMatch, Links
 
-from soccerstreams.settings import base as settings
+from soccerstreams import settings as settings
 
 
 def start():
