@@ -6,7 +6,7 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 
 from streamablematches.forms import AceStreamForm
-from .models import Match, League, Links, StreamableMatch, ScannedMatch, Team_Logo
+from .models import Match, League, Link, StreamableMatch, ScannedMatch, Team_Logo
 from lineups.models import Lineup
 from utils import (
     is_mobile, team_info, lineup_info
@@ -36,7 +36,7 @@ def watch_game(request, match_id):
     streamable_game = StreamableMatch.objects.filter(match__id=match_id).first()
     links = []
     if streamable_game:
-        links = Links.objects.get_links(streamable_game.scanned_match.id)
+        links = Link.objects.get_links(streamable_game.scanned_match.id)
     match =  Match.objects.get(id=match_id)
     display_name = match.display_name()
     home_team = {
@@ -97,7 +97,7 @@ def add_ace_stream(request):
 
                     if new_stream['ace_stream'].startswith('acestream://') and len(new_stream['ace_stream'].lstrip('acestream://')) > 10:
                         # SAVE THE LINK
-                        link = Links()
+                        link = Link()
                         link.match = streamable_match.scanned_match
                         link.link = new_stream['ace_stream']
                         link.linkScore = 0
@@ -110,7 +110,7 @@ def add_ace_stream(request):
                     else:
                         ignored.append(new_stream['ace_stream'])
 
-            new_links = serializers.serialize("json", Links.objects.filter(id__in=links).distinct('link'))
+            new_links = serializers.serialize("json", Link.objects.filter(id__in=links).distinct('link'))
 
         return JsonResponse({
             "data": {
