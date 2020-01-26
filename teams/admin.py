@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Teams_in_League, Team_Logo, Team
+from streamablematches.models import Teams_in_League, Team_Logo, Team
 
 
 def team(obj):

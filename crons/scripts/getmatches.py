@@ -5,9 +5,7 @@ import pytz
 
 from utils import make_request, sanitize_string
 
-from leagues.models import League
-from teams.models import Team
-from matches.models import Match
+from streamablematches.models import Match, League, Team
 
 from soccerstreams import settings as settings
 

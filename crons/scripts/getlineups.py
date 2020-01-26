@@ -4,7 +4,7 @@ from bs4.element import SoupStrainer
 from utils import make_request
 
 from logs.models import RotowireRequest
-from leagues.models import League
+from streamablematches.models import League
 
 from soccerstreams import settings as settings
 

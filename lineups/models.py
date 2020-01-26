@@ -1,7 +1,7 @@
 from django.db import models
 from django.db.models import Q
 
-from matches.models import Match
+from streamablematches.models import Match
 
 class LineupQuerySet(models.QuerySet):
     def get_home_lineup(self, match_id):

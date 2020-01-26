@@ -1,6 +1,6 @@
 from django.db import models
 
-from leagues.models import League
+from streamablematches.models import League
 
 
 # Create your models here.

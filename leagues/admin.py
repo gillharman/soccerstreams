@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import League
+from streamablematches.models import League
 
 # Register your models here.
 class LeagueAdmin(admin.ModelAdmin):

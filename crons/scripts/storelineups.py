@@ -3,7 +3,7 @@ import re
 import difflib
 from datetime import datetime, date
 
-from matches.models import Match
+from streamablematches.models import Match
 from lineups.models import Lineup
 from logs.models import RotowireRequest
 

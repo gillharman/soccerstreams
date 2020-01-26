@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import os
 import difflib
 
-from teams.models import Team, Team_Logo
+from streamablematches.models import Team, Team_Logo
 
 def go(league_code):
     # url = "https://ssl.gstatic.com/onebox/media/sports/logos/z44l-a0W1v5FmgPnemV6Xw_48x48.png"

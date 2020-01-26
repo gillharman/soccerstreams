@@ -5,7 +5,7 @@ from django import template
 from storage import AvatarFileRetrieval
 from utils import link_class_classifier
 
-from teams.models import Team
+from streamablematches.models import Team
 from users.models import UserAvatar
 
 register = template.Library()

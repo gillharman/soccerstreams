@@ -1,8 +1,7 @@
 import os
 import json
 
-from leagues.models import League
-from teams.models import Team, Teams_in_League, Team_Logo
+from streamablematches.models import League, Team, Teams_in_League, Team_Logo
 
 
 def transform_leagues(data):

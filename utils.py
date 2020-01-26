@@ -5,7 +5,7 @@ import requests
 # Models
 from lineups.models import Lineup
 from logs.models import RequestLogs
-from teams.models import Team
+from streamablematches.models import Team
 
 
 ##########################
