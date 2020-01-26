@@ -16,6 +16,7 @@ class League(models.Model):
 
     class Meta:
         app_label = "leagues"
+        db_table = "league"
 
 
 # Create your models here.
@@ -33,6 +34,7 @@ class Team(models.Model):
 
     class Meta:
         app_label = "teams"
+        db_table = "team"
 
     def get_logo_url(self, dimension):
         try:
@@ -56,6 +58,7 @@ class Teams_in_League(models.Model):
 
     class Meta:
         app_label = "teams"
+        db_table = "teams_in_league"
 
 
 class Team_Logo(models.Model):
@@ -67,6 +70,7 @@ class Team_Logo(models.Model):
 
     class Meta:
         app_label = "teams"
+        db_table = "team_logo"
 
 
 class MatchQuerySet(models.QuerySet):
@@ -138,6 +142,7 @@ class Match(models.Model):
 
     class Meta:
         app_label = "matches"
+        db_table = "match"
 
     def display_name(self):
         return "{} vs {}".format(self.home_team.short_name, self.away_team.short_name)
@@ -152,6 +157,7 @@ class GamesQuerySet(models.QuerySet):
     def get_match_name(self, gameID):
         return self.get(id=gameID).match
 
+
 class ScannedMatch(models.Model):
     match = models.CharField(max_length=100)
     postUrl = models.CharField(max_length=2083, default='https://reddit.com/soccerstreams')
@@ -162,8 +168,11 @@ class ScannedMatch(models.Model):
 
     objects = GamesQuerySet.as_manager()
 
+    class Meta:
+        db_table = "scanned_match"
 
-class LinksQuerySet(models.QuerySet):
+
+class LinkQuerySet(models.QuerySet):
     def get_links(self, gameID):
         return self.filter(match=gameID).distinct('link') #Workaround implemented due to data duplication
 
@@ -179,7 +188,8 @@ class LinksQuerySet(models.QuerySet):
         q = {key:value}
         return self.filter(**q).count()
 
-class Links(models.Model):
+
+class Link(models.Model):
     match = models.ForeignKey(ScannedMatch, on_delete=models.CASCADE)
     streamer = models.CharField(max_length=100, default="")
     link = models.CharField(max_length=100, default=None)
@@ -187,12 +197,16 @@ class Links(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 
-    objects = LinksQuerySet.as_manager()
+    objects = LinkQuerySet.as_manager()
+
+    class Meta:
+        db_table = "link"
 
 
 class StreamableMatchQuerySet(models.QuerySet):
     def get_games(self, date=date.today()):
         return self.filter(match__match_date_time__date=date)
+
 
 class StreamableMatch(models.Model):
     match = models.ForeignKey(Match, on_delete=models.CASCADE)
@@ -201,3 +215,6 @@ class StreamableMatch(models.Model):
     updated = models.DateTimeField(auto_now=True)
 
     objects = StreamableMatchQuerySet.as_manager()
+
+    class Meta:
+        db_table = "streamable_match"

@@ -2,7 +2,7 @@ import re
 
 from utils import make_request
 
-from streamablematches.models import ScannedMatch, Links
+from streamablematches.models import ScannedMatch, Link
 
 from soccerstreams import settings as settings
 
@@ -36,12 +36,12 @@ def store_links(arr):
     try:
         for i in arr:
             # ONLY SAVE NEW LINKS
-            if not Links.objects.filter(link=i["link"], id=i["gameID"], streamer=i["author"]):
+            if not Link.objects.filter(link=i["link"], id=i["gameID"], streamer=i["author"]):
                 gameInstance = ScannedMatch.objects.get(id=i["gameID"])
                 if (gameInstance.aceLink == False):
                     gameInstance.aceLink = True
                     gameInstance.save()
-                link = Links()
+                link = Link()
                 link.match = gameInstance
                 link.streamer = i["author"]
                 link.link = i["link"]
