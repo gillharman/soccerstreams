@@ -10,7 +10,7 @@ class Migration(migrations.Migration):
 
     dependencies = [
         ('teams', '0001_initial'),
-        ('leagues', '0001_initial'),
+        ('leagues', '0001_leagues-migrations'),
     ]
 
     operations = [
