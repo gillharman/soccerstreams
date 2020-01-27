@@ -3,13 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a24984d9-905a-4a1e-8193-849e0157c296" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
-=======
       <change beforePath="$PROJECT_DIR$/crons/scripts/scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/crons/scripts/scraper.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/streamablematches/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/streamablematches/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/streamablematches/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/views.py" afterDir="false" />
->>>>>>> application-rearchitecture
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
