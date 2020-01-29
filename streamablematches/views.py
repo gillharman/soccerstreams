@@ -6,8 +6,8 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 
 from streamablematches.forms import AceStreamForm
-from .models import Match, League, Link, StreamableMatch, ScannedMatch, Team_Logo
-from lineups.models import Lineup
+from .models.competitions import Match, League, Lineup, Team_Logo
+from .models.streamablematches import Link, StreamableMatch, ScannedMatch
 from utils import (
     is_mobile, team_info, lineup_info
 )

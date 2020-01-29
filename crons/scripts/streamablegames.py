@@ -1,6 +1,7 @@
 import difflib
 
-from streamablematches.models import Match, ScannedMatch, StreamableMatch
+from streamablematches.models.competitions import Match
+from streamablematches.models.streamablematches import ScannedMatch, StreamableMatch
 
 
 def match_streamable_games():

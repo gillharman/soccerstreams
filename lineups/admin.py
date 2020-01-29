@@ -1,5 +1,6 @@
 from django.contrib import admin
-from .models import Lineup
+from streamablematches.models.competitions import Lineup
+
 
 def match_name(obj):
     return "%s" % (obj.match.display_name())
@@ -14,4 +15,6 @@ class LineupAdmin(admin.ModelAdmin):
         ('match__home_team', admin.RelatedFieldListFilter),
         ('match__away_team', admin.RelatedFieldListFilter),
     )
+
+
 admin.site.register(Lineup, LineupAdmin)

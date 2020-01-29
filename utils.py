@@ -1,11 +1,10 @@
-# External libraries
+# Libraries
 import ast
 import requests
 
 # Models
-from lineups.models import Lineup
-from logs.models import RequestLogs
-from streamablematches.models import Team
+from streamablematches.models.logs import RequestLogs
+from streamablematches.models.competitions import Team, Lineup
 
 
 ##########################

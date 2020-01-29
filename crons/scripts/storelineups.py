@@ -3,9 +3,8 @@ import re
 import difflib
 from datetime import datetime, date
 
-from streamablematches.models import Match
-from lineups.models import Lineup
-from logs.models import RotowireRequest
+from streamablematches.models.competitions import Match, Lineup
+from streamablematches.models.logs import RotowireRequest
 
 
 def get_match_instance(string, date_):

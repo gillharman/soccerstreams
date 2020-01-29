@@ -3,8 +3,8 @@ from bs4.element import SoupStrainer
 
 from utils import make_request
 
-from logs.models import RotowireRequest
-from streamablematches.models import League
+from streamablematches.models.competitions import League
+from streamablematches.models.logs import RotowireRequest
 
 from soccerstreams import settings as settings
 

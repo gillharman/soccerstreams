@@ -4,8 +4,9 @@ import pytz
 
 from crons.scripts import getmatches, scraper, storelineups, getlineups, streamablegames
 
-from logs.models import RequestLogs, RotowireRequest
-from streamablematches.models import Match, ScannedMatch
+from streamablematches.models.competitions import Match
+from streamablematches.models.logs import RequestLogs, RotowireRequest
+from streamablematches.models.streamablematches import ScannedMatch
 
 
 class StreamScraper(CronJobBase):

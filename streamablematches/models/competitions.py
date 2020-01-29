@@ -1,6 +1,10 @@
-from django.db import models
+# Import python modules here.
 from datetime import date, datetime
 import pytz
+
+# Import django modules here.
+from django.db import models
+from django.db.models import Q
 
 
 # Create your models here.
@@ -33,7 +37,6 @@ class LeagueCopy(models.Model):
         db_table = "league_copy"
 
 
-# Create your models here.
 class Team(models.Model):
     api_id = models.IntegerField()
     name = models.CharField(max_length=60)
@@ -64,7 +67,6 @@ class Team(models.Model):
                 return team_logo.logo_96x96_url
 
 
-# Create your models here.
 class TeamCopy(models.Model):
     api_id = models.IntegerField()
     name = models.CharField(max_length=60)
@@ -157,7 +159,6 @@ class MatchQuerySet(models.QuerySet):
         return self.filter(home_team__short_name=home_team, away_team__short_name=away_team, match_date_time__date=date_)
 
 
-# Create your models here.
 class Match(models.Model):
     SCHEDULED = 'SH'
     LIVE = 'LI'
@@ -215,7 +216,6 @@ class Match(models.Model):
     objects = MatchQuerySet.as_manager()
 
 
-# Create your models here.
 class MatchCopy(models.Model):
     SCHEDULED = 'SH'
     LIVE = 'LI'
@@ -272,71 +272,39 @@ class MatchCopy(models.Model):
     objects = MatchQuerySet.as_manager()
 
 
-class GamesQuerySet(models.QuerySet):
-    def get_games(self, date=date.today()):
-        return self.filter(created__date=date).distinct('match')
+class LineupQuerySet(models.QuerySet):
+    def get_home_lineup(self, match_id):
+        return self.filter(match__id=match_id, lineup_type='H').order_by('id')
 
-    def get_match_name(self, gameID):
-        return self.get(id=gameID).match
+    def get_away_lineup(self, match_id):
+        return self.filter(match__id=match_id, lineup_type='A').order_by('id')
 
-
-class ScannedMatch(models.Model):
-    match = models.CharField(max_length=100)
-    postUrl = models.CharField(max_length=2083, default='https://reddit.com/soccerstreams')
-    time = models.CharField(max_length=14)
-    aceLink = models.BooleanField(default=False)
-    created = models.DateTimeField(auto_now_add=True)
-    updated = models.DateTimeField(auto_now=True)
-
-    objects = GamesQuerySet.as_manager()
-
-    class Meta:
-        db_table = "scanned_match"
+    def get_lineup(self, match_id, team_id):
+        return self.filter(match__id=match_id).filter(Q(match__home_team__id=team_id) | Q(match__away_team__id=team_id)).order_by('id')
 
 
-class LinkQuerySet(models.QuerySet):
-    def get_links(self, gameID):
-        return self.filter(match=gameID).distinct('link') #Workaround implemented due to data duplication
-
-    def get_streamers(self, gameID):
-        links = self.get_links(gameID)
-        return self.filter(id__in=links).values('streamer', 'linkScore').annotate(models.Count('streamer'))
-
-    def get_values(self, key, value, field):
-        q = {key:value}
-        return self.filter(**q).values_list(field, flat=True)
-
-    def get_count(self, key, value):
-        q = {key:value}
-        return self.filter(**q).count()
-
-
-class Link(models.Model):
-    match = models.ForeignKey(ScannedMatch, on_delete=models.CASCADE)
-    streamer = models.CharField(max_length=100, default="")
-    link = models.CharField(max_length=100, default=None)
-    linkScore = models.IntegerField()
-    created = models.DateTimeField(auto_now_add=True)
-    updated = models.DateTimeField(auto_now=True)
-
-    objects = LinkQuerySet.as_manager()
-
-    class Meta:
-        db_table = "link"
-
-
-class StreamableMatchQuerySet(models.QuerySet):
-    def get_games(self, date=date.today()):
-        return self.filter(match__match_date_time__date=date)
-
-
-class StreamableMatch(models.Model):
+class Lineup(models.Model):
+    POSITIONS = (
+        ('G', 'Goalkeeper'),
+        ('D', 'Defender'),
+        ('M', 'Midfielder'),
+        ('F', 'Forward'),
+        ('F/M', 'Forward/Midfielder'),
+        ('M/D', 'Midfielder/Defender')
+    )
+    LINEUP_TYPES = (
+        ('H', 'Home'),
+        ('A', 'Away')
+    )
     match = models.ForeignKey(Match, on_delete=models.CASCADE)
-    scanned_match = models.ForeignKey(ScannedMatch, on_delete=models.CASCADE)
+    position = models.CharField(max_length=40, choices=POSITIONS)
+    player = models.CharField(max_length=40)
+    lineup_type = models.CharField(max_length=10, choices=LINEUP_TYPES)
+    confirmed = models.BooleanField(default=False)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 
-    objects = StreamableMatchQuerySet.as_manager()
-
     class Meta:
-        db_table = "streamable_match"
+        app_label = "lineups"
+
+    objects = LineupQuerySet.as_manager()
