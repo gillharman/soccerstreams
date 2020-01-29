@@ -308,3 +308,30 @@ class Lineup(models.Model):
         app_label = "lineups"
 
     objects = LineupQuerySet.as_manager()
+
+
+class LineupCopy(models.Model):
+    POSITIONS = (
+        ('G', 'Goalkeeper'),
+        ('D', 'Defender'),
+        ('M', 'Midfielder'),
+        ('F', 'Forward'),
+        ('F/M', 'Forward/Midfielder'),
+        ('M/D', 'Midfielder/Defender')
+    )
+    LINEUP_TYPES = (
+        ('H', 'Home'),
+        ('A', 'Away')
+    )
+    match = models.ForeignKey(MatchCopy, on_delete=models.CASCADE)
+    position = models.CharField(max_length=40, choices=POSITIONS)
+    player = models.CharField(max_length=40)
+    lineup_type = models.CharField(max_length=10, choices=LINEUP_TYPES)
+    confirmed = models.BooleanField(default=False)
+    created = models.DateTimeField(auto_now_add=True)
+    updated = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        db_table = "lineup_copy"
+
+    objects = LineupQuerySet.as_manager()
