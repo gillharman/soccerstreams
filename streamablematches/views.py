@@ -6,7 +6,7 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 
 from streamablematches.forms import AceStreamForm
-from .models.competitions import Match, League, Lineup, Team_Logo
+from .models.competitions import MatchCopy, LeagueCopy, LineupCopy, TeamLogoCopy
 from .models.streamablematches import Link, StreamableMatch, ScannedMatch
 from utils import (
     is_mobile, team_info, lineup_info
@@ -17,11 +17,11 @@ from .forms import AceStreamForm
 
 def league_matches(request, league="PL"):
     _is_mobile = is_mobile(request)
-    games = Match.objects.filter(league__code=league).order_by('match_day', 'match_date_time')
+    games = MatchCopy.objects.filter(league__code=league).order_by('match_day', 'match_date_time')
     try:
-        league = League.objects.get(code=league)
-    except League.DoesNotExist:
-        league = League.objects.filter(code=league).first()
+        league = LeagueCopy.objects.get(code=league)
+    except LeagueCopy.DoesNotExist:
+        league = LeagueCopy.objects.filter(code=league).first()
 
     return render(request, 'games/templates/league_matches.html',
                   {"data": {
@@ -37,7 +37,7 @@ def watch_game(request, match_id):
     links = []
     if streamable_game:
         links = Link.objects.get_links(streamable_game.scanned_match.id)
-    match =  Match.objects.get(id=match_id)
+    match = MatchCopy.objects.get(id=match_id)
     display_name = match.display_name()
     home_team = {
         "team": team_info(match.home_team.id),
@@ -82,7 +82,7 @@ def add_ace_stream(request):
                 if('ace_stream' in new_stream):
                     streamable_match = StreamableMatch.objects.filter(match__id=request_parameters['match_id']).first()
                     if not streamable_match:
-                        match = Match.objects.filter(id=request_parameters['match_id']).first()
+                        match = MatchCopy.objects.filter(id=request_parameters['match_id']).first()
                         # CREATE A SCANNED MATCH
                         scanned_match = ScannedMatch()
                         scanned_match.match = match.display_name()

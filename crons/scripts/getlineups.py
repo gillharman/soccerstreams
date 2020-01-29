@@ -3,8 +3,8 @@ from bs4.element import SoupStrainer
 
 from utils import make_request
 
-from streamablematches.models.competitions import League
-from streamablematches.models.logs import RotowireRequest
+from streamablematches.models.competitions import LeagueCopy
+from streamablematches.models.logs import RotowireRequestLog
 
 from soccerstreams import settings as settings
 
@@ -21,14 +21,14 @@ def get_lineups():
         lineup_html = BeautifulSoup(rotowire_html['data'], parse_only=SoupStrainer(class_="lineups"), features="html.parser")
 
         # ONLY GET NEW LINEUP IF IT CHANGED
-        current_html = RotowireRequest.objects.get_html(league)
+        current_html = RotowireRequestLog.objects.get_html(league)
         if current_html:
             current_html = current_html.html
         else:
             current_html = ''
         if current_html != str(lineup_html):
-            rr = RotowireRequest()
+            rr = RotowireRequestLog()
             rr.html = str(lineup_html)
-            rr.league = League.objects.get(code=league)
+            rr.league = LeagueCopy.objects.get(code=league)
             rr.save()
     return True

@@ -5,7 +5,7 @@ from django import template
 from storage import AvatarFileRetrieval
 from utils import link_class_classifier
 
-from streamablematches.models import Team
+from streamablematches.models import TeamCopy
 from users.models import UserAvatar
 
 register = template.Library()
@@ -109,8 +109,8 @@ def get_result(match, side):
 @register.filter(name="get_logo_url_48x48")
 def get_logo_url_48x48(team_id):
     try:
-        team = Team.objects.get(id=team_id)
-    except Team.DoesNotExist as e:
+        team = TeamCopy.objects.get(id=team_id)
+    except TeamCopy.DoesNotExist as e:
         print(e)
     else:
         return team.get_logo_url(48)
@@ -119,8 +119,8 @@ def get_logo_url_48x48(team_id):
 @register.filter(name="get_logo_url_96x96")
 def get_logo_url_96x96(team_id):
     try:
-        team = Team.objects.get(id=team_id)
-    except Team.DoesNotExist as e:
+        team = TeamCopy.objects.get(id=team_id)
+    except TeamCopy.DoesNotExist as e:
         print(e)
     else:
         return team.get_logo_url(96)

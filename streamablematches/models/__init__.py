@@ -1,11 +1,10 @@
 # competitions.py
 from .competitions import (
-    League, Team, Teams_in_League, Team_Logo, Match,
     LeagueCopy, TeamCopy, TeamsInLeagueCopy, TeamLogoCopy, MatchCopy
 )
 # logs.py
 from .logs import (
-    RequestLogs, RotowireRequest
+    RequestLog, RotowireRequestLog
 )
 # streamablematches.py
 from .streamablematches import (

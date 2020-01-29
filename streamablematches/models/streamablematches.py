@@ -5,7 +5,7 @@ from datetime import date
 from django.db import models
 
 # Import soccerstreams modules here.
-from .competitions import Match
+from .competitions import MatchCopy
 
 
 # Create your models here.
@@ -68,7 +68,7 @@ class StreamableMatchQuerySet(models.QuerySet):
 
 
 class StreamableMatch(models.Model):
-    match = models.ForeignKey(Match, on_delete=models.CASCADE)
+    match = models.ForeignKey(MatchCopy, on_delete=models.CASCADE)
     scanned_match = models.ForeignKey(ScannedMatch, on_delete=models.CASCADE)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)

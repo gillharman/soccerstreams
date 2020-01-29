@@ -1,5 +1,5 @@
 from django.contrib import admin
-from streamablematches.models.competitions import Lineup
+from streamablematches.models.competitions import LineupCopy
 
 
 def match_name(obj):
@@ -17,4 +17,4 @@ class LineupAdmin(admin.ModelAdmin):
     )
 
 
-admin.site.register(Lineup, LineupAdmin)
+admin.site.register(LineupCopy, LineupAdmin)

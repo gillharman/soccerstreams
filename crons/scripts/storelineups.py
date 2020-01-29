@@ -3,16 +3,16 @@ import re
 import difflib
 from datetime import datetime, date
 
-from streamablematches.models.competitions import Match, Lineup
-from streamablematches.models.logs import RotowireRequest
+from streamablematches.models.competitions import MatchCopy, LineupCopy
+from streamablematches.models.logs import RotowireRequestLog
 
 
 def get_match_instance(string, date_):
-    matches = Match.objects.get_match_display_name()
+    matches = MatchCopy.objects.get_match_display_name()
     close_match = difflib.get_close_matches(string, matches, n=1)
 
     if close_match:
-        m = Match.objects.get_match_from_display_name(close_match[0], date_)
+        m = MatchCopy.objects.get_match_from_display_name(close_match[0], date_)
         # print(m)
         if m:
             # print(m.first().display_name())
@@ -41,12 +41,12 @@ def get_lineup(tag):
 
 def save_lineup(o):
     ret_val = {"update":0, "insert":0}
-    existing_lineup = Lineup.objects.filter(match=o['match'], lineup_type=o['lineupType'])
+    existing_lineup = LineupCopy.objects.filter(match=o['match'], lineup_type=o['lineupType'])
     if existing_lineup:
         ret_val['update'] += 1
         existing_lineup.delete()
     for player in o['lineup']:
-        l = Lineup()
+        l = LineupCopy()
         l.position = player['position']
         l.lineup_type = o['lineupType']
         l.player = player['name']
@@ -58,7 +58,7 @@ def save_lineup(o):
 
 def store_lineups(league):
     lineup_html = ''
-    html = RotowireRequest.objects.get_html(league)
+    html = RotowireRequestLog.objects.get_html(league)
     if html and html.parsed_count == 0:
         lineup_html = html.html
     soup = BeautifulSoup(lineup_html, features="html.parser")

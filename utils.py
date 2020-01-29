@@ -3,8 +3,8 @@ import ast
 import requests
 
 # Models
-from streamablematches.models.logs import RequestLogs
-from streamablematches.models.competitions import Team, Lineup
+from streamablematches.models.logs import RequestLog
+from streamablematches.models.competitions import TeamCopy, LineupCopy
 
 
 ##########################
@@ -14,8 +14,8 @@ from streamablematches.models.competitions import Team, Lineup
 # Returns team information with their logos
 def team_info(team_id):
     try:
-        team = Team.objects.get(id=team_id)
-    except Team.DoesNotExist:
+        team = TeamCopy.objects.get(id=team_id)
+    except TeamCopy.DoesNotExist:
         return {}
     else:
         return {
@@ -33,9 +33,9 @@ def lineup_info(match_id, home):
     midfield = []
     attack = []
     if home:
-        lineup = Lineup.objects.get_home_lineup(match_id=match_id)
+        lineup = LineupCopy.objects.get_home_lineup(match_id=match_id)
     else:
-        lineup = Lineup.objects.get_away_lineup(match_id=match_id)
+        lineup = LineupCopy.objects.get_away_lineup(match_id=match_id)
 
     if lineup:
         lineup_available = True
@@ -121,7 +121,7 @@ def make_request(url, header, _type="json"):
         ret_val['data'] = r.text
 
     # Log the request call
-    log = RequestLogs()
+    log = RequestLog()
     log.endPoint = url
     log.httpStatusCode = r.status_code
     log.exception = str(r.raise_for_status())

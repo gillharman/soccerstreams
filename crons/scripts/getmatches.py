@@ -5,7 +5,7 @@ import pytz
 
 from utils import make_request, sanitize_string
 
-from streamablematches.models.competitions import Match, League, Team
+from streamablematches.models.competitions import MatchCopy, LeagueCopy, TeamCopy
 
 from soccerstreams import settings as settings
 
@@ -18,15 +18,15 @@ def get_leagues():
         for league in data["competitions"]:
             if league["plan"] == "TIER_ONE":
                 try:
-                    new_league = League.objects.get(
+                    new_league = LeagueCopy.objects.get(
                         Q(api_id=league["id"]) | Q(name=league["name"])
                     )
                     if new_league and new_league.api_id is None:
                         new_league.api_id = league["id"]
                         new_league.save()
-                except League.DoesNotExist:
+                except LeagueCopy.DoesNotExist:
                     print(league["name"] + " does not exists. Creating...")
-                    new_league = League()
+                    new_league = LeagueCopy()
                     new_league.api_id = league["id"]
                     new_league.name = league["name"]
                     new_league.code = league["code"]
@@ -45,12 +45,12 @@ def get_leagues():
 def get_teams():
     # Clear previous set leagues.
     # For example, a team might no longer be in the Champions league or the First division
-    teams = Team.objects.all()
+    teams = TeamCopy.objects.all()
     for i in teams:
         i.leagues.clear()
 
     # Get new teams and update leagues on current teams only for the supported leagues
-    tracked_leagues = League.objects.filter(tracked=True)
+    tracked_leagues = LeagueCopy.objects.filter(tracked=True)
     for tracked_league in tracked_leagues:
         url = settings.FOOTBALL_API_BASE_URL + settings.FOOTBALL_API_URLS["teams"] % str(tracked_league.api_id)
         request = make_request(url, settings.REQUEST_HEADERS["footballApi"])
@@ -58,12 +58,12 @@ def get_teams():
             data = request["data"]
             for team in data["teams"]:
                 try:
-                    new_team = Team.objects.get(api_id=team["id"])
+                    new_team = TeamCopy.objects.get(api_id=team["id"])
                     if new_team:
-                        new_team.leagues.add(League.objects.get(id=tracked_league.id))
-                except Team.DoesNotExist:
+                        new_team.leagues.add(LeagueCopy.objects.get(id=tracked_league.id))
+                except TeamCopy.DoesNotExist:
                     print(team["name"] + " does not exist. Creating...")
-                    new_team = Team()
+                    new_team = TeamCopy()
                     new_team.api_id = team["id"]
                     new_team.club_colors = team["clubColors"]
                     new_team.name = team["name"]
@@ -73,7 +73,7 @@ def get_teams():
                     new_team.save()
 
                     # New team needs to exist before adding values to Many-to-Many field
-                    new_team.leagues.add(League.objects.get(id=tracked_league.id))
+                    new_team.leagues.add(LeagueCopy.objects.get(id=tracked_league.id))
                     print("Successfully created " + team["name"])
         except KeyError:
             print(request["message"])
@@ -97,9 +97,9 @@ def get_matches(start_date=None, end_date=None):
         raise ValueError("Invalid Date Format!")
 
     query = "?dateFrom=%s&dateTo=%s" % (start_date, end_date)
-    tracked_leagues = League.objects.filter(tracked=True)
-    match_status_choices = dict((key, value) for (value, key) in Match.STATUS_CHOICES)
-    match_winner_choices = dict((key, value) for (value, key) in Match.WINNER_CHOICES)
+    tracked_leagues = LeagueCopy.objects.filter(tracked=True)
+    match_status_choices = dict((key, value) for (value, key) in MatchCopy.STATUS_CHOICES)
+    match_winner_choices = dict((key, value) for (value, key) in MatchCopy.WINNER_CHOICES)
     for tracked_league in tracked_leagues:
         url = settings.FOOTBALL_API_BASE_URL + settings.FOOTBALL_API_URLS["matches"] % str(tracked_league.api_id) + query
         request = make_request(url, settings.REQUEST_HEADERS["footballApi"])
@@ -107,16 +107,16 @@ def get_matches(start_date=None, end_date=None):
             data = request["data"]
             for match in data["matches"]:
                 try:
-                    home_team = Team.objects.get(api_id=match["homeTeam"]["id"])
-                    away_team = Team.objects.get(api_id=match["awayTeam"]["id"])
+                    home_team = TeamCopy.objects.get(api_id=match["homeTeam"]["id"])
+                    away_team = TeamCopy.objects.get(api_id=match["awayTeam"]["id"])
                     match_status = sanitize_string(match["status"], delimiter="_")  # Ex. IN_PLAY -> In Play
                     match_winner = sanitize_string(match["score"]["winner"], delimiter="_")
                     match_datetime = datetime.strptime(match["utcDate"], "%Y-%m-%dT%H:%M:%SZ")
                     match_datetime = match_datetime.replace(tzinfo=pytz.utc)
-                    new_match = Match()
+                    new_match = MatchCopy()
                     try:
-                        new_match = Match.objects.get(api_match_id=match["id"])
-                    except Match.DoesNotExist as e:
+                        new_match = MatchCopy.objects.get(api_match_id=match["id"])
+                    except MatchCopy.DoesNotExist as e:
                         print(match["homeTeam"]["name"] +
                               " vs " + match["awayTeam"]["name"] +
                               " does not exist. Creating...")
@@ -125,7 +125,7 @@ def get_matches(start_date=None, end_date=None):
                         new_match.match_date_time = match_datetime
                         new_match.home_team = home_team
                         new_match.away_team = away_team
-                        new_match.league = League.objects.get(id=tracked_league.id)
+                        new_match.league = LeagueCopy.objects.get(id=tracked_league.id)
                     finally:
                         new_match.status = match_status_choices[match_status]
                         new_match.goals_scored_home_team = match["score"]["fullTime"]["homeTeam"]
@@ -135,7 +135,7 @@ def get_matches(start_date=None, end_date=None):
                         if match_winner is not None and match_winner != "":
                             new_match.winner = match_winner_choices[match_winner]
                         new_match.save()
-                except Team.DoesNotExist as e:
+                except TeamCopy.DoesNotExist as e:
                     print("Home or Away does not exists...")
                     raise
                 except KeyError:
@@ -151,7 +151,7 @@ def get_matches(start_date=None, end_date=None):
 
 
 def update_match_day():
-    leagues = League.objects.filter(tracked=True)
+    leagues = LeagueCopy.objects.filter(tracked=True)
     for league in leagues:
         url = settings.FOOTBALL_API_BASE_URL + settings.FOOTBALL_API_URLS["competitionSeasons"] % str(league.api_id)
         request = make_request(url, settings.REQUEST_HEADERS["footballApi"])
