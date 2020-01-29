@@ -54,7 +54,7 @@ class RotowireRequest(models.Model):
 
 class RotowireRequestLog(models.Model):
     html = models.TextField()
-    league = models.ForeignKey(League, on_delete=models.CASCADE)
+    league = models.ForeignKey(LeagueCopy, on_delete=models.CASCADE)
     parsed_count = models.IntegerField(default=0)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
