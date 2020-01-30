@@ -6,13 +6,7 @@ import django.db.models.deletion
 
 class Migration(migrations.Migration):
 
-    replaces = [('streamablematches', '0001_initial'), ('streamablematches', '0002_auto_20200126_1435'), ('streamablematches', '0003_leaguecopy_matchcopy_teamcopy_teamlogocopy_teamsinleaguecopy'), ('streamablematches', '0004_lineupcopy_requestlog_rotowirerequestlog'), ('streamablematches', '0005_auto_20200128_1947'), ('streamablematches', '0006_auto_20200128_2115')]
-
     initial = True
-
-    dependencies = [
-        ('leagues', '0002_auto_20200126_1435'),
-    ]
 
     operations = [
         migrations.CreateModel(

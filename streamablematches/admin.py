@@ -1,6 +1,8 @@
 from django.contrib import admin
 
-from .models.competitions import LineupCopy, TeamCopy, TeamLogoCopy, TeamsInLeagueCopy
+from .models.competitions import (
+    LeagueCopy, LineupCopy, TeamCopy, TeamLogoCopy, TeamsInLeagueCopy
+)
 from .models.logs import RequestLog
 from .models.streamablematches import Link, StreamableMatch
 
@@ -33,6 +35,10 @@ def team(obj):
 ##########################
 # models.competitions.py #
 ##########################
+class LeagueAdmin(admin.ModelAdmin):
+    list_display = ("id", "name", "tracked")
+
+
 class LineupAdmin(admin.ModelAdmin):
     list_display = (match_name, 'match', 'player', 'position')
     list_filter = (
@@ -70,6 +76,7 @@ class StreamableMatchAdmin(admin.ModelAdmin):
 
 # Register models below.
 admin.site.register(RequestLog)
+admin.site.register(LeagueCopy, LeagueAdmin)
 admin.site.register(LineupCopy, LineupAdmin)
 admin.site.register(Link, LinksAdmin)
 admin.site.register(StreamableMatch, StreamableMatchAdmin)
