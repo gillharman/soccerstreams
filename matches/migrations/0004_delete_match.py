@@ -6,7 +6,6 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('lineups', '0002_delete_lineup'),
         ('streamablematches', '0006_auto_20200128_2115'),
         ('matches', '0003_auto_20200126_1435'),
     ]

@@ -8,7 +8,6 @@ class Migration(migrations.Migration):
     dependencies = [
         ('teams', '0007_auto_20200128_2115'),
         ('matches', '0004_delete_match'),
-        ('logs', '0002_auto_20200128_2115'),
         ('leagues', '0002_auto_20200126_1435'),
     ]
 

@@ -36,8 +36,6 @@ INSTALLED_APPS = [
     'matches',
     'teams',
     'leagues',
-    'lineups',
-    'logs',
     'users',
     'gunicorn',
     'django_cron',
