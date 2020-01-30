@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a24984d9-905a-4a1e-8193-849e0157c296" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/leagues/migrations/0003_delete_league.py" beforeDir="false" afterPath="$PROJECT_DIR$/leagues/migrations/0003_delete_league.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/matches/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/matches/admin.py" beforeDir="false" />
