@@ -6,7 +6,6 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('matches', '0004_delete_match'),
         ('teams', '0006_auto_20200126_1435'),
     ]
 

@@ -2,17 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a24984d9-905a-4a1e-8193-849e0157c296" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/lineups/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lineups/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lineups/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lineups/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lineups/migrations/0002_delete_lineup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lineups/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lineups/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lineups/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/matches/migrations/0004_delete_match.py" beforeDir="false" afterPath="$PROJECT_DIR$/matches/migrations/0004_delete_match.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leagues/migrations/0003_delete_league.py" beforeDir="false" afterPath="$PROJECT_DIR$/leagues/migrations/0003_delete_league.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matches/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/matches/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/matches/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/matches/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/matches/migrations/0002_auto_20200103_2115.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/matches/migrations/0003_auto_20200126_1435.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/matches/migrations/0004_delete_match.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/matches/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/matches/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/matches/views.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/soccerstreams/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/soccerstreams/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamablematches/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/migrations/0002_auto_20200126_1435.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/migrations/0003_leaguecopy_matchcopy_teamcopy_teamlogocopy_teamsinleaguecopy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/migrations/0004_lineupcopy_requestlog_rotowirerequestlog.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/migrations/0005_auto_20200128_1947.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamablematches/migrations/0006_auto_20200128_2115.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/teams/migrations/0007_auto_20200128_2115.py" beforeDir="false" afterPath="$PROJECT_DIR$/teams/migrations/0007_auto_20200128_2115.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
