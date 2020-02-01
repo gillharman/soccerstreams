@@ -6,7 +6,7 @@ from django.shortcuts import render, redirect, HttpResponse
 from .forms import customAuthForm, customUserCreationForm, UserProfileForm
 from .models import User, UserAvatar
 
-from storage import AvatarFileStorage, AvatarFileRetrieval
+from streamablematches.core.storage import AvatarFileStorage, AvatarFileRetrieval
 
 # Create your views here.
 

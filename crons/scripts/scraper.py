@@ -1,6 +1,6 @@
 import re
 
-from utils import make_request
+from streamablematches.core.utils import make_request
 
 from streamablematches.models import ScannedMatch, Link
 

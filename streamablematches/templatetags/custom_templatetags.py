@@ -2,8 +2,8 @@ from datetime import date, datetime
 from pytz import timezone
 from django import template
 
-from storage import AvatarFileRetrieval
-from utils import link_class_classifier
+from streamablematches.core.storage import AvatarFileRetrieval
+from streamablematches.core.utils import link_class_classifier
 
 from streamablematches.models import Team
 from users.models import UserAvatar

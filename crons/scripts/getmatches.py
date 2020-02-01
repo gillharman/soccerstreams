@@ -3,7 +3,7 @@ from calendar import monthrange
 from datetime import datetime
 import pytz
 
-from utils import make_request, sanitize_string
+from streamablematches.core.utils import make_request, sanitize_string
 
 from streamablematches.models.competitions import Match, League, Team
 

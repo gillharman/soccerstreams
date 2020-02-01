@@ -1,14 +1,12 @@
-from django.shortcuts import render, HttpResponseRedirect
+from django.shortcuts import render
 from django.http import JsonResponse
 from django.core import serializers
 from django.forms import formset_factory
 from django.contrib.auth.decorators import login_required
-from django.db.models import Q
 
-from streamablematches.forms import AceStreamForm
-from .models.competitions import Match, League, Lineup, TeamLogo
+from .models.competitions import Match, League
 from .models.streamablematches import Link, StreamableMatch, ScannedMatch
-from utils import (
+from streamablematches.core.utils import (
     is_mobile, team_info, lineup_info
 )
 
