@@ -2,7 +2,7 @@
 from django.db import models
 
 # Import soccerstreams modules here.
-from .competitions import LeagueCopy
+from .competitions import League
 
 
 # Create your models here.
@@ -28,7 +28,7 @@ class RotowireQuerySet(models.QuerySet):
 
 class RotowireRequestLog(models.Model):
     html = models.TextField()
-    league = models.ForeignKey(LeagueCopy, on_delete=models.CASCADE)
+    league = models.ForeignKey(League, on_delete=models.CASCADE)
     parsed_count = models.IntegerField(default=0)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)

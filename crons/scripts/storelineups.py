@@ -3,16 +3,16 @@ import re
 import difflib
 from datetime import datetime, date
 
-from streamablematches.models.competitions import MatchCopy, LineupCopy
+from streamablematches.models.competitions import Match, Lineup
 from streamablematches.models.logs import RotowireRequestLog
 
 
 def get_match_instance(string, date_):
-    matches = MatchCopy.objects.get_match_display_name()
+    matches = Match.objects.get_match_display_name()
     close_match = difflib.get_close_matches(string, matches, n=1)
 
     if close_match:
-        m = MatchCopy.objects.get_match_from_display_name(close_match[0], date_)
+        m = Match.objects.get_match_from_display_name(close_match[0], date_)
         # print(m)
         if m:
             # print(m.first().display_name())
@@ -41,12 +41,12 @@ def get_lineup(tag):
 
 def save_lineup(o):
     ret_val = {"update":0, "insert":0}
-    existing_lineup = LineupCopy.objects.filter(match=o['match'], lineup_type=o['lineupType'])
+    existing_lineup = Lineup.objects.filter(match=o['match'], lineup_type=o['lineupType'])
     if existing_lineup:
         ret_val['update'] += 1
         existing_lineup.delete()
     for player in o['lineup']:
-        l = LineupCopy()
+        l = Lineup()
         l.position = player['position']
         l.lineup_type = o['lineupType']
         l.player = player['name']

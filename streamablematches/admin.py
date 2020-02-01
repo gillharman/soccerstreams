@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 from .models.competitions import (
-    LeagueCopy, LineupCopy, TeamCopy, TeamLogoCopy, TeamsInLeagueCopy
+    League, Lineup, Team, TeamLogo, TeamInLeague
 )
 from .models.logs import RequestLog
 from .models.streamablematches import Link, StreamableMatch
@@ -76,10 +76,10 @@ class StreamableMatchAdmin(admin.ModelAdmin):
 
 # Register models below.
 admin.site.register(RequestLog)
-admin.site.register(LeagueCopy, LeagueAdmin)
-admin.site.register(LineupCopy, LineupAdmin)
+admin.site.register(League, LeagueAdmin)
+admin.site.register(Lineup, LineupAdmin)
 admin.site.register(Link, LinksAdmin)
 admin.site.register(StreamableMatch, StreamableMatchAdmin)
-admin.site.register(TeamCopy, TeamAdmin)
-admin.site.register(TeamsInLeagueCopy, TeamInLeagueAdmin)
-admin.site.register(TeamLogoCopy, TeamLogoAdmin)
+admin.site.register(Team, TeamAdmin)
+admin.site.register(TeamInLeague, TeamInLeagueAdmin)
+admin.site.register(TeamLogo, TeamLogoAdmin)

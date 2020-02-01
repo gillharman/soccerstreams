@@ -5,7 +5,7 @@ from datetime import date
 from django.db import models
 
 # Import soccerstreams modules here.
-from .competitions import MatchCopy
+from .competitions import Match
 
 
 # Create your models here.
@@ -28,7 +28,9 @@ class ScannedMatch(models.Model):
     objects = GamesQuerySet.as_manager()
 
     class Meta:
-        db_table = "scanned_match"
+        db_table = "streamablematches_scanned_match"
+        verbose_name = "scanned match"
+        verbose_name_plural = "scanned matches"
 
 
 class LinkQuerySet(models.QuerySet):
@@ -59,7 +61,9 @@ class Link(models.Model):
     objects = LinkQuerySet.as_manager()
 
     class Meta:
-        db_table = "link"
+        db_table = "streamablematches_link"
+        verbose_name = "link"
+        verbose_name_plural = "links"
 
 
 class StreamableMatchQuerySet(models.QuerySet):
@@ -68,7 +72,7 @@ class StreamableMatchQuerySet(models.QuerySet):
 
 
 class StreamableMatch(models.Model):
-    match = models.ForeignKey(MatchCopy, on_delete=models.CASCADE)
+    match = models.ForeignKey(Match, on_delete=models.CASCADE)
     scanned_match = models.ForeignKey(ScannedMatch, on_delete=models.CASCADE)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
@@ -76,4 +80,6 @@ class StreamableMatch(models.Model):
     objects = StreamableMatchQuerySet.as_manager()
 
     class Meta:
-        db_table = "streamable_match"
+        db_table = "streamablematches_streamable_match"
+        verbose_name = "streamable match"
+        verbose_name_plural = "streamable matches"

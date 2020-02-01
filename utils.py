@@ -4,7 +4,7 @@ import requests
 
 # Models
 from streamablematches.models.logs import RequestLog
-from streamablematches.models.competitions import TeamCopy, LineupCopy
+from streamablematches.models.competitions import Team, Lineup
 
 
 ##########################
@@ -14,8 +14,8 @@ from streamablematches.models.competitions import TeamCopy, LineupCopy
 # Returns team information with their logos
 def team_info(team_id):
     try:
-        team = TeamCopy.objects.get(id=team_id)
-    except TeamCopy.DoesNotExist:
+        team = Team.objects.get(id=team_id)
+    except Team.DoesNotExist:
         return {}
     else:
         return {
@@ -33,9 +33,9 @@ def lineup_info(match_id, home):
     midfield = []
     attack = []
     if home:
-        lineup = LineupCopy.objects.get_home_lineup(match_id=match_id)
+        lineup = Lineup.objects.get_home_lineup(match_id=match_id)
     else:
-        lineup = LineupCopy.objects.get_away_lineup(match_id=match_id)
+        lineup = Lineup.objects.get_away_lineup(match_id=match_id)
 
     if lineup:
         lineup_available = True

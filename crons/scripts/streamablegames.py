@@ -1,6 +1,6 @@
 import difflib
 
-from streamablematches.models.competitions import MatchCopy
+from streamablematches.models.competitions import Match
 from streamablematches.models.streamablematches import ScannedMatch, StreamableMatch
 
 
@@ -8,7 +8,7 @@ def match_streamable_games():
     ignore = 0
     insert = 0
     update = 0
-    todays_matches = MatchCopy.objects.get_games()
+    todays_matches = Match.objects.get_games()
     streamable_matches = ScannedMatch.objects.get_games().values('id','match')
     match_name = streamable_matches.values_list('match', flat=True)
 

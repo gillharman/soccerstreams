@@ -1,6 +1,6 @@
 # competitions.py
 from .competitions import (
-    LeagueCopy, TeamCopy, TeamsInLeagueCopy, TeamLogoCopy, MatchCopy
+    League, Team, TeamInLeague, TeamLogo, Match
 )
 # logs.py
 from .logs import (

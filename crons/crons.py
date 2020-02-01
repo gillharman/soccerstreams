@@ -4,7 +4,7 @@ import pytz
 
 from crons.scripts import getmatches, scraper, storelineups, getlineups, streamablegames
 
-from streamablematches.models.competitions import MatchCopy
+from streamablematches.models.competitions import Match
 from streamablematches.models.logs import RequestLog, RotowireRequestLog
 from streamablematches.models.streamablematches import ScannedMatch
 
@@ -73,7 +73,7 @@ class Cleanup(CronJobBase):
         # Clean up matches
         matches_dt = datetime.today() - timedelta(days=matches_keep_history)
         matches_dt = matches_dt.replace(tzinfo=pytz.utc)
-        matches = MatchCopy.objects.filter(created__lt=matches_dt)
+        matches = Match.objects.filter(created__lt=matches_dt)
         matches.delete()
 
         scanned_matches = ScannedMatch.objects.filter(created__lt=matches_dt)

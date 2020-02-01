@@ -1,12 +1,12 @@
 import os
 import json
 
-from streamablematches.models.competitions import LeagueCopy, TeamCopy, TeamsInLeagueCopy, TeamLogoCopy
+from streamablematches.models.competitions import League, Team, TeamInLeague, TeamLogo
 
 
 def transform_leagues(data):
     for i in data['competitions']:
-        league = LeagueCopy()
+        league = League()
         league.name = i["name"]
         league.code = i["code"]
         league.country = i["area"]["name"]
@@ -18,11 +18,11 @@ def transform_teams(data):
     insert = 0
     for i in data['teams']:
         # CHECK IF TEAM ALREADY EXITS
-        if TeamCopy.objects.filter(api_id=i['id'], name=i['name']):
+        if Team.objects.filter(api_id=i['id'], name=i['name']):
             ignore += 1
             print(i['name'] + ' already exists')
         else:
-            team = TeamCopy()
+            team = Team()
             team.api_id = i['id']
             team.name = i['name']
             team.short_name = i['shortName']
@@ -40,14 +40,14 @@ def transform_teams(data):
 def transform_teams_in_league(data):
     ignore = 0
     insert = 0
-    league = LeagueCopy.objects.get(code=data['competition']['code'])
+    league = League.objects.get(code=data['competition']['code'])
     for i in data['teams']:
-        team = TeamCopy.objects.get(api_id=i['id'], name=i['name'])
-        if TeamsInLeagueCopy.objects.filter(team=team, league=league):
+        team = Team.objects.get(api_id=i['id'], name=i['name'])
+        if TeamInLeague.objects.filter(team=team, league=league):
             print(team.name + ' already exists in this competition')
             ignore += 1
         else:
-            league_team = TeamsInLeagueCopy()
+            league_team = TeamInLeague()
             league_team.team = team
             league_team.league = league
             league_team.save()
@@ -69,14 +69,14 @@ def transform():
 
 def transform_logos(data):
     for logo in data:
-        team = TeamCopy.objects.filter(api_id=logo["team__api_id"]).first()
+        team = Team.objects.filter(api_id=logo["team__api_id"]).first()
         if team:
-            current = TeamLogoCopy.objects.filter(team=team).first()
+            current = TeamLogo.objects.filter(team=team).first()
             if current:
                 print('Logo Already exists in database for ' + current.team.name)
             else:
                 print('Creating new Logo entry for ' + team.name)
-                team_logo = TeamLogoCopy()
+                team_logo = TeamLogo()
                 team_logo.logo_48x48 = logo["logo_48x48"]
                 team_logo.logo_48x48_url = logo["logo_48x48_url"]
                 team_logo.logo_96x96 = logo["logo_96x96"]
@@ -89,7 +89,7 @@ def update_logos(data):
     updated = 0
     ignored = 0
     for logo in data:
-        team_logo = TeamLogoCopy.objects.filter(team__api_id=logo["team__api_id"]).first()
+        team_logo = TeamLogo.objects.filter(team__api_id=logo["team__api_id"]).first()
         if team_logo:
             team_logo.logo_48x48 = logo["logo_48x48"]
             team_logo.logo_48x48_url = logo["logo_48x48_url"]

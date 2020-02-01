@@ -8,7 +8,7 @@ from django.db.models import Q
 
 
 # Create your models here.
-class LeagueCopy(models.Model):
+class League(models.Model):
     name = models.CharField(max_length=30)
     code = models.CharField(max_length=10)
     country = models.CharField(max_length=30)
@@ -19,10 +19,12 @@ class LeagueCopy(models.Model):
     updated = models.DateTimeField(auto_now=True)
 
     class Meta:
-        db_table = "league_copy"
+        db_table = "competitions_league"
+        verbose_name = "league"
+        verbose_name_plural = "leagues"
 
 
-class TeamCopy(models.Model):
+class Team(models.Model):
     api_id = models.IntegerField()
     name = models.CharField(max_length=60)
     short_name = models.CharField(max_length=30, null=True)
@@ -30,19 +32,21 @@ class TeamCopy(models.Model):
     venue = models.CharField(max_length=100, null=True)
     club_colors = models.CharField(max_length=30, null=True)
     crest = models.CharField(max_length=2083, null=True)
-    leagues = models.ManyToManyField(LeagueCopy)
+    leagues = models.ManyToManyField(League)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 
     class Meta:
-        db_table = "team_copy"
+        db_table = "competitions_team"
+        verbose_name = "team"
+        verbose_name = "teams"
 
     def get_logo_url(self, dimension):
         try:
-            team_logo = TeamLogoCopy.objects.get(team=self)
-        except TeamLogoCopy.DoesNotExist:
+            team_logo = TeamLogo.objects.get(team=self)
+        except TeamLogo.DoesNotExist:
             print("Team logo entry for {0} not found!".format(self.name))
-        except TeamLogoCopy.MultipleObjectsReturned as e:
+        except TeamLogo.MultipleObjectsReturned as e:
             print("Multiple logo entry for {0} - {1}".format(self.name, e))
         else:
             if dimension == 48:
@@ -51,25 +55,29 @@ class TeamCopy(models.Model):
                 return team_logo.logo_96x96_url
 
 
-class TeamsInLeagueCopy(models.Model):
-    team = models.ForeignKey(TeamCopy, on_delete=models.CASCADE)
-    league = models.ForeignKey(LeagueCopy, on_delete=models.CASCADE)
+class TeamInLeague(models.Model):
+    team = models.ForeignKey(Team, on_delete=models.CASCADE)
+    league = models.ForeignKey(League, on_delete=models.CASCADE)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 
     class Meta:
-        db_table = "teams_in_league_copy"
+        db_table = "competitions_team_in_league"
+        verbose_name = "team in league"
+        verbose_name_plural = "team in leagues"
 
 
-class TeamLogoCopy(models.Model):
-    team = models.ForeignKey(TeamCopy, on_delete=models.CASCADE)
+class TeamLogo(models.Model):
+    team = models.ForeignKey(Team, on_delete=models.CASCADE)
     logo_48x48 = models.ImageField(upload_to="", null=True)
     logo_48x48_url = models.CharField(max_length=2083, null=True)
     logo_96x96 = models.ImageField(upload_to="", null=True)
     logo_96x96_url = models.CharField(max_length=2083, null=True)
 
     class Meta:
-        db_table = "team_logo_copy"
+        db_table = "competitions_team_logo"
+        verbose_name = "team logo"
+        verbose_name_plural = "team logos"
 
 
 class MatchQuerySet(models.QuerySet):
@@ -91,7 +99,7 @@ class MatchQuerySet(models.QuerySet):
         return self.filter(home_team__short_name=home_team, away_team__short_name=away_team, match_date_time__date=date_)
 
 
-class MatchCopy(models.Model):
+class Match(models.Model):
     SCHEDULED = 'SH'
     LIVE = 'LI'
     IN_PLAY = 'IP'
@@ -126,9 +134,9 @@ class MatchCopy(models.Model):
     status = models.CharField(max_length=2, choices=STATUS_CHOICES)
     match_day = models.IntegerField()
     match_date_time = models.DateTimeField()
-    home_team = models.ForeignKey(TeamCopy, on_delete=models.CASCADE, related_name="homeTeam")
-    away_team = models.ForeignKey(TeamCopy, on_delete=models.CASCADE, related_name="awayTeam")
-    league = models.ForeignKey(LeagueCopy, on_delete=models.CASCADE)
+    home_team = models.ForeignKey(Team, on_delete=models.CASCADE, related_name="homeTeam")
+    away_team = models.ForeignKey(Team, on_delete=models.CASCADE, related_name="awayTeam")
+    league = models.ForeignKey(League, on_delete=models.CASCADE)
     goals_scored_home_team = models.IntegerField(null=True)
     goals_scored_away_team = models.IntegerField(null=True)
     penalty_goals_home_team = models.IntegerField(null=True)
@@ -139,7 +147,9 @@ class MatchCopy(models.Model):
     updated = models.DateTimeField(auto_now=True)
 
     class Meta:
-        db_table = "match_copy"
+        db_table = "competitions_match"
+        verbose_name = "match"
+        verbose_name_plural = "matches"
 
     def display_name(self):
         return "{} vs {}".format(self.home_team.short_name, self.away_team.short_name)
@@ -158,7 +168,7 @@ class LineupQuerySet(models.QuerySet):
         return self.filter(match__id=match_id).filter(Q(match__home_team__id=team_id) | Q(match__away_team__id=team_id)).order_by('id')
 
 
-class LineupCopy(models.Model):
+class Lineup(models.Model):
     POSITIONS = (
         ('G', 'Goalkeeper'),
         ('D', 'Defender'),
@@ -171,7 +181,7 @@ class LineupCopy(models.Model):
         ('H', 'Home'),
         ('A', 'Away')
     )
-    match = models.ForeignKey(MatchCopy, on_delete=models.CASCADE)
+    match = models.ForeignKey(Match, on_delete=models.CASCADE)
     position = models.CharField(max_length=40, choices=POSITIONS)
     player = models.CharField(max_length=40)
     lineup_type = models.CharField(max_length=10, choices=LINEUP_TYPES)
@@ -180,6 +190,8 @@ class LineupCopy(models.Model):
     updated = models.DateTimeField(auto_now=True)
 
     class Meta:
-        db_table = "lineup_copy"
+        db_table = "competitions_lineup"
+        verbose_name = "lineup"
+        verbose_name_plural = "lineups"
 
     objects = LineupQuerySet.as_manager()

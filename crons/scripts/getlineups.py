@@ -3,7 +3,7 @@ from bs4.element import SoupStrainer
 
 from utils import make_request
 
-from streamablematches.models.competitions import LeagueCopy
+from streamablematches.models.competitions import League
 from streamablematches.models.logs import RotowireRequestLog
 
 from soccerstreams import settings as settings
@@ -29,6 +29,6 @@ def get_lineups():
         if current_html != str(lineup_html):
             rr = RotowireRequestLog()
             rr.html = str(lineup_html)
-            rr.league = LeagueCopy.objects.get(code=league)
+            rr.league = League.objects.get(code=league)
             rr.save()
     return True
