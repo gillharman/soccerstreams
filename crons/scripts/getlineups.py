@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 from bs4.element import SoupStrainer
 
-from streamablematches.core.utils import make_request
+from core.utils import make_request
 
 from streamablematches.models.competitions import League
 from streamablematches.models.logs import RotowireRequestLog

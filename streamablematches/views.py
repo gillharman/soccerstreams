@@ -6,7 +6,7 @@ from django.contrib.auth.decorators import login_required
 
 from .models.competitions import Match, League
 from .models.streamablematches import Link, StreamableMatch, ScannedMatch
-from streamablematches.core.utils import (
+from core.utils import (
     is_mobile, team_info, lineup_info
 )
 
