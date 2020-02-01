@@ -3,19 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a24984d9-905a-4a1e-8193-849e0157c296" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crons/crons.py" beforeDir="false" afterPath="$PROJECT_DIR$/crons/crons.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crons/scripts/getlineups.py" beforeDir="false" afterPath="$PROJECT_DIR$/crons/scripts/getlineups.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crons/scripts/getmatches.py" beforeDir="false" afterPath="$PROJECT_DIR$/crons/scripts/getmatches.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crons/scripts/storelineups.py" beforeDir="false" afterPath="$PROJECT_DIR$/crons/scripts/storelineups.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crons/scripts/streamablegames.py" beforeDir="false" afterPath="$PROJECT_DIR$/crons/scripts/streamablegames.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/datatransform.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/datatransform.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamablematches/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamablematches/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamablematches/models/competitions.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/models/competitions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamablematches/models/logs.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/models/logs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamablematches/models/streamablematches.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/models/streamablematches.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamablematches/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
