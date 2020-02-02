@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a24984d9-905a-4a1e-8193-849e0157c296" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/crons/scripts/getlineups.py" beforeDir="false" afterPath="$PROJECT_DIR$/crons/scripts/getlineups.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crons/scripts/getmatches.py" beforeDir="false" afterPath="$PROJECT_DIR$/crons/scripts/getmatches.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crons/scripts/scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/crons/scripts/scraper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamablematches/core/storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/storage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamablematches/core/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamablematches/templatetags/custom_templatetags.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/templatetags/custom_templatetags.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamablematches/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,19 +37,19 @@
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/bin/helper_scripts/get_Images.py" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\gillh\PycharmProjects\soccerstreams" />
-      <recent name="C:\Users\gillh\PycharmProjects\soccerstreams\soccerstreams" />
-      <recent name="C:\Users\gillh\PycharmProjects\soccerstreams\streamablematches\static\users\img" />
-      <recent name="C:\Users\gillh\PycharmProjects\soccerstreams\streamablematches\static\users" />
-      <recent name="C:\Users\gillh\PycharmProjects\soccerstreams\streamablematches\static\main" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams" />
       <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\static\js" />
       <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\static\css" />
       <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\templates" />
       <recent name="C:\Users\Harman\Documents\soccer-streams\soccerstreams\streamablematches\templates\games\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gillh\PycharmProjects\soccerstreams" />
+      <recent name="C:\Users\gillh\PycharmProjects\soccerstreams\soccerstreams" />
+      <recent name="C:\Users\gillh\PycharmProjects\soccerstreams\streamablematches\static\users\img" />
+      <recent name="C:\Users\gillh\PycharmProjects\soccerstreams\streamablematches\static\users" />
+      <recent name="C:\Users\gillh\PycharmProjects\soccerstreams\streamablematches\static\main" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -170,8 +163,34 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="angular-implementation" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
               <option name="COLUMN_ORDER" />
             </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="angular-implementation" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
