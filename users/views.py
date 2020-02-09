@@ -1,17 +1,17 @@
 from base64 import b64encode
 
-from django.contrib.auth.views import LoginView, LogoutView
+from django.contrib.auth.views import PasswordChangeView, LoginView, LogoutView
 from django.shortcuts import render, redirect, HttpResponse
 
-from .forms import customAuthForm, customUserCreationForm, UserProfileForm
+from .forms import CustomAuthForm, CustomUserCreationForm, CustomPasswordChangeForm, UserProfileForm
 from .models import User, UserAvatar
 
 from core.storage import AvatarFileStorage, AvatarFileRetrieval
 
-# Create your views here.
 
+# Create your views here.
 class CustomLoginView(LoginView):
-    form_class = customAuthForm
+    form_class = CustomAuthForm
     template_name = 'users/templates/login.html'
     extra_context = {
         "data": {
@@ -24,9 +24,9 @@ class CustomLogoutView(LogoutView):
     template_name = 'users/templates/logout.html'
 
 
-def RegisterNewUserView(request):
+def register_new_user_view(request):
     if request.method == "POST":
-        form = customUserCreationForm(request.POST)
+        form = CustomUserCreationForm(request.POST)
 
         if form.is_valid():
             user = form.save()
@@ -37,7 +37,7 @@ def RegisterNewUserView(request):
             return redirect("/users/registration_successful")
 
     else:
-        form = customUserCreationForm()
+        form = CustomUserCreationForm()
 
     return render(request, 'users/templates/register.html',
                   {"data": {
@@ -45,7 +45,7 @@ def RegisterNewUserView(request):
                   }})
 
 
-def RegistrationSuccessfulView(request):
+def registration_successful_view(request):
     return render(request, 'users/templates/registration_successful.html')
 
 
@@ -87,8 +87,11 @@ def user_profile_view(request):
                   }})
 
 
-def ChangePasswordView(request):
-    return HttpResponse("Under Construction")
+class ChangePasswordView(PasswordChangeView):
+    form_class = CustomPasswordChangeForm
+    template_name = "users/templates/change_password.html"
+    extra_context = {}
+    # return render(request, "users/templates/change_password.html")
 
 
 def about_the_author_view(request):

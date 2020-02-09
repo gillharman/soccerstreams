@@ -147,6 +147,51 @@
     padding-left: 3px;
 }
 
+.password-strength {
+    margin-top: 8px;
+    text-align: left;
+    width: 100%;
+}
+
+.password-strength-indicator {
+    display: table;
+    height: 8px;
+    width: 100%;
+    margin: 4px 0 0;
+    padding: 0px;
+    border-bottom: 1px solid #ddd;
+}
+
+.strength-bar {
+    display: table-cell;
+    width: 25%;
+}
+
+.s-b-0, .s-b-1,
+.s-b-2, .s-b-3 {
+    opacity: 0;
+}
+
+.s-b-0 {
+    background-color: #ff0000;
+}
+
+.s-b-1 {
+    background-color: #ff4500;
+}
+
+.s-b-2 {
+    background-color: #ffa500;
+}
+
+.s-b-3 {
+    background-color: #008000;
+}
+
+.s-b-active {
+    opacity: 1;
+}
+
 /*
 .home-link {
     color: #ded5d5;

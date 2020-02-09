@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a24984d9-905a-4a1e-8193-849e0157c296" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/node_modules/app/change-password/change-password.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/app/change-password/change-password.module.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/app/core/core.module.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/app/core/password-strength-meter/password-strength-meter.module.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/streamablematches/templates/users/templates/change_password.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soccerstreams/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/soccerstreams/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/streamablematches/static/users/css/auth.css" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/static/users/css/auth.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/streamablematches/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/streamablematches/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/forms.py" afterDir="false" />
@@ -167,6 +161,16 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="requirements.txt" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
