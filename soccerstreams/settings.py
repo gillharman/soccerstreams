@@ -32,11 +32,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'streamablematches',
-    'users',
-    'gunicorn',
     'django_cron',
     'django_user_agents',
+    'djng',
+    'gunicorn',
+    'streamablematches',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -116,18 +117,23 @@ USE_TZ = True
 
 STATIC_ROOT = os.path.join(PROJECT_DIR, 'staticfiles')
 
+STATICFILES_DIRS = [
+    ('node_modules', os.path.join(PROJECT_DIR, 'node_modules')),
+]
+
 STATIC_URL = '/static/'
 
 # MEDIA_ROOT = os.path.join(PROJECT_DIR, 'users/media/')
 
 # MEDIA_URL = 'users/media/'
 
+# Models
 AUTH_USER_MODEL = 'users.User'
 
-########################
-# API RELATED SETTINGS #
-########################
+# Angular integration
+FORM_RENDERER = 'djng.forms.renderers.DjangoAngularBootstrap3Templates'
 
+# APIs configuration
 REQUEST_HEADERS = {
     "reddit": "{'user_agent': 'laptop:soccerStreams:v 0.1'}",
     "footballApi": "{'x-auth-token': '335ffd5c439f4d3ea4f5ade02de7b207'}",
