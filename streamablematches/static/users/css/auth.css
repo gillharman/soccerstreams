@@ -173,19 +173,19 @@
 }
 
 .s-b-0 {
-    background-color: #ff0000;
+    background-color: #008000;
 }
 
 .s-b-1 {
-    background-color: #ff4500;
-}
-
-.s-b-2 {
     background-color: #ffa500;
 }
 
+.s-b-2 {
+    background-color: #ff4500;
+}
+
 .s-b-3 {
-    background-color: #008000;
+    background-color: #ff0000;
 }
 
 .s-b-active {

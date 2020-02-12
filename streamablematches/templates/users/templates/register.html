@@ -14,7 +14,7 @@ Create a new Soccerstreams account
 {% endblock %}
 
 {% block content %}
-<div id="auth-form-wrapper" class="container content">
+<div id="auth-form-wrapper" class="container content" ng-app="soccerStreams" ng-controller="UserRegistrationController as urc">
     <div class="row auth-form-container wrapper-outline">
         <div class="col auth-form">
             <div id="heading-text">Create</div>
@@ -61,6 +61,9 @@ Create a new Soccerstreams account
                         <div class="placeholder placeholder-text" aria-hidden="true">{{ data.form.password2.label }}</div>
                         <div class="auth-form-field-border"></div>
                     </div>
+                    {% verbatim %}
+                    <password-strength-meter></password-strength-meter>
+                    {% endverbatim %}
                     {% if data.form.errors %}
                     {% for key, values in data.form.errors.items %}
                     {% for value in values %}
@@ -86,5 +89,12 @@ Create a new Soccerstreams account
 {% endblock %}
 
 {% block script %}
+<script type="text/javascript" src="{% static 'node_modules/app/app.module.js' %}"></script>
+<script type="text/javascript" src="{% static 'node_modules/app/authentication/authentication.module.js' %}"></script>
+<script type="text/javascript" src="{% static 'node_modules/app/authentication/change-password/change-password.module.js' %}"></script>
+<script type="text/javascript" src="{% static 'node_modules/app/authentication/user-registration/user-registration.module.js' %}"></script>
+<script type="text/javascript" src="{% static 'node_modules/app/authentication/user-registration/user-registration.controller.js' %}"></script>
+<script type="text/javascript" src="{% static 'node_modules/app/password-strength-meter/password-strength-meter.module.js' %}"></script>
+<script type="text/javascript" src="{% static 'node_modules/app/password-strength-meter/password-strength-meter.component.js' %}"></script>
 <script src="{% static 'users/js/auth.js' %}"></script>
 {% endblock %}

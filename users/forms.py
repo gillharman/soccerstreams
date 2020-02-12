@@ -35,7 +35,7 @@ class CustomPasswordChangeForm(PasswordChangeForm):
         widget=forms.PasswordInput(
             attrs={
                 "class": "password auth-form-field",
-                "ng-model": "$scope.old_password",
+                "ng-model": "old_password",
                 "autocomplete": "off",
                 "aria-label": "Old password",
                 "autofocus": True
@@ -49,7 +49,7 @@ class CustomPasswordChangeForm(PasswordChangeForm):
         widget=forms.PasswordInput(
             attrs={
                 "class": "password auth-form-field",
-                "ng-model": "$scope.new_password1",
+                "ng-model": "new_password1",
                 "autocomplete": "off",
                 "aria-label": "New password",
                 "aria-describedby": "passwordHelpBlock"
@@ -64,7 +64,7 @@ class CustomPasswordChangeForm(PasswordChangeForm):
         widget=forms.PasswordInput(
             attrs={
                 "class": "password auth-form-field",
-                "ng-model": "$scope.new_password2",
+                "ng-model": "new_password2",
                 "autocomplete": "off",
                 "aria-label": "New password confirmation"
             }
@@ -114,6 +114,7 @@ class CustomUserCreationForm(UserCreationForm):
         widget=forms.PasswordInput(
             attrs={
                 "class": "password auth-form-field",
+                "ng-model": "password1",
                 "autocomplete": "off",
                 "aria-label": "Password",
                 "aria-describedby": "passwordHelpBlock"
@@ -128,6 +129,7 @@ class CustomUserCreationForm(UserCreationForm):
         widget=forms.PasswordInput(
             attrs={
                 "class": "password auth-form-field",
+                "ng-model": "password2",
                 "autocomplete": "off",
                 "aria-label": "Confirm password"
             }
