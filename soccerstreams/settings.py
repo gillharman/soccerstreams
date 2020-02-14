@@ -119,6 +119,7 @@ STATIC_ROOT = os.path.join(PROJECT_DIR, 'staticfiles')
 
 STATICFILES_DIRS = [
     ('node_modules', os.path.join(PROJECT_DIR, 'node_modules')),
+    ('app', os.path.join(PROJECT_DIR, 'streamablematches/app'))
 ]
 
 STATIC_URL = '/static/'

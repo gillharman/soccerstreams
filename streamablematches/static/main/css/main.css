@@ -81,6 +81,7 @@ body {
 
 .content {
     padding-top: 42px;
+    padding-bottom: 26px;
 }
 
 .content-width {
@@ -244,5 +245,10 @@ body {
 
     .wrapper-outline {
         box-shadow: 0 1px 3px 0px rgba(0,0,0,0.16);
+    }
+
+    .content {
+        padding-top: 42px;
+        padding-bottom: 35px;
     }
 }

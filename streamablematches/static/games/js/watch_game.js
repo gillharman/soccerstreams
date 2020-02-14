@@ -12,8 +12,13 @@ $(document).ready(function() {
     }
 
     $('#ace-stream-form form').on("submit", function(event) {
+        $(".new-links-alert").hide();
         event.preventDefault();
-        addAceStream();
+        $(".progress-bar").animate({
+            width: "100%",
+        }, 400, function() {
+            addAceStream();
+        });
     });
 
     $('#add-another-ace-stream').on("click", function() {
@@ -24,6 +29,16 @@ $(document).ready(function() {
         if(!$(this).val()) {
             $(this).val("acestream://");
         }
+    });
+
+    $('.content-id input').on("blur", function(ele) {
+        if($(this).val() === "acestream://") {
+            $(this).val("");
+        }
+    });
+
+    $('.close-alert').on("click", function() {
+        $('.new-links-alert').hide();
     });
 
     // ACTIVATE THE LINEUPS TAB
@@ -67,10 +82,7 @@ function addAceStream() {
         success: function(result) {
             var new_links = JSON.parse(result.data.new_links);
             addLinksToDOM(new_links);
-            if(result.data.ignored.length > 0)
-                $("#ace-stream-form").prepend(addToastMessage("failed", result.data.ignored));
-            if(result.data.inserts.length > 0)
-                $("#ace-stream-form").prepend(addToastMessage("success", result.data.inserts));
+            $("#ace-stream-form").prepend(addToastMessage("success", result.data.inserts));
         },
         error: function() {
             $("#ace-stream-form").prepend(addToastMessage("failed"));
@@ -111,7 +123,7 @@ function addAceStreamForm() {
     var num = incrementForms();
     num -= 1;  // IDS ARE INDEXED FROM ZERO
     var label_clone = $("label[for='id_form-0-ace_stream']").clone().attr({
-        for: "form-" + num + "-ace_stream",
+        "for": "id_form-" + num + "-ace_stream",
     });
     var input_clone = $("#id_form-0-ace_stream").clone(true).attr({
         id: "id_form-" + num + "-ace_stream",
@@ -144,21 +156,22 @@ function addToastMessage(type, arr) {
         arr = ''
     var toast = {
         "success": {
-            "message": "Links added successfully!" + arr,
-            "classType": "success"
+            "message": "Success!",
+            "classType": "alert alert-success"
         },
         "failed": {
-            "message": "An error occurred while adding new links. " + arr,
-            "classType": "danger"
+            "message": "Error.",
+            "classType": "alert alert-danger"
         }
     }
-    var div_tag = document.createElement("div");
-    $(div_tag).attr({
-        "class": "alert alert-" + toast[type].classType,
-        "role": "alert"
-    });
-    var message_node = document.createTextNode(toast[type].message);
-    div_tag.appendChild(message_node);
 
-    return div_tag;
+    if($(".new-links-alert").hasClass("alert")) {
+        $(".new-links-alert").contents().first().remove();
+    }
+    $(".new-links-alert")
+        .addClass(toast[type].classType)
+        .prepend(toast[type].message)
+        .show();
+
+    return;
 }
