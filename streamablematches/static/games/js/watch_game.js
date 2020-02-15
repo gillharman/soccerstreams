@@ -8,6 +8,9 @@ $(document).ready(function() {
             var tab_content = $(this).attr('data-tab-content');
             $('#' + tab_content).css('display','flex');
             $(this).addClass('tab-active');
+
+            // Add last open tab to localStorage
+            window.localStorage["lastOpenTab"] = this.id;
         });
     }
 
@@ -16,8 +19,9 @@ $(document).ready(function() {
         event.preventDefault();
         $(".progress-bar").animate({
             width: "100%",
-        }, 400, function() {
+        }, 800, function() {
             addAceStream();
+            $(".progress-bar").css("width", "0");
         });
     });
 
@@ -41,8 +45,12 @@ $(document).ready(function() {
         $('.new-links-alert').hide();
     });
 
-    // ACTIVATE THE LINEUPS TAB
-    $('#default-open').click();
+    // Activate the last open tab
+    if(window.localStorage.lastOpenTab) {
+        $("#" + window.localStorage.lastOpenTab).click();
+    } else {
+        $('#lineups-menu').click();
+    }
 });
 
 function getCookie(name) {
