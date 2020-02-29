@@ -21,7 +21,7 @@ PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 
-SECRET_KEY = 'secret'
+SECRET_KEY = os.environ["SECRET_KEY"]
 
 # Application definition
 
@@ -110,6 +110,26 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+
+ALLOWED_HOSTS = os.environ['ALLOWED_HOSTS']
+
+DEBUG = os.environ["DEBUG"]
+
+
+# Database
+# https://docs.djangoproject.com/en/2.0/ref/settings/#databases
+
+DATABASES = {
+    'default' : {
+        'ENGINE': os.environ["DATABASE_ENGINE"],
+        'NAME': os.environ["DATABASE_NAME"],
+        'USER': os.environ["DATABASE_USER"],
+        'PASSWORD': os.environ["DATABASE_PASSWORD"],
+        'HOST': os.environ["DATABASE_HOST"],
+        'PORT': os.environ["DATABASE_PORT"],
+    }
+}
 
 
 # Static files (CSS, JavaScript, Images)

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="TerminalProjectOptionsProvider">
+    <envs>
+      <env key="FOOTBALL_API_KEY" value="335ffd5c439f4d3ea4f5ade02de7b207" />
+      <env key="DEBUG" value="True" />
+      <env key="ALLOWED_HOSTS" value="*" />
+      <env key="SECRET_KEY" value="djx4q2y-yyvjozclbw4*t1w!ph#l2om^24gc(j$09%njvjbg++" />
+      <env key="DATABASE_ENGINE" value="django.db.backends.postgresql_psycopg2" />
+      <env key="DATABASE_NAME" value="postgres" />
+      <env key="DATABASE_USER" value="postgres" />
+      <env key="DATABASE_PASSWORD" value="manveer" />
+      <env key="DATABASE_HOST" value="localhost" />
+      <env key="DATABASE_PORT" value="5432" />
+    </envs>
+  </component>
+</project>
