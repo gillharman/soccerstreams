@@ -112,9 +112,9 @@ USE_L10N = True
 USE_TZ = True
 
 
-ALLOWED_HOSTS = os.environ['ALLOWED_HOSTS']
+ALLOWED_HOSTS = [os.environ['ALLOWED_HOSTS']]
 
-DEBUG = os.environ["DEBUG"]
+DEBUG = bool(os.environ["DEBUG"])
 
 
 # Database
