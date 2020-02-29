@@ -136,7 +136,7 @@ FORM_RENDERER = 'djng.forms.renderers.DjangoAngularBootstrap3Templates'
 # APIs configuration
 REQUEST_HEADERS = {
     "reddit": "{'user_agent': 'pc'}",
-    "footballApi": "{'x-auth-token': '%s' }" % os.environ("FOOTBALL_API_KEY"),
+    "footballApi": "{'x-auth-token': '" + os.environ("FOOTBALL_API_KEY") + "'}",
     "rotowire": "{'user_agent': 'pc'}"
 }
 
